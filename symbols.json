@@ -1,0 +1,7 @@
+{
+  "key": "default.symbo.ls",
+  "distDir": "./smbls",
+  "version": "1.12.10",
+  "branch": "main",
+  "packageManager": "npm"
+}
