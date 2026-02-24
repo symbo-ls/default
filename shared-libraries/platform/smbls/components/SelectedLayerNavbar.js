@@ -1,0 +1,52 @@
+export const SelectedLayerNavbar = {
+  extends: 'EditNavbar',
+  if: (el) => true || el.getUserSettings('allowTitleOnArtboard'),
+  fontSize: 'Y2',
+  position: 'absolute',
+  bottom: '100%',
+  margin: 'Z -',
+  left: '50%',
+  width: 'auto',
+  padding: '0 X',
+  transition: 'X opacity defaultBezier',
+  round: '--canvas-round',
+  top: 'auto',
+  pointerEvents: 'auto',
+  borderColor: 'line',
+  borderWidth: '1px',
+  borderStyle: 'solid',
+  theme: 'common-box',
+  transform: 'translate3d(-50%, 0, 1px)',
+  state: {
+    value: {},
+  },
+  EditorTools: {
+    padding: '0',
+    margin: '0',
+    hide: (el, s) => s.isEditMode,
+    gap: 'U',
+    childExtends: 'NavbarButton',
+    AddBtn: {
+      order: '-1',
+      icon: 'plus',
+      title: 'Add children',
+      onClick: (ev, el, s) => {},
+    },
+    Remove: {
+      icon: 'trash',
+      title: 'Remove',
+    },
+    TextNavbarButtonDropdown: {},
+    ContextBtn: {
+      icon: 'three dots vertical',
+      title: 'Options',
+      onClick: (ev, el, s) => {
+        el.activateContext(ev, s.key)
+      },
+      order: 3,
+    },
+  },
+  EditorPositionNavbar: null,
+  NavbarButtonSet_title: null,
+  NavbarButtonSet_meta: null,
+};

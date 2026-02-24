@@ -1,0 +1,1 @@
+export const getPrefixForLocalStorage = function getPrefixForLocalStorage() { /* console.log(this, this.state, this.context) */ }
