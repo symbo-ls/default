@@ -2,15 +2,15 @@ export const IcontextLink = {
   text: 'Follow Symbols',
   Icon: {
     fontSize: 'B',
-    name: 'logo',
+    name: 'logo'
   },
   extends: [
     'Link',
-    'IconText',
+    'IconText'
   ],
   gap: 'Y',
   maxHeight: '3em',
   cursor: 'pointer',
   round: 'D',
-  fontWeight: '500',
-};
+  fontWeight: '500'
+}

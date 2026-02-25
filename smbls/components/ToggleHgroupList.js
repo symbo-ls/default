@@ -7,20 +7,20 @@ export const ToggleHgroupList = {
     Hgroup: {
       gap: 'W2',
       H: {
-        tag: 'h6',
+        tag: 'h6'
       },
-      P: {},
+      P: {}
     },
     Toggle: {
       margin: '- - - auto',
       Input: {},
       Flex: {
-        after: {},
-      },
-    },
+        after: {}
+      }
+    }
   },
   children: [
     {},
-    {},
-  ],
-};
+    {}
+  ]
+}

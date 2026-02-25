@@ -4,8 +4,8 @@ export default {
     ratio: 1.25,
     range: [
       -5,
-      12,
+      12
     ],
-    subSequence: true,
-  },
-};
+    subSequence: true
+  }
+}

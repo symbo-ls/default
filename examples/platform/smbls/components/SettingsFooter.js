@@ -13,10 +13,10 @@ export const SettingsFooter = {
       el.getEditorPanels().update()
       el.call('openNotification', {
         title: 'Settings are saved',
-        message: `Project settings are updated`,
+        message: 'Project settings are updated',
         type: 'success'
       })
-    },
+    }
   },
   CheckboxField: {
     margin: '- auto - -',
@@ -33,8 +33,8 @@ export const SettingsFooter = {
     },
     Icon: {},
     Span: {
-      text: 'Auto update canvas',
-    },
+      text: 'Auto update canvas'
+    }
   },
   Flex: {
     ConvertToDomql3: {
@@ -42,21 +42,21 @@ export const SettingsFooter = {
       text: 'Convert to DOMQL3',
       onClick: async (ev, el) => {
         await el.convertToDomql3()
-      },
+      }
     },
     RestoreTypes: {
       color: 'inactive',
       text: 'Restore missing types',
       onClick: async (ev, el) => {
         await el.restoreMissingTypes()
-      },
+      }
     },
     RestoreComponents: {
       color: 'inactive',
       text: 'Restore missing components',
       onClick: async (ev, el) => {
         await el.restoreMissingComponents()
-      },
+      }
     },
     ResetSettings: {
       color: 'inactive',
@@ -76,7 +76,7 @@ export const SettingsFooter = {
         }, {
           message: 'Reset settings'
         })
-      },
+      }
     },
     ClearCookies: {
       color: 'inactive',
@@ -122,10 +122,10 @@ export const SettingsFooter = {
         el.call('removeCookie', 'email')
         el.call('openNotification', {
           title: 'Cookies are cleared',
-          message: `Cleared all project related cookies from browser`,
+          message: 'Cleared all project related cookies from browser',
           type: 'success'
         })
-      },
+      }
     },
     ClearCache: {
       color: 'inactive',
@@ -133,12 +133,12 @@ export const SettingsFooter = {
       fontWeight: 400,
       onClick: async (ev, el) => {
         await el.clearCache()
-      },
+      }
     },
     gap: 'B2',
     childExtends: [
       'IconText',
-      'DocsLink',
-    ],
-  },
-};
+      'DocsLink'
+    ]
+  }
+}

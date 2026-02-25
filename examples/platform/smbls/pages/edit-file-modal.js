@@ -10,17 +10,17 @@ export const editFileModal = {
   },
   ModalHeader: {
     title: 'Edit {{ key }} file',
-    p: null,
+    p: null
   },
   Flex: {
     InputField: {
       pointerEvents: 'none',
       Input: {
         opacity: '.65',
-        disabled: 'disabled',
-      },
+        disabled: 'disabled'
+      }
     },
-    'CommonSection.type': null,
+    'CommonSection.type': null
   },
   ModalFooter: {
     CheckBuuon: {},
@@ -32,7 +32,7 @@ export const editFileModal = {
           await el.call('rerenderFileSidebarByType', 'files')
           await el.call('closeModal')
         }
-      },
-    },
-  },
-};
+      }
+    }
+  }
+}

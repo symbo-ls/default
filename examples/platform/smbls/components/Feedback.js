@@ -18,13 +18,13 @@ export const Feedback = {
       name: 'arrowAngleUp',
       color: 'dim',
       '.isActive': {
-        color: 'orange',
-      },
+        color: 'orange'
+      }
     },
     '!isActive': {
       ':hover svg': {
-        color: 'placeholder',
-      },
+        color: 'placeholder'
+      }
     },
     onClick: (ev, el, s) => {
       const {
@@ -34,40 +34,40 @@ export const Feedback = {
         isActive: !isActive,
         upvotes: isActive ? s.upvotes - 1 : s.upvotes + 1
       })
-    },
+    }
   },
   Hgroup: {
     H: {
       extends: 'DocsLink',
       text: 'Flexbox in Editor',
       fontWeight: '700',
-      tag: 'h6',
+      tag: 'h6'
     },
     P: {
       text: null,
       childProps: {
-        display: 'inline',
+        display: 'inline'
       },
       children: [
         'by ',
         {
           DocsLink: {
-            text: 'kiaynwang',
-          },
+            text: 'kiaynwang'
+          }
         },
         ' ',
         {
           DocsLink: {
-            text: '3 hours ago',
-          },
+            text: '3 hours ago'
+          }
         },
         ' ・ ',
         {
           DocsLink: {
-            text: '49 commnts',
-          },
-        },
-      ],
-    },
-  },
-};
+            text: '49 commnts'
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,7 +1,7 @@
 export const IconButton = {
   Icon: {
     name: 'smile',
-    fontSize: 'A2',
+    fontSize: 'A2'
   },
   extends: 'Button',
   padding: 'A',
@@ -10,5 +10,5 @@ export const IconButton = {
   round: '100%',
   boxSizing: 'content-box',
   align: 'center center',
-  theme: 'dialog',
-};
+  theme: 'dialog'
+}

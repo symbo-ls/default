@@ -18,7 +18,7 @@ export const ModalWindow = {
     top: 'Z2',
     right: 'Z2',
     color: 'dim',
-    onClick: (ev, el, s, ctx) => el.call('closeModal'),
+    onClick: (ev, el, s, ctx) => el.call('closeModal')
   },
-  ModalHeader: {},
-};
+  ModalHeader: {}
+}

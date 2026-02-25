@@ -1,16 +1,16 @@
 export const CheckCaption = {
   Caption: {
-    text: 'Caption',
+    text: 'Caption'
   },
   Checkbox: {
     Input: {},
     Flex: {
       Icon: {
-        name: 'check',
-      },
-    },
+        name: 'check'
+      }
+    }
   },
   extends: 'Flex',
   align: 'center flex-start',
-  gap: 'Z',
-};
+  gap: 'Z'
+}

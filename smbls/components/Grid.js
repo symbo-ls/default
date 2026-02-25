@@ -1,3 +1,3 @@
 export const Grid = {
-  extends: 'smbls.Flex',
-};
+  extends: 'smbls.Flex'
+}

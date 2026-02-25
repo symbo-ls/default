@@ -2,12 +2,12 @@ export const SharingPermissions = {
   extend: 'Flex',
   props: {
     flow: 'y',
-    gap: 'A',
+    gap: 'A'
   },
   CaptionTitle: {
     Text: {
-      text: 'Access Permissions',
-    },
+      text: 'Access Permissions'
+    }
   },
   Flex: {
     gap: 'A',
@@ -26,67 +26,67 @@ export const SharingPermissions = {
         color: 'currentColor',
         width: 'D3+Z2',
         onChange: (ev, el, s, ctx) => {
-            const value = ev.target.value
-            if (value) {
-              s.update({
-                action: value
-              })
-            }
-          },
+          const value = ev.target.value
+          if (value) {
+            s.update({
+              action: value
+            })
+          }
+        },
         childrenAs: 'props',
         childProps: {
           tag: 'option',
           attr: {
-            selected: (el, s) => el.node.value === s.action,
-          },
-        },
-      },
+            selected: (el, s) => el.node.value === s.action
+          }
+        }
+      }
     },
     Guests: {
       Hgroup: {
         H: {
-          text: 'Preview visibility',
+          text: 'Preview visibility'
         },
         P: {
-          text: 'Control access to the preview links',
-        },
+          text: 'Control access to the preview links'
+        }
       },
       Select: {
         children: [
           {
-            text: 'Public',
+            text: 'Public'
           },
           {
-            text: 'Password protected',
+            text: 'Password protected'
           },
           {
-            text: 'Private',
-          },
-        ],
-      },
+            text: 'Private'
+          }
+        ]
+      }
     },
     Editors: {
       Hgroup: {
         H: {
-          text: 'Canvas access',
+          text: 'Canvas access'
         },
         P: {
-          text: 'Control access to the canvas',
-        },
+          text: 'Control access to the canvas'
+        }
       },
       Select: {
         children: [
           {
-            text: 'Public',
+            text: 'Public'
           },
           {
-            text: 'Unlisted',
+            text: 'Unlisted'
           },
           {
-            text: 'Private',
-          },
-        ],
-      },
-    },
-  },
-};
+            text: 'Private'
+          }
+        ]
+      }
+    }
+  }
+}

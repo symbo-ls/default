@@ -3,6 +3,6 @@ export const BoxModelAside = {
   extend: 'Flex',
   props: {
     align: 'center center',
-    height: '100%',
-  },
-};
+    height: '100%'
+  }
+}

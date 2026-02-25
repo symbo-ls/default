@@ -24,21 +24,21 @@ export const Role = {
     },
     childrenAs: 'props',
     children: () => [{
-        value: 'owner',
-        text: 'Owner'
-      },
-      {
-        value: 'admin',
-        text: 'Admin'
-      },
-      {
-        value: 'editor',
-        text: 'Editor'
-      },
-      {
-        value: 'guest',
-        text: 'Guest'
-      }
+      value: 'owner',
+      text: 'Owner'
+    },
+    {
+      value: 'admin',
+      text: 'Admin'
+    },
+    {
+      value: 'editor',
+      text: 'Editor'
+    },
+    {
+      value: 'guest',
+      text: 'Guest'
+    }
     ],
     childProps: {
       tag: 'option',
@@ -48,8 +48,8 @@ export const Role = {
           const optionValue = el.props.value
           return userRole === optionValue
         },
-        disabled: (el, s) => !el.sdk.hasPermission('iam'),
-      },
-    },
-  },
-};
+        disabled: (el, s) => !el.sdk.hasPermission('iam')
+      }
+    }
+  }
+}

@@ -4,13 +4,13 @@ export const ImgHeading = {
     widthL: 'auto',
     maxWidth: 'C',
     maxHeight: 'C',
-    round: 'Z2',
+    round: 'Z2'
   },
   H: {
     tag: 'h4',
-    text: 'Heading',
+    text: 'Heading'
   },
   extends: 'Flex',
   align: 'center flex-start',
-  gap: 'Y1',
-};
+  gap: 'Y1'
+}

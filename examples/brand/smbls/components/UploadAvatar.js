@@ -1,9 +1,9 @@
 export const UploadAvatar = {
   extends: [
-    'GroupField',
+    'GroupField'
   ],
   Title: {
-    text: 'Pick the avatar',
+    text: 'Pick the avatar'
   },
-  UploadIcon: {},
-};
+  UploadIcon: {}
+}

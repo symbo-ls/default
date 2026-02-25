@@ -5,7 +5,7 @@ export const InstallExt = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    background: 'shadow',
+    background: 'shadow'
   },
   ModalHeader: null,
   IconButton: null,
@@ -16,18 +16,18 @@ export const InstallExt = {
     Img: {
       src: 'chrome-ext-icon.png',
       width: 'C',
-      margin: '-W - - -',
+      margin: '-W - - -'
     },
     Hgroup: {
       H: {
         tag: 'strong',
-        text: 'Install Chrome extension to allow inspecting',
+        text: 'Install Chrome extension to allow inspecting'
       },
       P: {
-        text: 'Extension is required to gain access to website content',
+        text: 'Extension is required to gain access to website content'
       },
-      gap: 'X',
-    },
+      gap: 'X'
+    }
   },
   Flex_Buttons: {
     align: 'start',
@@ -38,7 +38,7 @@ export const InstallExt = {
     Install: {
       extends: [
         'Link',
-        'Button',
+        'Button'
       ],
       href: '/docs/chrome-extension',
       target: '_blank',
@@ -47,9 +47,9 @@ export const InstallExt = {
       icon: 'arrow up right',
       gap: 'X2',
       Icon: {
-        order: 2,
+        order: 2
       },
-      onClick: () => {},
+      onClick: () => {}
     },
     Cancel: {
       text: 'Cancel',
@@ -58,7 +58,7 @@ export const InstallExt = {
       borderWidth: '1px',
       borderStyle: 'solid',
       borderColor: 'line',
-      onClick: (ev, el) => el.closeModal(),
-    },
-  },
-};
+      onClick: (ev, el) => el.closeModal()
+    }
+  }
+}

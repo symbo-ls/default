@@ -3,9 +3,9 @@ export const Modal = {
     gap: 'X1',
     H: {
       tag: 'h5',
-      fontWeight: '700',
+      fontWeight: '700'
     },
-    P: {},
+    P: {}
   },
   IconButton: {
     position: 'absolute',
@@ -14,11 +14,11 @@ export const Modal = {
     round: '100%',
     $isSafari: {
       top: 'Z2',
-      right: 'Z2',
+      right: 'Z2'
     },
     Icon: {
-      name: 'x',
-    },
+      name: 'x'
+    }
   },
   extends: 'Flex',
   boxSize: 'fit-content',
@@ -29,5 +29,5 @@ export const Modal = {
   theme: 'dialog',
   flow: 'y',
   padding: 'A2 A2 A1 A2',
-  borderStyle: 'none',
-};
+  borderStyle: 'none'
+}

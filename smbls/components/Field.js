@@ -4,7 +4,7 @@ export const Field = {
     round: 'C',
     padding: 'Z2 C Z2 A2',
     placeholder: 'Placeholder',
-    minWidth: '100%',
+    minWidth: '100%'
   },
   Icon: {
     icon: 'info',
@@ -12,11 +12,11 @@ export const Field = {
     lineHeight: '1em',
     position: 'absolute',
     right: 'Z2',
-    opacity: '.45',
+    opacity: '.45'
   },
   extends: 'Flex',
   theme: 'field',
   align: 'center flex-start',
   round: 'D',
-  position: 'relative',
-};
+  position: 'relative'
+}

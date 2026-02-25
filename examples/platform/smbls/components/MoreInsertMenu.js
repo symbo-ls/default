@@ -1,9 +1,9 @@
 export const MoreInsertMenu = {
   CaptionTitle: {
     Text: {
-      text: 'Insert from',
+      text: 'Insert from'
     },
-    color: 'propValue',
+    color: 'propValue'
   },
   ListInDropdown: {
     margin: '- -Z2',
@@ -19,40 +19,40 @@ export const MoreInsertMenu = {
         color: 'currentColor',
         opacity: '1',
         margin: '- Y1 - -',
-        fontWeight: '100',
+        fontWeight: '100'
       },
       ':hover': {
         style: {
           svg: {
-            opacity: 1,
-          },
-        },
-      },
+            opacity: 1
+          }
+        }
+      }
     },
     childrenAs: 'props',
     children: el => [{
-        text: 'Live website',
-        Icon: {
-          name: 'globe'
-        },
-        onClick: (ev, el) => {
-          el.openModal('/browser-extension')
-        }
-      }, {
-        text: 'Local files',
-        Icon: {
-          name: 'terminal'
-        },
-        onClick: (ev, el) => {
-          el.openModal('/settings', {
-            key: '/install'
-          })
-        }
-      }],
+      text: 'Live website',
+      Icon: {
+        name: 'globe'
+      },
+      onClick: (ev, el) => {
+        el.openModal('/browser-extension')
+      }
+    }, {
+      text: 'Local files',
+      Icon: {
+        name: 'terminal'
+      },
+      onClick: (ev, el) => {
+        el.openModal('/settings', {
+          key: '/install'
+        })
+      }
+    }]
   },
   extend: 'Flex',
   props: {
     flow: 'y',
-    gap: 'Z',
-  },
-};
+    gap: 'Z'
+  }
+}

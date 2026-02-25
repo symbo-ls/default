@@ -15,74 +15,75 @@ export const SceneNavbar = {
   fontSize: 'Y1',
   onClick: ev => ev.stopPropagation(),
   style: {
-    minWidth: '-webkit-fill-available',
+    minWidth: '-webkit-fill-available'
   },
   Space: {
     if: el => el.isEmbed(),
     width: 'B2',
-    height: 'A',
+    height: 'A'
   },
   NavbarButtonSet_copy: {
     padding: '0',
     Text: {
       ignoreChildExtend: true,
-      text: '{{ key }}',
+      text: '{{ key }}'
     },
     CopyButton: {
-      value: (el, s) => s.parent.key,
-    },
+      value: (el, s) => s.parent.key
+    }
   },
   EditorTools: {
     margin: '- - - C3',
     color: 'dim',
-    fontSize: 'Z1',
+    fontSize: 'Z1'
   },
   ResponsiveSwitching: {
     margin: '0 auto',
     color: 'dim',
     fontSize: 'Z1',
-    align: 'center',
+    align: 'center'
   },
   EditorPositionNavbar: {
     margin: '- A - -',
-    isDisabled: el => !Boolean(el.getCanvasScope('componentEditor')),
+    isDisabled: el => !el.getCanvasScope('componentEditor'),
     '.isDisabled': {
       opacity: '.35',
-      pointerEvents: 'none',
-    },
+      pointerEvents: 'none'
+    }
   },
   NavbarButtonSet: {
     color: 'dim',
     fontSize: 'Z1',
     Fullscreen: {
       title: 'Fullscreen',
-      icon: el => !el.getRootState('isFullscreen') ?
-        'fullscreen' : 'fullscreen exit',
+      icon: el => !el.getRootState('isFullscreen')
+        ? 'fullscreen'
+        : 'fullscreen exit',
       onClick: async (ev, el) => {
         const Canvas = el.getCanvas()
         await Canvas.call('toggleFullscreen')
         el.getRootState().isFullscreen = Boolean(document.fullscreenElement)
         el.update()
-      },
+      }
     },
     Minimize: {
       title: 'Minimize',
       icon: 'minus',
       onClick: (ev, el) => {
         el.activateChosen(null)
-      },
+      }
     },
     Close: {
       title: 'Close',
       icon: 'crossmark',
       onClick: (ev, el, s) => {
         el.activateChosen(null)
-      },
-    },
+      }
+    }
   },
   NavbarTooltip: {
     '&': {
-      pointerEvents: 'none',
-    },
-  },
-};
+      pointerEvents: 'none'
+    }
+  }
+}

@@ -18,7 +18,7 @@ export const SelectedLayerNavbar = {
   theme: 'common-box',
   transform: 'translate3d(-50%, 0, 1px)',
   state: {
-    value: {},
+    value: {}
   },
   EditorTools: {
     padding: '0',
@@ -30,11 +30,11 @@ export const SelectedLayerNavbar = {
       order: '-1',
       icon: 'plus',
       title: 'Add children',
-      onClick: (ev, el, s) => {},
+      onClick: (ev, el, s) => {}
     },
     Remove: {
       icon: 'trash',
-      title: 'Remove',
+      title: 'Remove'
     },
     TextNavbarButtonDropdown: {},
     ContextBtn: {
@@ -43,10 +43,10 @@ export const SelectedLayerNavbar = {
       onClick: (ev, el, s) => {
         el.activateContext(ev, s.key)
       },
-      order: 3,
-    },
+      order: 3
+    }
   },
   EditorPositionNavbar: null,
   NavbarButtonSet_title: null,
-  NavbarButtonSet_meta: null,
-};
+  NavbarButtonSet_meta: null
+}

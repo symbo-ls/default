@@ -1,6 +1,6 @@
 export const MainLoader = {
   attr: {
-    id: 'main-loader',
+    id: 'main-loader'
   },
   position: 'fixed',
   boxSize: '100% 100%',
@@ -13,7 +13,7 @@ export const MainLoader = {
   animationDuration: 'E',
   LoaderRatio: {
     position: 'absolute',
-    zIndex: 1,
+    zIndex: 1
   },
   LogoLoader: {
     zIndex: 2,
@@ -21,6 +21,6 @@ export const MainLoader = {
     top: '50%',
     left: '50%',
     fontSize: '1em',
-    transform: 'translate3d(-50%, -50%, 0)',
-  },
-};
+    transform: 'translate3d(-50%, -50%, 0)'
+  }
+}

@@ -5,30 +5,30 @@ export const ItemAlt = {
   align: 'flex-start space-between',
   padding: 'A2 B B',
   '@mobileL': {
-    flow: 'row',
+    flow: 'row'
   },
   Flex_header: {
     props: {
       gap: 'A2',
-      align: 'center flex-start',
+      align: 'center flex-start'
     },
     Icon: {
       fontSize: 'B2',
-      name: 'tree',
-    },
+      name: 'tree'
+    }
   },
   Img: {
     round: 'A',
     margin: '- - - -Z',
     aspectRatio: '16 / 9',
     height: '12em',
-    src: 'https://p194.p3.n0.cdn.zight.com/items/rRuDJBlD/7f15d948-1604-4c5f-ad1f-d9aebe607f52.png?v=499b93d980e92921c72e5dc02b7e5ce2',
+    src: 'https://p194.p3.n0.cdn.zight.com/items/rRuDJBlD/7f15d948-1604-4c5f-ad1f-d9aebe607f52.png?v=499b93d980e92921c72e5dc02b7e5ce2'
   },
   Flex_footer: {
     props: {
       minWidth: 'auto',
       align: 'flex-end space-between',
-      gap: 'E',
+      gap: 'E'
     },
     ArticleMedium: {
       props: {
@@ -36,12 +36,12 @@ export const ItemAlt = {
         width: '100%',
         maxWidth: 'F1',
         title: {
-          text: 'What is Symbols?',
+          text: 'What is Symbols?'
         },
         p: {
-          text: 'A minute video explaining how to get started with Symbols',
-        },
-      },
-    },
-  },
-};
+          text: 'A minute video explaining how to get started with Symbols'
+        }
+      }
+    }
+  }
+}

@@ -7,19 +7,19 @@ export const RadioHgroupList = {
     Hgroup: {
       gap: 'W2',
       H: {
-        tag: 'h6',
+        tag: 'h6'
       },
-      P: {},
+      P: {}
     },
     Radio: {
       Input: {},
       FLex: {
-        ':after': {},
-      },
-    },
+        ':after': {}
+      }
+    }
   },
   children: [
     {},
-    {},
-  ],
-};
+    {}
+  ]
+}

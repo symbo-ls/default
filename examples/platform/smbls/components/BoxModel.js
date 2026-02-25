@@ -17,66 +17,66 @@ export const BoxModel = {
     textAlign: 'center',
     childProps: {
       cursor: 'pointer',
-      position: 'relative',
+      position: 'relative'
     },
     childrenAs: 'props',
     children: [
       {
-        boxSize: '100%',
+        boxSize: '100%'
       },
       {
-        boxSize: '100%',
+        boxSize: '100%'
       },
       {
-        boxSize: '100%',
+        boxSize: '100%'
       },
       {
-        boxSize: '100%',
+        boxSize: '100%'
       },
       {
         extends: 'BoxModelAside',
         gridArea: 't',
         SizeUnits: {
           LetterValue: {
-            color: '#85684B',
+            color: '#85684B'
           },
-          NumberValue: {},
-        },
+          NumberValue: {}
+        }
       },
       {
         extends: 'BoxModelAside',
         gridArea: 'r',
         SizeUnits: {
           LetterValue: {
-            color: '#85684B',
+            color: '#85684B'
           },
-          NumberValue: {},
-        },
+          NumberValue: {}
+        }
       },
       {
         extends: 'BoxModelSubGrid',
-        gridArea: 'content',
+        gridArea: 'content'
       },
       {
         extends: 'BoxModelAside',
         gridArea: 'b',
         SizeUnits: {
           LetterValue: {
-            color: '#85684B',
+            color: '#85684B'
           },
-          NumberValue: {},
-        },
+          NumberValue: {}
+        }
       },
       {
         extends: 'BoxModelAside',
         gridArea: 'l',
         SizeUnits: {
           LetterValue: {
-            color: '#85684B',
+            color: '#85684B'
           },
-          NumberValue: {},
-        },
-      },
-    ],
-  },
-};
+          NumberValue: {}
+        }
+      }
+    ]
+  }
+}

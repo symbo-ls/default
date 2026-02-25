@@ -1,6 +1,6 @@
 export const integrations = {
   extends: [
-    'Page',
+    'Page'
   ],
   flow: 'y',
   gap: 'D1',
@@ -13,11 +13,11 @@ export const integrations = {
       Link: {
         extends: [
           'Link',
-          'IconButton',
+          'IconButton'
         ],
         icon: 'question mark fill',
-        href: '/docs/dependencies',
-      },
+        href: '/docs/dependencies'
+      }
     },
     Grid: {
       show: (el, s) => Object.keys(s.parse()).length,
@@ -26,11 +26,11 @@ export const integrations = {
       childExtends: {
         extend: [
           'Flex',
-          'Link',
+          'Link'
         ],
         props: (el, s) => ({
           isError: el.getPackages(el.props.Title.text) === 'error',
-          ".isError": {
+          '.isError': {
             color: 'red'
           },
           fontWeight: '400',
@@ -46,20 +46,20 @@ export const integrations = {
           show: (el, s) => el.getPackages(el.parent.props.Title.text) === 'loading',
           inCenter: false,
           width: 'A',
-          transform: 'scale(1.98)',
+          transform: 'scale(1.98)'
         },
         Icon: {
-          show: (el, s) => el.getPackages(el.parent.props.Title.text) !== 'error' && el.getPackages(el.parent.props.Title.text) !== 'loading',
+          show: (el, s) => el.getPackages(el.parent.props.Title.text) !== 'error' && el.getPackages(el.parent.props.Title.text) !== 'loading'
         },
         Icon_error: {
-          show: (el, s) => el.getPackages(el.parent.props.Title.text) === 'error',
+          show: (el, s) => el.getPackages(el.parent.props.Title.text) === 'error'
         },
         Title: {
-          margin: '- A - Z',
+          margin: '- A - Z'
         },
         Version: {
-          opacity: 0.65,
-        },
+          opacity: 0.65
+        }
       },
       childrenAs: 'props',
       children: (el, s) => {
@@ -74,21 +74,21 @@ export const integrations = {
             text: deps[v] + ' ' + pkgs[v] !== s[v] && pkgs[v] !== 'loading' && pkgs[v] !== 'error' ? `(${pkgs[v]})` : ''
           }
         }))
-      },
+      }
     },
     SectionAddButton: {
       ignoreChildExtend: true,
       scrollToTop: false,
-      href: () => window.location.pathname + '/add-dependency',
+      href: () => window.location.pathname + '/add-dependency'
     },
     Line: {
-      margin: 'D1 - 0',
-    },
+      margin: 'D1 - 0'
+    }
   },
   DesignTools: {
     show: (el) => el.getRootState().userId === 'usb148d6dd' || el.getRootState().userId === 'usce70482d',
     SectionTitle: {
-      text: 'Design Tools',
+      text: 'Design Tools'
     },
     state: '~/INTEGRATIONS',
     Grid: {
@@ -99,7 +99,7 @@ export const integrations = {
         {
           extend: 'InputField',
           Title: {
-            text: 'Figma file URL:',
+            text: 'Figma file URL:'
           },
           Input: {
             type: 'url',
@@ -119,13 +119,13 @@ export const integrations = {
                   }
                 })
               }
-            },
-          },
+            }
+          }
         },
         {
           extend: 'InputField',
           Title: {
-            text: 'Sketch file URL:',
+            text: 'Sketch file URL:'
           },
           Input: {
             type: 'url',
@@ -145,14 +145,14 @@ export const integrations = {
                   }
                 })
               }
-            },
-          },
-        },
-      ],
+            }
+          }
+        }
+      ]
     },
     Line: {
-      margin: 'D1 - 0',
-    },
+      margin: 'D1 - 0'
+    }
   },
   Secrets: {
     SectionTitle: {
@@ -161,11 +161,11 @@ export const integrations = {
       Link: {
         extends: [
           'Link',
-          'IconButton',
+          'IconButton'
         ],
         icon: 'question mark fill',
-        href: '/docs/secrets',
-      },
+        href: '/docs/secrets'
+      }
     },
     Grid: {
       if: (el, s) => Object.keys(el.getSecrets()).length,
@@ -174,19 +174,19 @@ export const integrations = {
       margin: '- - C1',
       childExtends: [
         'Flex',
-        'Link',
+        'Link'
       ],
       childrenAs: 'props',
       childProps: {
         fontWeight: '400',
-        align: 'center start',
+        align: 'center start'
       },
       children: (el) => Object.keys(el.getSecrets()).map((v) => ({
         href: window.location.pathname + '/edit-secret/' + v,
         Title: {
           text: v
         }
-      })),
+      }))
     },
     SectionAddButton: {
       props: () => ({
@@ -194,31 +194,31 @@ export const integrations = {
         ignoreChildExtend: true,
         scrollToTop: false,
         href: window.location.pathname + '/add-secret'
-      }),
+      })
     },
     Line: {
-      margin: 'D1 - 0',
-    },
+      margin: 'D1 - 0'
+    }
   },
   Analytics: {
     SectionTitle: {
-      text: 'Analytics',
+      text: 'Analytics'
     },
     state: '~/INTEGRATIONS/analytics',
     P: {
-      text: 'No analytics integration at this moment (TBA)',
+      text: 'No analytics integration at this moment (TBA)'
     },
     Line: {
-      margin: 'D1 - 0',
-    },
+      margin: 'D1 - 0'
+    }
   },
   Plugins: {
     SectionTitle: {
-      text: 'Plugins',
+      text: 'Plugins'
     },
     state: '~/PLUGINS',
     P: {
-      text: 'No plugins at this moment (TBA)',
-    },
-  },
-};
+      text: 'No plugins at this moment (TBA)'
+    }
+  }
+}

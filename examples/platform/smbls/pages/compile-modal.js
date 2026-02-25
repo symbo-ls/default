@@ -12,12 +12,12 @@ export const compileModal = {
     top: 'X',
     right: 'X',
     color: 'dim',
-    onClick: (ev, el, s, ctx) => el.call('closeModal'),
+    onClick: (ev, el, s, ctx) => el.call('closeModal')
   },
   Compile: {
     extends: '/compile',
     Flex_header: {
-      padding: '0 C1 X A',
-    },
-  },
-};
+      padding: '0 C1 X A'
+    }
+  }
+}

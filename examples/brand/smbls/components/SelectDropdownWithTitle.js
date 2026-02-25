@@ -3,6 +3,6 @@ export const SelectDropdownWithTitle = {
   minWidth: 'F1',
   Title: {},
   SelectDropdown: {
-    width: '100%',
-  },
-};
+    width: '100%'
+  }
+}

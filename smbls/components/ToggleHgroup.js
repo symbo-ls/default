@@ -2,17 +2,17 @@ export const ToggleHgroup = {
   Hgroup: {
     gap: 'W2',
     H: {
-      tag: 'h6',
+      tag: 'h6'
     },
-    P: {},
+    P: {}
   },
   Toggle: {
     margin: '- - - auto',
     Input: {},
     Flex: {
-      after: {},
-    },
+      after: {}
+    }
   },
   extends: 'Flex',
-  gap: 'Z',
-};
+  gap: 'Z'
+}

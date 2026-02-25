@@ -3,6 +3,6 @@ export const ArticleBig = {
   Title: {
     tag: 'h1',
     fontSize: 'E',
-    fontWeight: '700',
-  },
-};
+    fontWeight: '700'
+  }
+}

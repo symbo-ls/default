@@ -8,30 +8,30 @@ export const BoxSizeRow = {
     childProps: {
       ':first-child': {
         border: '.7px, dashed, gray3',
-        round: 'Z1',
-      },
+        round: 'Z1'
+      }
     },
     childExtends: 'BoxSizeItem',
     children: [
       {
         SizeUnits: {
           LetterValue: {},
-          NumberValue: {},
-        },
+          NumberValue: {}
+        }
       },
       {
         Icon: {
-          opacity: '0',
+          opacity: '0'
         },
         SizeUnits: {
           LetterValue: {},
-          NumberValue: {},
+          NumberValue: {}
         },
         Span: {
-          opacity: '0',
-        },
-      },
-    ],
+          opacity: '0'
+        }
+      }
+    ]
   },
   BoxSizeItem: {
     border: '.7px, dashed, gray3',
@@ -39,41 +39,41 @@ export const BoxSizeRow = {
     margin: '-1px 0 -1px -B',
     padding: 'Z Y1 Z B',
     Icon: {
-      opacity: '0',
+      opacity: '0'
     },
     SizeUnits: {
       LetterValue: {
         value: (el, s) => {
           const type = s.type
           const key = `max${type}`
-          return s[key] && s[key] !== 'none' ?
-            el.call('getLetterValueFromState', 0, key) :
-            ''
+          return s[key] && s[key] !== 'none'
+            ? el.call('getLetterValueFromState', 0, key)
+            : ''
         },
         onInput: (ev, el, s) => {
           const type = s.type
           const key = `max${type}`
           el.call('updateLetterStateValue', 0, key)
-        },
+        }
       },
       NumberValue: {
         value: (el, s) => {
           const type = s.type
           const key = `max${type}`
-          return s[key] && s[key] !== 'none' ?
-            el.call('getNumberValueFromState', 0, key) :
-            'none'
+          return s[key] && s[key] !== 'none'
+            ? el.call('getNumberValueFromState', 0, key)
+            : 'none'
         },
         onInput: (ev, el, s) => {
           const type = s.type
           const key = `max${type}`
           el.call('updateNumberStateValue', 0, key)
-        },
-      },
+        }
+      }
     },
     Span: {
-      text: 'Max',
-    },
+      text: 'Max'
+    }
   },
-  extend: 'Flex',
-};
+  extend: 'Flex'
+}

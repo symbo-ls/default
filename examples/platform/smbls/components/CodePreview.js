@@ -17,79 +17,79 @@ export const CodePreview = {
     style: {
       '& .token': {
         '&.keyword': {
-          color: '#4f82ae',
+          color: '#4f82ae'
         },
         '&.string': {
-          color: '#c8749c',
+          color: '#c8749c'
         },
         '&.punctuation': {
-          color: '#A3A3A8',
+          color: '#A3A3A8'
         },
         '&.function': {
-          color: '#c7c981',
+          color: '#c7c981'
         },
         '&.property': {
-          color: '#87b6cb',
+          color: '#87b6cb'
         },
         '&.string-property': {
-          color: '#C584C0',
+          color: '#C584C0'
         },
         '&.operator': {
-          color: '#74b6d4',
+          color: '#74b6d4'
         },
         '&.boolean': {
-          color: '#589BD6',
+          color: '#589BD6'
         },
         '&.number': {
-          color: '#B5CFA8',
+          color: '#B5CFA8'
         },
         '&.comment': {
-          color: '#6A9A55',
+          color: '#6A9A55'
         },
         '&.constant': {
-          color: '#fff',
-        },
-      },
-    },
+          color: '#fff'
+        }
+      }
+    }
   },
   '@light': {
     style: {
       '& .token': {
         '&.keyword': {
-          color: '#1373c6',
+          color: '#1373c6'
         },
         '&.string': {
-          color: '#e34c94',
+          color: '#e34c94'
         },
         '&.punctuation': {
-          color: '#8c8ca6',
+          color: '#8c8ca6'
         },
         '&.function': {
-          color: '#a59300',
+          color: '#a59300'
         },
         '&.property': {
-          color: '#348cb3',
+          color: '#348cb3'
         },
         '&.string-property': {
-          color: '#cd4cc3',
+          color: '#cd4cc3'
         },
         '&.operator': {
-          color: '#74b6d4',
+          color: '#74b6d4'
         },
         '&.boolean': {
-          color: '#589BD6',
+          color: '#589BD6'
         },
         '&.number': {
-          color: '#B5CFA8',
+          color: '#B5CFA8'
         },
         '&.comment': {
-          color: '#6A9A55',
+          color: '#6A9A55'
         },
         '&.constant': {
-          color: 'black',
-        },
-      },
-    },
+          color: 'black'
+        }
+      }
+    }
   },
   onUpdate: (el, s) => {
     el.props.onRender(el, s)
@@ -109,5 +109,5 @@ export const CodePreview = {
     }, {
       preventListeners: true
     })
-  },
-};
+  }
+}

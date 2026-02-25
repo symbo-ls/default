@@ -4,7 +4,7 @@ export const TutorialItemInLearn = {
     title: 'Getting started',
     descr: 'Getting started with basic landing page',
     youtubeId: 'jYU0soXY-To',
-    duration: '14:31',
+    duration: '14:31'
   },
   props: {
     align: 'stretch',
@@ -18,12 +18,12 @@ export const TutorialItemInLearn = {
     ':hover': {
       opacity: '1',
       '& .playButton': {
-        opacity: '1',
-      },
+        opacity: '1'
+      }
     },
     onClick: (ev, el, s) => {
-        el.call('openModalVideo', `https://www.youtube.com/embed/${s.youtubeId}?controls=1&amp;autoplay=1`)
-      },
+      el.call('openModalVideo', `https://www.youtube.com/embed/${s.youtubeId}?controls=1&amp;autoplay=1`)
+    }
   },
   Box: {
     position: 'relative',
@@ -33,7 +33,7 @@ export const TutorialItemInLearn = {
       round: 'Z2',
       position: 'relative',
       width: '100%',
-      src: 'https://img.youtube.com/vi/{{ youtubeId }}/hqdefault.jpg',
+      src: 'https://img.youtube.com/vi/{{ youtubeId }}/hqdefault.jpg'
     },
     Circle: {
       extends: 'Flex',
@@ -44,27 +44,27 @@ export const TutorialItemInLearn = {
       color: 'title',
       Icon: {
         fontSize: 'D',
-        name: 'play oval fill',
-      },
-    },
+        name: 'play oval fill'
+      }
+    }
   },
   Flex: {
     flow: 'y',
     gap: 'W2',
     Strong: {
-      text: '{{ title }}',
+      text: '{{ title }}'
     },
     Span: {
       whiteSpace: 'nowrap',
       fontWeight: '200',
       overflow: 'hidden',
       textOverflow: 'ellipsis',
-      text: '{{ descr }}',
+      text: '{{ descr }}'
     },
     Time: {
       margin: 'auto - -',
       text: '{{ duration }}',
-      fontWeight: '200',
-    },
-  },
-};
+      fontWeight: '200'
+    }
+  }
+}

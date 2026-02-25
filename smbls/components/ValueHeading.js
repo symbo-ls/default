@@ -1,14 +1,14 @@
 export const ValueHeading = {
   H: {
     tag: 'h6',
-    text: 'Kobe Bryant',
+    text: 'Kobe Bryant'
   },
   UnitValue: {
     margin: '- - - auto',
     Unit: {},
-    Value: {},
+    Value: {}
   },
   extends: 'Flex',
   minWidth: 'F3',
-  align: 'center space-between',
-};
+  align: 'center space-between'
+}

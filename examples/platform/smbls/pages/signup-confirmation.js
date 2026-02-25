@@ -9,7 +9,7 @@ export const signupConfirmation = {
   state: {
     loading: true,
     success: false,
-    error: null,
+    error: null
   },
   ConfirmationWindow: {
     boxSize: 'auto I1',
@@ -22,7 +22,7 @@ export const signupConfirmation = {
       gap: 'C1',
       padding: 'C1',
       '@mobileL': {
-        padding: 'B',
+        padding: 'B'
       },
       LoadingState: {
         if: ({
@@ -32,24 +32,24 @@ export const signupConfirmation = {
         align: 'center',
         gap: 'B',
         Spinner: {
-          size: 'D',
+          size: 'D'
         },
         Text: {
           text: 'Confirming your email...',
           fontSize: 'B',
-          color: 'paragraph',
-        },
+          color: 'paragraph'
+        }
       },
       EmailConfirmationSuccess: {
         if: ({
           state
-        }) => !state.loading && state.success,
+        }) => !state.loading && state.success
       },
       EmailConfirmationError: {
         if: ({
           state
-        }) => !state.loading && !state.success,
-      },
-    },
-  },
-};
+        }) => !state.loading && !state.success
+      }
+    }
+  }
+}

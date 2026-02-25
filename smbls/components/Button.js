@@ -1,3 +1,3 @@
 export const Button = {
-  extends: 'smbls.Button',
-};
+  extends: 'smbls.Button'
+}

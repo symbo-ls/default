@@ -3,7 +3,7 @@ export const Group = {
     text: 'Field Title',
     color: 'caption',
     userSelect: 'none',
-    whiteSpace: 'nowrap',
+    whiteSpace: 'nowrap'
   },
   extends: 'Flex',
   flow: 'y',
@@ -11,6 +11,6 @@ export const Group = {
   gap: 'Y1',
   minWidth: 'F',
   childProps: {
-    width: '100%',
-  },
-};
+    width: '100%'
+  }
+}

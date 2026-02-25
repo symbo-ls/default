@@ -3,9 +3,9 @@ export const AvatarHeading = {
   H: {
     tag: 'h6',
     lineHeight: '1em',
-    text: 'Heading',
+    text: 'Heading'
   },
   extends: 'Flex',
   gap: 'X2',
-  align: 'center flex-start',
-};
+  align: 'center flex-start'
+}

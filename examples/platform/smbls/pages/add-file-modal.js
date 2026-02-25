@@ -52,11 +52,11 @@ export const addFileModal = {
     key: '',
     type: 'files',
     code: '',
-    content: {},
+    content: {}
   },
   ModalHeader: {
     title: 'Add a new file',
-    p: null,
+    p: null
   },
   Flex: {
     overflow: 'auto',
@@ -71,7 +71,7 @@ export const addFileModal = {
       width: '100%',
       Title: {
         fontSize: 'Z',
-        text: 'File name',
+        text: 'File name'
       },
       Input: {
         placeholder: 'new.html',
@@ -84,8 +84,8 @@ export const addFileModal = {
           }, {
             forceMonacoUpdate: true
           })
-        },
-      },
+        }
+      }
     },
     UploadAvatar: {
       if: (el, s) => s.type !== 'code',
@@ -93,7 +93,7 @@ export const addFileModal = {
       position: 'relative',
       Title: {
         fontSize: 'Z',
-        text: 'Upload the file',
+        text: 'Upload the file'
       },
       UploadIcon: {
         margin: '0 -X2',
@@ -107,7 +107,7 @@ export const addFileModal = {
               return
             }
             await el.call('uploadFile', contents)
-          },
+          }
         },
         onDragenter: (ev, el) => {
           ev.preventDefault()
@@ -136,13 +136,13 @@ export const addFileModal = {
           }
 
           await el.call('uploadFile', files[0])
-        },
+        }
       },
       ErrorMessage: {
         if: (el, s) => s.errorMessage,
         color: 'red',
         fontSize: 'Z',
-        text: (el, s) => s.errorMessage,
+        text: (el, s) => s.errorMessage
       },
       FilePreview: {
         if: (el, s) => s.content?.src,
@@ -150,8 +150,8 @@ export const addFileModal = {
         left: '50%',
         top: '50%',
         transform: 'translate3d(-50%, -40%, 1px)',
-        href: null,
-      },
+        href: null
+      }
     },
     PublicURL: {
       extends: 'Code',
@@ -160,29 +160,29 @@ export const addFileModal = {
       Title: {
         fontSize: 'Z',
         fontWeight: '400',
-        text: 'Public URL:',
+        text: 'Public URL:'
       },
       CodePreview: {
         padding: 'A A B2',
         theme: 'field-static',
-        text: (el, s) => s.content?.src,
+        text: (el, s) => s.content?.src
       },
       Buttons: {
         Copy: {
-          value: (el, s) => s.content?.src,
+          value: (el, s) => s.content?.src
         },
         Link: {
           href: (el, s) => s.content?.src,
-          target: '_blank',
-        },
-      },
+          target: '_blank'
+        }
+      }
     },
     Code: {
       minWidth: '100%',
       if: (el, s) => s.content?.src,
       Title: {
         fontWeight: '400',
-        text: 'Using as property:',
+        text: 'Using as property:'
       },
       CodePreview: {
         padding: 'A A B2',
@@ -191,7 +191,7 @@ export const addFileModal = {
   Img: {
     src: '${s.content?.src}'
   }
-}`,
+}`
       },
       Buttons: {
         Copy: {
@@ -199,16 +199,16 @@ export const addFileModal = {
   Img: {
     src: '${s.content?.src}'
   }
-}`,
+}`
         },
-        Link: null,
-      },
-    },
+        Link: null
+      }
+    }
   },
   ModalFooter: {
     CheckButton: {
       type: 'submit',
-      text: 'Add',
-    },
-  },
-};
+      text: 'Add'
+    }
+  }
+}

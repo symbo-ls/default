@@ -13,9 +13,9 @@ export const EditInNavbarMenu = {
       ':hover': {
         style: {
           svg: {
-            opacity: 1,
-          },
-        },
+            opacity: 1
+          }
+        }
       },
       padding: 'Z Z2',
       fontSize: 'A',
@@ -27,25 +27,25 @@ export const EditInNavbarMenu = {
         color: 'currentColor',
         opacity: '1',
         margin: '- Y1 - -',
-        fontWeight: '100',
-      },
+        fontWeight: '100'
+      }
     },
     childrenAs: 'props',
     children: el => [{
       text: 'Open in Editor',
       Icon: {
-        name: 'playOvalDotted',
+        name: 'playOvalDotted'
       },
       onClick: (ev, el, s) => {
         el.setCanvasScope({
           editorActive: true,
           preferredEditor: 'editor'
         })
-      },
+      }
     }, {
       text: 'Edit in Code',
       Icon: {
-        name: 'code',
+        name: 'code'
       },
       onClick: (ev, el, s) => {
         if (el.getWindow('componentEditor') === 'code') {
@@ -56,7 +56,7 @@ export const EditInNavbarMenu = {
         el.setCanvasScope({
           preferredEditor: 'code'
         })
-      },
+      }
     }, {
       text: 'Open in Sidebar',
       Icon: {
@@ -75,7 +75,7 @@ export const EditInNavbarMenu = {
         el.setCanvasScope({
           preferredEditor: 'sidebar'
         })
-      },
-    }],
-  },
-};
+      }
+    }]
+  }
+}

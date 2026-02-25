@@ -22,9 +22,9 @@ export const LoginWindow = {
     ),
     extends: [
       'Link',
-      'IconButton',
+      'IconButton'
     ],
-    href: '/',
+    href: '/'
   },
   LoadingGifSection: {
     background: 'black .65',
@@ -35,16 +35,16 @@ export const LoginWindow = {
     transitionProperty: 'opacity, visibility',
     '.loading': {
       opacity: 1,
-      visibility: 'visible',
+      visibility: 'visible'
     },
     '!loading': {
       opacity: 0,
-      visibility: 'hidden',
-    },
+      visibility: 'hidden'
+    }
   },
   ModalHeader: {
     margin: '0',
-    title: 'Sign in to Symbols',
+    title: 'Sign in to Symbols'
   },
   Flex: {
     align: 'start start',
@@ -53,27 +53,27 @@ export const LoginWindow = {
     padding: 'B C1',
     gap: 'C2',
     childProps: {
-      flex: 1,
+      flex: 1
     },
     '@mobileL': {
       flexWrap: 'wrap',
       padding: 'C1 B C1 B',
       gap: 'A1',
       width: '100%',
-      maxWidth: '100%',
+      maxWidth: '100%'
     },
     RequestAccessButtons: {
       height: '100%',
       padding: '- - - C2',
       gap: 'A2',
       Hgroup: {
-        margin: '- - A',
+        margin: '- - A'
       },
       Flex: {
         GoogleSignInButton: {
           extends: [
             'Link',
-            'Button',
+            'Button'
           ],
           margin: '0 0 0 -X',
           theme: 'quaternary',
@@ -83,14 +83,14 @@ export const LoginWindow = {
           icon: 'googleLogoNormal',
           text: 'Sign in with Google',
           '@tabletS': {
-            padding: '- - - C',
+            padding: '- - - C'
           },
           '@mobileL': {
             padding: 'Z1 -',
             align: 'center center',
             maxWidth: '100%',
             textAlign: 'center',
-            border: 'none',
+            border: 'none'
           },
           onRender: async (el, state) => {
             // Make sure Google client is loaded
@@ -137,7 +137,7 @@ export const LoginWindow = {
 
                   await el.call(
                     'initializeUserSession', {
-                      loginData: loginResult,
+                      loginData: loginResult
                     },
                     el.getRootState(),
                     el.sdk
@@ -212,7 +212,7 @@ export const LoginWindow = {
               })
               el.call('handleGoogleRedirectFlow')
             }
-          },
+          }
         },
         GithubSignInButton: {
           if: (el) => {
@@ -223,7 +223,7 @@ export const LoginWindow = {
           },
           extends: [
             'Link',
-            'Button',
+            'Button'
           ],
           margin: '0 0 0 -X',
           theme: 'quaternary',
@@ -233,14 +233,14 @@ export const LoginWindow = {
           icon: 'github',
           text: 'Sign in with Github',
           '@tabletS': {
-            padding: '- - - C',
+            padding: '- - - C'
           },
           '@mobileL': {
             padding: 'Z1 -',
             align: 'center center',
             maxWidth: '100%',
             textAlign: 'center',
-            border: 'none',
+            border: 'none'
           },
           onClick: (ev, el, state) => {
             state.update({
@@ -281,13 +281,13 @@ export const LoginWindow = {
                 type: 'error'
               })
             }
-          },
+          }
         },
         Link: {
-          order: 3,
-        },
-      },
-    },
+          order: 3
+        }
+      }
+    }
   },
-  props: {},
-};
+  props: {}
+}

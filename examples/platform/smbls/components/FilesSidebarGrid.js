@@ -8,11 +8,11 @@ export const FilesSidebarGrid = {
     margin: '- 0',
     gap: 'Z1',
     children: async (el, s) => {
-        const activeFileSidebar = s.parent.activeFileSidebar
-        return await el.call('listSidebar', s.type, {
-          search: el.lookup('Overflow')?.state.search,
-          activeFileSidebar
-        })
-      },
-  },
-};
+      const activeFileSidebar = s.parent.activeFileSidebar
+      return await el.call('listSidebar', s.type, {
+        search: el.lookup('Overflow')?.state.search,
+        activeFileSidebar
+      })
+    }
+  }
+}

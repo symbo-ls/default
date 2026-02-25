@@ -11,7 +11,7 @@ export const SuggestionAction = {
   cursor: 'pointer',
   ':hover': {
     borderColor: 'gray2 1 +4',
-    background: 'gray2 .1',
+    background: 'gray2 .1'
   },
   text: 'Add a page',
   href: () => `${window.location.pathname}/add-page`,
@@ -29,6 +29,6 @@ export const SuggestionAction = {
     position: 'absolute',
     color: 'dim',
     bottom: 'A1',
-    text: 'Click and fill the required fields',
-  },
-};
+    text: 'Click and fill the required fields'
+  }
+}

@@ -2,25 +2,25 @@ export const ChooseCanvas = {
   CaptionTitle: {
     extends: [
       'Flex',
-      'CaptionTitle',
+      'CaptionTitle'
     ],
     align: 'center',
     padding: 'X - - A',
     Text: {
       text: 'Select Canvas',
-      margin: '- C - -',
+      margin: '- C - -'
     },
     IconButton: {
       onClick: (ev, el) => el.call('openModal', '/add-canvas'),
       theme: 'tertiary',
       icon: 'plus',
-      margin: '- - - auto',
+      margin: '- - - auto'
     },
     'IconButton.question': {
       theme: 'tertiary',
       icon: 'sf question',
-      onClick: (ev, el) => el.setWindow('docs', '/canvas-pages'),
-    },
+      onClick: (ev, el) => el.setWindow('docs', '/canvas-pages')
+    }
   },
   Flex: {
     flow: 'y',
@@ -89,8 +89,8 @@ export const ChooseCanvas = {
           window.requestAnimationFrame(() => {
             el.activateContext(ev, el)
           })
-        },
-      },
+        }
+      }
     },
     childrenAs: 'state',
     children: async (el, s) => {
@@ -101,9 +101,9 @@ export const ChooseCanvas = {
         .call(
           'joinArrays',
           [{
-              title: 'Default'
-            },
-            ...Object.values(canvas.pages || {})
+            title: 'Default'
+          },
+          ...Object.values(canvas.pages || {})
           ],
           s.sharedLibs || []
         )
@@ -130,6 +130,6 @@ export const ChooseCanvas = {
         //   sharedLibs
         // })
       })
-    },
-  },
-};
+    }
+  }
+}

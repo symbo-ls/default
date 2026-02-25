@@ -17,12 +17,12 @@ export const DangerZoneSection = {
         color: 'title',
         fontSize: '1.5rem',
         fontWeight: 'bold',
-        text: 'Delete Project',
+        text: 'Delete Project'
       },
       P: {
         margin: '0',
-        text: 'Once you delete a project, there is no going back. Please be certain.',
-      },
+        text: 'Once you delete a project, there is no going back. Please be certain.'
+      }
     },
     ContinueButton: {
       padding: 'Z2 C1',
@@ -33,7 +33,7 @@ export const DangerZoneSection = {
         // Double confirmation is not recommended because it can be frustrating for users.
         if (
           !window.confirm(
-            `Are you sure you want to delete this project? This action cannot be undone.`
+            'Are you sure you want to delete this project? This action cannot be undone.'
           )
         ) {
           return
@@ -69,7 +69,7 @@ export const DangerZoneSection = {
             type: 'error'
           })
         }
-      },
-    },
-  },
-};
+      }
+    }
+  }
+}

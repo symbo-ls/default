@@ -2,10 +2,10 @@ export const YouAreConnected = {
   width: '100%',
   if: (el) => el.getRootState().package > 0,
   attr: {
-    id: 'connect',
+    id: 'connect'
   },
   SectionTitle: {
-    text: 'Connection',
+    text: 'Connection'
   },
   Grid: {
     width: '100%',
@@ -17,7 +17,7 @@ export const YouAreConnected = {
     ServerPreview_test: {
       gap: 'C1',
       SectionHeader: {
-        title: 'Development',
+        title: 'Development'
       },
       Flex: {
         gap: 'A',
@@ -30,15 +30,15 @@ export const YouAreConnected = {
             fontWeight: '400',
             href: (el) => `https://${el.getAppKey()}/`,
             ':hover': {
-              textDecoration: 'underline',
+              textDecoration: 'underline'
             },
             '@dark': {
-              color: 'white',
+              color: 'white'
             },
             '@light': {
-              color: 'black',
+              color: 'black'
             },
-            text: (el) => el.getAppKey(),
+            text: (el) => el.getAppKey()
           },
           SquareButton_force: {
             show: (el, s) => s.active,
@@ -66,36 +66,36 @@ export const YouAreConnected = {
               }, 1000)
 
               await el.call('addSmblsSubdomains', el.getAppKey())
-            },
+            }
           },
-          text: null,
+          text: null
         },
         ConnectionLabel_local: {
           isActive: (el, s) => el.getRootState('clients').localhost,
           Circle: {},
-          text: 'localhost',
-        },
-      },
+          text: 'localhost'
+        }
+      }
     },
     ServerPreview_cli: {
       SectionHeader: {
-        title: 'CLI',
+        title: 'CLI'
       },
       ConnectionLabel: {
-        isActive: (el, s) => el.getRootState('clients').cli,
-      },
+        isActive: (el, s) => el.getRootState('clients').cli
+      }
     },
     ServerPreview_ci: {
       SectionHeader: {
-        title: 'CI',
+        title: 'CI'
       },
-      ConnectionLabel: {},
+      ConnectionLabel: {}
     },
     ServerPreview_prod: {
       flex: 1,
       state: 'RELEASE',
       SectionHeader: {
-        title: 'Production',
+        title: 'Production'
       },
       ConnectionLabel_published: {
         isActive: (el) => el.getRootState('createdAt'),
@@ -111,9 +111,9 @@ export const YouAreConnected = {
             el.getRootState('domain') &&
             new URL(el.getRootState('domain')).host,
           ':hover': {
-            textDecoration: 'underline',
-          },
-        },
+            textDecoration: 'underline'
+          }
+        }
       },
       SectionHeader_last_connected: {
         margin: '0',
@@ -121,17 +121,17 @@ export const YouAreConnected = {
         Article: {
           P: {
             order: '-1',
-            text: 'Last publish',
+            text: 'Last publish'
           },
           Title: {
             color: 'title',
             text: (el) =>
               el.getRootState('updatedAt') &&
-              new Date(el.getRootState('updatedAt')).toLocaleString(),
-          },
-        },
-      },
-    },
+              new Date(el.getRootState('updatedAt')).toLocaleString()
+          }
+        }
+      }
+    }
   },
   Flex: {
     props: {
@@ -139,12 +139,12 @@ export const YouAreConnected = {
       align: 'center space-between',
       gridColumnStart: 'span 3',
       color: 'title',
-      padding: 'B1 X - -',
+      padding: 'B1 X - -'
     },
     staging: {
       noChanges: {
         if: () => false,
-        text: 'You have no staged changes',
+        text: 'You have no staged changes'
       },
       publish: {
         if: () => true,
@@ -153,7 +153,7 @@ export const YouAreConnected = {
           href: (el) => el.getCanvasPathname() + '/publish',
           margin: '0',
           color: 'white',
-          text: 'Publish',
+          text: 'Publish'
         },
         Button_reset: {
           onClick: async (ev, el) => {
@@ -165,12 +165,12 @@ export const YouAreConnected = {
           scrollToTop: false,
           background: 'transparent',
           theme: 'common-card-outline-interactive',
-          text: 'Reset',
-        },
-      },
+          text: 'Reset'
+        }
+      }
     },
     version: {
-      text: (el) => `Version 1.${el.getRootState().version}`,
-    },
-  },
-};
+      text: (el) => `Version 1.${el.getRootState().version}`
+    }
+  }
+}

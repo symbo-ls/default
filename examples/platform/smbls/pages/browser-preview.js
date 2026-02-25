@@ -3,7 +3,7 @@ export const browserPreview = {
   state: {
     searchTerm: '',
     recents: [
-    ],
+    ]
   },
   scope: {
     getInitialValues: (el, s) => {
@@ -16,13 +16,12 @@ export const browserPreview = {
       const prefix = (isPage ? '&' : '?') + 'env='
       const env = s.env || 'Current'
 
-
       s.envUrl = {
         Current: prefix + 'dev',
         Development: '',
         Staging: prefix + 'staging',
         Production: prefix + 'production'
-      } [env]
+      }[env]
 
       const path = el.getCanvasPathname()
       const domain = 'preview.symbo.ls'
@@ -36,7 +35,7 @@ export const browserPreview = {
       s.path = path
       s.url = url
       s.urlWithEnv = urlWithEnv
-    },
+    }
   },
   props: {
     flow: 'y',
@@ -49,7 +48,7 @@ export const browserPreview = {
     },
     onBeforeUpdate: (_, el, s) => {
       el.scope.getInitialValues(el, s)
-    },
+    }
   },
   PreviewCanvasNavbar: {},
   Window: {
@@ -65,7 +64,7 @@ export const browserPreview = {
       border: 0,
       hide: (el, s) => !s.url,
       height: '100%',
-      width: '100%',
+      width: '100%'
     },
     Message: {
       hide: (el, s) => s.url,
@@ -75,8 +74,8 @@ export const browserPreview = {
       transform: 'translate(-50%, -50%)',
       P: {
         color: 'disabled',
-        text: 'Select the component or page to preview',
-      },
-    },
-  },
-};
+        text: 'Select the component or page to preview'
+      }
+    }
+  }
+}

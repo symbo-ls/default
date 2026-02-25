@@ -6,11 +6,11 @@ export const DotCaption = {
     text: '•',
     textDecoration: 'none',
     opacity: '0.35',
-    color: 'paragraph',
+    color: 'paragraph'
   },
   Text: {
     ':hover': {
-      textDecoration: 'underline',
-    },
-  },
-};
+      textDecoration: 'underline'
+    }
+  }
+}

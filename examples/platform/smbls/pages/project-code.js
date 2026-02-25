@@ -8,11 +8,11 @@ export const projectCode = {
   theme: 'modal',
   '& .monaco-editor': {
     style: {
-      width: '100%',
-    },
+      width: '100%'
+    }
   },
   onInit: (el, s) => {
-    const baseUrl = `https://${el.getAppKey()}`;
+    const baseUrl = `https://${el.getAppKey()}`
     s.placeholders['sitemap.xml'] = el.call('generateSitemap', baseUrl, el.getData('pages'))
   },
   state: {
@@ -59,10 +59,10 @@ export const projectCode = {
   props: {
     theme: 'document',
   },
-}`,
+}`
     },
     selected: {},
-    selectedKey: '// placeholder',
+    selectedKey: '// placeholder'
   },
   IconButton: {
     icon: 'crossmark',
@@ -71,7 +71,7 @@ export const projectCode = {
     top: 'X',
     right: 'X',
     color: 'dim',
-    onClick: (ev, el, s, ctx) => el.call('closeModal'),
+    onClick: (ev, el, s, ctx) => el.call('closeModal')
   },
   Overflow: {
     overflow: 'hidden auto',
@@ -83,7 +83,7 @@ export const projectCode = {
     borderStyle: 'solid',
     borderColor: 'line',
     fontSize: 'Z1',
-    ProjectCodeSidebar: {},
+    ProjectCodeSidebar: {}
   },
   Content: {
     extends: 'Flex',
@@ -100,7 +100,7 @@ export const projectCode = {
         borderBottom: '1px solid line',
         color: 'dim',
         fontSize: 'Y',
-        textTransform: 'uppercase',
+        textTransform: 'uppercase'
       },
       CodePreviewWidget: {
         flex: 1,
@@ -117,17 +117,17 @@ export const projectCode = {
           opacity: 1,
           fileTab: {
             type: 'javascript',
-            fileTabKey: 'function',
-          },
-        },
-      },
+            fileTabKey: 'function'
+          }
+        }
+      }
     },
     ProjectCodeData: {},
     ProjectCodeSchema: {
       hide: (el, s) => {
         const found = el.call('getWhichKey', s.type)
         return !found.includes('DATA_TYPES')
-      },
-    },
-  },
-};
+      }
+    }
+  }
+}

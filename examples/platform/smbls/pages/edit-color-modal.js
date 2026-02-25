@@ -17,25 +17,25 @@ export const editColorModal = {
     })
   },
   ModalHeader: {
-    title: 'Edit "{{ key }}" color',
+    title: 'Edit "{{ key }}" color'
   },
   Flex: {},
   ModalFooter: {
     props: {
-      gap: 'A',
+      gap: 'A'
     },
     CheckButton: {
       icon: 'checkmark',
-      text: 'Save',
+      text: 'Save'
     },
     'IconButton.copy': {
       extends: [
         'Link',
-        'IconButton',
+        'IconButton'
       ],
       margin: '- - - auto',
       icon: 'copy outline',
-      href: (el, s) => '/color/add-color/' + s.value,
+      href: (el, s) => '/color/add-color/' + s.value
     },
     'IconButton.trash': {
       if: (el, s) => el.getDesignSystem('COLOR')[s.key],
@@ -55,7 +55,7 @@ export const editColorModal = {
           })
           el.call('closeModal', el, s)
         }
-      },
-    },
-  },
-};
+      }
+    }
+  }
+}

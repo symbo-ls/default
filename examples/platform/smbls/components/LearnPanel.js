@@ -8,15 +8,15 @@ export const LearnPanel = {
   background: 'red',
   ExamplesInLearn: {},
   Line_1: {
-    margin: '- -A',
+    margin: '- -A'
   },
   TutorialsInLearn: {},
   Line_2: {
-    margin: '- -A',
+    margin: '- -A'
   },
   TutorialsPanel: {},
   Line_3: {
-    margin: '- -A',
+    margin: '- -A'
   },
-  LibrariesInLearn: {},
-};
+  LibrariesInLearn: {}
+}

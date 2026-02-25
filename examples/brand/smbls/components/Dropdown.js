@@ -1,7 +1,7 @@
 export const Dropdown = {
   tag: 'section',
   attr: {
-    dropdown: true,
+    dropdown: true
   },
   isDropdownRoot: true,
   theme: 'common-box',
@@ -23,57 +23,57 @@ export const Dropdown = {
   visibility: 'hidden',
   forcedVisible: false,
   '.preventAbsolute': {
-    position: 'static',
+    position: 'static'
   },
   '.forcedVisible': {
     opacity: '1',
-    visibility: 'visible',
+    visibility: 'visible'
   },
   '@dark': {
-    boxShadow: 'black .20, 0px, 5px, 10px, 5px',
+    boxShadow: 'black .20, 0px, 5px, 10px, 5px'
   },
   '@light': {
-    boxShadow: 'gray5 .20, 0px, 5px, 10px, 5px',
+    boxShadow: 'gray5 .20, 0px, 5px, 10px, 5px'
   },
   onRender: el => {
-  const dropdown = el.node
-  const dropdownParentNode = el.parent?.node
+    const dropdown = el.node
+    const dropdownParentNode = el.parent?.node
 
-  if (!dropdown || !dropdownParentNode) {
-    return
-  }
+    if (!dropdown || !dropdownParentNode) {
+      return
+    }
 
-  const yOffset = el.props.yOffset || '115%'
+    const yOffset = el.props.yOffset || '115%'
 
-  const calculateDirection = () => {
-    const dropdownParentRect = dropdownParentNode.getBoundingClientRect()
-    const dropdownRect = dropdown.getBoundingClientRect()
-    const dropdownHeight = dropdownRect.height
+    const calculateDirection = () => {
+      const dropdownParentRect = dropdownParentNode.getBoundingClientRect()
+      const dropdownRect = dropdown.getBoundingClientRect()
+      const dropdownHeight = dropdownRect.height
 
-    const spaceBelow = window.innerHeight - dropdownParentRect.bottom
-    const spaceAbove = dropdownParentRect.top
+      const spaceBelow = window.innerHeight - dropdownParentRect.bottom
+      const spaceAbove = dropdownParentRect.top
 
-    const shouldOpenUp =
+      const shouldOpenUp =
       spaceBelow < dropdownHeight && spaceAbove > dropdownHeight
 
-    if (shouldOpenUp && el.props.bottom !== yOffset) {
-      el.setProps({
-        top: '',
-        bottom: yOffset
-      })
-    } else if (!shouldOpenUp && el.props.top !== yOffset) {
-      el.setProps({
-        bottom: '',
-        top: yOffset
-      })
+      if (shouldOpenUp && el.props.bottom !== yOffset) {
+        el.setProps({
+          top: '',
+          bottom: yOffset
+        })
+      } else if (!shouldOpenUp && el.props.top !== yOffset) {
+        el.setProps({
+          bottom: '',
+          top: yOffset
+        })
+      }
     }
-  }
 
-  dropdownParentNode.addEventListener('mouseenter', calculateDirection)
+    dropdownParentNode.addEventListener('mouseenter', calculateDirection)
 
-  return () => {
-    dropdownParentNode.removeEventListener('mouseenter', calculateDirection)
-  }
-},
-  preventAbsolute: false,
-};
+    return () => {
+      dropdownParentNode.removeEventListener('mouseenter', calculateDirection)
+    }
+  },
+  preventAbsolute: false
+}

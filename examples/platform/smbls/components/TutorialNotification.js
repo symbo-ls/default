@@ -6,18 +6,18 @@ export const TutorialNotification = {
     overflow: 'hidden',
     align: 'stretch',
     transition: 'all, defaultBezier, B2',
-    round: 'Z2',
+    round: 'Z2'
   },
   state: {
     title: 'Enjoy the canvas',
     descr: 'You are about to experience the canvas experience. Pan and zoom around as you build.',
-    icon: 'resize.json',
+    icon: 'resize.json'
   },
   Lottie: {
     minWidth: '3.2em',
     src: '{{ icon }}',
     fontSize: 'C2',
-    margin: '-A -Y2 - -Z1',
+    margin: '-A -Y2 - -Z1'
   },
   Hgroup: {
     flex: 1,
@@ -27,11 +27,11 @@ export const TutorialNotification = {
     lineHeight: 1.4,
     H: {
       tag: 'strong',
-      text: '{{ title }}',
+      text: '{{ title }}'
     },
     P: {
-      text: '{{ descr }}',
-    },
+      text: '{{ descr }}'
+    }
   },
   Buttons: {
     extends: 'Flex',
@@ -47,7 +47,7 @@ export const TutorialNotification = {
     right: '0',
     childExtends: [
       'CanvasButton',
-      'IconButton',
+      'IconButton'
     ],
     childProps: {
       round: '0',
@@ -56,16 +56,16 @@ export const TutorialNotification = {
       ':first-child': {
         borderStyle: 'solid',
         borderColor: 'line',
-        borderWidth: '0 0 1px 0',
-      },
+        borderWidth: '0 0 1px 0'
+      }
     },
     children: [
       {
-        icon: 'checkmark',
+        icon: 'checkmark'
       },
       {
-        icon: 'question mark',
-      },
-    ],
-  },
-};
+        icon: 'question mark'
+      }
+    ]
+  }
+}

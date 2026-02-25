@@ -4,12 +4,12 @@ export const QuestionMarkTooltip = {
   Icon: {
     color: 'gray7',
     opacity: '.35',
-    name: 'questionMark fill',
+    name: 'questionMark fill'
   },
   TooltipHidden: {
     padding: 'Z A',
     shapeDirection: 'bottom',
     title: null,
-    minWidth: 'F1',
-  },
-};
+    minWidth: 'F1'
+  }
+}

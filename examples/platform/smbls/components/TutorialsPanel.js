@@ -1,8 +1,8 @@
 export const TutorialsPanel = {
   CaptionTitle: {
     Text: {
-      text: 'Docs and articles',
-    },
+      text: 'Docs and articles'
+    }
   },
   DocsSidebar: {
     top: 'auto',
@@ -15,14 +15,14 @@ export const TutorialsPanel = {
       NumbCaption: {
         Numb: null,
         SquareButton: {
-          padding: 'X',
-        },
-      },
-    },
+          padding: 'X'
+        }
+      }
+    }
   },
   extend: 'Flex',
   props: {
     flow: 'y',
-    gap: 'A',
-  },
-};
+    gap: 'A'
+  }
+}

@@ -1,6 +1,6 @@
 export const Accordion = {
   state: {
-    activeAccordion: false,
+    activeAccordion: false
   },
   ButtonParagraph: {
     cursor: 'pointer',
@@ -9,21 +9,20 @@ export const Accordion = {
       state.update({
         activeAccordion: !state.activeAccordion
       })
-
     },
     P: {
-      text: 'Question text one here',
+      text: 'Question text one here'
     },
     Button: {
       text: '',
       Icon: {
         name: 'chevronDown',
         '.activeAccordion': {
-          transform: 'rotate(-180deg)',
+          transform: 'rotate(-180deg)'
         },
-        transition: 'transform .3s ease',
-      },
-    },
+        transition: 'transform .3s ease'
+      }
+    }
   },
   P: {
     text: 'Use a checkbox when users can select one option, multiple options, or no option from a list of a possible options',
@@ -38,16 +37,16 @@ export const Accordion = {
     '.activeAccordion': {
       minHeight: '4em',
       maxHeight: '10em',
-      opacity: '1',
+      opacity: '1'
     },
     '!activeAccordion': {
       minHeight: '0',
       maxHeight: '0',
-      opacity: '0',
-    },
+      opacity: '0'
+    }
   },
   extends: 'Flex',
   flow: 'y',
   gap: 'Y2',
-  position: 'relative',
-};
+  position: 'relative'
+}

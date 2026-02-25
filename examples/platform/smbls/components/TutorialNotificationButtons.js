@@ -2,7 +2,7 @@ export const TutorialNotificationButtons = {
   extend: 'Flex',
   childExtend: [
     'CanvasButton',
-    'Button',
+    'Button'
   ],
   props: {
     align: 'center center',
@@ -20,27 +20,27 @@ export const TutorialNotificationButtons = {
       ':not(:last-child)': {
         borderStyle: 'solid',
         borderColor: 'line-highlight',
-        borderWidth: '0 1px 0 0',
-      },
+        borderWidth: '0 1px 0 0'
+      }
     },
     children: [
       {
         icon: 'sf question oval',
         text: 'Learn more',
         onClick: (ev, el, s) => {
-        el.setWindow('docs', s.docsArticle)
-      },
+          el.setWindow('docs', s.docsArticle)
+        }
       },
       {
         icon: 'checkmark',
         text: 'Okay',
         onClick: (ev, el, s) => {
-        if (s.callback) el.call('exec', s.callback)
-        el.lookup(el => el.props?.rootSlide).remove()
-        const markKey = 'tutorialMarked_' + s.key
-        el.call('setCookie', markKey, true)
-      },
-      },
-    ],
-  },
-};
+          if (s.callback) el.call('exec', s.callback)
+          el.lookup(el => el.props?.rootSlide).remove()
+          const markKey = 'tutorialMarked_' + s.key
+          el.call('setCookie', markKey, true)
+        }
+      }
+    ]
+  }
+}

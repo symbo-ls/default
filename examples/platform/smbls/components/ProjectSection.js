@@ -8,14 +8,14 @@ export const ProjectSection = {
   }),
   Stats: {
     Title: {
-      text: 'Company',
+      text: 'Company'
     },
     ItemPreview: {
       gap: 'B',
       align: 'flex-start space-between',
       Strong: {
         margin: 'W - -',
-        text: '{{ title }}',
+        text: '{{ title }}'
       },
       Grid: {
         templateColumns: '2fr 1fr 1fr 1fr',
@@ -23,49 +23,49 @@ export const ProjectSection = {
         childExtends: {
           extend: 'Hgroup',
           props: {
-            margin: '0',
+            margin: '0'
           },
           H: {
             tag: 'strong',
-            text: '{{ title }}',
+            text: '{{ title }}'
           },
           P: {
-            text: '{{ p }}',
-          },
+            text: '{{ p }}'
+          }
         },
         children: (el) => [{
-            title: el.getRootState().package > 1 ? 'Premium' : 'Starter',
-            p: 'Package'
-          },
-          {
-            title: `1.${el.getRootState().version}`,
-            p: 'Version'
-          },
-          {
-            title: el.getRootState().versionscount,
-            p: 'Publishes'
-          },
-          {
-            title: el.call('formatDate', el.getRootState().createdAt),
-            p: 'User since'
-          }
+          title: el.getRootState().package > 1 ? 'Premium' : 'Starter',
+          p: 'Package'
+        },
+        {
+          title: `1.${el.getRootState().version}`,
+          p: 'Version'
+        },
+        {
+          title: el.getRootState().versionscount,
+          p: 'Publishes'
+        },
+        {
+          title: el.call('formatDate', el.getRootState().createdAt),
+          p: 'User since'
+        }
         ],
-        childrenAs: 'state',
-      },
-    },
+        childrenAs: 'state'
+      }
+    }
   },
   Team: {
     Title: {
-      text: 'Team',
+      text: 'Team'
     },
     ItemPreview: {
       AvatarBundle: {
         extend: 'AvatarBundle',
         props: (el, s) => {
           const projectUsers = el.getRootProjectsUsers()
-          const options = el.call('isArray', projectUsers) ?
-            projectUsers.filter((v) => (v.role || 0) > -1) :
-            projectUsers
+          const options = el.call('isArray', projectUsers)
+            ? projectUsers.filter((v) => (v.role || 0) > -1)
+            : projectUsers
 
           return {
             fontSize: 'Y2',
@@ -81,7 +81,7 @@ export const ProjectSection = {
               }
             }
           }
-        },
+        }
       },
       SectionHeader_last_connected: {
         props: (el) => {
@@ -95,8 +95,8 @@ export const ProjectSection = {
             title: `${usersCount} members`,
             p: `You can invite ${left} more users`
           }
-        },
-      },
-    },
-  },
-};
+        }
+      }
+    }
+  }
+}

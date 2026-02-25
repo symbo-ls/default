@@ -1,3 +1,3 @@
 export const IconText = {
-  extends: 'smbls.IconText',
-};
+  extends: 'smbls.IconText'
+}

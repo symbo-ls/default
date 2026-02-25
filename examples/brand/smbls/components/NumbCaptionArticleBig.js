@@ -4,9 +4,9 @@ export const NumbCaptionArticleBig = {
   H: {
     extends: 'NumbCaption',
     tag: 'strong',
-    text: null,
+    text: null
   },
   P: {
-    padding: '0 0 0 A2',
-  },
-};
+    padding: '0 0 0 A2'
+  }
+}

@@ -5,20 +5,20 @@ export const SwitchFieldWithCaption = {
   userSelect: 'none',
   ':hover > caption': {
     color: 'gray12',
-    opacity: 1,
+    opacity: 1
   },
   Input: {
     type: 'checkbox',
     display: 'none',
     ':checked ~ caption': {
-      opacity: 1,
+      opacity: 1
     },
     ':checked ~ span > span': {
       background: 'dim',
       ':before': {
         left: '68%',
-        background: 'caption',
-      },
+        background: 'caption'
+      }
     },
     onChange: (ev, el, s, ctx) => {
       ev.stopPropagation()
@@ -26,11 +26,11 @@ export const SwitchFieldWithCaption = {
       if (hasChange) {
         hasChange(ev, el.parent, s, ctx)
       }
-    },
+    }
   },
   SwitchField: {
     tag: 'span',
-    Input: null,
+    Input: null
   },
   Caption: {
     padding: '0',
@@ -38,6 +38,6 @@ export const SwitchFieldWithCaption = {
     color: 'gray7',
     text: 'Disable this style',
     transition: 'B defaultBezier',
-    transitionProperty: 'color, opacity',
-  },
-};
+    transitionProperty: 'color, opacity'
+  }
+}

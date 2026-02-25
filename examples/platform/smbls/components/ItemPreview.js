@@ -1,6 +1,6 @@
 export const ItemPreview = {
   extends: [
-    'Link',
+    'Link'
   ],
   flow: 'y',
   align: 'space-between flex-start',
@@ -14,5 +14,5 @@ export const ItemPreview = {
   borderWidth: '2px',
   borderStyle: 'solid',
   theme: 'common-card-outline-interactive',
-  fontWeight: '400',
-};
+  fontWeight: '400'
+}

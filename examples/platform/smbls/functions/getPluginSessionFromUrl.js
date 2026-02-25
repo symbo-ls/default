@@ -1,4 +1,4 @@
-export const getPluginSessionFromUrl = function getPluginSessionFromUrl() {
+export const getPluginSessionFromUrl = function getPluginSessionFromUrl () {
   if (typeof window === 'undefined') {
     return null
   }

@@ -7,5 +7,5 @@ export const CanvasEmbed = {
   height: 'H2',
   project: '/nikoloza/default',
   src: el => 'https://symbols.app/embed' + el.props.project,
-  round: 'Z2',
-};
+  round: 'Z2'
+}

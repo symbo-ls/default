@@ -39,7 +39,7 @@ export const compileMarkdown = {
           })
         }
       }
-    }),
+    })
   },
   Code: {
     flex: 1,
@@ -49,10 +49,10 @@ export const compileMarkdown = {
     CodePreview: {
       round: 'X2',
       height: '100%',
-      margin: '0',
+      margin: '0'
     },
     Buttons: {
-      padding: '0 Y2',
-    },
-  },
-};
+      padding: '0 Y2'
+    }
+  }
+}

@@ -6,10 +6,10 @@ export const PageTemplate = {
   flex: 1,
   flow: 'column',
   '@screenS': {
-    padding: 'C1 C B1',
+    padding: 'C1 C B1'
   },
   '@tabletS': {
-    padding: 'C1 B',
+    padding: 'C1 B'
   },
-  tag: 'main',
-};
+  tag: 'main'
+}

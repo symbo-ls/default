@@ -16,7 +16,7 @@ export const tutorialModal = {
     }) => ({
       title: state.title,
       p: state.description
-    }),
+    })
   },
   Flex: {
     align: 'stretch flex-start',
@@ -35,7 +35,7 @@ export const tutorialModal = {
         minHeight: '0',
         allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share',
         allowfullscreen: true
-      }),
-    },
-  },
-};
+      })
+    }
+  }
+}

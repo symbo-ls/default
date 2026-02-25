@@ -6,7 +6,7 @@ export const ExtensionCanvasNavbar = {
     padding: 'V Z',
     fontSize: 'Z',
     userSelect: 'none',
-    theme: 'common-box',
+    theme: 'common-box'
   },
   LogoDropdown: {},
   Inspects: {
@@ -41,12 +41,12 @@ export const ExtensionCanvasNavbar = {
         } else {
           console.error('chrome extension not installed')
         }
-      },
+      }
     },
     AddToCanvasButton: {
       '!value': {
         opacity: 0.35,
-        pointerEvents: 'none',
+        pointerEvents: 'none'
       },
       extends: 'DropdownButton',
       ignoreChildExtend: true,
@@ -70,9 +70,9 @@ export const ExtensionCanvasNavbar = {
             })
             clearTimeut(t)
           }, 500)
-        },
+        }
       },
-      IconButton: {},
+      IconButton: {}
     },
     Edit: {
       disabled: true,
@@ -80,7 +80,7 @@ export const ExtensionCanvasNavbar = {
       pointerEvents: 'none',
       title: 'Edit',
       icon: 'sf pencil',
-      onClick: (ev, el, s) => {},
+      onClick: (ev, el, s) => {}
     },
     Replace: {
       disabled: true,
@@ -88,11 +88,11 @@ export const ExtensionCanvasNavbar = {
       title: 'Replace',
       icon: 'sf replace',
       onClick: (ev, el, s) => {},
-      pointerEvents: 'none',
-    },
+      pointerEvents: 'none'
+    }
   },
   UrlAddressBar: {
-    flex: 1,
+    flex: 1
   },
   History: {
     extends: 'NavbarButtonSet',
@@ -102,14 +102,14 @@ export const ExtensionCanvasNavbar = {
       icon: 'undo',
       onClick: (ev, el, s) => {
         el.sdk.undo()
-      },
+      }
     },
     Redo: {
       title: 'Redo',
       icon: 'redo',
       onClick: (ev, el, s) => {
         el.sdk.redo()
-      },
+      }
     },
     History: {
       title: 'History',
@@ -119,8 +119,8 @@ export const ExtensionCanvasNavbar = {
           preventUpdate: true
         })
         el.getVersionsAside()?.update()
-      },
-    },
+      }
+    }
   },
   Meta: {
     extends: 'NavbarButtonSet',
@@ -128,7 +128,7 @@ export const ExtensionCanvasNavbar = {
     InNewTab: {
       icon: 'sf arrow up right',
       title: 'In new tab',
-      onClick: 'openInNewTab',
+      onClick: 'openInNewTab'
     },
     Share: {
       title: 'Share',
@@ -137,26 +137,26 @@ export const ExtensionCanvasNavbar = {
       Dropdown: {
         left: 'auto',
         right: '-A',
-        ShareDropdown: {},
+        ShareDropdown: {}
       },
       extends: [
         'CanvasButton',
         'IconButton',
-        'DropdownParentFocus',
-      ],
-    },
+        'DropdownParentFocus'
+      ]
+    }
   },
   Closing: {
     extends: 'NavbarButtonSet',
     gap: 'W2',
     InNewTab: {
       icon: 'question mark',
-      title: 'Help',
+      title: 'Help'
     },
     Quetion: {
       title: 'Close',
       icon: 'crossmark',
-      onClick: (ev, el, s) => el.closeModal(),
-    },
-  },
-};
+      onClick: (ev, el, s) => el.closeModal()
+    }
+  }
+}

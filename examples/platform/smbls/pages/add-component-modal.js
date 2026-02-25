@@ -59,17 +59,17 @@ export const addComponentModal = {
     settings: {
       gridOptions: {
         w: 2,
-        h: 1,
-      },
+        h: 1
+      }
     },
     interactivity: [
     ],
     dataTypes: [
-    ],
+    ]
   },
   ModalHeader: {
     title: 'Add a new component',
-    p: 'Fill initial settings and choose a template',
+    p: 'Fill initial settings and choose a template'
   },
   Flex: {
     overflow: 'auto',
@@ -84,11 +84,11 @@ export const addComponentModal = {
       flow: 'column',
       gap: 'B3',
       childProps: {
-        width: '50%',
+        width: '50%'
       },
       'InputField.key': {
         Title: {
-          text: 'Key',
+          text: 'Key'
         },
         Input: {
           required: true,
@@ -119,14 +119,14 @@ export const addComponentModal = {
               touched: true,
               key: val.replace(/[^a-zA-Z]/gu, '')
             })
-          },
-        },
+          }
+        }
       },
       'GroupField.draft': {
         margin: 'A - -',
         align: 'start',
         Title: {
-          text: 'Is a  draft?',
+          text: 'Is a  draft?'
         },
         SwitchFieldWithCaption: {
           align: 'start start',
@@ -138,17 +138,17 @@ export const addComponentModal = {
           Input: {
             checked: ({
               state
-            }) => state.draft,
+            }) => state.draft
           },
           SwitchField: {},
           Caption: {
             padding: '0',
             opacity: '.65',
             color: 'gray7',
-            text: 'Draft',
-          },
-        },
-      },
+            text: 'Draft'
+          }
+        }
+      }
     },
     'Button.showAdvanced': {
       margin: '- -Z2',
@@ -162,7 +162,7 @@ export const addComponentModal = {
       onClick: (ev, el, s) =>
         s.update({
           advanced: !s.advanced
-        }),
+        })
     },
     'Flex.advanced': {
       hide: ({
@@ -174,7 +174,7 @@ export const addComponentModal = {
       width: '100%',
       'InputField.title': {
         Title: {
-          text: 'Descriptive title',
+          text: 'Descriptive title'
         },
         Input: {
           value: '{{ title }}',
@@ -190,13 +190,13 @@ export const addComponentModal = {
               obj.key = el.call('toTitleCase', val).replace(/[^a-zA-Z]/gu, '')
             }
             s.update(obj)
-          },
-        },
+          }
+        }
       },
       'GroupField.value': {
         minWidth: '100%',
         Title: {
-          text: 'Initial code',
+          text: 'Initial code'
         },
         CodePreviewWidget: {
           props: (el, s) => ({
@@ -210,9 +210,11 @@ export const addComponentModal = {
               foldLevel: false,
               opacity: 1,
               fileTab: {
-                code: s.code ?
-                  el.call('decodeNewlines', s.code) : s.value ?
-                  el.stringifyCode(s.value) : 'export default {}',
+                code: s.code
+                  ? el.call('decodeNewlines', s.code)
+                  : s.value
+                    ? el.stringifyCode(s.value)
+                    : 'export default {}',
                 type: 'javascript',
                 filename: 'value.js',
                 fileTabKey: 'value'
@@ -226,13 +228,13 @@ export const addComponentModal = {
                 })
               }
             }
-          }),
-        },
+          })
+        }
       },
       'GroupField.description': {
         width: '100%',
         Title: {
-          text: 'Description',
+          text: 'Description'
         },
         TextareaField: {
           width: '100%',
@@ -246,18 +248,18 @@ export const addComponentModal = {
               s.update({
                 description: el.node.value
               })
-            },
-          },
-        },
+            }
+          }
+        }
       },
       'InputField.tags': {
         width: '50%',
         Title: {
-          text: 'Tags',
+          text: 'Tags'
         },
         Span: {
           color: 'paragraph',
-          text: 'For multiple tags divide by comma (,)',
+          text: 'For multiple tags divide by comma (,)'
         },
         Input: {
           placeholder: 'Landing, Survey',
@@ -268,13 +270,13 @@ export const addComponentModal = {
             s.update({
               tags: s.tags
             })
-          },
-        },
+          }
+        }
       },
       'InputField.figmaUrl': {
         width: '50%',
         Title: {
-          text: 'Figma embed URL:',
+          text: 'Figma embed URL:'
         },
         Input: {
           value: '{{ figmaUrl }}',
@@ -286,15 +288,15 @@ export const addComponentModal = {
             s.update({
               figmaUrl: value
             })
-          },
-        },
+          }
+        }
       },
       'InputField.stateStr': {
         if: (el, s, ctx) =>
           s.stateStr || (s.state && ctx.utils.isString(s.state)),
         width: '50%',
         Title: {
-          text: 'Path in state',
+          text: 'Path in state'
         },
         Input: {
           placeholder: 'about/team',
@@ -302,17 +304,17 @@ export const addComponentModal = {
           onKeyup: (e, el, s) =>
             s.update({
               state: el.node.value
-            }),
-        },
+            })
+        }
       },
       'Group.state': {
         if: (el, s, ctx) =>
           !s.stateStr || !s.state || (s.state && !ctx.utils.isString(s.state)),
         props: {
-          minWidth: '100%',
+          minWidth: '100%'
         },
         Title: {
-          text: 'Mockup state:',
+          text: 'Mockup state:'
         },
         CodePreviewWidget: {
           props: (el, s) => ({
@@ -326,8 +328,9 @@ export const addComponentModal = {
               foldLevel: false,
               opacity: 1,
               fileTab: {
-                code: s.state ?
-                  el.stringifyCode(s.state, el, s) : 'export default {}',
+                code: s.state
+                  ? el.stringifyCode(s.state, el, s)
+                  : 'export default {}',
                 type: 'javascript',
                 filename: 'state.js',
                 fileTabKey: 'state'
@@ -339,8 +342,8 @@ export const addComponentModal = {
                 })
               }
             }
-          }),
-        },
+          })
+        }
       },
       'SurveyIconicOptions.interactivity': {
         multiple: true,
@@ -348,29 +351,29 @@ export const addComponentModal = {
         lowercase: true,
         margin: '0',
         Title: {
-          text: 'Select interactivity types',
+          text: 'Select interactivity types'
         },
         options: {
           'Option.Hover': {
-            icon: 'hover outline',
+            icon: 'hover outline'
           },
           'Option.Click': {
-            icon: 'click outline',
+            icon: 'click outline'
           },
           'Option.Choose': {
-            icon: 'choose outline',
+            icon: 'choose outline'
           },
           'Option.Drag': {
-            icon: 'drag outline',
+            icon: 'drag outline'
           },
           'Option.Input': {
-            icon: 'input outline',
+            icon: 'input outline'
           },
           'Option.Focus': {
-            icon: 'focus outline',
+            icon: 'focus outline'
           },
-          Other: null,
-        },
+          Other: null
+        }
       },
       'SurveyIconicOptions.dataTypes': {
         multiple: true,
@@ -378,36 +381,36 @@ export const addComponentModal = {
         lowercase: true,
         margin: '0',
         Title: {
-          text: 'Select types of values',
+          text: 'Select types of values'
         },
         options: {
           'Option.Boolean': {
-            icon: 'boolean outline',
+            icon: 'boolean outline'
           },
           'Option.Int': {
-            icon: 'int outline',
+            icon: 'int outline'
           },
           'Option.String': {
-            icon: 'string outline',
+            icon: 'string outline'
           },
           'Option.Object': {
-            icon: 'object outline',
+            icon: 'object outline'
           },
           'Option.Array': {
-            icon: 'array outline',
+            icon: 'array outline'
           },
           'Option.Date': {
-            icon: 'date outline',
+            icon: 'date outline'
           },
-          Other: null,
-        },
+          Other: null
+        }
       },
       'Group.props': {
         props: {
-          minWidth: '100%',
+          minWidth: '100%'
         },
         Title: {
-          text: 'Frame properties:',
+          text: 'Frame properties:'
         },
         CodePreviewWidget: {
           props: (el, s) => ({
@@ -436,17 +439,17 @@ export const addComponentModal = {
                 })
               }
             }
-          }),
-        },
-      },
-    },
+          })
+        }
+      }
+    }
   },
   ModalFooter: {
     CheckButton: {
       type: 'submit',
       reverse: true,
       icon: 'arrow right',
-      text: 'Next',
-    },
-  },
-};
+      text: 'Next'
+    }
+  }
+}

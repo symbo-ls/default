@@ -1,8 +1,8 @@
 const Dropdownassistantmenu = {
   CaptionTitle: {
     Text: {
-      text: 'AI Tools:',
-    },
+      text: 'AI Tools:'
+    }
   },
   ListInDropdown: {
     margin: '- -Z2',
@@ -18,15 +18,15 @@ const Dropdownassistantmenu = {
         color: 'currentColor',
         opacity: '1',
         margin: '- Y1 - -',
-        fontWeight: '100',
+        fontWeight: '100'
       },
       ':hover': {
         style: {
           svg: {
-            opacity: 1,
-          },
-        },
-      },
+            opacity: 1
+          }
+        }
+      }
     },
     childrenAs: 'props',
     children: el => [{
@@ -37,14 +37,14 @@ const Dropdownassistantmenu = {
       onClick: (ev, el) => {
         el.call('openModal', '/ai-playground')
       }
-    }],
+    }]
   },
   extend: 'Flex',
   props: {
     padding: 'Z1 A',
     gap: 'A',
-    flexFlow: 'y',
-  },
-};
+    flexFlow: 'y'
+  }
+}
 
 export { Dropdownassistantmenu as 'Dropdown.AssistantMenu' }

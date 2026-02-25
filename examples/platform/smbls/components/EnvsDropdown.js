@@ -5,8 +5,8 @@ export const EnvsDropdown = {
     gap: 'A',
     CaptionTitle: {
       Text: {
-        text: 'Environments',
-      },
+        text: 'Environments'
+      }
     },
     Flex: {
       gap: 'A',
@@ -16,58 +16,58 @@ export const EnvsDropdown = {
       Prod: {
         Hgroup: {
           H: {
-            text: 'Production',
+            text: 'Production'
           },
           P: {
-            text: 'Specify production channel',
-          },
-        },
+            text: 'Specify production channel'
+          }
+        }
       },
       Test: {
         Hgroup: {
           H: {
-            text: 'Test',
+            text: 'Test'
           },
           P: {
-            text: 'Specify staging channel',
-          },
-        },
+            text: 'Specify staging channel'
+          }
+        }
       },
       Dev: {
         extends: [
           'CanvasButton',
-          'EnvItem',
+          'EnvItem'
         ],
         isActive: true,
         Circle: {
-          isActive: true,
+          isActive: true
         },
         Hgroup: {
           H: {
-            text: 'Development',
+            text: 'Development'
           },
           P: {
-            text: 'Default - set to latest',
-          },
+            text: 'Default - set to latest'
+          }
         },
         Buttons: {
-          hide: false,
+          hide: false
         },
-        Upgrade: null,
-      },
-    },
+        Upgrade: null
+      }
+    }
   },
   Line: {
-    margin: '-A',
+    margin: '-A'
   },
   EnvItem_Local: {
     Hgroup: {
       H: {
-        text: 'Local',
+        text: 'Local'
       },
       P: {
-        text: el => `localhost:1234`,
-      },
+        text: el => 'localhost:1234'
+      }
     },
     Upgrade: null,
     Connect: {
@@ -80,18 +80,18 @@ export const EnvsDropdown = {
       fontSize: 'Z2',
       lineHeight: 1,
       ':hover': {
-        textDecoration: 'underline',
+        textDecoration: 'underline'
       },
       onClick: (f, el, st) => {
-          el.call('openModal', '/settings', {
-            key: '/connect'
-          })
-        },
+        el.call('openModal', '/settings', {
+          key: '/connect'
+        })
+      }
     },
-    margin: '- -Z2',
+    margin: '- -Z2'
   },
   Line_2: {
-    margin: '-A',
+    margin: '-A'
   },
   Domains: {
     extends: 'Flex',
@@ -99,8 +99,8 @@ export const EnvsDropdown = {
     gap: 'A',
     CaptionTitle: {
       Text: {
-        text: 'Domains',
-      },
+        text: 'Domains'
+      }
     },
     Flex: {
       gap: 'A',
@@ -110,28 +110,28 @@ export const EnvsDropdown = {
       Custom: {
         Hgroup: {
           H: {
-            text: 'Custom domain',
+            text: 'Custom domain'
           },
           P: {
-            text: 'Connect any domain to your app',
-          },
-        },
+            text: 'Connect any domain to your app'
+          }
+        }
       },
       Lookup: {
         Hgroup: {
           H: {
-            text: 'Find your domain',
+            text: 'Find your domain'
           },
           P: {
-            text: 'Connect to a new domain',
-          },
+            text: 'Connect to a new domain'
+          }
         },
         Upgrade: null,
         Icon: {
-          name: 'sf search',
-        },
-      },
-    },
+          name: 'sf search'
+        }
+      }
+    }
   },
   extend: 'Flex',
   props: {
@@ -140,6 +140,6 @@ export const EnvsDropdown = {
     gap: 'C',
     textAlign: 'start',
     width: 'G1',
-    onClick: null,
-  },
-};
+    onClick: null
+  }
+}

@@ -1,7 +1,7 @@
 export const FnEditNavbar = {
   extends: [
     'MicroNavbar',
-    'Navbar',
+    'Navbar'
   ],
   width: '100%',
   padding: 'W1 X X1',
@@ -11,11 +11,11 @@ export const FnEditNavbar = {
     padding: 'X Z1',
     text: '{{ key }}',
     Icon: {
-      color: 'dim',
-    },
+      color: 'dim'
+    }
   },
   EditorPositionNavbar: {
-    margin: '- - - auto',
+    margin: '- - - auto'
   },
   NavbarButtonSet: {
     NavbarButton_docs: {
@@ -26,14 +26,14 @@ export const FnEditNavbar = {
       color: 'dim',
       onClick: (ev, el) => {
         el.setWindow('docs', '/functions')
-      },
+      }
     },
     NavbarButton_close: {
       icon: 'crossmark',
       isActive: false,
       onClick: (ev, el) => {
         el.activateFunction(null)
-      },
-    },
-  },
-};
+      }
+    }
+  }
+}

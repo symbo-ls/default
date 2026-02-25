@@ -4,25 +4,25 @@ export const NavbarPackageManagers = {
     {
       title: 'NPM',
       key: 'npm',
-      icon: 'npm',
+      icon: 'npm'
     },
     {
       title: 'Yarn',
       key: 'yarn',
-      icon: 'yarn',
+      icon: 'yarn'
     },
     {
       title: 'PNPM',
       key: 'pnpm',
-      icon: 'pnpm',
+      icon: 'pnpm'
     },
     {
       pointerEvents: 'none',
       opacity: '.25',
       title: 'CDN',
       key: 'cdn',
-      icon: 'cdn',
-    },
+      icon: 'cdn'
+    }
   ],
   childProps: {
     isActive: el => el.getRootState('pkgManager') === el.props.key,
@@ -31,6 +31,6 @@ export const NavbarPackageManagers = {
         pkgManager: el.props.key
       })
       el.call('setCookie', 'pkgManager', el.getRootState('pkgManager'))
-    },
-  },
-};
+    }
+  }
+}

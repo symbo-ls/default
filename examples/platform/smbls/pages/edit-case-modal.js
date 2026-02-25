@@ -17,14 +17,14 @@ export const editCaseModal = {
 
     await el.bulkUpdateDesignSystem(
       [{
-          type: 'delete',
-          path: ['CASES', s.oldName]
-        },
-        {
-          type: 'update',
-          path: ['CASES', s.key],
-          value: s.value
-        }
+        type: 'delete',
+        path: ['CASES', s.oldName]
+      },
+      {
+        type: 'update',
+        path: ['CASES', s.key],
+        value: s.value
+      }
       ],
       'Updated Case'
     )
@@ -37,7 +37,7 @@ export const editCaseModal = {
   },
   ModalHeader: {
     title: 'Edit {{ key }} case',
-    p: null,
+    p: null
   },
   Flex: {},
   ModalFooter: {
@@ -51,7 +51,7 @@ export const editCaseModal = {
           await el.updateDesignSystem(`CASES.${s.key}`)
           await el.call('closeModal')
         }
-      },
-    },
-  },
-};
+      }
+    }
+  }
+}

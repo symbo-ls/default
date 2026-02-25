@@ -24,5 +24,5 @@ export const CopyButton = {
       clearTimeout(t)
     }, 1000)
     el.call('copyStringToClipboard', el.call('exec', el.props.value || s.value, el, s))
-  },
-};
+  }
+}

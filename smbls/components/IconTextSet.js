@@ -1,27 +1,27 @@
 export const IconTextSet = {
   childExtends: [
     'IconText',
-    'Flex',
+    'Flex'
   ],
   gap: 'A',
   childProps: {
     align: 'center flex-start',
     gap: 'Y1',
-    Icon: {},
+    Icon: {}
   },
   flexFlow: 'y',
   children: [
     {
       Icon: {
-        name: 'smile',
+        name: 'smile'
       },
-      text: '+1 (555) 123-4567',
+      text: '+1 (555) 123-4567'
     },
     {
       Icon: {
-        name: 'logo',
+        name: 'logo'
       },
-      text: 'example@mail.com',
-    },
-  ],
-};
+      text: 'example@mail.com'
+    }
+  ]
+}

@@ -4,29 +4,29 @@ export const Partner = {
   transition: 'opacity B, filter B',
   flexAlign: 'center center',
   '@mobileL': {
-    margin: '0',
+    margin: '0'
   },
   '@dark': {
     style: {
-      filter: 'grayscale(100%)',
+      filter: 'grayscale(100%)'
     },
     ':hover': {
       style: {
-        filter: 'grayscale(0%)',
+        filter: 'grayscale(0%)'
       },
-      opacity: '1',
-    },
+      opacity: '1'
+    }
   },
   '@light': {
     style: {
-      filter: 'grayscale(100%)',
+      filter: 'grayscale(100%)'
     },
     ':hover': {
       style: {
-        filter: 'grayscale(0%)',
+        filter: 'grayscale(0%)'
       },
-      opacity: '.9',
-    },
+      opacity: '.9'
+    }
   },
   margin: '0',
   Img: null,
@@ -35,9 +35,9 @@ export const Partner = {
       flexAlign: 'center center',
       height: '1em',
       '& svg': {
-        minHeight: '1em',
-      },
+        minHeight: '1em'
+      }
     },
-    html: el => el.parent.props.src,
-  },
-};
+    html: el => el.parent.props.src
+  }
+}

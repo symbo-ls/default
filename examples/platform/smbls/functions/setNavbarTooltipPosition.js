@@ -1,4 +1,4 @@
-export const setNavbarTooltipPosition = function setNavbarTooltipPosition(options = {}) {
+export const setNavbarTooltipPosition = function setNavbarTooltipPosition (options = {}) {
   const TooltipElement = this.lookup('NavbarTooltip')
   if (!TooltipElement) {
     return

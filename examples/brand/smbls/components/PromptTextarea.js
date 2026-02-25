@@ -7,14 +7,14 @@ export const PromptTextarea = {
   theme: 'field',
   round: 'B',
   '@tabletM': {
-    boxSize: 'E2 I',
+    boxSize: 'E2 I'
   },
   '@tabletS': {
-    boxSize: 'E2 100%',
+    boxSize: 'E2 100%'
   },
   transition: 'B background defaultBezier',
   '@mobileL': {
-    boxSize: 'F1 100%',
+    boxSize: 'F1 100%'
   },
   Textarea: {
     minWidth: '100%',
@@ -27,16 +27,16 @@ export const PromptTextarea = {
     border: 'none',
     style: {
       border: 'none',
-      borderStyle: 'none',
+      borderStyle: 'none'
     },
     '@mobileL': {
-      padding: 'B B - B',
+      padding: 'B B - B'
     },
     '@mobileM': {
       padding: 'D B - B',
       textAlign: 'center',
-      lineHeight: '1.3em',
-    },
+      lineHeight: '1.3em'
+    }
   },
   Flex: {
     position: 'absolute',
@@ -45,29 +45,29 @@ export const PromptTextarea = {
     gap: 'B',
     '@mobileL': {
       right: 'B',
-      gap: 'A2',
+      gap: 'A2'
     },
     '@mobileM': {
       right: 'A1',
-      top: 'A',
+      top: 'A'
     },
     childExtends: 'IconButton',
     childProps: {
       padding: 'X',
-      theme: 'transparent',
+      theme: 'transparent'
     },
     children: [
       {
         Icon: {
-          name: 'upload',
-        },
+          name: 'upload'
+        }
       },
       {
         Icon: {
-          name: 'chevronUp',
-        },
-      },
-    ],
+          name: 'chevronUp'
+        }
+      }
+    ]
   },
   Button: {
     text: 'Create a feature',
@@ -83,13 +83,13 @@ export const PromptTextarea = {
       minWidth: '90%',
       maxWidth: '90%',
       right: '50%',
-      transform: 'translate(50%, 0)',
+      transform: 'translate(50%, 0)'
     },
     Icon: {
       name: 'chevronUp',
       fontSize: 'B',
       transform: 'rotate(45deg)',
-      margin: '-W - - -',
-    },
-  },
-};
+      margin: '-W - - -'
+    }
+  }
+}

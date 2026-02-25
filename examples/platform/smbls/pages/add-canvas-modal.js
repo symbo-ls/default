@@ -10,11 +10,11 @@ export const addCanvasModal = {
   tag: 'form',
   state: {
     title: '',
-    freeform: true,
+    freeform: true
   },
   ModalHeader: {
     title: 'Add new canvas',
-    p: 'Add custom canvas pages to manage your components in isolation',
+    p: 'Add custom canvas pages to manage your components in isolation'
   },
   Flex: {
     overflow: 'auto',
@@ -24,11 +24,11 @@ export const addCanvasModal = {
     flexAlign: 'flex-start space-between',
     gap: 'B3',
     childProps: {
-      width: '50%',
+      width: '50%'
     },
     InputField: {
       Title: {
-        text: 'Title',
+        text: 'Title'
       },
       Input: {
         value: '{{ title }}',
@@ -37,13 +37,13 @@ export const addCanvasModal = {
         onKeyup: (e, el, s) =>
           s.update({
             title: el.node.value
-          }),
-      },
+          })
+      }
     },
     Group: {
       margin: 'A - -',
       Title: {
-        text: 'Freeform',
+        text: 'Freeform'
       },
       SwitchFieldWithCaption: {
         width: 'max-content',
@@ -54,23 +54,23 @@ export const addCanvasModal = {
         Input: {
           checked: ({
             state
-          }) => !state.freeform,
+          }) => !state.freeform
         },
         SwitchField: {},
         Caption: {
           padding: '0',
           opacity: '.65',
           color: 'gray7',
-          text: 'Gravity',
-        },
-      },
-    },
+          text: 'Gravity'
+        }
+      }
+    }
   },
   ModalFooter: {
     CheckButton: {
       type: 'submit',
       reverse: true,
-      text: 'Save',
-    },
-  },
-};
+      text: 'Save'
+    }
+  }
+}

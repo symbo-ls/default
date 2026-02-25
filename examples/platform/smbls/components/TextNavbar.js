@@ -4,59 +4,59 @@ export const TextNavbar = {
     key: 'insert:library',
     Button: {
       icon: 'sf plus',
-      text: null,
+      text: null
     },
     IconButton: {
       DropdownParentFocus: {
         Dropdown: {
-          'Dropdown.QuickAdd': {},
-        },
-      },
-    },
+          'Dropdown.QuickAdd': {}
+        }
+      }
+    }
   },
   Assistant: {
     if: () => false,
     extends: 'TextNavbarButtonDropdown',
     key: 'chat',
     Button: {
-      text: 'Assistant',
+      text: 'Assistant'
     },
     IconButton: {
       DropdownParentFocus: {
         Dropdown: {
-          'Dropdown.AssistantMenu': {},
-        },
-      },
-    },
+          'Dropdown.AssistantMenu': {}
+        }
+      }
+    }
   },
   Files: {
     extends: 'TextNavbarButtonDropdown',
     key: 'explorer',
     Button: {
-      text: 'Files',
+      text: 'Files'
     },
     IconButton: {
       DropdownParentFocus: {
         Dropdown: {
-          'Dropdown.MoreFilesMenu': {},
-        },
-      },
-    },
+          'Dropdown.MoreFilesMenu': {}
+        }
+      }
+    }
   },
   Learn: {
     if: () => false,
     extends: 'TextNavbarButtonDropdown',
     key: 'learn',
     Button: {
-      text: 'Learn',
+      text: 'Learn'
     },
     IconButton: {
       DropdownParentFocus: {
         Dropdown: {
-          'Dropdown.MoreLearnMenu': {},
-        },
-      },
-    },
+          'Dropdown.MoreLearnMenu': {}
+        }
+      }
+    }
   },
   extend: 'Flex',
   props: {
@@ -67,6 +67,6 @@ export const TextNavbar = {
       }).changed((changes, prev) => {
         el.update()
       })
-    },
-  },
-};
+    }
+  }
+}

@@ -8,28 +8,28 @@ export const TextNavbarButtonDropdown = {
     '.isActive': {
       '@dark': {
         color: 'white',
-        backgroundColor: 'gray5',
+        backgroundColor: 'gray5'
       },
       '@light': {
         color: 'black',
-        backgroundColor: 'gray11',
+        backgroundColor: 'gray11'
       },
       ':hover': {
         '@dark': {
-          backgroundColor: 'gray5 .9',
+          backgroundColor: 'gray5 .9'
         },
         '@light': {
-          backgroundColor: 'gray12 .95',
-        },
-      },
-    },
+          backgroundColor: 'gray12 .95'
+        }
+      }
+    }
   },
   Button: {
     extends: 'TextNavbarButton',
     text: 'Insert',
     icon: null,
     isActive: null,
-    padding: 'Y2 Y1 Y2 Z2',
+    padding: 'Y2 Y1 Y2 Z2'
   },
   IconButton: {
     padding: 'Z Y2 Z Y',
@@ -39,9 +39,9 @@ export const TextNavbarButtonDropdown = {
       Dropdown: {
         left: '-D2',
         onClick: () => {},
-        theme: 'common-box',
-      },
-    },
+        theme: 'common-box'
+      }
+    }
   },
-  extend: 'DropdownButton',
-};
+  extend: 'DropdownButton'
+}

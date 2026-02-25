@@ -5,7 +5,7 @@ export const LoginForm = {
   '@mobileL': {
     height: 'unset',
     justifyContent: 'flex-start',
-    width: '100%',
+    width: '100%'
   },
   Flex: {
     gap: 'A',
@@ -15,15 +15,15 @@ export const LoginForm = {
       '@mobileL': {
         maxWidth: '100%',
         alignItems: 'stretch',
-        width: '100%',
-      },
+        width: '100%'
+      }
     },
     Title: null,
     Input: null,
     Identifier: {
       Title: {
         text: 'Email or username',
-        padding: '- - Y',
+        padding: '- - Y'
       },
       Input: {
         height: 'B2',
@@ -35,19 +35,19 @@ export const LoginForm = {
         borderRadius: 'Z',
         '@mobileL': {
           width: '100%',
-          height: 'unset',
+          height: 'unset'
         },
         onInput: (ev, el, s) => {
           s.update({
             identifier: el.node.value
           })
-        },
-      },
+        }
+      }
     },
     Password: {
       Title: {
         text: 'Password',
-        padding: '- - X',
+        padding: '- - X'
       },
       Input: {
         height: 'B2',
@@ -60,16 +60,16 @@ export const LoginForm = {
         borderRadius: 'Z',
         '@mobileL': {
           width: '100%',
-          height: 'unset',
+          height: 'unset'
         },
         onInput: (ev, el, s) => {
           s.password = el.node.value
           s.update({
             password: el.node.value
           })
-        },
-      },
-    },
+        }
+      }
+    }
   },
   ModalFooter: {
     display: 'flex',
@@ -83,8 +83,8 @@ export const LoginForm = {
       flow: 'column',
       gap: 'A2',
       childProps: {
-        width: '100%',
-      },
+        width: '100%'
+      }
     },
     CheckButton: {
       theme: 'primary',
@@ -97,8 +97,8 @@ export const LoginForm = {
       '@mobileL': {
         width: '100%',
         maxWidth: '100%',
-        height: 'unset',
-      },
+        height: 'unset'
+      }
     },
     Title: null,
     Input: null,
@@ -111,8 +111,8 @@ export const LoginForm = {
       display: 'flex',
       justifyContent: 'center',
       '@mobileL': {
-        margin: '0 auto',
-      },
-    },
-  },
-};
+        margin: '0 auto'
+      }
+    }
+  }
+}

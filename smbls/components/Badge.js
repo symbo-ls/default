@@ -9,5 +9,5 @@ export const Badge = {
   boxSizing: 'content-box',
   padding: 'X1 Z1',
   backgroundColor: '',
-  borderRadius: '',
-};
+  borderRadius: ''
+}

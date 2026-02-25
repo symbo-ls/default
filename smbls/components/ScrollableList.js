@@ -8,8 +8,8 @@ export const ScrollableList = {
     style: {
       listStyleType: 'none',
       '::-webkit-scrollbar': {
-        display: 'none',
-      },
+        display: 'none'
+      }
     },
     childProps: {
       padding: 'Y1 A',
@@ -21,18 +21,18 @@ export const ScrollableList = {
       theme: 'dialog',
       fontSize: 'C',
       ':hover': {
-        theme: 'dialog-elevated',
-      },
+        theme: 'dialog-elevated'
+      }
     },
     childExtends: 'Button',
     children: [
       {
-        text: 'Item One',
+        text: 'Item One'
       },
       {
-        text: 'Item Two',
-      },
-    ],
+        text: 'Item Two'
+      }
+    ]
   },
   position: 'relative',
   overflow: 'hidden',
@@ -45,24 +45,24 @@ export const ScrollableList = {
     boxSize: 'B 100%',
     zIndex: '2',
     left: '0',
-    pointerEvents: 'none',
+    pointerEvents: 'none'
   },
   ':before': {
     top: '0',
     '@light': {
-      background: 'linear-gradient(to bottom,  #ebecf2 0%, transparent 100%)',
+      background: 'linear-gradient(to bottom,  #ebecf2 0%, transparent 100%)'
     },
     '@dark': {
-      background: 'linear-gradient(to bottom, #171717 0%, transparent 100%)',
-    },
+      background: 'linear-gradient(to bottom, #171717 0%, transparent 100%)'
+    }
   },
   ':after': {
     bottom: '-3px',
     '@light': {
-      background: 'linear-gradient(to top,  #ebecf2 0%, transparent 100%)',
+      background: 'linear-gradient(to top,  #ebecf2 0%, transparent 100%)'
     },
     '@dark': {
-      background: 'linear-gradient(to top, #171717 0%, transparent 100%)',
-    },
-  },
-};
+      background: 'linear-gradient(to top, #171717 0%, transparent 100%)'
+    }
+  }
+}

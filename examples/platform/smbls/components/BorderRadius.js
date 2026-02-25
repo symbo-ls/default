@@ -12,7 +12,7 @@ export const BorderRadius = {
     childrenAs: 'props',
     childProps: {
       cursor: 'pointer',
-      position: 'relative',
+      position: 'relative'
     },
     children: [
       {
@@ -21,17 +21,17 @@ export const BorderRadius = {
         SizeUnits: {
           LetterValue: {
             color: '#85684B',
-            attr: {},
+            attr: {}
           },
           NumberValue: {
-            attr: {},
-          },
-        },
+            attr: {}
+          }
+        }
       },
       {
         BorderRadiusBox: {},
         gridArea: 'content',
-        gridRow: '1 3',
+        gridRow: '1 3'
       },
       {
         gridArea: 'bse',
@@ -39,12 +39,12 @@ export const BorderRadius = {
         SizeUnits: {
           LetterValue: {
             color: '#85684B',
-            attr: {},
+            attr: {}
           },
           NumberValue: {
-            attr: {},
-          },
-        },
+            attr: {}
+          }
+        }
       },
       {
         gridArea: 'bes',
@@ -52,12 +52,12 @@ export const BorderRadius = {
         SizeUnits: {
           LetterValue: {
             color: '#85684B',
-            attr: {},
+            attr: {}
           },
           NumberValue: {
-            attr: {},
-          },
-        },
+            attr: {}
+          }
+        }
       },
       {
         gridArea: 'bee',
@@ -65,13 +65,13 @@ export const BorderRadius = {
         SizeUnits: {
           LetterValue: {
             color: '#85684B',
-            attr: {},
+            attr: {}
           },
           NumberValue: {
-            attr: {},
-          },
-        },
-      },
-    ],
-  },
-};
+            attr: {}
+          }
+        }
+      }
+    ]
+  }
+}

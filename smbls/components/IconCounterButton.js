@@ -8,13 +8,13 @@ export const IconCounterButton = {
   gap: 'Z',
   Icon: {
     display: 'block',
-    name: 'info',
+    name: 'info'
   },
   Span: {
-    text: 'Button',
+    text: 'Button'
   },
   NotificationCounter: {
     text: '7',
-    margin: '- - - auto',
-  },
-};
+    margin: '- - - auto'
+  }
+}

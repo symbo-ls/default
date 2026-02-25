@@ -21,11 +21,11 @@ export const addBranchModal = {
   },
   tag: 'form',
   state: {
-    branch: '',
+    branch: ''
   },
   ModalHeader: {
     title: 'Add new branch',
-    p: 'Add custom canvas pages to manage your components in isolation',
+    p: 'Add custom canvas pages to manage your components in isolation'
   },
   Flex: {
     overflow: 'auto',
@@ -35,11 +35,11 @@ export const addBranchModal = {
     flexAlign: 'flex-start space-between',
     gap: 'B3',
     childProps: {
-      width: '50%',
+      width: '50%'
     },
     InputField: {
       Title: {
-        text: 'Branch name',
+        text: 'Branch name'
       },
       Input: {
         value: '{{ branch }}',
@@ -64,15 +64,15 @@ export const addBranchModal = {
           }
 
           s.branch = cleanedValue
-        },
-      },
-    },
+        }
+      }
+    }
   },
   ModalFooter: {
     CheckButton: {
       type: 'submit',
       reverse: true,
-      text: 'Save',
-    },
-  },
-};
+      text: 'Save'
+    }
+  }
+}

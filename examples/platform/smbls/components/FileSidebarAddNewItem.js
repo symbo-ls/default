@@ -11,8 +11,8 @@ export const FileSidebarAddNewItem = {
       borderColor: 'line-highlight',
       borderStyle: 'solid',
       ':focus-within': {
-        borderColor: 'dim',
-      },
+        borderColor: 'dim'
+      }
     },
     templateAreas: `"plus input icons"
         "error error error"`,
@@ -20,7 +20,7 @@ export const FileSidebarAddNewItem = {
     Icon: {
       gridArea: 'plus',
       color: 'dim',
-      name: 'plus',
+      name: 'plus'
     },
     Input: {
       gridArea: 'input',
@@ -33,24 +33,31 @@ export const FileSidebarAddNewItem = {
       attr: {
         required: true,
         placeholder: (el, s) =>
-          s.type === 'pages' ?
-          '/add-new-page' : s.type === 'components' ?
-          'ComponentName' : s.type === 'functions' ?
-          'newFunction' : s.type === 'methods' ?
-          'newMethod' : s.type === 'state' ?
-          'state_collection' : s.type === 'secrets' ?
-          'new_secret' : s.type === 'dependencies' ?
-          '@npm/dependency' : '',
+          s.type === 'pages'
+            ? '/add-new-page'
+            : s.type === 'components'
+              ? 'ComponentName'
+              : s.type === 'functions'
+                ? 'newFunction'
+                : s.type === 'methods'
+                  ? 'newMethod'
+                  : s.type === 'state'
+                    ? 'state_collection'
+                    : s.type === 'secrets'
+                      ? 'new_secret'
+                      : s.type === 'dependencies'
+                        ? '@npm/dependency'
+                        : ''
       },
       '::placeholder': {
-        color: 'dim',
+        color: 'dim'
       },
       ':focus-visible': {
-        outline: '0',
+        outline: '0'
       },
       ':focus': {
         outline: '0',
-        borderColor: 'caption',
+        borderColor: 'caption'
       },
       onInput: (ev, el, s) => {
         // eslint-disable-next-line init-declarations
@@ -105,7 +112,7 @@ export const FileSidebarAddNewItem = {
         }
 
         s.key = cleanedValue
-      },
+      }
     },
     Flex: {
       gap: 'X2',
@@ -118,12 +125,12 @@ export const FileSidebarAddNewItem = {
         fontSize: 'Z',
         theme: 'transparent',
         ':hover': {
-          theme: 'quaternary',
-        },
+          theme: 'quaternary'
+        }
       },
       Save: {
         type: 'submit',
-        icon: 'checkmark',
+        icon: 'checkmark'
       },
       Close: {
         icon: 'crossmark',
@@ -132,8 +139,8 @@ export const FileSidebarAddNewItem = {
             key: null,
             adding: null
           })
-        },
-      },
+        }
+      }
     },
     Err: {
       hide: (el, s) => !s.err,
@@ -143,57 +150,57 @@ export const FileSidebarAddNewItem = {
       left: '0',
       right: '0',
       theme: 'navbar',
-      text: (el, s) => s.err,
+      text: (el, s) => s.err
     },
     ':hover .icons, :focus-within .icons': {
-      opacity: 1,
-    },
+      opacity: 1
+    }
   },
   extend: [
     'Form',
-    'Grid',
+    'Grid'
   ],
   props: {
     onSubmit: async (ev, el, s) => {
-    ev.preventDefault()
+      ev.preventDefault()
 
-    const {
-      key
-    } = s
+      const {
+        key
+      } = s
 
-    const type = el.getSingular(s.type) || s.parent.type
+      const type = el.getSingular(s.type) || s.parent.type
 
-    if (el.getSchemaItem(key, type)) {
-      el.call('openNotification', {
-        title: `${type} already exists`,
-        message: `"${key}" ${type} already exists`,
-        type: 'error'
-      })
-      return
-    }
+      if (el.getSchemaItem(key, type)) {
+        el.call('openNotification', {
+          title: `${type} already exists`,
+          message: `"${key}" ${type} already exists`,
+          type: 'error'
+        })
+        return
+      }
 
-    try {
-      await el.call('createItem', type, key)
-      el.Label.Input.node.value = ''
-    } catch (err) {
-      if (!err) {
-        el.node.reset()
-        return s.update({
-          key: null,
-          err: null,
-          adding: false
+      try {
+        await el.call('createItem', type, key)
+        el.Label.Input.node.value = ''
+      } catch (err) {
+        if (!err) {
+          el.node.reset()
+          return s.update({
+            key: null,
+            err: null,
+            adding: false
+          })
+        }
+
+        s.update({
+          err
         })
       }
 
       s.update({
-        err
+        key: null,
+        adding: null
       })
     }
-
-    s.update({
-      key: null,
-      adding: null
-    })
-  },
-  },
-};
+  }
+}

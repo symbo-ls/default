@@ -8,28 +8,28 @@ export const NativeSelect = {
   outline: 'none',
   children: [
     {
-      text: 'about',
+      text: 'about'
     },
     {
-      text: 'contact',
+      text: 'contact'
     },
     {
-      text: 'market research',
+      text: 'market research'
     },
     {
-      text: 'Recruiting Partner',
+      text: 'Recruiting Partner'
     },
     {
-      text: 'Recruiting',
+      text: 'Recruiting'
     },
     {
-      text: 'Recruiting',
+      text: 'Recruiting'
     },
     {
-      text: 'Refer a Friend',
-    },
+      text: 'Refer a Friend'
+    }
   ],
   childExtends: {
-    tag: 'option',
-  },
-};
+    tag: 'option'
+  }
+}

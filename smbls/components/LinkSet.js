@@ -5,14 +5,14 @@ export const LinkSet = {
   align: 'center flex-start',
   gap: 'A',
   childProps: {
-    cursor: 'pointer',
+    cursor: 'pointer'
   },
   children: [
     {
-      text: 'Link 1',
+      text: 'Link 1'
     },
     {
-      text: 'Link 2',
-    },
-  ],
-};
+      text: 'Link 2'
+    }
+  ]
+}

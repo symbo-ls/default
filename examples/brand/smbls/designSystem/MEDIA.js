@@ -28,5 +28,5 @@ export default {
   heightL: '(max-height: 1024px)',
   heightM: '(max-height: 900px)',
   heightS: '(max-height: 768px)',
-  heightXS: '(max-height: 480px)',
-};
+  heightXS: '(max-height: 480px)'
+}

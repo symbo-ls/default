@@ -1,1 +1,1 @@
-export const editFontFamilyModal = {};
+export const editFontFamilyModal = {}

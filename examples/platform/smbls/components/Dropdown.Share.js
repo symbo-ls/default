@@ -6,8 +6,8 @@ const Dropdownshare = {
     gap: 'A',
     CaptionTitle: {
       Text: {
-        text: 'Share',
-      },
+        text: 'Share'
+      }
     },
     DomainItem_Env: {
       margin: '- -Z2',
@@ -15,11 +15,11 @@ const Dropdownshare = {
       Icon: null,
       Hgroup: {
         H: {
-          text: 'Environment',
+          text: 'Environment'
         },
         P: {
-          text: 'Inherint or switch while sharing',
-        },
+          text: 'Inherint or switch while sharing'
+        }
       },
       Select: {
         padding: 'X Y2',
@@ -39,25 +39,25 @@ const Dropdownshare = {
         childProps: {
           tag: 'option',
           attr: {
-            selected: (el, s) => el.node.value === s.action,
-          },
+            selected: (el, s) => el.node.value === s.action
+          }
         },
         children: [
           {
-            text: 'Current',
+            text: 'Current'
           },
           {
-            text: 'Development',
+            text: 'Development'
           },
           {
-            text: 'Staging',
+            text: 'Staging'
           },
           {
-            text: 'Production',
-          },
-        ],
+            text: 'Production'
+          }
+        ]
       },
-      align: 'start',
+      align: 'start'
     },
     Label: {
       extends: 'Flex',
@@ -66,14 +66,14 @@ const Dropdownshare = {
       Hgroup: {
         H: {
           tag: 'p',
-          text: 'Selection share',
+          text: 'Selection share'
         },
         P: {
           fontSize: 'Y2',
           color: 'paragraph',
-          text: 'Link to selected element on canvas',
+          text: 'Link to selected element on canvas'
         },
-        gap: 'X',
+        gap: 'X'
       },
       Toggle: {
         margin: '- - - auto',
@@ -81,9 +81,9 @@ const Dropdownshare = {
         Input: {
           onChange: (ev, el, s) => s.update({
             isSelcetedActive: el.node.checked
-          }),
-        },
-      },
+          })
+        }
+      }
     },
     Flex: {
       gap: 'A',
@@ -109,23 +109,23 @@ const Dropdownshare = {
               Development: '',
               Staging: prefix + 'staging',
               Production: prefix + 'production'
-            } [s.parent.env]
+            }[s.parent.env]
           }
         },
         Icon: null,
         Hgroup: {
           H: {
-            text: '{{ title }}',
+            text: '{{ title }}'
           },
           P: {
-            text: el => '{{ domain }}{{ path }}{{ selected }}{{ env }}',
-          },
+            text: el => '{{ domain }}{{ path }}{{ selected }}{{ env }}'
+          }
         },
         Upgrade: null,
         Copy: {
           extends: [
             'CanvasButton',
-            'IconButton',
+            'IconButton'
           ],
           padding: 'Y2',
           margin: '-Y - - auto',
@@ -133,37 +133,37 @@ const Dropdownshare = {
           value: '{{ env }}{{ domain }}{{ path }}{{ selection }}',
           Icon: {
             order: 2,
-            color: 'blue',
-          },
+            color: 'blue'
+          }
         },
         Open: {
           extends: [
             'CanvasButton',
             'Link',
-            'IconButton',
+            'IconButton'
           ],
           padding: 'Y2',
           margin: '-Y -Y2 -',
           icon: 'arrow up right',
           href: 'https://{{ domain }}{{ path }}{{ selection }}',
-          target: '_blank',
-        },
+          target: '_blank'
+        }
       },
       childrenAs: 'state',
       children: [
         {
           title: 'Preview link',
-          domain: 'preview.symbo.ls',
+          domain: 'preview.symbo.ls'
         },
         {
           title: 'Canvas link',
-          domain: 'symbols.app',
-        },
-      ],
-    },
+          domain: 'symbols.app'
+        }
+      ]
+    }
   },
   Line: {
-    margin: '-Z2',
+    margin: '-Z2'
   },
   SharingPermissions: {},
   extend: 'Flex',
@@ -172,8 +172,8 @@ const Dropdownshare = {
     flow: 'y',
     gap: 'C',
     padding: 'Z1 A',
-    textAlign: 'start',
-  },
-};
+    textAlign: 'start'
+  }
+}
 
 export { Dropdownshare as 'Dropdown.Share' }

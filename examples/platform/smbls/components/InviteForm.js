@@ -6,29 +6,29 @@ export const InviteForm = {
     flex: '1',
     childProps: {
       Input: {
-        margin: '- -Z',
-      },
-    },
+        margin: '- -Z'
+      }
+    }
   },
   'InputField.name': {
     Title: {
-      text: 'Full name',
+      text: 'Full name'
     },
     Input: {
       value: '{{ name }}',
       required: true,
       placeholder: 'Mike',
       onInput: (ev, el, s) => {
-          const [, key] = el.parent.key.split('.')
-          s.update({
-            [key]: el.node.value
-          })
-        },
-    },
+        const [, key] = el.parent.key.split('.')
+        s.update({
+          [key]: el.node.value
+        })
+      }
+    }
   },
   'InputField.email': {
     Title: {
-      text: 'Email of member',
+      text: 'Email of member'
     },
     Input: {
       value: '{{ email }}',
@@ -37,17 +37,17 @@ export const InviteForm = {
       pattern: '^[^s@]+@[^s@]+.[^s@]{2,}$',
       type: 'email',
       onInput: (ev, el, s) => {
-          const [, key] = el.parent.key.split('.')
-          s.update({
-            [key]: el.node.value
-          })
-        },
-    },
+        const [, key] = el.parent.key.split('.')
+        s.update({
+          [key]: el.node.value
+        })
+      }
+    }
   },
   Flex: {
     extend: 'GroupField',
     Title: {
-      text: 'Role of member',
+      text: 'Role of member'
     },
     'SelectRoleField.role': {
       margin: '- -Z',
@@ -55,22 +55,22 @@ export const InviteForm = {
         value: '{{ role }}',
         required: true,
         onChange: (ev, el, s) => {
-            const [, key] = el.parent.key.split('.')
-            s.update({
-              [key]: el.node.value
-            })
-          },
+          const [, key] = el.parent.key.split('.')
+          s.update({
+            [key]: el.node.value
+          })
+        },
         onRender: (el, s) => {
-            const [, key] = el.parent.key.split('.')
-            console.error(111, s)
-            s.update({
-              [key]: 'guest'
-            })
-          },
-      },
+          const [, key] = el.parent.key.split('.')
+          console.error(111, s)
+          s.update({
+            [key]: 'guest'
+          })
+        }
+      }
     },
     Input: {
-      display: 'none',
-    },
-  },
-};
+      display: 'none'
+    }
+  }
+}

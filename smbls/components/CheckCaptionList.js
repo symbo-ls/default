@@ -9,13 +9,13 @@ export const CheckCaptionList = {
       Input: {},
       Flex: {
         Icon: {
-          name: 'check',
-        },
-      },
-    },
+          name: 'check'
+        }
+      }
+    }
   },
   children: [
     {},
-    {},
-  ],
-};
+    {}
+  ]
+}

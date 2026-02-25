@@ -5,7 +5,7 @@ export const TutorialPillsNotification = {
     src: 'code-preview.gif',
     title: 'Enjoy coding!',
     key: 'symbolsCodeExplained',
-    docsArticle: '/building-in-symbols',
+    docsArticle: '/building-in-symbols'
   },
   Img: {},
   Hgroup: {},
@@ -13,6 +13,6 @@ export const TutorialPillsNotification = {
   extend: 'TutorialGifNotification',
   props: {
     theme: null,
-    overflow: null,
-  },
-};
+    overflow: null
+  }
+}

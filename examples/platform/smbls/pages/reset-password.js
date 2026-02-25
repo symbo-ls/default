@@ -76,18 +76,18 @@ export const resetPassword = {
       }
     },
     '@tabletS': {
-      boxSize: 'auto I',
+      boxSize: 'auto I'
     },
     '@mobileL': {
       boxSize: 'auto H',
-      padding: '- C',
+      padding: '- C'
     },
     '@mobileS': {
       boxSize: 'auto G2',
-      padding: '- B1',
+      padding: '- B1'
     },
     '@mobileXS': {
-      boxSize: 'auto G1',
+      boxSize: 'auto G1'
     },
     ConfirmEmail: {
       transition: 'B defaultBezier',
@@ -95,30 +95,30 @@ export const resetPassword = {
       zIndex: 999,
       '.sent': {
         opacity: 1,
-        visibility: 'visible',
+        visibility: 'visible'
       },
       '!sent': {
         opacity: 0,
-        visibility: 'hidden',
+        visibility: 'hidden'
       },
       H: {
-        text: 'Please check the email: {{ email }}',
+        text: 'Please check the email: {{ email }}'
       },
       P: {
-        text: 'And follow the activation link.',
-      },
+        text: 'And follow the activation link.'
+      }
     },
     ModalHeader: {
       title: 'Recover password',
-      p: 'Use your email used during signup to recover password',
+      p: 'Use your email used during signup to recover password'
     },
     Flex: {
       padding: 'C1 B C1 C',
       ResetEmailForm: {},
       ResetPasswordsForm: {
-        if: (el, s) => s.token,
-      },
-    },
+        if: (el, s) => s.token
+      }
+    }
   },
-  Footer: {},
-};
+  Footer: {}
+}

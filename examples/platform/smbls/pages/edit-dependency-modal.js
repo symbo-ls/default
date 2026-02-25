@@ -19,16 +19,16 @@ export const editDependencyModal = {
   },
   ModalHeader: {
     title: 'Edit {{ name }} dependency',
-    p: 'Edit or update NPM package dependency and version',
+    p: 'Edit or update NPM package dependency and version'
   },
   Flex: {
     'InputField.name': {
       Title: {},
       Input: {
-        disabled: true,
+        disabled: true
       },
-      Dropdown: null,
-    },
+      Dropdown: null
+    }
   },
   Flex_Codes: {
     if: (el, s) => el.getDependencies(s.name),
@@ -38,21 +38,21 @@ export const editDependencyModal = {
     TerminalWithTitle: {
       maxWidth: '50%',
       Title: {
-        text: 'Your dependencies file CDN URL:',
+        text: 'Your dependencies file CDN URL:'
       },
       Terminal: {
         theme: 'field-static',
         icon: null,
         margin: '0 0 0 -Y',
         value: (el, s) =>
-          `https://pkg.symbo.ls/${s.name}/${el.getDependencies(s.name)}.js`,
-      },
+          `https://pkg.symbo.ls/${s.name}/${el.getDependencies(s.name)}.js`
+      }
     },
     CodeWithTitle: {
       P: {
         color: 'gray8',
         margin: '0',
-        text: 'The CDN file for your dependencies:',
+        text: 'The CDN file for your dependencies:'
       },
       Code: {
         margin: 'Z1 0 0',
@@ -62,32 +62,31 @@ export const editDependencyModal = {
           }')`,
         Title: null,
         CodePreview: {
-          theme: 'field-static',
+          theme: 'field-static'
         },
         Buttons: {
-          FrameworkSwitcher: null,
-        },
-      },
+          FrameworkSwitcher: null
+        }
+      }
     },
     Status: {
-      text: '{{ status }}',
-    },
+      text: '{{ status }}'
+    }
   },
   ModalFooter: {
     CheckButton: {
       type: 'submit',
       icon: 'checkmark',
-      text: 'Save',
+      text: 'Save'
     },
     IconButton: {
       margin: '- - - auto',
       icon: 'trash outline',
       onClick: async (ev, el, s, ctx) => {
-        if (!window.confirm('Are you sure you want to remove this dependency?'))
-          return
+        if (!window.confirm('Are you sure you want to remove this dependency?')) { return }
         await el.call('deleteDependency')
         await el.call('closeModal')
-      },
-    },
-  },
-};
+      }
+    }
+  }
+}

@@ -8,13 +8,13 @@ export const DraftSwitcher = {
   Input: {
     checked: ({
       state
-    }) => state.draft,
+    }) => state.draft
   },
   SwitchField: {},
   Caption: {
     padding: '0',
     opacity: '.65',
     color: 'gray7',
-    text: 'Draft',
-  },
-};
+    text: 'Draft'
+  }
+}

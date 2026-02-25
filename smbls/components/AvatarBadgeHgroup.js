@@ -6,9 +6,9 @@ export const AvatarBadgeHgroup = {
       display: 'flex',
       alignItems: 'center',
       gap: 'Y',
-      Badge: {},
+      Badge: {}
     },
-    P: {},
+    P: {}
   },
-  extends: 'AvatarHgroup',
-};
+  extends: 'AvatarHgroup'
+}

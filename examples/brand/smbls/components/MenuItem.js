@@ -1,7 +1,7 @@
 export const MenuItem = {
   extends: [
     'Link',
-    'IconButton',
+    'IconButton'
   ],
   round: 'Z',
   fontSize: 'A',
@@ -16,5 +16,5 @@ export const MenuItem = {
       const hrefKey = el.call('isString', href) && href.slice(1)
       return activePage === hrefKey
     }
-  },
-};
+  }
+}

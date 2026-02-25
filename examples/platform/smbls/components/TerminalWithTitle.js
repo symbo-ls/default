@@ -1,7 +1,7 @@
 export const TerminalWithTitle = {
   extends: 'Group',
   Title: {
-    tag: 'title',
+    tag: 'title'
   },
-  Terminal: {},
-};
+  Terminal: {}
+}

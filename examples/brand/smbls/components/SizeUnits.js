@@ -12,16 +12,16 @@ export const SizeUnits = {
     padding: '4px',
     borderRadius: '4px',
     backgroundColor: 'inherit',
-    cursor: 'pointer',
+    cursor: 'pointer'
   },
   NumberValue: {
     color: 'title',
-    fontSize: 'Z1',
+    fontSize: 'Z1'
   },
   LetterValue: {
     color: '#8B935C',
     fontSize: 'Y',
     fontWeight: '500',
-    textTransform: 'uppercase',
-  },
-};
+    textTransform: 'uppercase'
+  }
+}

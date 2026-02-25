@@ -31,19 +31,19 @@ export default {
         base: '/core/files',
         file: '/core/files/69325d61ebee5529e03920c5',
         download: '/core/files/public/69325d61ebee5529e03920c5/download',
-        publicDownload: '/core/files/public/69325d61ebee5529e03920c5/download',
+        publicDownload: '/core/files/public/69325d61ebee5529e03920c5/download'
       },
       absolute: {
         base: 'https://api.symbols.app/core/files',
         file: 'https://api.symbols.app/core/files/69325d61ebee5529e03920c5',
         download: 'https://api.symbols.app/core/files/public/69325d61ebee5529e03920c5/download',
-        publicDownload: 'https://api.symbols.app/core/files/public/69325d61ebee5529e03920c5/download',
+        publicDownload: 'https://api.symbols.app/core/files/public/69325d61ebee5529e03920c5/download'
       },
-      storage: 'https://storage.googleapis.com/smbls-api-media/media/projects/686848570cf470c5890934c5/users/6868484c0cf470c5890933cc/N86CK12seIk_qkJ01Z0Hp.png',
-    },
+      storage: 'https://storage.googleapis.com/smbls-api-media/media/projects/686848570cf470c5890934c5/users/6868484c0cf470c5890933cc/N86CK12seIk_qkJ01Z0Hp.png'
+    }
   },
   code: '',
   key: 'woodchuck.jpeg',
   type: 'file',
-  format: 'png',
-};
+  format: 'png'
+}

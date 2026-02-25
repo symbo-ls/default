@@ -10,30 +10,30 @@ export const RequestAccessButtons = {
     borderStyle: 'unset',
     borderWidth: '0',
     padding: 'C1 0 0',
-    justifyContent: 'flex-start',
+    justifyContent: 'flex-start'
   },
   childProps: {
-    width: '100%',
+    width: '100%'
   },
   Hgroup: {
     H: {
       tag: 'strong',
-      text: 'Get early access',
+      text: 'Get early access'
     },
     P: {
-      text: `We're kicking off invite-only. Get early signup to make it to the top.`,
-    },
+      text: 'We\'re kicking off invite-only. Get early signup to make it to the top.'
+    }
   },
   Flex: {
     flow: 'y',
     gap: 'A2',
     '@mobileL': {
-      gap: 'A',
+      gap: 'A'
     },
     Link: {
       extends: [
         'Link',
-        'Button',
+        'Button'
       ],
       icon: 'email',
       margin: '0 0 0 -X',
@@ -43,14 +43,14 @@ export const RequestAccessButtons = {
       href: '/signin',
       gap: 'Z',
       '@tabletS': {
-        padding: '- - - C',
+        padding: '- - - C'
       },
       '@mobileL': {
         align: 'center center',
         maxWidth: '100%',
         textAlign: 'center',
-        border: 'none',
-      },
-    },
-  },
-};
+        border: 'none'
+      }
+    }
+  }
+}

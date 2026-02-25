@@ -14,27 +14,27 @@ export const WatchVideo = {
     align: 'center center',
     padding: 'A A B1 A',
     gap: 'C1',
-    round: 'B2',
+    round: 'B2'
   },
   ':hover': {
     transform: 'scale(1.0085)',
     '& img': {
-      transform: 'scale(1.0085)',
+      transform: 'scale(1.0085)'
     },
     '& button': {
-      letterSpacing: '.35px',
-    },
+      letterSpacing: '.35px'
+    }
   },
   onClick: (event, el, s) => {
-    el.call('openModalVideo', `https://www.youtube.com/embed/ko1TXI9pejg?autoplay=1`)
+    el.call('openModalVideo', 'https://www.youtube.com/embed/ko1TXI9pejg?autoplay=1')
   },
   Img: {
     src: 'video.png',
     boxSize: 'E F',
     transition: 'transform, B, defaultBezier',
     '@mobileL': {
-      boxSize: 'F 100%',
-    },
+      boxSize: 'F 100%'
+    }
   },
   Flex: {
     flow: 'y',
@@ -45,7 +45,7 @@ export const WatchVideo = {
       11 unique features of Symbols`,
       maxWidth: 'F+C2',
       fontWeight: '300',
-      margin: '0',
+      margin: '0'
     },
     Button: {
       text: 'Watch the Video',
@@ -57,12 +57,12 @@ export const WatchVideo = {
       transition: 'letter-spacing B defaultBezier',
       Icon: {
         name: 'playOutline',
-        fontSize: 'B',
-      },
+        fontSize: 'B'
+      }
     },
     '@mobileL': {
       align: 'center flex-start',
-      textAlign: 'center',
-    },
-  },
-};
+      textAlign: 'center'
+    }
+  }
+}

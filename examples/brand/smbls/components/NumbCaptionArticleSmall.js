@@ -8,10 +8,10 @@ export const NumbCaptionArticleSmall = {
     gap: '0',
     text: null,
     Numb: {
-      width: 'A2',
-    },
+      width: 'A2'
+    }
   },
   P: {
-    margin: '0 - 0 A2',
-  },
-};
+    margin: '0 - 0 A2'
+  }
+}

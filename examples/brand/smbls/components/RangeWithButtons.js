@@ -16,7 +16,7 @@ export const RangeWithButtons = {
       }
 
       return val
-    },
+    }
   },
   SquareButton_minus: {
     icon: 'minus',
@@ -38,7 +38,7 @@ export const RangeWithButtons = {
           })
         }
       }
-    },
+    }
   },
   Value: {
     tag: 'span',
@@ -46,7 +46,7 @@ export const RangeWithButtons = {
     text: (el, s) => {
       const unit = el.parent.deps.returnPropertyValue(el.parent, 'unit', '')
       return `${s.value ?? s.defaultValue ?? 0}${unit}`
-    },
+    }
   },
   Range: {
     attr: {
@@ -54,7 +54,7 @@ export const RangeWithButtons = {
       min: el => el.parent.deps.returnPropertyValue(el.parent, 'min', 0),
       max: el => el.parent.deps.returnPropertyValue(el.parent, 'max', 100),
       step: el => el.parent.deps.returnPropertyValue(el.parent, 'step', 1),
-      disabled: el => el.parent.deps.returnPropertyValue(el.parent, 'disabled', false),
+      disabled: el => el.parent.deps.returnPropertyValue(el.parent, 'disabled', false)
     },
     onInput: (ev, el, s) => {
       const parentProps = el.parent.props
@@ -75,7 +75,7 @@ export const RangeWithButtons = {
           value: parseFloat(el.node.value)
         })
       }
-    },
+    }
   },
   SquareButton_plus: {
     theme: 'field',
@@ -97,6 +97,6 @@ export const RangeWithButtons = {
           })
         }
       }
-    },
-  },
-};
+    }
+  }
+}

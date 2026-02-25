@@ -3,31 +3,31 @@ export const PublishTools = {
   props: {
     gap: 'A',
     flow: 'y',
-    margin: '- -Z2',
+    margin: '- -Z2'
   },
   childExtend: 'DomainItem',
   Custom: {
     Hgroup: {
       H: {
-        text: 'Version 2.0.0',
+        text: 'Version 2.0.0'
       },
       P: {
-        text: 'Update Major',
-      },
-    },
+        text: 'Update Major'
+      }
+    }
   },
   Lookup: {
     Icon: {
-      name: 'sf search',
+      name: 'sf search'
     },
     Hgroup: {
       H: {
-        text: 'Version 1.2.0',
+        text: 'Version 1.2.0'
       },
       P: {
-        text: 'Update Minor',
-      },
-    },
+        text: 'Update Minor'
+      }
+    }
   },
   Current: {
     Icon: null,
@@ -37,28 +37,28 @@ export const PublishTools = {
         IconButton: {
           extends: [
             'CanvasButton',
-            'IconButton',
+            'IconButton'
           ],
           theme: null,
           padding: 'Y',
           margin: '- - -Z X',
           icon: 'search oval dotted',
           onClick: (ev, el, s) => {
-              el.getRootState().toggle('isVersionsOpen', {
-                preventUpdate: true
-              })
-              el.getVersionsAside()?.update()
-            },
-        },
+            el.getRootState().toggle('isVersionsOpen', {
+              preventUpdate: true
+            })
+            el.getVersionsAside()?.update()
+          }
+        }
       },
       P: {
-        text: 'Autosaved',
-      },
+        text: 'Autosaved'
+      }
     },
     Upgrade: null,
     Span: {
       margin: '- - - auto',
-      text: 'Latest',
-    },
-  },
-};
+      text: 'Latest'
+    }
+  }
+}

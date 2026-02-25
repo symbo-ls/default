@@ -3,7 +3,7 @@ export const RangeFieldWithIcon = {
   flexAlign: 'center flex-start',
   Icon: {
     display: 'block',
-    color: 'caption',
+    color: 'caption'
   },
-  RangeField: {},
-};
+  RangeField: {}
+}

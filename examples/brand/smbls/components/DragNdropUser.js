@@ -5,7 +5,7 @@ export const DragNdropUser = {
   round: 'A',
   Avatar: {
     boxSize: 'C C',
-    src: '{{ src }}',
+    src: '{{ src }}'
   },
   Flex: {
     gap: 'Y',
@@ -14,17 +14,17 @@ export const DragNdropUser = {
       boxSize: 'B B',
       background: 'gray4',
       round: 'Y1',
-      color: 'gray7',
+      color: 'gray7'
     },
     childExtends: 'IconButton',
     childrenAs: 'props',
     children: [
       {
-        icon: 'reload',
+        icon: 'reload'
       },
       {
-        icon: 'trash',
-      },
-    ],
-  },
-};
+        icon: 'trash'
+      }
+    ]
+  }
+}

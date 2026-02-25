@@ -3,12 +3,12 @@ export const ProgressStepSet = {
   childExtends: 'Progress',
   gap: 'A',
   childProps: {
-    minWidth: 'C',
+    minWidth: 'C'
   },
   children: [
     {
-      value: 0.7,
+      value: 0.7
     },
-    {},
-  ],
-};
+    {}
+  ]
+}

@@ -3,20 +3,20 @@ export const HgroupSteps = {
     gap: 'Y1',
     H: {
       tag: 'h4',
-      text: 'Symbols',
+      text: 'Symbols'
     },
     P: {
-      text: 'The easiest way to build your own website',
-    },
+      text: 'The easiest way to build your own website'
+    }
   },
   ProgressStepSet: {
     childProps: {
-      flex: '1',
-    },
+      flex: '1'
+    }
   },
   extends: 'Flex',
   flow: 'column',
   gap: 'A1',
   minWidth: 'G1',
-  maxWidth: 'H',
-};
+  maxWidth: 'H'
+}

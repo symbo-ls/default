@@ -7,10 +7,10 @@ export const ItemHighlight = {
   '@dark': {
     background: 'lightBlue .065',
     ':hover': {
-      background: 'lightBlue .1',
-    },
+      background: 'lightBlue .1'
+    }
   },
   '@light': {
-    theme: 'common-card',
-  },
-};
+    theme: 'common-card'
+  }
+}

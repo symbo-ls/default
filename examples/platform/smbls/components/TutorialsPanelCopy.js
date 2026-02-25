@@ -3,7 +3,7 @@ export const TutorialsPanelCopy = {
   props: {
     padding: 'A1 Z1',
     flow: 'y',
-    gap: 'B2',
+    gap: 'B2'
   },
   Hgroup: {
     H: {
@@ -12,19 +12,19 @@ export const TutorialsPanelCopy = {
       color: 'title',
       fontWeight: '500',
       text: (el) => {
-          const {
-            name,
-            username
-          } = el.getRootState()
-          return `Hi ${username || name || ''} 👋`
-        },
+        const {
+          name,
+          username
+        } = el.getRootState()
+        return `Hi ${username || name || ''} 👋`
+      }
     },
     P: {
       margin: '0',
       fontSize: 'Z2',
       color: 'paragraph',
-      text: `Let's run through docs and tutorials...`,
-    },
+      text: 'Let\'s run through docs and tutorials...'
+    }
   },
   DocsSidebar: {
     top: 'auto',
@@ -36,18 +36,18 @@ export const TutorialsPanelCopy = {
       NumbCaption: {
         Numb: null,
         SquareButton: {
-          padding: 'X',
-        },
+          padding: 'X'
+        }
       },
       ':not(:last-child):after': {
-        content: `''`,
+        content: '\'\'',
         position: 'absolute',
         width: '100%',
         borderStyle: 'solid',
         borderWidth: '1px 0 0 0',
         borderColor: 'line',
-        bottom: '-Z2+W',
-      },
-    },
-  },
-};
+        bottom: '-Z2+W'
+      }
+    }
+  }
+}

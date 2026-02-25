@@ -8,7 +8,7 @@ export const projectAccount = {
   state: {
     editMode: false,
     errorMessage: '',
-    successMessage: '',
+    successMessage: ''
   },
   onInit: (el, s) => {
     const rootState = el.getRootState()
@@ -26,7 +26,7 @@ export const projectAccount = {
       visibility: rootState.visibility || 'none',
       createdAt: rootState.createdAt || 'none',
       updatedAt: rootState.updatedAt || 'none',
-      tags: rootState.tags || [],
+      tags: rootState.tags || []
     }
     el.call('overwrite', s, state)
   },
@@ -55,12 +55,12 @@ export const projectAccount = {
     H: {
       color: 'title',
       text: (el, s) => `Settings for ${s.projectName}`,
-      fontWeight: 'bold',
+      fontWeight: 'bold'
     },
     P: {
       text: 'Manage your project settings, team members, and more.',
-      margin: '0',
-    },
+      margin: '0'
+    }
   },
   ProjectInfoSection: {
     extends: 'Flex',
@@ -82,30 +82,30 @@ export const projectAccount = {
         childProps: {
           width: 'G',
           Strong: {
-            hide: (el, s) => s.editMode,
+            hide: (el, s) => s.editMode
           },
           Field: {
-            hide: (el, s) => !s.editMode,
-          },
-        },
+            hide: (el, s) => !s.editMode
+          }
+        }
       },
-      position: 'relative',
+      position: 'relative'
     },
     children: [
       {
         CaptionTitle: {
           Text: {
-            text: 'Project info',
-          },
+            text: 'Project info'
+          }
         },
         Flex: {
           children: [
             {
               Title: {
-                text: 'Project Name:',
+                text: 'Project Name:'
               },
               Strong: {
-                text: (el, s) => s.projectName,
+                text: (el, s) => s.projectName
               },
               Field: {
                 extends: 'Input',
@@ -113,60 +113,60 @@ export const projectAccount = {
                 value: '{{ projectName }}',
                 required: true,
                 onInput: (ev, el, s) => {
-              s.update({
-                projectName: el.node.value
-              })
-            },
-              },
+                  s.update({
+                    projectName: el.node.value
+                  })
+                }
+              }
             },
             {
               Title: {
                 text: 'Project Key:',
-                fontWeight: 'bold',
+                fontWeight: 'bold'
               },
               Strong: {
-                text: (el, s) => s.projectKey,
+                text: (el, s) => s.projectKey
               },
               Field: {
                 extends: 'Input',
                 value: '{{ projectKey }}',
-                disabled: true,
-              },
-            },
-          ],
-        },
+                disabled: true
+              }
+            }
+          ]
+        }
       },
       {
         CaptionTitle: {
           Text: {
-            text: 'Status',
-          },
+            text: 'Status'
+          }
         },
         Flex: {
           children: [
             {
               Title: {
                 text: 'Tier:',
-                fontWeight: 'bold',
+                fontWeight: 'bold'
               },
               Strong: {
                 text: (el, s) => {
-              const tierMap = {
-                free: 'Starter',
-                pro: 'Pro',
-                enterprise: 'Enterprise'
+                  const tierMap = {
+                    free: 'Starter',
+                    pro: 'Pro',
+                    enterprise: 'Enterprise'
+                  }
+                  return tierMap[s.tier] || s.tier
+                }
               }
-              return tierMap[s.tier] || s.tier
-            },
-              },
             },
             {
               Title: {
                 text: 'Seats:',
-                fontWeight: 'bold',
+                fontWeight: 'bold'
               },
               Strong: {
-                text: (el, s) => s.seats,
+                text: (el, s) => s.seats
               },
               Field: {
                 extends: 'Input',
@@ -174,37 +174,37 @@ export const projectAccount = {
                 min: 1,
                 value: '{{ seats }}',
                 onInput: (ev, el, s) => {
-              s.update({
-                seats: parseInt(el.node.value, 10)
-              })
-            },
-              },
-            },
-          ],
-        },
+                  s.update({
+                    seats: parseInt(el.node.value, 10)
+                  })
+                }
+              }
+            }
+          ]
+        }
       },
       {
         CaptionTitle: {
           Text: {
-            text: 'Permissions',
-          },
+            text: 'Permissions'
+          }
         },
         Flex: {
           children: [
             {
               Title: {
                 text: 'Visibility:',
-                fontWeight: 'bold',
+                fontWeight: 'bold'
               },
               Strong: {
                 text: (el, s) => {
-              const visibilityMap = {
-                private: 'Private',
-                public: 'Public',
-                'password-protected': 'Password Protected'
-              }
-              return visibilityMap[s.visibility] || s.visibility
-            },
+                  const visibilityMap = {
+                    private: 'Private',
+                    public: 'Public',
+                    'password-protected': 'Password Protected'
+                  }
+                  return visibilityMap[s.visibility] || s.visibility
+                }
               },
               Field: {
                 extends: 'SelectField',
@@ -214,49 +214,49 @@ export const projectAccount = {
                   name: 'visibility',
                   id: 'visibility',
                   onChange: (ev, el, s) => {
-                ev.preventDefault()
-                ev.stopImmediatePropagation()
-                s.update({
-                  visibility: ev.target.value
-                })
-              },
+                    ev.preventDefault()
+                    ev.stopImmediatePropagation()
+                    s.update({
+                      visibility: ev.target.value
+                    })
+                  },
                   childrenAs: 'props',
                   children: () => [{
-                  value: 'private',
-                  text: 'Private'
-                },
-                {
-                  value: 'public',
-                  text: 'Public'
-                },
-                {
-                  value: 'password-protected',
-                  text: 'Password Protected'
-                }
-              ],
+                    value: 'private',
+                    text: 'Private'
+                  },
+                  {
+                    value: 'public',
+                    text: 'Public'
+                  },
+                  {
+                    value: 'password-protected',
+                    text: 'Password Protected'
+                  }
+                  ],
                   childProps: {
                     tag: 'option',
                     attr: {
                       disabled: (el) => !el.sdk.hasPermission('projectSettings'),
-                      selected: (el, s) => s.visibility === el.props.value,
-                    },
-                  },
-                },
-              },
+                      selected: (el, s) => s.visibility === el.props.value
+                    }
+                  }
+                }
+              }
             },
             {
               Title: {
                 text: 'Access:',
-                fontWeight: 'bold',
+                fontWeight: 'bold'
               },
               Strong: {
                 text: (el, s) => {
-              const accessMap = {
-                account: 'Account',
-                public: 'Public'
-              }
-              return accessMap[s.access] || s.access
-            },
+                  const accessMap = {
+                    account: 'Account',
+                    public: 'Public'
+                  }
+                  return accessMap[s.access] || s.access
+                }
               },
               Field: {
                 extends: 'SelectField',
@@ -266,36 +266,36 @@ export const projectAccount = {
                   name: 'access',
                   id: 'access',
                   onChange: (ev, el, s) => {
-                ev.preventDefault()
-                ev.stopImmediatePropagation()
-                s.update({
-                  access: ev.target.value
-                })
-              },
+                    ev.preventDefault()
+                    ev.stopImmediatePropagation()
+                    s.update({
+                      access: ev.target.value
+                    })
+                  },
                   childrenAs: 'props',
                   children: () => [{
-                  value: 'account',
-                  text: 'Account'
-                },
-                {
-                  value: 'public',
-                  text: 'Public'
-                }
-              ],
+                    value: 'account',
+                    text: 'Account'
+                  },
+                  {
+                    value: 'public',
+                    text: 'Public'
+                  }
+                  ],
                   childProps: {
                     tag: 'option',
                     attr: {
                       disabled: (el) => !el.sdk.hasPermission('projectSettings'),
-                      selected: (el, s) => s.access === el.props.value,
-                    },
-                  },
-                },
-              },
+                      selected: (el, s) => s.access === el.props.value
+                    }
+                  }
+                }
+              }
             },
             {
               show: (el, s) => s.visibility === 'password-protected',
               Title: {
-                text: 'Access Password',
+                text: 'Access Password'
               },
               Field: {
                 extends: 'Input',
@@ -303,26 +303,26 @@ export const projectAccount = {
                 placeholder: 'Enter new password',
                 value: '',
                 attr: {
-                  required: (el, s) => s.visibility === 'password-protected',
+                  required: (el, s) => s.visibility === 'password-protected'
                 },
                 onChange: (ev, el, s) => {
-              const val = el.node.value
-              el.call('sha256', val).then((hash) => {
-                s.update({
-                  projectPassword: hash
-                })
-              })
-            },
-              },
+                  const val = el.node.value
+                  el.call('sha256', val).then((hash) => {
+                    s.update({
+                      projectPassword: hash
+                    })
+                  })
+                }
+              }
             },
             {
               Title: {
                 text: 'Shared Library:',
                 tip: 'Is this a shared library?',
-                fontWeight: 'bold',
+                fontWeight: 'bold'
               },
               Strong: {
-                text: (el, s) => (s.isSharedLibrary ? 'Yes' : 'No'),
+                text: (el, s) => (s.isSharedLibrary ? 'Yes' : 'No')
               },
               Field: {
                 extends: 'SelectField',
@@ -332,37 +332,37 @@ export const projectAccount = {
                   name: 'isSharedLibrary',
                   id: 'isSharedLibrary',
                   onChange: (ev, el, s) => {
-                ev.preventDefault()
-                ev.stopImmediatePropagation()
-                s.update({
-                  isSharedLibrary: ev.target.value === 'yes'
-                })
-              },
+                    ev.preventDefault()
+                    ev.stopImmediatePropagation()
+                    s.update({
+                      isSharedLibrary: ev.target.value === 'yes'
+                    })
+                  },
                   childrenAs: 'props',
                   children: () => [{
-                  value: 'yes',
-                  text: 'Yes'
-                },
-                {
-                  value: 'no',
-                  text: 'No'
-                }
-              ],
+                    value: 'yes',
+                    text: 'Yes'
+                  },
+                  {
+                    value: 'no',
+                    text: 'No'
+                  }
+                  ],
                   childProps: {
                     tag: 'option',
                     attr: {
                       disabled: (el) => !el.sdk.hasPermission('projectSettings'),
                       selected: (el, s) =>
-                    (s.isSharedLibrary ? 'yes' : 'no') === el.props.value,
-                    },
-                  },
-                },
-              },
-            },
-          ],
-        },
-      },
-    ],
+                        (s.isSharedLibrary ? 'yes' : 'no') === el.props.value
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
   },
   Buttons: {
     margin: 'C - -',
@@ -378,7 +378,7 @@ export const projectAccount = {
           successMessage: '',
           errorMessage: ''
         })
-      },
+      }
     },
     ActionButtons: {
       extends: 'Flex',
@@ -459,7 +459,7 @@ export const projectAccount = {
               successMessage: ''
             })
           }
-        },
+        }
       },
       CancelButton: {
         extends: 'ContinueButton',
@@ -472,13 +472,13 @@ export const projectAccount = {
             successMessage: '',
             errorMessage: ''
           })
-        },
-      },
-    },
+        }
+      }
+    }
   },
   Line: {
     width: '100%',
-    margin: 'C1 - C1',
+    margin: 'C1 - C1'
   },
   MetaInfo: {
     extends: 'Flex',
@@ -487,38 +487,38 @@ export const projectAccount = {
     flow: 'row wrap',
     childExtends: 'Group',
     childProps: {
-      width: 'G',
+      width: 'G'
     },
     children: [
       {
         Title: {
           text: 'Created:',
-          fontWeight: 'bold',
+          fontWeight: 'bold'
         },
         Strong: {
           text: (el, s) => {
-          const date = new Date(s.createdAt)
-          return date.toLocaleString()
-        },
-        },
+            const date = new Date(s.createdAt)
+            return date.toLocaleString()
+          }
+        }
       },
       {
         Title: {
           text: 'Last Updated:',
-          fontWeight: 'bold',
+          fontWeight: 'bold'
         },
         Strong: {
           text: (el, s) => {
-          const date = new Date(s.updatedAt)
-          return date.toLocaleString()
-        },
-        },
-      },
-    ],
+            const date = new Date(s.updatedAt)
+            return date.toLocaleString()
+          }
+        }
+      }
+    ]
   },
   Line_1: {
     width: '100%',
-    margin: 'C1 - C1',
+    margin: 'C1 - C1'
   },
   Members: {
     if: (el) => el.sdk.hasPermission('projectSettings'),
@@ -533,19 +533,19 @@ export const projectAccount = {
         color: 'title',
         text: (el, s) => `Members for ${s.projectName}`,
         fontSize: '1.5rem',
-        fontWeight: 'bold',
+        fontWeight: 'bold'
       },
       P: {
         text: 'Manage your project settings, team members, and more.',
-        margin: '0',
-      },
+        margin: '0'
+      }
     },
-    MembersTable: {},
+    MembersTable: {}
   },
   Line_2: {
     if: (el) => el.sdk.hasPermission('projectSettings'),
     width: '100%',
-    margin: 'C1 - C1',
+    margin: 'C1 - C1'
   },
-  DangerZoneSection: {},
-};
+  DangerZoneSection: {}
+}

@@ -5,12 +5,12 @@ export const BoxSize = {
     childExtends: 'BoxSizeRow',
     children: [
       {
-        type: 'Width',
+        type: 'Width'
       },
       {
-        type: 'Height',
-      },
+        type: 'Height'
+      }
     ],
-    childrenAs: 'state',
-  },
-};
+    childrenAs: 'state'
+  }
+}

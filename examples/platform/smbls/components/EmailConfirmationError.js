@@ -5,22 +5,22 @@ export const EmailConfirmationError = {
   Icon: {
     name: 'exclMark',
     size: 'A',
-    color: 'red',
+    color: 'red'
   },
   H3: {
     text: 'Confirmation Failed',
-    margin: '0',
+    margin: '0'
   },
   P: {
     text: (el, s) => s.error || 'Unable to confirm your email. Please try again or contact support.',
     textAlign: 'center',
     color: 'paragraph',
-    maxWidth: 'G',
+    maxWidth: 'G'
   },
   TryAgainButton: {
     extends: [
       'Button',
-      'ClickableItem',
+      'ClickableItem'
     ],
     text: 'Try Again',
     margin: 'B 0 0',
@@ -30,6 +30,6 @@ export const EmailConfirmationError = {
         loading: true
       })
       await el.call('confirmEmail')
-    },
-  },
-};
+    }
+  }
+}

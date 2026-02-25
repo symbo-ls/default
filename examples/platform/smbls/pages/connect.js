@@ -1,16 +1,16 @@
 export const connect = {
   extends: [
-    'Page',
+    'Page'
   ],
   flow: 'y',
   gap: 'D1',
   childProps: {
     flexFlow: 'y',
-    gap: 'C1',
+    gap: 'C1'
   },
   Development: {
     SectionTitle: {
-      text: 'Development',
+      text: 'Development'
     },
     Flex: {
       flow: 'y',
@@ -22,7 +22,7 @@ export const connect = {
         }),
         gridColumnStart: 'span 2',
         Circle: {
-          order: '-2',
+          order: '-2'
         },
         Link: {
           order: '-1',
@@ -31,14 +31,14 @@ export const connect = {
           target: '_blank',
           fontWeight: '400',
           '@dark': {
-            color: 'white',
+            color: 'white'
           },
           '@light': {
-            color: 'black',
+            color: 'black'
           },
           ':hover': {
-            textDecoration: 'underline',
-          },
+            textDecoration: 'underline'
+          }
         },
         CopyButton: {},
         SquareButton_force: {
@@ -67,19 +67,19 @@ export const connect = {
             }, 1000)
 
             await el.call('addSmblsSubdomains', el.getAppKey())
-          },
+          }
         },
-        text: null,
+        text: null
       },
       ConnectionLabel_local: {
         isActive: (el, s) => el.getRootState('clients').localhost,
         Circle: {},
-        text: 'localhost',
-      },
+        text: 'localhost'
+      }
     },
     Line: {
-      margin: 'C1 - 0',
-    },
+      margin: 'C1 - 0'
+    }
   },
   CLI: {
     ComingSoon: {
@@ -87,23 +87,23 @@ export const connect = {
         flow: 'x',
         gap: 'X',
         Strong: {
-          text: 'CLI Tool',
-        },
+          text: 'CLI Tool'
+        }
       },
       SectionTitle: {
-        text: 'CLI',
+        text: 'CLI'
       },
       Grid: {
         gap: 'B1 C3',
         templateColumns: 'repeat(4, 1fr)',
         ConnectionLabel: {
-          isActive: (el, s) => el.getRootState('clients').cli,
-        },
-      },
+          isActive: (el, s) => el.getRootState('clients').cli
+        }
+      }
     },
     Line: {
-      margin: 'C1 - 0',
-    },
+      margin: 'C1 - 0'
+    }
   },
   CI: {
     ComingSoon: {
@@ -111,24 +111,24 @@ export const connect = {
         flow: 'x',
         gap: 'X',
         Strong: {
-          text: 'CI integrations',
-        },
+          text: 'CI integrations'
+        }
       },
       SectionTitle: {
-        text: 'CI/CD integrations',
+        text: 'CI/CD integrations'
       },
       Grid: {
         gap: 'B1 C3',
         templateColumns: 'repeat(4, 1fr)',
         ConnectionLabel: {
-          isActive: (el, s) => el.getRootState('clients').cli,
-        },
-      },
-    },
+          isActive: (el, s) => el.getRootState('clients').cli
+        }
+      }
+    }
   },
   Envs: {
     SectionTitle: {
-      text: 'Environments',
+      text: 'Environments'
     },
     Flex: {
       flow: 'y',
@@ -140,7 +140,7 @@ export const connect = {
         }),
         gridColumnStart: 'span 2',
         Circle: {
-          order: '-2',
+          order: '-2'
         },
         Link: {
           order: '-1',
@@ -149,14 +149,14 @@ export const connect = {
           target: '_blank',
           fontWeight: '400',
           '@dark': {
-            color: 'white',
+            color: 'white'
           },
           '@light': {
-            color: 'black',
+            color: 'black'
           },
           ':hover': {
-            textDecoration: 'underline',
-          },
+            textDecoration: 'underline'
+          }
         },
         CopyButton: {},
         SquareButton_force: {
@@ -185,28 +185,28 @@ export const connect = {
             }, 1000)
 
             await el.call('addSmblsSubdomains', el.getAppKey())
-          }`,
+          }`
         },
-        text: null,
+        text: null
       },
       ConnectionLabel_local: {
         isActive: (el, s) => el.getRootState('clients').localhost,
         Circle: {},
-        text: 'localhost',
-      },
+        text: 'localhost'
+      }
     },
     ComingSoon: {
       Span: {
         flow: 'x',
         gap: 'X',
         Strong: {
-          text: 'Custom domains',
-        },
+          text: 'Custom domains'
+        }
       },
       CustomDomains: {
         state: {
           domains: [
-          ],
+          ]
         },
         onRender: (el, st) => {
           const {
@@ -220,22 +220,22 @@ export const connect = {
               }]
             })
           }
-        },
+        }
       },
       AddCustomDomain: {
         ContinueButton: {
           width: '15rem',
           ':hover': {
-            cursor: 'pointer',
+            cursor: 'pointer'
           },
           href: () => `${window.location.pathname}/add-domain?type=development`,
-          text: 'Add custom domain',
-        },
+          text: 'Add custom domain'
+        }
       },
       Button: {
         extends: [
           'Link',
-          'Button',
+          'Button'
         ],
         href: () => `${window.location.pathname}/reset`,
         fontSize: 'A1',
@@ -243,12 +243,12 @@ export const connect = {
         alignSelf: 'start',
         scrollToTop: false,
         theme: 'common-card-interactive',
-        text: 'Reset',
-      },
+        text: 'Reset'
+      }
     },
     Line: {
-      margin: 'C1 - 0',
-    },
+      margin: 'C1 - 0'
+    }
   },
   Packages: {
     flexFlow: 'y',
@@ -259,11 +259,11 @@ export const connect = {
       Link: {
         extends: [
           'Link',
-          'IconButton',
+          'IconButton'
         ],
         icon: 'question mark fill',
-        href: '/docs/dependencies',
-      },
+        href: '/docs/dependencies'
+      }
     },
     Grid: {
       show: (el, s) => Object.keys(s.parse()).length,
@@ -272,7 +272,7 @@ export const connect = {
       childExtends: {
         extend: [
           'Flex',
-          'Link',
+          'Link'
         ],
         props: (el, s) => ({
           isError: el.getDependencies(el.props.Title.text) === 'error',
@@ -293,23 +293,23 @@ export const connect = {
             el.getDependencies(el.parent.props.Title.text) === 'loading',
           inCenter: false,
           width: 'A',
-          transform: 'scale(1.98)',
+          transform: 'scale(1.98)'
         },
         Icon: {
           show: (el, s) =>
             el.getDependencies(el.parent.props.Title.text) !== 'error' &&
-            el.getDependencies(el.parent.props.Title.text) !== 'loading',
+            el.getDependencies(el.parent.props.Title.text) !== 'loading'
         },
         Icon_error: {
           show: (el, s) =>
-            el.getDependencies(el.parent.props.Title.text) === 'error',
+            el.getDependencies(el.parent.props.Title.text) === 'error'
         },
         Title: {
-          margin: '- A - Z',
+          margin: '- A - Z'
         },
         Version: {
-          opacity: 0.65,
-        },
+          opacity: 0.65
+        }
       },
       childrenAs: 'props',
       children: (el, s) => {
@@ -334,25 +334,25 @@ export const connect = {
             }`
           }
         }))
-      },
+      }
     },
     SectionAddButton: {
       ignoreChildExtend: true,
       scrollToTop: false,
       onClick: async (f, el, st) => {
         await el.call('openModal', '/add-dependency')
-      },
+      }
     },
     Line: {
-      margin: 'D1 - 0',
-    },
+      margin: 'D1 - 0'
+    }
   },
   DesignTools: {
     show: (el) =>
       el.getRootState().userId === 'usb148d6dd' ||
       el.getRootState().userId === 'usce70482d',
     SectionTitle: {
-      text: 'Design Tools',
+      text: 'Design Tools'
     },
     state: '~/INTEGRATIONS',
     Grid: {
@@ -363,7 +363,7 @@ export const connect = {
         {
           extend: 'InputField',
           Title: {
-            text: 'Figma file URL:',
+            text: 'Figma file URL:'
           },
           Input: {
             type: 'url',
@@ -386,13 +386,13 @@ export const connect = {
                   }
                 })
               }
-            },
-          },
+            }
+          }
         },
         {
           extend: 'InputField',
           Title: {
-            text: 'Sketch file URL:',
+            text: 'Sketch file URL:'
           },
           Input: {
             type: 'url',
@@ -415,14 +415,14 @@ export const connect = {
                   }
                 })
               }
-            },
-          },
-        },
-      ],
+            }
+          }
+        }
+      ]
     },
     Line: {
-      margin: 'D1 - 0',
-    },
+      margin: 'D1 - 0'
+    }
   },
   Secrets: {
     SectionTitle: {
@@ -431,11 +431,11 @@ export const connect = {
       Link: {
         extends: [
           'Link',
-          'IconButton',
+          'IconButton'
         ],
         icon: 'question mark fill',
-        href: '/docs/secrets',
-      },
+        href: '/docs/secrets'
+      }
     },
     Grid: {
       if: (el, s) => Object.keys(el.getSecrets()).length,
@@ -444,12 +444,12 @@ export const connect = {
       margin: '- - C1',
       childExtends: [
         'Flex',
-        'Link',
+        'Link'
       ],
       childrenAs: 'props',
       childProps: {
         fontWeight: '400',
-        align: 'center start',
+        align: 'center start'
       },
       children: (el) =>
         Object.keys(el.getSecrets()).map((v) => ({
@@ -461,7 +461,7 @@ export const connect = {
           Title: {
             text: v
           }
-        })),
+        }))
     },
     SectionAddButton: {
       props: () => ({
@@ -471,31 +471,31 @@ export const connect = {
         onClick: async (f, el, st) => {
           await el.call('openModal', '/add-secret')
         }
-      }),
+      })
     },
     Line: {
-      margin: 'D1 - 0',
-    },
+      margin: 'D1 - 0'
+    }
   },
   Analytics: {
     SectionTitle: {
-      text: 'Analytics',
+      text: 'Analytics'
     },
     state: '~/INTEGRATIONS/analytics',
     P: {
-      text: 'No analytics integration at this moment (TBA)',
+      text: 'No analytics integration at this moment (TBA)'
     },
     Line: {
-      margin: 'D1 - 0',
-    },
+      margin: 'D1 - 0'
+    }
   },
   Plugins: {
     SectionTitle: {
-      text: 'Plugins',
+      text: 'Plugins'
     },
     state: '~/PLUGINS',
     P: {
-      text: 'No plugins at this moment (TBA)',
-    },
-  },
-};
+      text: 'No plugins at this moment (TBA)'
+    }
+  }
+}

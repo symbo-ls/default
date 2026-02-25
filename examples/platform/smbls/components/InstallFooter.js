@@ -3,7 +3,7 @@ export const InstallFooter = {
   gap: 'X2',
   opacity: '.35',
   Icon: {
-    name: 'question mark fill',
+    name: 'question mark fill'
   },
   Paragraph: {
     margin: '0',
@@ -11,13 +11,13 @@ export const InstallFooter = {
     children: [
       {
         text: 'Learn more on how to get started at ',
-        padding: '0 V1',
+        padding: '0 V1'
       },
       {
         extends: 'DocsLink',
         href: '/docs/intro',
-        text: 'Documentations page',
-      },
-    ],
-  },
-};
+        text: 'Documentations page'
+      }
+    ]
+  }
+}

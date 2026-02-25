@@ -3,7 +3,7 @@ export const invite = {
   align: 'center',
   height: '100%',
   state: {
-    role: 'guest',
+    role: 'guest'
   },
   Form: {
     margin: 'auto',
@@ -12,26 +12,26 @@ export const invite = {
     Hgroup: {
       margin: '- - C1',
       H: {
-        text: 'Invite team members',
+        text: 'Invite team members'
       },
-      P: null,
+      P: null
     },
     InviteForm: {
-      gap: 'A2',
+      gap: 'A2'
     },
     P: {
       gap: 'E',
       margin: 'A2 - C1 -',
       color: 'gray7',
       maxWidth: 'G1',
-      text: 'Invite your team members and assign permissions and roles.',
+      text: 'Invite your team members and assign permissions and roles.'
     },
     ContinueButton: {
       tag: 'button',
       type: 'submit',
       margin: 'C1 - - -Y2',
       text: 'Invite',
-      theme: 'primary',
+      theme: 'primary'
     },
     CancelButton: {
       tag: 'button',
@@ -50,7 +50,7 @@ export const invite = {
         } else {
           await el.router('/', el.getRoot())
         }
-      },
+      }
     },
     onSubmit: async (ev, el, s) => {
       ev.preventDefault()
@@ -84,7 +84,7 @@ export const invite = {
         } else {
           el.call('openNotification', {
             title: 'Validation message',
-            message: `Please fill in all fields`,
+            message: 'Please fill in all fields',
             type: 'warning'
           })
         }
@@ -96,6 +96,6 @@ export const invite = {
         })
         console.error(err)
       }
-    },
-  },
-};
+    }
+  }
+}

@@ -24,52 +24,52 @@ export const CanvasVerticalNavbar = {
         window.setTimeout(() => {
           el.call('setSidebarContent', activeContent)
         }, 35)
-      },
+      }
     },
     children: [
       {
         icon: 'content',
         title: 'Artboards',
-        section: 'ARTBOARD_TYPES',
+        section: 'ARTBOARD_TYPES'
       },
       {
         icon: 'fnOutline',
         title: 'Functions',
-        section: 'FUNCTION_TYPES',
+        section: 'FUNCTION_TYPES'
       },
       {
         icon: 'copywritingOutline',
         title: 'State',
-        section: 'STATE_TYPES',
+        section: 'STATE_TYPES'
       },
       {
         icon: 'tree',
         title: 'Design System',
-        section: 'DESIGN_SYSTEM_TYPES',
+        section: 'DESIGN_SYSTEM_TYPES'
       },
       {
         icon: 'folderOutline',
         title: 'Assets',
-        section: 'ASSETS_TYPES',
+        section: 'ASSETS_TYPES'
       },
       {
         icon: 'fuse',
         title: 'Integrations',
-        section: 'INTEGRATIONS_TYPES',
+        section: 'INTEGRATIONS_TYPES'
       },
       {
         icon: 'tutorial outline',
         title: 'Learn',
-        section: 'TUTORIALS',
-      },
+        section: 'TUTORIALS'
+      }
     ],
-    childrenAs: 'props',
+    childrenAs: 'props'
   },
   Line: {
     margin: 'Y1 0',
     style: {
-      width: 'fill-available',
-    },
+      width: 'fill-available'
+    }
   },
   NavbarButtonSet_meta: {
     padding: '0',
@@ -80,8 +80,8 @@ export const CanvasVerticalNavbar = {
       icon: 'arrowAngleRight',
       onClick: (ev, el) => {
         el.toggleWindow('explorer')
-      },
-    },
+      }
+    }
   },
   NavbarTooltip: {
     ignoreChildProps: true,
@@ -89,6 +89,6 @@ export const CanvasVerticalNavbar = {
     top: '0',
     left: '110%',
     tooltipPosition: 'right',
-    shapeDirection: 'left',
-  },
-};
+    shapeDirection: 'left'
+  }
+}

@@ -6,5 +6,5 @@ export const HelloUser = {
         el.getRootProjects().length > 0 ? ' back, ' : 'to Symbols, '
       }${
         el.getRootState('username')
-      } 👋 `,
-};
+      } 👋 `
+}

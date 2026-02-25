@@ -13,7 +13,7 @@ export const ComingSoon = {
     top: 0,
     left: 0,
     zIndex: 999999,
-    background: 'document 0.9',
+    background: 'document 0.9'
   },
   Span: {
     extends: 'Flex',
@@ -33,11 +33,11 @@ export const ComingSoon = {
     Strong: {
       extends: 'Flex',
       align: 'center',
-      text: 'Branching',
+      text: 'Branching'
     },
     Span: {
       fontWeight: 'normal',
-      text: 'Coming soon',
-    },
-  },
-};
+      text: 'Coming soon'
+    }
+  }
+}

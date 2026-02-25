@@ -7,31 +7,31 @@ export const FooteLite = {
   gap: 'B',
   '@tabletL': {
     flow: 'column',
-    gap: 'C1',
+    gap: 'C1'
   },
   childProps: {
     '@tabletL': {
       width: '100%',
-      padding: '0',
-    },
+      padding: '0'
+    }
   },
   Copy: {
     display: 'flex',
     gap: 'X2',
     lineHeight: '1',
     '@dark': {
-      color: 'gray8',
+      color: 'gray8'
     },
     '@light': {
-      color: 'gray5',
+      color: 'gray5'
     },
     DocsLink: {
       target: '_blank',
       href: 'https://symbols.app',
-      text: 'Symbols',
+      text: 'Symbols'
     },
     Year: {
-      text: ' © 2025',
+      text: ' © 2025'
     },
     DocsLink_version: {
       text: (el, s, ctx) => (!ctx.version ? '' : `TODO: smbls@^${ctx.version}`),
@@ -39,17 +39,17 @@ export const FooteLite = {
       target: '_blank',
       margin: '- - - A2',
       '@dark': {
-        color: 'gray9',
+        color: 'gray9'
       },
       '@light': {
-        color: 'gray6',
-      },
-    },
+        color: 'gray6'
+      }
+    }
   },
   DocsSocialLinks: {
     textAlign: 'end',
     H6: null,
     P: null,
-    onRender: () => {},
-  },
-};
+    onRender: () => {}
+  }
+}

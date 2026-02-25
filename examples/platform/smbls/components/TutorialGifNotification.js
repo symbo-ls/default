@@ -6,12 +6,12 @@ export const TutorialGifNotification = {
   state: {
     title: 'Move around and zoom canvas',
     descr: 'Dive into your interactive canvas. Pan, zoom, and explore freely as you build.',
-    src: 'intro.gif',
+    src: 'intro.gif'
   },
   Img: {
     minWidth: '3.2em',
     src: '{{ src }}',
-    fontSize: 'C2',
+    fontSize: 'C2'
   },
   Hgroup: {
     flex: 1,
@@ -22,11 +22,11 @@ export const TutorialGifNotification = {
     width: '100%',
     H: {
       tag: 'strong',
-      text: '{{ title }}',
+      text: '{{ title }}'
     },
     P: {
-      text: '{{ descr }}',
-    },
+      text: '{{ descr }}'
+    }
   },
   TutorialNotificationButtons: {},
   extend: 'Navbar',
@@ -43,6 +43,6 @@ export const TutorialGifNotification = {
     borderColor: 'line-highlight',
     maxWidth: 'H2',
     rootSlide: true,
-    useCookie: true,
-  },
-};
+    useCookie: true
+  }
+}

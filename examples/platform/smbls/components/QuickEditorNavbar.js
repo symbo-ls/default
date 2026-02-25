@@ -6,7 +6,7 @@ export const QuickEditorNavbar = {
     },
     '!hasBack': {
       opacity: '0.35',
-      pointerEvents: 'none',
+      pointerEvents: 'none'
     },
     onClick: (ev, el, s) => {
       const recents = s.recents
@@ -17,7 +17,7 @@ export const QuickEditorNavbar = {
           skipRecentsIndexing: true
         })
       }
-    },
+    }
   },
   Forward: {
     icon: 'arrow angle right',
@@ -26,7 +26,7 @@ export const QuickEditorNavbar = {
     },
     '!hasForward': {
       opacity: '0.35',
-      pointerEvents: 'none',
+      pointerEvents: 'none'
     },
     onClick: (ev, el, s) => {
       const recents = s.recents
@@ -37,21 +37,21 @@ export const QuickEditorNavbar = {
           skipRecentsIndexing: true
         })
       }
-    },
+    }
   },
   Close: {
     icon: 'crossmark',
     onClick: (ev, el) => {
       el.getCanvasScope().editorActive = false
-    },
+    }
   },
   extend: 'NavbarButtonSet',
   props: {
     padding: '0',
     childProps: {
-      padding: 'Y',
+      padding: 'Y'
     },
     gap: 'W',
-    fontSize: 'Z2',
-  },
-};
+    fontSize: 'Z2'
+  }
+}

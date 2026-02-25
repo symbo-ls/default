@@ -1,13 +1,13 @@
 export const GlobalNotification = {
   childExtends: [
-    'Notification',
+    'Notification'
   ],
   flexFlow: 'y',
   gap: 'Y1',
   position: 'fixed',
   '.left-bottom': {
     left: 'A2',
-    bottom: 'Z2',
+    bottom: 'Z2'
   },
   zIndex: 9990100,
   round: 'Y',
@@ -73,5 +73,5 @@ export const GlobalNotification = {
       color: 'currentColor',
       cursor: 'pointer'
     }
-  }),
-};
+  })
+}

@@ -7,38 +7,38 @@ export const BorderRadiusBox = {
     height: '100%',
     onClick: (ev, el, s) => {
       const getCornerInputs = () => {
-        const inputs = [...document.querySelectorAll('input[key="NumberValue"]')];
+        const inputs = [...document.querySelectorAll('input[key="NumberValue"]')]
         return inputs.map(input => {
-          const rect = input.getBoundingClientRect();
+          const rect = input.getBoundingClientRect()
           return {
             el: input,
             value: input.value,
             x: rect.left + rect.width / 2,
-            y: rect.top + rect.height / 2,
-          };
-        });
+            y: rect.top + rect.height / 2
+          }
+        })
       }
 
-      const corners = getCornerInputs();
+      const corners = getCornerInputs()
 
-      let closest = null;
-      let minDist = Infinity;
+      let closest = null
+      let minDist = Infinity
 
       for (const c of corners) {
-        const dx = ev.clientX - c.x;
-        const dy = ev.clientY - c.y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
+        const dx = ev.clientX - c.x
+        const dy = ev.clientY - c.y
+        const dist = Math.sqrt(dx * dx + dy * dy)
 
         if (dist < minDist) {
-          minDist = dist;
-          closest = c;
+          minDist = dist
+          closest = c
         }
       }
 
       if (closest) {
-        closest.el.select();
+        closest.el.select()
       }
-    },
+    }
   }),
-  extend: 'Flex',
-};
+  extend: 'Flex'
+}

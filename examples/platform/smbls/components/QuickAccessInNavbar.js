@@ -3,7 +3,7 @@ export const QuickAccessInNavbar = {
     extends: [
       'CanvasButton',
       'Button',
-      'DropdownParentFocus',
+      'DropdownParentFocus'
     ],
     icon: 'sf plus',
     padding: 'Y1 Z Y1 Z1',
@@ -14,11 +14,11 @@ export const QuickAccessInNavbar = {
     Dropdown: {
       left: '0',
       onClick: () => {},
-      'Dropdown.QuickAdd': {},
-    },
+      'Dropdown.QuickAdd': {}
+    }
   },
   props: {
     gap: 'W2',
-    align: 'center',
-  },
-};
+    align: 'center'
+  }
+}

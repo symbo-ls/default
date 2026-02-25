@@ -6,7 +6,7 @@ export const PreviewCanvasNavbar = {
     padding: 'V Z',
     fontSize: 'Z',
     userSelect: 'none',
-    theme: 'common-box',
+    theme: 'common-box'
   },
   LogoDropdown: {},
   Inspects: {
@@ -14,11 +14,11 @@ export const PreviewCanvasNavbar = {
     gap: 'X2',
     Undo: {
       title: 'Select',
-      icon: 'sfCursor',
-    },
+      icon: 'sfCursor'
+    }
   },
   ComponentAddressBar: {
-    flex: 1,
+    flex: 1
   },
   Select: {
     padding: 'X Y2',
@@ -27,38 +27,38 @@ export const PreviewCanvasNavbar = {
     color: 'currentColor',
     width: 'D3',
     onChange: (ev, el, s, ctx) => {
-        const value = ev.target.value
-        if (value) {
-          s.update({
-            env: value
-          })
-        }
-      },
+      const value = ev.target.value
+      if (value) {
+        s.update({
+          env: value
+        })
+      }
+    },
     childrenAs: 'props',
     childProps: {
       tag: 'option',
       attr: {
-        selected: (el, s) => el.node.value === s.action,
-      },
+        selected: (el, s) => el.node.value === s.action
+      }
     },
     children: [
       {
         disabled: true,
-        text: 'Environment',
+        text: 'Environment'
       },
       {
-        text: 'Current',
+        text: 'Current'
       },
       {
-        text: 'Development',
+        text: 'Development'
       },
       {
-        text: 'Staging',
+        text: 'Staging'
       },
       {
-        text: 'Production',
-      },
-    ],
+        text: 'Production'
+      }
+    ]
   },
   Meta: {
     extends: 'NavbarButtonSet',
@@ -67,12 +67,12 @@ export const PreviewCanvasNavbar = {
       icon: 'sf arrow up right',
       title: 'In new tab',
       onClick: (ev, el, s) => {
-          window.open(s.url)
-        },
+        window.open(s.url)
+      },
       '!url': {
         opacity: '.35',
-        pointerEvents: 'none',
-      },
+        pointerEvents: 'none'
+      }
     },
     Share: {
       title: 'Share',
@@ -81,22 +81,22 @@ export const PreviewCanvasNavbar = {
       Dropdown: {
         left: 'auto',
         right: '-A',
-        ShareDropdown: {},
+        ShareDropdown: {}
       },
       '!url': {
         opacity: '.35',
-        pointerEvents: 'none',
+        pointerEvents: 'none'
       },
       extends: [
         'CanvasButton',
         'IconButton',
-        'DropdownParentFocus',
-      ],
+        'DropdownParentFocus'
+      ]
     },
     Close: {
       title: 'Close',
       icon: 'crossmark',
-      onClick: (ev, el, s) => el.closeModal(),
-    },
-  },
-};
+      onClick: (ev, el, s) => el.closeModal()
+    }
+  }
+}

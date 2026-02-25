@@ -7,5 +7,5 @@ export const Navbar = {
   padding: 'Y X2',
   theme: 'canvas-card-glass',
   tag: 'aside',
-  NavbarTooltip: {},
-};
+  NavbarTooltip: {}
+}

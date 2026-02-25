@@ -1,1 +1,1 @@
-export const SettingsModal = {};
+export const SettingsModal = {}

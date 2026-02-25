@@ -7,10 +7,10 @@ export const Labeled = {
   round: 'X2',
   '@dark': {
     border: 'gray6 .15, solid, 1px',
-    background: 'gray3',
+    background: 'gray3'
   },
   '@light': {
     border: 'gray10 .15, solid, 1px',
-    background: 'white .5',
-  },
-};
+    background: 'white .5'
+  }
+}

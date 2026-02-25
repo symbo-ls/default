@@ -4,7 +4,7 @@ export const AccessibilityCheck = {
   flexAlign: 'flex-start flex-start',
   gap: 'A',
   Title: {
-    text: 'WCAG accessibility checks',
+    text: 'WCAG accessibility checks'
   },
   Flex: {
     flow: 'row wrap',
@@ -16,23 +16,23 @@ export const AccessibilityCheck = {
         gap: 'Y',
         icon: 'checkmark',
         Icon: {
-          color: 'grassgreen',
-        },
-      },
+          color: 'grassgreen'
+        }
+      }
     },
     children: [
       {
-        text: 'Normal AAA',
+        text: 'Normal AAA'
       },
       {
-        text: 'Large AAA',
+        text: 'Large AAA'
       },
       {
-        text: 'Large AA',
+        text: 'Large AA'
       },
       {
-        text: 'UI Components',
-      },
-    ],
-  },
-};
+        text: 'UI Components'
+      }
+    ]
+  }
+}

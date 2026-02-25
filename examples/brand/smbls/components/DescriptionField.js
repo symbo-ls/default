@@ -1,12 +1,12 @@
 export const DescriptionField = {
   extends: 'GroupField',
   Title: {
-    text: 'Description',
+    text: 'Description'
   },
   Textarea: {
     round: 'Y',
     '@tabletS': {
-      maxWidth: '100%',
-    },
-  },
-};
+      maxWidth: '100%'
+    }
+  }
+}

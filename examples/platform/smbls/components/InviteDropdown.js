@@ -6,8 +6,8 @@ export const InviteDropdown = {
     gap: 'A',
     CaptionTitle: {
       Text: {
-        text: 'New member',
-      },
+        text: 'New member'
+      }
     },
     InviteFormInDropdown: {},
     DomainItem: {
@@ -16,32 +16,32 @@ export const InviteDropdown = {
       Upgrade: null,
       Hgroup: {
         H: {
-          text: 'https://symbols.app/...',
+          text: 'https://symbols.app/...'
         },
         P: {
           order: '-1',
-          text: 'Invite by magic link',
-        },
+          text: 'Invite by magic link'
+        }
       },
       CopyButton: {
         extends: [
           'CanvasButton',
-          'CopyButton',
+          'CopyButton'
         ],
         padding: 'Y2',
         round: 'C1',
         fontSize: 'Z1',
         margin: '-X -Y2 - auto',
-        icon: 'copy outline',
-      },
-    },
+        icon: 'copy outline'
+      }
+    }
   },
   Line: {
-    margin: '-Z2 -A',
+    margin: '-Z2 -A'
   },
   MembersInInvite: {},
   Line_2: {
-    margin: '-Z2',
+    margin: '-Z2'
   },
   RolePermissionsInInvite: {},
   extend: 'Flex',
@@ -51,6 +51,6 @@ export const InviteDropdown = {
     gap: 'C',
     padding: 'A A2 A2',
     textAlign: 'start',
-    onClick: null,
-  },
-};
+    onClick: null
+  }
+}

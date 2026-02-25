@@ -23,10 +23,10 @@ export const addSnippetModal = {
     key: '',
     title: '',
     type: 'snippet',
-    value: () => {},
+    value: () => {}
   },
   ModalHeader: {
-    title: 'Add a new snippet',
+    title: 'Add a new snippet'
   },
   Flex: {
     overflow: 'auto',
@@ -42,7 +42,7 @@ export const addSnippetModal = {
       width: '50%',
       'InputField.title': {
         Title: {
-          text: 'Snippet title',
+          text: 'Snippet title'
         },
         Input: {
           value: '{{ title }}',
@@ -56,12 +56,12 @@ export const addSnippetModal = {
             const canApplyKey = !s.touched && window.location.pathname.includes('/add-snippet')
             if (canApplyKey) obj.key = el.call('toCamelCase', val.toLowerCase()).replace(/[^a-zA-Z]/g, '')
             s.update(obj)
-          },
-        },
+          }
+        }
       },
       'InputField.key': {
         Title: {
-          text: 'Key',
+          text: 'Key'
         },
         Input: {
           value: '{{ key }}',
@@ -79,14 +79,14 @@ export const addSnippetModal = {
               touched: true,
               key: val.replace(/[^a-zA-Z]/g, '')
             })
-          },
-        },
-      },
+          }
+        }
+      }
     },
     'Group.code': {
       minWidth: '100%',
       Title: {
-        text: 'Snippet code',
+        text: 'Snippet code'
       },
       CodePreviewWidget: {
         props: (el, s, ctx) => ({
@@ -111,8 +111,8 @@ export const addSnippetModal = {
               })
             }
           }
-        }),
-      },
+        })
+      }
     },
     'Button.showAdvanced': {
       margin: '- -Z2',
@@ -125,7 +125,7 @@ export const addSnippetModal = {
       text: (el, s) => `${s.advanced ? 'Hide' : 'Show'} advanced settings`,
       onClick: (ev, el, s) => s.update({
         advanced: !s.advanced
-      }),
+      })
     },
     'Flex.advanced': {
       hide: ({
@@ -138,7 +138,7 @@ export const addSnippetModal = {
       'Group.description': {
         width: '100%',
         Title: {
-          text: 'Description',
+          text: 'Description'
         },
         TextareaField: {
           width: '100%',
@@ -151,18 +151,18 @@ export const addSnippetModal = {
               s.update({
                 description: el.node.value
               })
-            },
-          },
-        },
-      },
-    },
+            }
+          }
+        }
+      }
+    }
   },
   ModalFooter: {
     CheckButton: {
       type: 'submit',
       reverse: true,
       icon: 'arrow right',
-      text: 'Next',
-    },
-  },
-};
+      text: 'Next'
+    }
+  }
+}

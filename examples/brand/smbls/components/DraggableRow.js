@@ -5,7 +5,7 @@ export const DraggableRow = {
   dragstart: {
     transform: 'scale(0.97)',
     opacity: '0',
-    isDragging: true,
+    isDragging: true
   },
   onDragstart: (e, el, s) => {
     e.stopPropagation()
@@ -16,7 +16,7 @@ export const DraggableRow = {
   },
   dragenter: {
     transform: 'scale(0.97)',
-    opacity: '0.9',
+    opacity: '0.9'
   },
   onDragenter: (e, el, s) => {
     e.preventDefault()
@@ -37,7 +37,7 @@ export const DraggableRow = {
   },
   dragleave: {
     opacity: '1',
-    transform: 'none',
+    transform: 'none'
   },
   onDragleave: (e, el, s) => {
     e.preventDefault()
@@ -52,7 +52,7 @@ export const DraggableRow = {
   },
   drop: {
     opacity: '1',
-    transform: 'none',
+    transform: 'none'
   },
   onDrop: (e, el, s, ctx) => {
     if (!el.parent.data) return
@@ -67,21 +67,21 @@ export const DraggableRow = {
   dragend: {
     opacity: '1',
     transform: 'none',
-    isDragging: false,
+    isDragging: false
   },
   onDragend: (e, el, s) => {
     el.setProps(el.props.dragend)
   },
   ':not(:hover) > footer': {
     pointerEvents: 'none',
-    opacity: '0',
+    opacity: '0'
   },
   ':hover > footer, &:focus-within > footer': {
     pointerEvents: 'auto',
-    opacity: '1',
+    opacity: '1'
   },
   attr: {
-    draggable: true,
+    draggable: true
   },
-  IteratorFooter: {},
-};
+  IteratorFooter: {}
+}

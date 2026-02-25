@@ -6,10 +6,10 @@ import blueJpg from './blue.jpg.js'
 import vinylPng from './vinyl.png.js'
 
 export default {
-  "colors.jpeg": colorsJpeg,
-  "basket.jpg": basketJpg,
-  "ball.jpg": ballJpg,
-  "woodchuck.jpeg": woodchuckJpeg,
-  "blue.jpg": blueJpg,
-  "vinyl.png": vinylPng,
+  'colors.jpeg': colorsJpeg,
+  'basket.jpg': basketJpg,
+  'ball.jpg': ballJpg,
+  'woodchuck.jpeg': woodchuckJpeg,
+  'blue.jpg': blueJpg,
+  'vinyl.png': vinylPng
 }

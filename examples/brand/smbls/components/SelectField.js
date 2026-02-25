@@ -13,8 +13,8 @@ export const SelectField = {
     Arrow: {
       theme: 'transparent',
       color: 'dim',
-      icon: 'arrow angle down',
-    },
+      icon: 'arrow angle down'
+    }
   },
   Select: {
     outline: 'none',
@@ -38,8 +38,8 @@ export const SelectField = {
     childProps: {
       tag: 'option',
       attr: {
-        selected: (el, s) => el.node.value === s.visibility,
-      },
-    },
-  },
-};
+        selected: (el, s) => el.node.value === s.visibility
+      }
+    }
+  }
+}

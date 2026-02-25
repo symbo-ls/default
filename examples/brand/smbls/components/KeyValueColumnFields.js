@@ -1,7 +1,7 @@
 export const KeyValueColumnFields = {
   extends: [
     'DropdownItem',
-    'Button',
+    'Button'
   ],
   textAlign: 'start',
   align: 'center flex-start',
@@ -14,17 +14,17 @@ export const KeyValueColumnFields = {
     name: 'checkmark',
     opacity: '0',
     transition: 'A opacity',
-    margin: '- Y1 - W1',
+    margin: '- Y1 - W1'
   },
   Text: {
     color: 'title',
-    text: (el, s) => s.text || s.value || s.key || '',
+    text: (el, s) => s.text || s.value || s.key || ''
   },
   Caption: {
     marginLeft: 'Z2',
     textTransform: 'capitalize',
     color: 'caption',
     whiteSpace: 'nowrap',
-    text: '',
-  },
-};
+    text: ''
+  }
+}

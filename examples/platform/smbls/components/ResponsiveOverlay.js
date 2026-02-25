@@ -19,20 +19,20 @@ export const ResponsiveOverlay = {
   zIndex: '999999',
   gap: 'A',
   '@tabletL': {
-    display: 'flex',
+    display: 'flex'
   },
   '@dark': {
-    background: 'black .9',
+    background: 'black .9'
   },
   '@light': {
-    background: 'gray15 .95',
+    background: 'gray15 .95'
   },
   Link: {
     extends: 'SquareButton',
     theme: 'quaternary',
     color: 'title',
     icon: 'logo',
-    href: 'https://symbols.app',
+    href: 'https://symbols.app'
   },
   IconText: {
     icon: 'deviceTabletLandscapeHalf fill',
@@ -41,14 +41,14 @@ export const ResponsiveOverlay = {
     text: 'Small view is temporarily disabled, please check from larger screens',
     '@mobileM': {
       flow: 'column',
-      textAlign: 'center',
-    },
+      textAlign: 'center'
+    }
   },
   Button: {
     theme: 'quaternary',
     round: 'B',
     padding: 'Z2 A2',
     text: 'Open anyway',
-    onClick: (ev, el) => el.parent.remove(),
-  },
-};
+    onClick: (ev, el) => el.parent.remove()
+  }
+}

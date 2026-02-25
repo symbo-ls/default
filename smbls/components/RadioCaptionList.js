@@ -5,17 +5,17 @@ export const RadioCaptionList = {
   gap: 'B',
   childProps: {
     Caption: {
-      text: 'Caption',
+      text: 'Caption'
     },
     Radio: {
       Input: {},
       FLex: {
-        ':after': {},
-      },
-    },
+        ':after': {}
+      }
+    }
   },
   children: [
     {},
-    {},
-  ],
-};
+    {}
+  ]
+}

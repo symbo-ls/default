@@ -1,8 +1,8 @@
 export const AddButton = {
   extends: [
     'Link',
-    'MenuItem',
+    'MenuItem'
   ],
   ignoreChildExtend: true,
-  icon: 'plus',
-};
+  icon: 'plus'
+}

@@ -2,7 +2,7 @@ export const GridChooser = {
   extends: 'Group',
   width: '100%',
   Title: {
-    text: 'Grid options',
+    text: 'Grid options'
   },
   Grid: {
     childProps: {
@@ -33,13 +33,13 @@ export const GridChooser = {
       minHeight: 'B1',
       round: 'X1',
       '.isActive': {
-        opacity: '.85',
+        opacity: '.85'
       },
       '!isActive': {
         ':hover': {
-          opacity: '.45',
-        },
-      },
+          opacity: '.45'
+        }
+      }
     },
     margin: '- -X2',
     templateColumns: 'repeat(12, 1fr)',
@@ -47,6 +47,6 @@ export const GridChooser = {
     gap: 'X2',
     round: 'Z2',
     overflow: 'hidden',
-    children: () => new Array(60).fill({}),
-  },
-};
+    children: () => new Array(60).fill({})
+  }
+}

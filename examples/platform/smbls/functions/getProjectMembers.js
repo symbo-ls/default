@@ -1,8 +1,8 @@
-export const getProjectMembers = async function getProjectMembers() {
+export const getProjectMembers = async function getProjectMembers () {
   const s = this.getRootState()
- 
+
   const ordering = { owner: 0, admin: 1, editor: 2, guest: 3 }
- 
+
   const projectMembers = (
     await this.sdk.getProjectMembers(this.getRootState('projectId'))
   ).sort((a, b) => {
@@ -11,8 +11,8 @@ export const getProjectMembers = async function getProjectMembers() {
       ? a.name > b.name
         ? 1
         : a.name < b.name
-        ? -1
-        : 0
+          ? -1
+          : 0
       : roleDiff
   })
 

@@ -6,11 +6,11 @@ export const SearchDropdown = {
       'Los Angeles',
       'New York',
       'San Fransisco',
-      'San Diego',
+      'San Diego'
     ],
     filtered: [
     ],
-    searchValue: '',
+    searchValue: ''
   },
   SelectedContainer: {
     text: '{{ selected }}',
@@ -21,9 +21,9 @@ export const SearchDropdown = {
     color: 'caption',
     isSelected: (el, s) => s.selected !== 'Search and Select',
     '.isSelected': {
-      color: 'blue',
+      color: 'blue'
     },
-    onClick: (e, el, s) => s.toggle('isOpen'),
+    onClick: (e, el, s) => s.toggle('isOpen')
   },
   Options: {
     show: (el, s) => s.isOpen,
@@ -45,14 +45,14 @@ export const SearchDropdown = {
       border: 'none',
       outline: 'none',
       onInput: (e, el, state) => {
-          const value = e.target.value.trim().toLowerCase()
-          const filtered = state.data.filter(item =>
-            item.toLowerCase().includes(value))
-          state.replace({
-            searchValue: value,
-            filtered: filtered
-          })
-        },
+        const value = e.target.value.trim().toLowerCase()
+        const filtered = state.data.filter(item =>
+          item.toLowerCase().includes(value))
+        state.replace({
+          searchValue: value,
+          filtered
+        })
+      }
     },
     Results: {
       marginTop: 'X',
@@ -63,30 +63,30 @@ export const SearchDropdown = {
         padding: 'Z',
         text: '{{ value }}',
         onClick: (ev, el, s) => {
-            s.parent.update({
-              selected: s.value,
-              isOpen: false,
-              searchValue: '',
-              //filtered: []
-            })
-          },
-      },
+          s.parent.update({
+            selected: s.value,
+            isOpen: false,
+            searchValue: ''
+            // filtered: []
+          })
+        }
+      }
     },
     Placeholder: {
       padding: 'Z',
       show: (el, s) => !s.searchValue,
       text: 'Enter name to search',
-      color: 'disabled',
+      color: 'disabled'
     },
     NoResults: {
       padding: 'Z',
       show: (el, s) => !!s.searchValue && !s.filtered.length,
       text: 'No results found',
-      color: 'disabled',
-    },
+      color: 'disabled'
+    }
   },
   position: 'relative',
   width: 'G3',
   theme: 'field',
-  round: 'A2',
-};
+  round: 'A2'
+}

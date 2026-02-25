@@ -1,7 +1,7 @@
 export const ItemOutline = {
   extends: [
     'Item',
-    'ClickableItem',
+    'ClickableItem'
   ],
   hasHref: null,
   padding: 'A B',
@@ -10,6 +10,6 @@ export const ItemOutline = {
   borderStyle: 'solid',
   '!hasHref': {
     pointerEvents: 'none',
-    opacity: 0.35,
-  },
-};
+    opacity: 0.35
+  }
+}

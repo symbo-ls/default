@@ -6,9 +6,9 @@ const Dropdownmoremodesmenu = {
       ':hover': {
         style: {
           svg: {
-            opacity: 1,
-          },
-        },
+            opacity: 1
+          }
+        }
       },
       padding: 'Z Z2',
       fontSize: 'A',
@@ -20,8 +20,8 @@ const Dropdownmoremodesmenu = {
         color: 'currentColor',
         opacity: '1',
         margin: '- Y1 - -',
-        fontWeight: '100',
-      },
+        fontWeight: '100'
+      }
     },
     childrenAs: 'props',
     children: el => [{
@@ -29,7 +29,7 @@ const Dropdownmoremodesmenu = {
       isActive: (el) => el.getRootState('sceneTheme') === 'light',
       Icon: {
         theme: 'sepia',
-        name: (el, s) => el.getRootState('sceneTheme') === 'light' ? 'sun' : 'sun outline',
+        name: (el, s) => el.getRootState('sceneTheme') === 'light' ? 'sun' : 'sun outline'
       },
       onClick: (ev, el, s) => {
         const key = 'light'
@@ -40,13 +40,13 @@ const Dropdownmoremodesmenu = {
         el.getRoot().call('router', window.location.pathname)
         el.getRoot().call('setCookie', 'sceneTheme', key)
         el.getRoot().call('setCookie', 'globalTheme', key)
-      },
+      }
     }, {
       text: 'Dark mode',
       isActive: (el) => el.getRootState('sceneTheme') === 'dark',
       Icon: {
         theme: 'sepia',
-        name: (el, s) => el.getRootState('sceneTheme') === 'dark' ? 'moon' : 'moon outline',
+        name: (el, s) => el.getRootState('sceneTheme') === 'dark' ? 'moon' : 'moon outline'
       },
       onClick: (ev, el, s) => {
         const key = 'dark'
@@ -57,18 +57,18 @@ const Dropdownmoremodesmenu = {
         el.getRoot().call('router', window.location.pathname)
         el.getRoot().call('setCookie', 'sceneTheme', key)
         el.getRoot().call('setCookie', 'globalTheme', key)
-      },
-    }],
+      }
+    }]
   },
   Line: {
-    margin: '0 -Z2',
+    margin: '0 -Z2'
   },
   More: {
     CaptionTitle: {
       margin: 'X - Y2',
       Text: {
-        text: 'More canvas modes',
-      },
+        text: 'More canvas modes'
+      }
     },
     ListInDropdown_modes: {
       margin: '- -Z2',
@@ -77,9 +77,9 @@ const Dropdownmoremodesmenu = {
         ':hover': {
           style: {
             svg: {
-              opacity: 1,
-            },
-          },
+              opacity: 1
+            }
+          }
         },
         padding: 'Z Z2',
         fontSize: 'A',
@@ -91,8 +91,8 @@ const Dropdownmoremodesmenu = {
           color: 'currentColor',
           opacity: '1',
           margin: '- Y1 - -',
-          fontWeight: '100',
-        },
+          fontWeight: '100'
+        }
       },
       childrenAs: 'props',
       children: el => [{
@@ -129,15 +129,15 @@ const Dropdownmoremodesmenu = {
           fontSize: 'Y',
           text: '(soon)'
         }
-      }],
-    },
+      }]
+    }
   },
   extend: 'Flex',
   props: {
     flow: 'y',
     gap: 'A',
-    padding: 'Z1 A',
-  },
-};
+    padding: 'Z1 A'
+  }
+}
 
 export { Dropdownmoremodesmenu as 'Dropdown.MoreModesMenu' }

@@ -4,9 +4,9 @@ const Dropdownlogo = {
   padding: 'Z1 A',
   CaptionTitle: {
     Text: {
-      text: 'Active Project',
+      text: 'Active Project'
     },
-    if: el => el.isCanvas(),
+    if: el => el.isCanvas()
   },
   Flex: {
     if: el => el.isCanvas(),
@@ -19,7 +19,7 @@ const Dropdownlogo = {
         el.props.key || el.key || 'no-avatar'
       }`,
         round: 'Z'
-      }),
+      })
     },
     Hgroup: {
       flexFlow: 'y',
@@ -31,7 +31,7 @@ const Dropdownlogo = {
         overflow: 'hidden',
         whiteSpace: 'wrap',
         textOverflow: 'anywhere',
-        text: el => el.getRootState('projectName'),
+        text: el => el.getRootState('projectName')
       },
       P: {
         margin: '0',
@@ -42,8 +42,8 @@ const Dropdownlogo = {
         whiteSpace: 'wrap',
         textOverflow: 'anywhere',
         lineBreak: 'anywhere',
-        text: el => `${el.getRootState('workingProjectOwner')}/${el.getRootState('workingProjectKey')}`,
-      },
+        text: el => `${el.getRootState('workingProjectOwner')}/${el.getRootState('workingProjectKey')}`
+      }
     },
     Upgrade: {
       if: (el) => el.isAuthorised() && el.getRootState('tier') === 'starter',
@@ -56,22 +56,22 @@ const Dropdownlogo = {
       fontSize: 'Z2',
       lineHeight: 1,
       ':hover': {
-        textDecoration: 'underline',
+        textDecoration: 'underline'
       },
       onClick: (f, el, st) => {
         el.call('openModal', '/settings', {
           key: '/pricing'
         })
-      },
-    },
+      }
+    }
   },
   ProjectNav: {
     if: el => !el.isDashboard(),
     CaptionTitle: {
       margin: 'Z - X',
       Text: {
-        text: 'Project',
-      },
+        text: 'Project'
+      }
     },
     ListInDropdown: {
       margin: '- -Z2',
@@ -87,51 +87,51 @@ const Dropdownlogo = {
           color: 'currentColor',
           opacity: '1',
           margin: '- Y1 - -',
-          fontWeight: '100',
+          fontWeight: '100'
         },
         ':hover': {
           style: {
             svg: {
-              opacity: 1,
-            },
-          },
-        },
+              opacity: 1
+            }
+          }
+        }
       },
       childrenAs: 'props',
       children: [
         {
           Icon: {
-            name: 'upgrade',
+            name: 'upgrade'
           },
           text: 'Upgrade to team',
           Sup: {
             color: 'disabled',
             margin: '-Z - - X2',
             fontSize: 'Y',
-            text: '(soon)',
-          },
+            text: '(soon)'
+          }
         },
         {
           Icon: {
-            name: 'billing',
+            name: 'billing'
           },
-          text: 'Billing',
+          text: 'Billing'
         },
         {
           Icon: {
-            name: 'sf settings fill',
+            name: 'sf settings fill'
           },
-          text: 'Project Settings',
-        },
-      ],
-    },
+          text: 'Project Settings'
+        }
+      ]
+    }
   },
   DashboardNav: {
     CaptionTitle: {
       margin: 'X -',
       Text: {
-        text: 'Dashboard',
-      },
+        text: 'Dashboard'
+      }
     },
     ListInDropdown: {
       margin: '- -Z2',
@@ -147,15 +147,15 @@ const Dropdownlogo = {
           color: 'currentColor',
           opacity: '1',
           margin: '- Y1 - -',
-          fontWeight: '100',
+          fontWeight: '100'
         },
         ':hover': {
           style: {
             svg: {
-              opacity: 1,
-            },
-          },
-        },
+              opacity: 1
+            }
+          }
+        }
       },
       childrenAs: 'props',
       children: el => [{
@@ -167,30 +167,30 @@ const Dropdownlogo = {
           await el.call('openModal', '/settings', {
             key: '/onboarding'
           })
-        },
+        }
       }, {
         Icon: {
           name: 'arrows diagonal'
         },
         extends: ['Link', 'Button'],
         text: 'Switch project',
-        href: '/dashboard',
+        href: '/dashboard'
       }, {
         Icon: {
           name: 'back'
         },
         extends: ['Link', 'Button'],
         text: 'Back to dashboard',
-        href: '/dashboard',
-      }],
-    },
+        href: '/dashboard'
+      }]
+    }
   },
   UserNav: {
     CaptionTitle: {
       margin: 'Z - X',
       Text: {
-        text: 'User',
-      },
+        text: 'User'
+      }
     },
     ListInDropdown: {
       margin: '- -Z2',
@@ -206,49 +206,49 @@ const Dropdownlogo = {
           color: 'currentColor',
           opacity: '1',
           margin: '- Y1 - -',
-          fontWeight: '100',
+          fontWeight: '100'
         },
         ':hover': {
           style: {
             svg: {
-              opacity: 1,
-            },
-          },
-        },
+              opacity: 1
+            }
+          }
+        }
       },
       childrenAs: 'props',
       children: [
         {
           Icon: {
-            name: null,
+            name: null
           },
           text: 'Profile',
           onClick: async (ev, el) => {
             await el.call('openModal', '/settings', {
               key: '/personal-account'
             })
-          },
+          }
         },
         {
           extends: [
             'Link',
-            'Button',
+            'Button'
           ],
           Icon: {
-            name: null,
+            name: null
           },
           text: 'Logout',
-          href: '/logout',
-        },
-      ],
-    },
+          href: '/logout'
+        }
+      ]
+    }
   },
   GeneralNav: {
     CaptionTitle: {
       margin: 'Z - -',
       Text: {
-        text: 'General',
-      },
+        text: 'General'
+      }
     },
     ListInDropdown: {
       margin: '- -Z2',
@@ -264,15 +264,15 @@ const Dropdownlogo = {
           color: 'currentColor',
           opacity: '1',
           margin: '- Y1 - -',
-          fontWeight: '100',
+          fontWeight: '100'
         },
         ':hover': {
           style: {
             svg: {
-              opacity: 1,
-            },
-          },
-        },
+              opacity: 1
+            }
+          }
+        }
       },
       childrenAs: 'props',
       children: el => [{
@@ -284,7 +284,7 @@ const Dropdownlogo = {
         },
         Icon: {
           name: 'news'
-        },
+        }
       }, {
         extends: 'DocsLink',
         href: '/developers',
@@ -294,7 +294,7 @@ const Dropdownlogo = {
         },
         Icon: {
           name: 'sf info'
-        },
+        }
       }, {
         extends: 'DocsLink',
         href: '/docs/resources',
@@ -304,10 +304,10 @@ const Dropdownlogo = {
         },
         Icon: {
           name: 'support'
-        },
-      }],
-    },
-  },
-};
+        }
+      }]
+    }
+  }
+}
 
 export { Dropdownlogo as 'Dropdown.Logo' }

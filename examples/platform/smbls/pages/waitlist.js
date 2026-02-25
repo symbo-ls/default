@@ -23,27 +23,27 @@ export const waitlist = {
     props: {
       maxWidth: 'H',
       width: '100%',
-      margin: 'auto',
+      margin: 'auto'
     },
     Hgroup: {
       margin: '- - C1',
       H: {
-        text: 'Get early access',
+        text: 'Get early access'
       },
       P: {
-        text: `You're joining the waitlist. Knowing your preferences helps us customize your invitation.`,
-      },
+        text: 'You\'re joining the waitlist. Knowing your preferences helps us customize your invitation.'
+      }
     },
     WaitlistForm: {
       margin: '- - - -Y2',
-      gap: 'Z2',
+      gap: 'Z2'
     },
     ContinueButton: {
       type: 'submit',
       margin: 'C1 - - -Y2',
       text: 'Sign up to waitlist',
-      theme: 'primary',
-    },
+      theme: 'primary'
+    }
   },
-  Footer: {},
-};
+  Footer: {}
+}

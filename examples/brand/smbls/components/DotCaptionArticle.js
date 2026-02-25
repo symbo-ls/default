@@ -4,11 +4,11 @@ export const DotCaptionArticle = {
   H: {
     extends: [
       'Link',
-      'DotCaption',
+      'DotCaption'
     ],
-    tag: 'strong',
+    tag: 'strong'
   },
   P: {
-    padding: '0 0 0 A1',
-  },
-};
+    padding: '0 0 0 A1'
+  }
+}

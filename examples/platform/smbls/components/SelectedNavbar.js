@@ -4,7 +4,7 @@ export const SelectedNavbar = {
   state: {
     type: 'components',
     value: {},
-    isEditMode: false,
+    isEditMode: false
   },
   minWidth: 'G1',
   fontSize: 'Y2',
@@ -24,10 +24,10 @@ export const SelectedNavbar = {
   borderWidth: '1px',
   borderStyle: 'solid',
   '.isEditing': {
-    theme: 'field',
+    theme: 'field'
   },
   '!isEditing': {
-    theme: 'navbar',
+    theme: 'navbar'
   },
   onBeforeUpdate: (_, el, s, ctx, opts) => {
     s.isEditMode = Boolean(opts.force)
@@ -39,7 +39,7 @@ export const SelectedNavbar = {
   },
   style: {
     width: 'calc(100% + var(--spacing-Y1) * 2)',
-    maxWidth: 'calc(100% + var(--spacing-Y1) * 2)',
+    maxWidth: 'calc(100% + var(--spacing-Y1) * 2)'
   },
   NavbarButtonSet_title: {
     maxWidth: '40%',
@@ -57,11 +57,11 @@ export const SelectedNavbar = {
       textOverflow: 'ellipsis',
       lineHeight: '1.7',
       ignoreChildExtend: true,
-      text: (el) => el.getSelectedKey(),
+      text: (el) => el.getSelectedKey()
     },
     CopyButton: {
-      value: (el, s) => el.getSelectedKey(),
-    },
+      value: (el, s) => el.getSelectedKey()
+    }
   },
   EditorTools: {
     margin: '- - - auto',
@@ -74,7 +74,7 @@ export const SelectedNavbar = {
       onClick: (ev, el, s) => {
         el.activateChosen(s.key)
         el.call('clearFollowing')
-      },
+      }
     },
     ContextBtn: {
       icon: 'three dots vertical',
@@ -82,7 +82,7 @@ export const SelectedNavbar = {
       onClick: (ev, el, s) => {
         el.activateContext(ev, s.key)
       },
-      order: 3,
+      order: 3
     },
     childExtends: 'NavbarButton',
     Refresh: {
@@ -92,7 +92,7 @@ export const SelectedNavbar = {
         const key = el.getSelectedKey()
         const item = el.getItem?.(key)
         el.call('refreshComponentOnCanvas', key, item)
-      },
+      }
     },
     InNewTab: {
       icon: 'arrow up right',
@@ -100,9 +100,9 @@ export const SelectedNavbar = {
       onClick: (ev, el) => {
         const url = el.call('generatePreviewUrl')
         window.open(url, 'Symbols preview')
-      },
+      }
     },
-    TextNavbarButtonDropdown: {},
+    TextNavbarButtonDropdown: {}
   },
   FileSidebarAddNewItem: {
     hide: (el, s) => !s.isEditMode,
@@ -134,15 +134,16 @@ export const SelectedNavbar = {
         attr: {
           required: true,
           placeholder: (el, s) => 'Type ' + (
-            s.type === 'pages' ?
-            '/page-path' : 'ComponentName'),
-        },
+            s.type === 'pages'
+              ? '/page-path'
+              : 'ComponentName')
+        }
       },
       Flex: {
         childExtends: 'NavbarButton',
         Save: {
           padding: 'Y2',
-          fontSize: 'A',
+          fontSize: 'A'
         },
         Close: {
           order: 2,
@@ -152,11 +153,11 @@ export const SelectedNavbar = {
             s.parent.update({
               isEditMode: false
             })
-          },
-        },
-      },
-    },
+          }
+        }
+      }
+    }
   },
   EditorPositionNavbar: null,
-  NavbarButtonSet_meta: null,
-};
+  NavbarButtonSet_meta: null
+}

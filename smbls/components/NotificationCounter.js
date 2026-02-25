@@ -8,5 +8,5 @@ export const NotificationCounter = {
   padding: 'W2',
   lineHeight: '1em',
   boxSizing: 'content-box',
-  align: 'center center',
-};
+  align: 'center center'
+}

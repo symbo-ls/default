@@ -5,6 +5,6 @@ export const CaptionTitle = {
   textTransform: 'uppercase',
   align: 'center',
   Text: {
-    text: 'Active Project',
-  },
-};
+    text: 'Active Project'
+  }
+}

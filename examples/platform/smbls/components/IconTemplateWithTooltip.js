@@ -3,7 +3,7 @@ export const IconTemplateWithTooltip = {
     'ClickableItem',
     'Link',
     'IconText',
-    'TooltipParent',
+    'TooltipParent'
   ],
   round: 'X',
   scrollToTop: false,
@@ -18,15 +18,15 @@ export const IconTemplateWithTooltip = {
     border: '10px solid blue',
     color: 'red !important',
     style: {
-      color: 'red !important',
-    },
+      color: 'red !important'
+    }
   },
   ':hover': {
     theme: 'secondary',
     transform: 'scale(1.015)',
     '> svg': {
-      fontSize: 'E',
-    },
+      fontSize: 'E'
+    }
   },
   onClick: (event, element, state, ctx) => {
     element.call('copyStringToClipboard', state.key)
@@ -34,7 +34,7 @@ export const IconTemplateWithTooltip = {
   Icon: {
     transition: 'A defaultBezier font-size',
     fontSize: 'D2',
-    src: (el, s) => s.value,
+    src: (el, s) => s.value
   },
   TooltipHidden: {
     props: (el, s) => ({
@@ -71,7 +71,7 @@ export const IconTemplateWithTooltip = {
     P: null,
     Icon: {
       color: 'dim',
-      name: 'copy outline',
-    },
-  },
-};
+      name: 'copy outline'
+    }
+  }
+}

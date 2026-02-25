@@ -4,7 +4,7 @@ export const HeaderBreadcrumb = {
   Button_page: {
     extends: [
       'Button',
-      'DropdownParentFocus',
+      'DropdownParentFocus'
     ],
     theme: 'tertiary',
     gap: 'Z',
@@ -20,7 +20,7 @@ export const HeaderBreadcrumb = {
       else return 'Canvas'
     },
     Icon: {
-      minWidth: 'A',
+      minWidth: 'A'
     },
     Dropdown: {
       ListInDropdown: {
@@ -30,7 +30,7 @@ export const HeaderBreadcrumb = {
           href: '/dashboard'
         }, {
           if: (el, s) => el.isAuthorised(),
-          text: 'Canvas', 
+          text: 'Canvas',
           href: el.getCanvasPathnameAnyway()
         }, {
           hide: el => !el.getRootState('email').endsWith('@symbols.app'),
@@ -62,47 +62,47 @@ export const HeaderBreadcrumb = {
           Caption: null,
           Icon: {
             order: 2,
-            margin: '- - - auto',
+            margin: '- - - auto'
           },
           ':hover': {
-            theme: 'field',
+            theme: 'field'
           },
           '.isActive': {
-            theme: 'field',
-          },
+            theme: 'field'
+          }
         },
         childrenAs: 'props',
         childExtends: [
           'Link',
-          'Button',
-        ],
+          'Button'
+        ]
       },
       childrenAs: 'state',
       left: '0',
-      align: 'start',
-    },
+      align: 'start'
+    }
   },
   Button_username: {
     extends: [
       'Button',
-      'Link',
+      'Link'
     ],
     hide: true,
     theme: 'transparent',
     ':hover': {
-      theme: 'tertiary',
+      theme: 'tertiary'
     },
     gap: 'X2',
     href: el => '/' + el.getRootState('username'),
     flow: 'row-reverse',
     padding: 'Y2 Z2',
-    text: el => el.getRootState('username'),
+    text: el => el.getRootState('username')
   },
   Button_project: {
     if: (el, s) => el.isAuthorised(),
     extends: [
       'Button',
-      'DropdownParentFocus',
+      'DropdownParentFocus'
     ],
     hide: el => !el.getRootState('appKey') || !el.getRootState('appKey').split('.').length,
     theme: 'tertiary',
@@ -123,10 +123,10 @@ export const HeaderBreadcrumb = {
       fontWeight: 'bold',
       lineHeight: '1.15',
       padding: '- - - X',
-      maxWidth: '100%',
+      maxWidth: '100%'
     },
     Icon: {
-      minWidth: 'A',
+      minWidth: 'A'
     },
     Dropdown: {
       childrenAs: 'state',
@@ -152,14 +152,14 @@ export const HeaderBreadcrumb = {
           Caption: null,
           Icon: {
             order: 2,
-            margin: '- - - auto',
+            margin: '- - - auto'
           },
           ':hover': {
-            theme: 'field',
+            theme: 'field'
           },
           '.isActive': {
-            theme: 'field',
-          },
+            theme: 'field'
+          }
         },
         childrenAs: 'props',
         children: el => [{
@@ -201,8 +201,8 @@ export const HeaderBreadcrumb = {
         }, {
           text: 'Settings',
           href: '/settings'
-        }],
-      },
-    },
-  },
-};
+        }]
+      }
+    }
+  }
+}

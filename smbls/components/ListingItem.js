@@ -14,13 +14,13 @@ export const ListingItem = {
       name: 'check',
       color: 'dim',
       '.isActive': {
-        color: 'orange',
-      },
+        color: 'orange'
+      }
     },
     '!isActive': {
       ':hover svg': {
-        color: 'disabled',
-      },
+        color: 'disabled'
+      }
     },
     onClick: (ev, el, s) => {
       const isActive = s.isActive
@@ -28,43 +28,43 @@ export const ListingItem = {
         isActive: !isActive,
         upvotes: isActive ? s.upvotes - 1 : s.upvotes + 1
       })
-    },
+    }
   },
   Hgroup: {
     H: {
       extends: 'Link',
       tag: 'h6',
       text: 'Flexbox in Editor',
-      fontWeight: '700',
+      fontWeight: '700'
     },
     P: {
       text: null,
       childProps: {
-        display: 'inline',
+        display: 'inline'
       },
       children: [
         'by ',
         {
           Link: {
-            text: 'kiaynwang',
-          },
+            text: 'kiaynwang'
+          }
         },
         ' ',
         {
           Link: {
-            text: '3 hours ago',
-          },
+            text: '3 hours ago'
+          }
         },
         ' ・ ',
         {
           Link: {
-            text: '49 commnts',
-          },
-        },
-      ],
-    },
+            text: '49 commnts'
+          }
+        }
+      ]
+    }
   },
   extends: 'Flex',
   gap: 'A2',
-  alignItems: 'flex-start',
-};
+  alignItems: 'flex-start'
+}

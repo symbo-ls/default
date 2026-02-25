@@ -1,7 +1,7 @@
 export const IconGridTypes = {
   extends: 'Group',
   Title: {
-    text: 'Icon type',
+    text: 'Icon type'
   },
   Flex: {
     flow: 'y',
@@ -21,10 +21,10 @@ export const IconGridTypes = {
         background: `linear-gradient(0deg,
           rgba(255,255,255,0.06) 0%,
           rgba(255,255,255,0.07) 100%
-        )`,
+        )`
       },
       ':hover svg': {
-        color: 'title',
+        color: 'title'
       },
       IconText: {
         icon: 'info',
@@ -42,14 +42,14 @@ export const IconGridTypes = {
           background: `linear-gradient(0deg,
             rgba(255,255,255,0.06) 0%,
             rgba(255,255,255,0.07) 100%
-          )`,
-        },
+          )`
+        }
       },
       Icon: {
         name: 'checkmark',
         fontSize: 'Z',
-        opacity: '0',
-      },
+        opacity: '0'
+      }
     },
     childrenAs: 'state',
     children: () => [{
@@ -61,6 +61,6 @@ export const IconGridTypes = {
     }, {
       icon: 'iconsColored',
       text: 'Multicolor'
-    }],
-  },
-};
+    }]
+  }
+}

@@ -1,5 +1,5 @@
 export const ClickableItem = {
-  props: ({ 
+  props: ({
     state
   }) => ({
     transition: 'B defaultBezier',
@@ -24,5 +24,5 @@ export const ClickableItem = {
       opacity: 1,
       theme: 'secondary @' + state.root.globalTheme || 'dark' + '.active'
     }
-  }),
-};
+  })
+}

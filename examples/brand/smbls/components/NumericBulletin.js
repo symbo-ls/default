@@ -3,9 +3,9 @@ export const NumericBulletin = {
   alignItems: 'flex-start',
   Numb: {
     color: 'currentColor',
-    opacity: '0.5',
+    opacity: '0.5'
   },
   Text: {
-    fontWeight: '400',
-  },
-};
+    fontWeight: '400'
+  }
+}

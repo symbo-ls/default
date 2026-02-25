@@ -6,15 +6,15 @@ export const Draggable = {
   ':not(:hover) > footer': {
     pointerEvents: 'none',
     height: 'A2',
-    opacity: '0',
+    opacity: '0'
   },
   ':hover': {
-    zIndex: 3,
+    zIndex: 3
   },
   ':hover > footer, &:focus-within > footer': {
     pointerEvents: 'auto',
     height: 'B2',
-    opacity: '1',
+    opacity: '1'
   },
   onDragstart: (e, el, s) => {
     e.stopPropagation()
@@ -43,7 +43,7 @@ export const Draggable = {
     if (isSame || !isSameGroup || isRootNode) return
     el.parent.data.active = el.key
     el.setProps({
-      transform: `scale(0.97)`,
+      transform: 'scale(0.97)',
       opacity: '0.9'
     })
   },
@@ -82,7 +82,7 @@ export const Draggable = {
     })
   },
   attr: {
-    draggable: true,
+    draggable: true
   },
-  IteratorFooter: {},
-};
+  IteratorFooter: {}
+}

@@ -2,7 +2,7 @@ export const UploadField = {
   extends: 'GroupField',
   Title: {
     padding: '- - - X2',
-    text: 'Project icon',
+    text: 'Project icon'
   },
   UploadIcon: {
     position: 'relative',
@@ -14,7 +14,7 @@ export const UploadField = {
     Icon: {
       name: 'upload',
       fontSize: 'C1',
-      opacity: '1',
+      opacity: '1'
     },
     P: {
       text: 'Drag and drop or click',
@@ -22,14 +22,14 @@ export const UploadField = {
       textAlign: 'center',
       opacity: '1',
       fontSize: 'Z1',
-      Span: null,
+      Span: null
     },
     Input: {
       type: 'file',
       position: 'absolute',
       inset: '0 0 0 0',
       opacity: '0',
-      visibility: 'hidden',
-    },
-  },
-};
+      visibility: 'hidden'
+    }
+  }
+}

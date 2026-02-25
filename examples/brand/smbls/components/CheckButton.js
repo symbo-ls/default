@@ -1,7 +1,7 @@
 export const CheckButton = {
   extends: [
     'Button',
-    'ClickableItem',
+    'ClickableItem'
   ],
   icon: 'checkmark',
   text: 'Okay',
@@ -12,6 +12,6 @@ export const CheckButton = {
   gap: 'X2',
   ':disabled': {
     opacity: '.35',
-    theme: 'secondary',
-  },
-};
+    theme: 'secondary'
+  }
+}

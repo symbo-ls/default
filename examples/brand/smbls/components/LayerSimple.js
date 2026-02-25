@@ -7,43 +7,43 @@ export const LayerSimple = {
   width: 'F1',
   background: 'gray4',
   Title: {
-    text: 'Button',
+    text: 'Button'
   },
   Flex: {
     flow: 'column',
     gap: 'A',
     childProps: {
       gap: 'X',
-      flexAlign: 'center',
+      flexAlign: 'center'
     },
     childExtends: {
       Icon: {
         color: 'inactive',
-        gap: 'Y1',
+        gap: 'Y1'
       },
       Span: {
         color: 'white',
-        padding: '- - - X2',
-      },
+        padding: '- - - X2'
+      }
     },
     children: () => [{
-        Icon: {
-          icon: 'typography',
-          color: 'purple',
-        },
-        Span: {
-          text: 'Go Dark',
-        },
+      Icon: {
+        icon: 'typography',
+        color: 'purple'
       },
-      {
-        Icon: {
-          icon: 'shapeOutline',
-          color: 'indigo',
-        },
-        Span: {
-          text: 'moon',
-        },
+      Span: {
+        text: 'Go Dark'
+      }
+    },
+    {
+      Icon: {
+        icon: 'shapeOutline',
+        color: 'indigo'
       },
-    ],
-  },
-};
+      Span: {
+        text: 'moon'
+      }
+    }
+    ]
+  }
+}

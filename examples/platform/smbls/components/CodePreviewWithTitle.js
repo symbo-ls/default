@@ -10,9 +10,9 @@ export const CodePreviewWithTitle = {
     color: 'caption',
     fontSize: 'Z',
     fontWeight: '500',
-    whiteSpace: 'nowrap',
+    whiteSpace: 'nowrap'
   },
   CodePreview: {
-    margin: '0 -Y1',
-  },
-};
+    margin: '0 -Y1'
+  }
+}

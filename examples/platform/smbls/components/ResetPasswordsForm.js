@@ -6,16 +6,16 @@ export const ResetPasswordsForm = {
     extend: 'InputField',
     props: {
       width: '100%',
-      maxWidth: 'G+B',
+      maxWidth: 'G+B'
     },
     Title: {},
     Input: {
-      width: '100%',
-    },
+      width: '100%'
+    }
   },
   Password: {
     Title: {
-      text: 'Type in new password',
+      text: 'Type in new password'
     },
     Input: {
       type: 'password',
@@ -24,30 +24,30 @@ export const ResetPasswordsForm = {
       value: '{{ password }}',
       height: 'B2',
       '@mobileL': {
-        height: 'unset',
+        height: 'unset'
       },
       onInput: (ev, el, s) => {
         s.update({
           passwordTouched: true,
           password: el.node.value
         })
-      },
+      }
     },
     Label_1: {
       show: (el, st) => st.passwordTouched === true && !st.password,
       color: 'red',
-      text: 'Password field is required',
-    },
+      text: 'Password field is required'
+    }
   },
   RepeatPassword: {
     Title: {
-      text: 'Repeat new password',
+      text: 'Repeat new password'
     },
     Input: {
       type: 'password',
       height: 'B2',
       '@mobileL': {
-        height: 'unset',
+        height: 'unset'
       },
       autocomplete: 'password',
       placeholder: 'Password',
@@ -57,12 +57,12 @@ export const ResetPasswordsForm = {
           repeatPasswordTouched: true,
           repeatPassword: el.node.value
         })
-      },
+      }
     },
     Label_2: {
       show: (el, st) => st.repeatPasswordTouched === true && !st.repeatPassword,
       color: 'red',
-      text: 'Repeat password field is required',
+      text: 'Repeat password field is required'
     },
     Label_3: {
       show: (el, st) =>
@@ -70,8 +70,8 @@ export const ResetPasswordsForm = {
         st.repeatPasswordTouched === true &&
         st.password !== st.repeatPassword,
       color: 'red',
-      text: 'Passwords do not match',
-    },
+      text: 'Passwords do not match'
+    }
   },
   ModalFooter: {
     display: 'flex',
@@ -85,8 +85,8 @@ export const ResetPasswordsForm = {
       flow: 'column',
       gap: 'A2',
       childProps: {
-        width: '100%',
-      },
+        width: '100%'
+      }
     },
     CheckButton: {
       theme: 'primary',
@@ -99,10 +99,10 @@ export const ResetPasswordsForm = {
       '@mobileL': {
         width: '100%',
         maxWidth: '100%',
-        height: 'unset',
-      },
+        height: 'unset'
+      }
     },
     Title: null,
-    Input: null,
-  },
-};
+    Input: null
+  }
+}

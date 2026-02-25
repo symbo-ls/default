@@ -1,6 +1,6 @@
 export const UploadIconButton = {
   Icon: {
-    name: 'upload',
+    name: 'upload'
   },
   Input: {
     type: 'file',
@@ -11,10 +11,10 @@ export const UploadIconButton = {
     cursor: 'pointer',
     top: '0',
     left: '0',
-    opacity: '0',
+    opacity: '0'
   },
   extends: 'IconButton',
   position: 'relative',
   padding: '0',
-  cursor: 'pointer',
-};
+  cursor: 'pointer'
+}

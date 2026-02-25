@@ -1,7 +1,7 @@
 export const addCnameModal = {
   extends: [
     'ModalWindow',
-    'Form',
+    'Form'
   ],
   width: '100%',
   maxWidth: 'I',
@@ -58,10 +58,10 @@ export const addCnameModal = {
   tag: 'form',
   state: {
     cname: '',
-    validationMessage: '',
+    validationMessage: ''
   },
   ModalHeader: {
-    title: 'Go to your DNS manager',
+    title: 'Go to your DNS manager'
   },
   Flex: {
     overflow: 'auto',
@@ -71,11 +71,11 @@ export const addCnameModal = {
     flexAlign: 'flex-start space-between',
     gap: 'B3',
     childProps: {
-      width: '50%',
+      width: '50%'
     },
     InputField: {
       Title: {
-        text: 'CNAME',
+        text: 'CNAME'
       },
       Input: {
         value: '{{ cname }}',
@@ -105,14 +105,14 @@ export const addCnameModal = {
             validationMessage: '',
             cname: value
           })
-        },
+        }
       },
       Label: {
         show: (ev, st) => st.validationMessage,
         color: 'red',
-        text: (ev, st) => st.validationMessage,
-      },
-    },
+        text: (ev, st) => st.validationMessage
+      }
+    }
   },
   ModalFooter: {
     CheckButton: {
@@ -120,8 +120,8 @@ export const addCnameModal = {
       reverse: true,
       text: 'Save',
       ':hover': {
-        cursor: 'pointer',
-      },
-    },
-  },
-};
+        cursor: 'pointer'
+      }
+    }
+  }
+}

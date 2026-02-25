@@ -1,28 +1,28 @@
 export const IntegrationsItem = {
   extend: 'DomainItem',
   props: {
-    align: 'start',
+    align: 'start'
   },
   state: {
     icon: 'plus',
     title: 'Custom',
-    descr: 'Add custom endpoint as data source',
+    descr: 'Add custom endpoint as data source'
   },
   Icon: {
-    name: '{{ icon }}',
+    name: '{{ icon }}'
   },
   Hgroup: {
     H: {
-      text: '{{ title }}',
+      text: '{{ title }}'
     },
     P: {
-      text: '{{ descr }}',
-    },
+      text: '{{ descr }}'
+    }
   },
   Button: {
     extends: [
       'CanvasButton',
-      'Button',
+      'Button'
     ],
     margin: '-Y -Z2 - auto',
     icon: 'plus oval',
@@ -32,9 +32,9 @@ export const IntegrationsItem = {
     fontSize: 'Z2',
     Icon: {
       order: 2,
-      color: 'blue',
+      color: 'blue'
     },
-    onClick: (ev, el, s) => s.onAdd?.(el, s),
+    onClick: (ev, el, s) => s.onAdd?.(el, s)
   },
-  Upgrade: null,
-};
+  Upgrade: null
+}

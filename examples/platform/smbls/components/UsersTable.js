@@ -1,5 +1,5 @@
 export const UsersTable = {
-  onRender: async (el, s) => { 
+  onRender: async (el, s) => {
     const projectMembers = await el.call('getProjectMembers')
     return s.set(projectMembers)
   },
@@ -10,7 +10,7 @@ export const UsersTable = {
     margin: '- - B2',
     gap: 'C1',
     Span: {
-      text: 'Team Members:',
+      text: 'Team Members:'
     },
     DocsLink: {
       if: el => el.sdk.hasPermission('projectSettings'),
@@ -18,7 +18,7 @@ export const UsersTable = {
       align: 'center',
       gap: 'X2',
       Icon: {
-        name: 'plus',
+        name: 'plus'
       },
       text: 'Invite new member',
       theme: 'transparent',
@@ -26,8 +26,8 @@ export const UsersTable = {
         await el.call('openModal', '/settings', {
           key: '/invite'
         })
-      },
-    },
+      }
+    }
   },
   Flex_members: {
     flow: 'y',
@@ -41,24 +41,24 @@ export const UsersTable = {
         props: (el, s) => ({
           boxSize: 'B',
           key: s.name
-        }),
+        })
       },
       Name: {
         margin: '- - - -C',
         Text: {
           tag: 'span',
-          text: '{{ name }}',
+          text: '{{ name }}'
         },
         Strong: {
           hide: (el, s) => !s.username,
-          text: ' ({{ username }})',
-        },
+          text: ' ({{ username }})'
+        }
       },
       Email: {
-        text: '{{ email }}',
+        text: '{{ email }}'
       },
       Role: {
-        role: '{{ role }}',
+        role: '{{ role }}'
       },
       IconButton_Remove: {
         if: (el, s) => el.sdk.hasPermission('iam') && s.role !== 'owner',
@@ -78,10 +78,10 @@ export const UsersTable = {
               console.error(err)
             }
           }
-        },
-      },
+        }
+      }
     },
     children: (el, s) => s.parse(),
-    childrenAs: 'state',
-  },
-};
+    childrenAs: 'state'
+  }
+}

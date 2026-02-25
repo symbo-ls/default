@@ -3,6 +3,6 @@ export const ArticleSmall = {
   gap: 'X',
   Title: {
     fontSize: 'A',
-    tag: 'h4',
-  },
-};
+    tag: 'h4'
+  }
+}

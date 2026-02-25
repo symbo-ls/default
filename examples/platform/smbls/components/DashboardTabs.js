@@ -7,10 +7,10 @@ export const DashboardTabs = {
   round: 'A',
   minHeight: 'G1',
   '@screenM': {
-    templateColumns: '2.7fr 7fr',
+    templateColumns: '2.7fr 7fr'
   },
   '@screenS': {
-    templateColumns: '1fr',
+    templateColumns: '1fr'
   },
   Info: {
     flex: 1,
@@ -20,7 +20,7 @@ export const DashboardTabs = {
     gap: 'E',
     '@screenS': {
       flow: 'row',
-      padding: '- - Y -',
+      padding: '- - Y -'
     },
     Hgroup: {
       width: '100%',
@@ -30,12 +30,12 @@ export const DashboardTabs = {
         lineHeight: 1.2,
         margin: '0 0 X',
         fontWeight: '700',
-        text: 'Dashboard',
+        text: 'Dashboard'
       },
       P: {
         maxWidth: 'G1',
-        text: 'Welcome to your development dashboard where you can customize your branding, build components, pages and add functions and files.',
-      },
+        text: 'Welcome to your development dashboard where you can customize your branding, build components, pages and add functions and files.'
+      }
     },
     ContinueButton: {
       minWidth: 'auto',
@@ -48,22 +48,22 @@ export const DashboardTabs = {
       transitionProperty: 'background, transform, color, background',
       theme: 'secondary',
       '@screenS': {
-        alignSelf: 'flex-end',
-      },
-    },
+        alignSelf: 'flex-end'
+      }
+    }
   },
   Flex: {
     margin: '- - - -Z2',
     gap: 'A',
     flex: 3,
     '@screenS': {
-      gap: 'A1',
+      gap: 'A1'
     },
     '@tabletS': {
       display: 'grid',
       style: {
-        gridTemplateColumns: 'repeat(3, 1fr)',
-      },
+        gridTemplateColumns: 'repeat(3, 1fr)'
+      }
     },
     childExtends: 'ItemHighlightAlt',
     childrenAs: 'state',
@@ -95,6 +95,6 @@ export const DashboardTabs = {
       title: 'Functions',
       href: state.package > 1 ? 'fn outline' : 'arrowUpRight',
       p: 'Browser and data functions'
-    }],
-  },
-};
+    }]
+  }
+}

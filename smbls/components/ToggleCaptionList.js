@@ -5,17 +5,17 @@ export const ToggleCaptionList = {
   gap: 'B',
   childProps: {
     Caption: {
-      text: 'Caption',
+      text: 'Caption'
     },
     Toggle: {
       Input: {},
       Flex: {
-        ':after': {},
-      },
-    },
+        ':after': {}
+      }
+    }
   },
   children: [
     {},
-    {},
-  ],
-};
+    {}
+  ]
+}

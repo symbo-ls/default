@@ -1,34 +1,34 @@
 export const AvatarStatusChatPreview = {
   AvatarStatus: {
     Avatar: {},
-    StatusDot: {},
+    StatusDot: {}
   },
   Flex: {
     flow: 'y',
     flex: '1',
     gap: 'W2',
     '> *': {
-      minWidth: '100%',
+      minWidth: '100%'
     },
     ValueHeading: {
       H: {},
       UnitValue: {
         flow: 'row-reverse',
         Unit: {
-          text: 'am',
+          text: 'am'
         },
         Value: {
-          text: '2:20',
-        },
-      },
+          text: '2:20'
+        }
+      }
     },
     NotCounterParagraph: {
       P: {},
-      NotificationCounter: {},
-    },
+      NotificationCounter: {}
+    }
   },
   extends: 'Flex',
   gap: 'Z1',
   minWidth: 'G3',
-  align: 'center flex-start',
-};
+  align: 'center flex-start'
+}

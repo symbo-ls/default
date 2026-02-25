@@ -2,8 +2,8 @@ export const CanvasSearchDropdown = {
   scope: {},
   CaptionTitle: {
     Text: {
-      text: (el, s) => s.searchTerm ? 'Search results' : 'Recent searches',
-    },
+      text: (el, s) => s.searchTerm ? 'Search results' : 'Recent searches'
+    }
   },
   ListInDropdown: {
     gap: 'Z',
@@ -20,18 +20,18 @@ export const CanvasSearchDropdown = {
         includeScore: true,
         threshold: 0.3,
         keys: [
-          "key",
-          "title",
-          "code",
+          'key',
+          'title',
+          'code'
         ]
       }
 
-      function mapBucketToItems(bucketObj, type) {
+      function mapBucketToItems (bucketObj, type) {
         return Object.values(bucketObj).map(item => ({
           key: item.key,
           title: item.title || '',
           code: item.code || '',
-          type,
+          type
         })).filter(v => v.key)
       }
 
@@ -49,15 +49,15 @@ export const CanvasSearchDropdown = {
 
       const fuse = el.scope.fuse
 
-      function searchAll(query) {
-        const results = fuse.search(query);
+      function searchAll (query) {
+        const results = fuse.search(query)
 
         return results.map(r => ({
           key: r.item.key,
           title: r.item.title,
           code: r.item.code,
           type: r.item.type, // component / page / function
-          score: r.score,
+          score: r.score
         }))
       }
 
@@ -65,13 +65,13 @@ export const CanvasSearchDropdown = {
       return result
     },
     childrenAs: 'state',
-    childExtends: 'CanvasSearchItem',
+    childExtends: 'CanvasSearchItem'
   },
   extend: 'Flex',
   props: {
     flow: 'y',
     gap: 'A',
     padding: 'Z1 A',
-    minWidth: 'G2',
-  },
-};
+    minWidth: 'G2'
+  }
+}

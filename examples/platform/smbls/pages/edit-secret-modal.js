@@ -2,16 +2,16 @@ export const editSecretModal = {
   extends: '/add-secret-modal',
   ModalHeader: {
     title: 'Edit a secret',
-    p: 'Edit secret hide keys while reusing in your functions',
+    p: 'Edit secret hide keys while reusing in your functions'
   },
   Flex: {
     'InputField.key': {
       Input: {
         opacity: '.35',
         disabled: true,
-        value: 'hidden',
-      },
-    },
+        value: 'hidden'
+      }
+    }
   },
   ModalFooter: {
     CheckButton: {},
@@ -20,7 +20,7 @@ export const editSecretModal = {
       onClick: async (ev, el, s, ctx) => {
         el.call('removeItem', 'secret', s.key)
         el.call('closeModal')
-      },
-    },
-  },
-};
+      }
+    }
+  }
+}

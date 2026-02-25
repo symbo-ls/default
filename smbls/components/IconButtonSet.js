@@ -3,18 +3,18 @@ export const IconButtonSet = {
   childExtends: 'IconButton',
   gap: 'Z',
   childProps: {
-    Icon: {},
+    Icon: {}
   },
   children: [
     {
       Icon: {
-        name: 'sun',
-      },
+        name: 'sun'
+      }
     },
     {
       Icon: {
-        name: 'moon',
-      },
-    },
-  ],
-};
+        name: 'moon'
+      }
+    }
+  ]
+}

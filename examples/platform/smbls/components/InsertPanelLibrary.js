@@ -56,11 +56,11 @@ export const InsertPanelLibrary = {
           preventListeners: true
         })
       }, 350)
-    },
+    }
   },
   state: {
     CACHE: {},
-    activeLibrary: 'default.symbo.ls',
+    activeLibrary: 'default.symbo.ls'
   },
   data: {},
   LibraryNavbar: {},
@@ -78,21 +78,21 @@ export const InsertPanelLibrary = {
       padding: 'Y Z',
       isActive: (el, s) => s.parent.activeLibrary === s.projectPath?.split('/')[1] + '.symbo.ls',
       '.isActive': {
-        theme: 'primary',
+        theme: 'primary'
       },
       '!isActive': {
-        theme: 'tertiary',
+        theme: 'tertiary'
       },
       onClick: (ev, el, s) => {
         const activeLibrary = s.projectPath.split('/')[1] + '.symbo.ls'
         s.parent.update({
           activeLibrary
         })
-      },
+      }
     },
     childrenAs: 'state',
     children: (el) => el.call('getSnippet', 'TEMPLATES_DATA', 'array'),
-    align: 'start',
+    align: 'start'
   },
   P: {
     flexAlign: 'center',
@@ -104,14 +104,14 @@ export const InsertPanelLibrary = {
     Lottie: {
       src: 'swipe-right.json',
       fontSize: 'B1',
-      margin: '- - -X2',
+      margin: '- - -X2'
     },
     Text: {
-      text: 'Drag and drop these components to your canvas',
-    },
+      text: 'Drag and drop these components to your canvas'
+    }
   },
   LoadingGif: {
-    hide: (el, s) => !s.loading,
+    hide: (el, s) => !s.loading
   },
   LibraryRows: {
     padding: 'Z',
@@ -122,17 +122,17 @@ export const InsertPanelLibrary = {
       const canvasPages = s.CACHE.canvas.pages
       const data = s.CACHE.schema.components
 
-      function unifyComponents(obj) {
-        const allComponents = [];
+      function unifyComponents (obj) {
+        const allComponents = []
 
         // Iterate through each key in the object
         for (const key in obj) {
           if (obj[key].components && Array.isArray(obj[key].components)) {
-            allComponents.push(...obj[key].components);
+            allComponents.push(...obj[key].components)
           }
         }
 
-        return allComponents;
+        return allComponents
       }
 
       const allDefined = unifyComponents(canvasPages)
@@ -151,8 +151,8 @@ export const InsertPanelLibrary = {
     childProps: {
       CaptionTitle: {
         Text: {
-          text: '{{ title }}',
-        },
+          text: '{{ title }}'
+        }
       },
       Grid: {
         padding: '0',
@@ -173,12 +173,12 @@ export const InsertPanelLibrary = {
             }
           })
           return components.filter(v => v)
-        },
+        }
       },
       Line: {
-        margin: 'B1 -Z1',
-      },
+        margin: 'B1 -Z1'
+      }
     },
-    hide: (el, s) => s.loading,
-  },
-};
+    hide: (el, s) => s.loading
+  }
+}

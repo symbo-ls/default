@@ -23,10 +23,10 @@ export const addMethodModal = {
     key: '',
     title: '',
     type: 'method',
-    value: () => {},
+    value: () => {}
   },
   ModalHeader: {
-    title: 'Add a new method',
+    title: 'Add a new method'
   },
   Flex: {
     overflow: 'auto',
@@ -42,7 +42,7 @@ export const addMethodModal = {
       width: '50%',
       'InputField.title': {
         Title: {
-          text: 'Method title',
+          text: 'Method title'
         },
         Input: {
           value: '{{ title }}',
@@ -56,12 +56,12 @@ export const addMethodModal = {
             const canApplyKey = !s.touched && window.location.pathname.includes('/add-method')
             if (canApplyKey) obj.key = el.call('toCamelCase', val.toLowerCase()).replace(/[^a-zA-Z]/g, '')
             s.update(obj)
-          },
-        },
+          }
+        }
       },
       'InputField.key': {
         Title: {
-          text: 'Key',
+          text: 'Key'
         },
         Input: {
           value: '{{ key }}',
@@ -79,14 +79,14 @@ export const addMethodModal = {
               touched: true,
               key: val.replace(/[^a-zA-Z]/g, '')
             })
-          },
-        },
-      },
+          }
+        }
+      }
     },
     'Group.code': {
       minWidth: '100%',
       Title: {
-        text: 'Method code',
+        text: 'Method code'
       },
       CodePreviewWidget: {
         props: (el, s, ctx) => ({
@@ -111,8 +111,8 @@ export const addMethodModal = {
               })
             }
           }
-        }),
-      },
+        })
+      }
     },
     'Button.showAdvanced': {
       margin: '- -Z2',
@@ -125,7 +125,7 @@ export const addMethodModal = {
       text: (el, s) => `${s.advanced ? 'Hide' : 'Show'} advanced settings`,
       onClick: (ev, el, s) => s.update({
         advanced: !s.advanced
-      }),
+      })
     },
     'Flex.advanced': {
       hide: ({
@@ -138,7 +138,7 @@ export const addMethodModal = {
       'Group.description': {
         width: '100%',
         Title: {
-          text: 'Description',
+          text: 'Description'
         },
         TextareaField: {
           width: '100%',
@@ -151,18 +151,18 @@ export const addMethodModal = {
               s.update({
                 description: el.node.value
               })
-            },
-          },
-        },
-      },
-    },
+            }
+          }
+        }
+      }
+    }
   },
   ModalFooter: {
     CheckButton: {
       type: 'submit',
       reverse: true,
       icon: 'arrow right',
-      text: 'Next',
-    },
-  },
-};
+      text: 'Next'
+    }
+  }
+}

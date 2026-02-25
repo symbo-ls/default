@@ -5,6 +5,6 @@ export const Code = {
   maxWidth: '50%',
   '@tabletS': {
     width: 'max-content',
-    widthRange: 'auto',
-  },
-};
+    widthRange: 'auto'
+  }
+}

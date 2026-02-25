@@ -16,7 +16,7 @@ export const welcomeModal = {
     }) => ({
       title: state.title,
       p: state.description
-    }),
+    })
   },
   Flex: {
     align: 'stretch flex-start',
@@ -35,7 +35,7 @@ export const welcomeModal = {
         minHeight: '0',
         allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share',
         allowfullscreen: true
-      }),
-    },
-  },
-};
+      })
+    }
+  }
+}

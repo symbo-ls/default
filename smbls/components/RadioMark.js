@@ -8,6 +8,6 @@ export const RadioMark = {
     boxSize: 'Z1',
     background: 'white',
     round: '100%',
-    display: 'block',
-  },
-};
+    display: 'block'
+  }
+}

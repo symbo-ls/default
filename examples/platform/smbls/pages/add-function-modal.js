@@ -10,9 +10,9 @@ export const addFunctionModal = {
 
     if (s.value) {
       try {
-        const res = exists ?
-          await el.call('updateItem', s.type, s.key, s) :
-          await el.call('createItem', s.type, s.key)
+        const res = exists
+          ? await el.call('updateItem', s.type, s.key, s)
+          : await el.call('createItem', s.type, s.key)
 
         if (res?.success) {
           await el.call('closeModal')
@@ -24,7 +24,7 @@ export const addFunctionModal = {
           })
         }
       } catch (err) {
-        console.log(`in addFunctionModal catch`, err.message)
+        console.log('in addFunctionModal catch', err.message)
         el.call('openNotification', {
           title: 'Error message',
           message: err.message,
@@ -46,10 +46,10 @@ export const addFunctionModal = {
     type: 'functions',
     value: () => {
       // Do nothing
-    },
+    }
   },
   ModalHeader: {
-    title: 'Add a new function',
+    title: 'Add a new function'
   },
   Flex: {
     overflow: 'auto',
@@ -65,7 +65,7 @@ export const addFunctionModal = {
       width: '50%',
       'InputField.title': {
         Title: {
-          text: 'Function title',
+          text: 'Function title'
         },
         Input: {
           value: '{{ title }}',
@@ -83,12 +83,12 @@ export const addFunctionModal = {
                 .replace(/[^a-zA-Z]/gu, '')
             }
             s.update(obj)
-          },
-        },
+          }
+        }
       },
       'InputField.key': {
         Title: {
-          text: 'Key',
+          text: 'Key'
         },
         Input: {
           value: '{{ key }}',
@@ -108,14 +108,14 @@ export const addFunctionModal = {
               touched: true,
               key: val.replace(/[^a-zA-Z]/gu, '')
             })
-          },
-        },
-      },
+          }
+        }
+      }
     },
     'Group.code': {
       minWidth: '100%',
       Title: {
-        text: 'Function code',
+        text: 'Function code'
       },
       CodePreviewWidget: {
         props: (el, s) => ({
@@ -140,8 +140,8 @@ export const addFunctionModal = {
               })
             }
           }
-        }),
-      },
+        })
+      }
     },
     'Button.showAdvanced': {
       margin: '- -Z2',
@@ -155,7 +155,7 @@ export const addFunctionModal = {
       onClick: (ev, el, s) =>
         s.update({
           advanced: !s.advanced
-        }),
+        })
     },
     'Flex.advanced': {
       hide: ({
@@ -168,7 +168,7 @@ export const addFunctionModal = {
       'Group.description': {
         width: '100%',
         Title: {
-          text: 'Description',
+          text: 'Description'
         },
         TextareaField: {
           width: '100%',
@@ -181,18 +181,18 @@ export const addFunctionModal = {
               s.update({
                 description: el.node.value
               })
-            },
-          },
-        },
-      },
-    },
+            }
+          }
+        }
+      }
+    }
   },
   ModalFooter: {
     CheckButton: {
       type: 'submit',
       reverse: true,
       icon: 'arrow right',
-      text: 'Next',
-    },
-  },
-};
+      text: 'Next'
+    }
+  }
+}

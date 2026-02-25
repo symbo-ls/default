@@ -35,8 +35,8 @@ const Scrollbarscrollable = {
         el.node.style.transform = `translateX(${
           scrollRatio * (100 - viewportRatio * 100)
         }%)`
-      },
-    },
+      }
+    }
   },
   NavigationArrows: {
     childProps: {
@@ -51,9 +51,9 @@ const Scrollbarscrollable = {
           behavior: 'smooth'
         })
       },
-      Icon: {},
-    },
-  },
-};
+      Icon: {}
+    }
+  }
+}
 
 export { Scrollbarscrollable as 'Scrollbar.scrollable' }

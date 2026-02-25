@@ -6,24 +6,24 @@ export const RangeField = {
   gap: 'Y',
   SquareButton_minus: {
     round: 'Y1',
-    padding: '0.3125em',
+    padding: '0.3125em'
   },
   Value: {
     tag: 'span',
-    fontSize: 'Z',
+    fontSize: 'Z'
   },
   Range: {
     ':hover': {
       '::-webkit-slider-thumb': {
-        borderColor: 'cerulean',
-      },
+        borderColor: 'cerulean'
+      }
     },
     '::-webkit-slider-thumb': {
-      borderColor: 'blue',
-    },
+      borderColor: 'blue'
+    }
   },
   SquareButton_plus: {
     round: 'Y1',
-    padding: '0.3125em',
-  },
-};
+    padding: '0.3125em'
+  }
+}

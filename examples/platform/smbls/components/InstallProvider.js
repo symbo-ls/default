@@ -6,9 +6,9 @@ export const InstallProvider = {
       '4. Wrap your root app within ',
       {
         extend: 'Labeled',
-        text: '<SymbolsProvider>',
-      },
-    ],
+        text: '<SymbolsProvider>'
+      }
+    ]
   },
   Code: {
     margin: 'Z1 0 0',
@@ -21,6 +21,6 @@ ReactDOM.render(
   <SymbolsProvider>
     // ... your app
   </SymbolsProvider>
-, document.body)`,
-  },
-};
+, document.body)`
+  }
+}

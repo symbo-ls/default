@@ -5,9 +5,9 @@ export const AddItemButton = {
     align: 'center center',
     round: 'Y1',
     icon: 'plus',
-    color: 'lightBlue',
+    color: 'lightBlue'
   },
   Caption: {
-    text: 'Add item',
-  },
-};
+    text: 'Add item'
+  }
+}

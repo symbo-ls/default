@@ -5,10 +5,10 @@ export const StatusDot = {
   round: '100%',
   '@dark': {
     border: 'solid, codGray',
-    borderWidth: 'X1',
+    borderWidth: 'X1'
   },
   '@light': {
     border: 'solid, concrete',
-    borderWidth: 'X1',
-  },
-};
+    borderWidth: 'X1'
+  }
+}

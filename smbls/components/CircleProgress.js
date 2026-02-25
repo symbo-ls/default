@@ -9,7 +9,7 @@ export const CircleProgress = {
     }) => props.progress,
     value: ({
       props
-    }) => props.value,
+    }) => props.value
   },
   boxSize: 'D D',
   value: 0.73,
@@ -17,10 +17,10 @@ export const CircleProgress = {
   overflow: 'hidden',
   position: 'relative',
   '&::-webkit-progress-bar': {
-    background: 'gray',
+    background: 'gray'
   },
   '&::-webkit-progress-value': {
-    theme: 'primary',
+    theme: 'primary'
   },
   ':after': {
     content: '""',
@@ -31,6 +31,6 @@ export const CircleProgress = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    background: 'codGray',
-  },
-};
+    background: 'codGray'
+  }
+}

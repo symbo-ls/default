@@ -3,5 +3,5 @@ export const Page = {
   width: '100%',
   maxWidth: 'K_default',
   margin: '- auto',
-  tag: 'main',
-};
+  tag: 'main'
+}

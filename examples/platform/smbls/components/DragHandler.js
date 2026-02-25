@@ -6,5 +6,5 @@ export const DragHandler = {
   transform: 'translate3d(-50%, 0, 1px)',
   icon: 'dragOutline',
   color: 'dim',
-  if: (el, s) => !el.getUserSettings('optimizedMode'),
-};
+  if: (el, s) => !el.getUserSettings('optimizedMode')
+}

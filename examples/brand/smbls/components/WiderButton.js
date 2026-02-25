@@ -3,5 +3,5 @@ export const WiderButton = {
   theme: 'quinary',
   padding: 'Z Z2',
   flexAlign: 'center center',
-  round: 'Z',
-};
+  round: 'Z'
+}

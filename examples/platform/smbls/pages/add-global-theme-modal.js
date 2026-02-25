@@ -26,11 +26,11 @@ export const addGlobalThemeModal = {
   },
   tag: 'form',
   state: {
-    value: {},
+    value: {}
   },
   ModalHeader: {
     title: 'Add global theme',
-    p: 'Adding new <body> styling theme',
+    p: 'Adding new <body> styling theme'
   },
   Preview: {
     props: (el, s) => {
@@ -48,14 +48,14 @@ export const addGlobalThemeModal = {
         padding: 'B C'
       }
     },
-    H5: el => el.getRootState().sampleText,
+    H5: el => el.getRootState().sampleText
   },
   Flex_fields: {
     padding: 'A C3 0',
     if: (el, s) => s.themeModifier !== '@light' && s.themeModifier !== '@dark',
     InputField: {
       Title: {
-        text: 'Name the theme',
+        text: 'Name the theme'
       },
       Input: {
         placeholder: 'Name the theme',
@@ -64,9 +64,9 @@ export const addGlobalThemeModal = {
           s.update({
             themeModifier: el.node.value
           })
-        },
-      },
-    },
+        }
+      }
+    }
   },
   Flex: {
     gap: 'A',
@@ -122,27 +122,27 @@ export const addGlobalThemeModal = {
             s.update({
               value
             })
-          },
-        },
-      },
+          }
+        }
+      }
     },
     Background: {
       Title: {
-        text: 'Background color',
+        text: 'Background color'
       },
-      ColorSelect: {},
+      ColorSelect: {}
     },
     Color: {
       Title: {
-        text: 'Text color',
+        text: 'Text color'
       },
-      ColorSelect: {},
-    },
+      ColorSelect: {}
+    }
   },
   ModalFooter: {
     CheckButton: {
       type: 'submit',
-      text: 'Save',
-    },
-  },
-};
+      text: 'Save'
+    }
+  }
+}

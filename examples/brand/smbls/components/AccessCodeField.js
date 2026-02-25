@@ -1,7 +1,7 @@
 export const AccessCodeField = {
   extends: 'GroupField',
   Title: {
-    text: 'Invitation code',
+    text: 'Invitation code'
   },
   Grid: {
     position: 'relative',
@@ -16,8 +16,8 @@ export const AccessCodeField = {
         null,
         null,
         null,
-        null,
-      ],
+        null
+      ]
     },
     childExtends: 'Input',
     childProps: {
@@ -59,7 +59,7 @@ export const AccessCodeField = {
         const value = paste.split('')
         state.value = value
         state.update()
-      },
+      }
     },
     children: [
       {},
@@ -67,7 +67,7 @@ export const AccessCodeField = {
       {},
       {},
       {},
-      {},
+      {}
     ],
     Input: {
       ignoreChildExtend: true,
@@ -79,7 +79,7 @@ export const AccessCodeField = {
       maxlength: 6,
       round: 'Y2',
       position: 'absolute',
-      inset: '0',
-    },
-  },
-};
+      inset: '0'
+    }
+  }
+}

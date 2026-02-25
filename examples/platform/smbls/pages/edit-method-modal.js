@@ -11,14 +11,14 @@ export const editMethodModal = {
     ctx.utils.closeModal(el, s, ctx)
   },
   ModalHeader: {
-    title: 'Edit {{ key }} method',
+    title: 'Edit {{ key }} method'
   },
   Flex: {},
   ModalFooter: {
     CheckButton: {
       type: 'submit',
       icon: 'checkmark',
-      text: 'Save',
+      text: 'Save'
     },
     IconButton: {
       icon: 'trash outline',
@@ -28,7 +28,7 @@ export const editMethodModal = {
           el.removeItem(s.parse())
           el.call('closeModal', el, s, ctx)
         }
-      },
-    },
-  },
-};
+      }
+    }
+  }
+}

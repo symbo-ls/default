@@ -2,11 +2,11 @@ export const Pagination = {
   Left: {
     extends: 'IconButton',
     Icon: {
-      name: 'chevronLeft',
+      name: 'chevronLeft'
     },
     onClick: (event, element, state) => {
       state.update({})
-    },
+    }
   },
   Flex: {
     gap: 'Z',
@@ -18,38 +18,38 @@ export const Pagination = {
       theme: 'field',
       isActive: (element, state) => state.active === parseInt(element.key),
       '.isActive': {
-        theme: 'primary',
-      },
+        theme: 'primary'
+      }
     },
     childExtends: 'Button',
     children: [
       {
-        text: '1',
+        text: '1'
       },
       {
-        text: '2',
+        text: '2'
       },
       {
-        text: '3',
+        text: '3'
       },
       {
-        text: '4',
+        text: '4'
       },
       {
-        text: '5',
-      },
-    ],
+        text: '5'
+      }
+    ]
   },
   Right: {
     extends: 'IconButton',
     Icon: {
-      name: 'chevronRight',
+      name: 'chevronRight'
     },
     onClick: (event, element, state) => {
       state.update({})
-    },
+    }
   },
   extends: 'Flex',
   gap: 'A',
-  align: 'center fllex-start',
-};
+  align: 'center fllex-start'
+}

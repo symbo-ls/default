@@ -30,20 +30,20 @@ export default {
         base: '/core/files',
         file: '/core/files/692d9e36d181acc7ae7653e1',
         download: '/core/files/public/692d9e36d181acc7ae7653e1/download',
-        publicDownload: '/core/files/public/692d9e36d181acc7ae7653e1/download',
+        publicDownload: '/core/files/public/692d9e36d181acc7ae7653e1/download'
       },
       absolute: {
         base: 'https://api.symbols.app/core/files',
         file: 'https://api.symbols.app/core/files/692d9e36d181acc7ae7653e1',
         download: 'https://api.symbols.app/core/files/public/692d9e36d181acc7ae7653e1/download',
-        publicDownload: 'https://api.symbols.app/core/files/public/692d9e36d181acc7ae7653e1/download',
+        publicDownload: 'https://api.symbols.app/core/files/public/692d9e36d181acc7ae7653e1/download'
       },
-      storage: 'https://storage.googleapis.com/smbls-api-media/media/projects/686848620cf470c589093511/users/6868484c0cf470c5890933cc/BBePg-zOIEuMYGdy64owT.jpg',
+      storage: 'https://storage.googleapis.com/smbls-api-media/media/projects/686848620cf470c589093511/users/6868484c0cf470c5890933cc/BBePg-zOIEuMYGdy64owT.jpg'
     },
-    src: 'https://api.symbols.app/core/files/public/692d9e36d181acc7ae7653e1/download',
+    src: 'https://api.symbols.app/core/files/public/692d9e36d181acc7ae7653e1/download'
   },
   code: '',
   key: 'chrome-inspect-demo.jpg',
   type: 'files',
-  format: 'jpg',
-};
+  format: 'jpg'
+}

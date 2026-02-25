@@ -10,7 +10,7 @@ export const Zoombar = {
       const initValue = colorFromCookie || {
         dark: '#A3ADB6',
         light: '#bac1c9'
-      } [globalTheme || 'dark']
+      }[globalTheme || 'dark']
       el.props.background = el.props.value = initValue
     },
     onDblclick: (ev, el, s) => {
@@ -18,7 +18,7 @@ export const Zoombar = {
       const value = {
         dark: '#A3ADB6',
         light: '#bac1c9'
-      } [globalTheme]
+      }[globalTheme]
       el.Input.node.value = value
       el.setNodeStyles({
         background: value
@@ -39,7 +39,7 @@ export const Zoombar = {
       type: 'color',
       theme: null,
       onInput: (ev, el, s) => {
-        const value = el.node.value || "#A3ADB6";
+        const value = el.node.value || '#A3ADB6'
         const globalTheme = el.call('getGlobalTheme')
         el.parent.setNodeStyles({
           background: value
@@ -48,8 +48,8 @@ export const Zoombar = {
           background: value
         })
         el.call('setCookie', `canvas_${globalTheme}_background`, value)
-      },
-    },
+      }
+    }
   },
   NavbarButtonSet: {
     padding: '0',
@@ -60,31 +60,31 @@ export const Zoombar = {
           key: '/settings'
         })
       },
-      title: 'Settings',
+      title: 'Settings'
     },
     Keyboard: {
       title: 'Keyboard shortcuts (soon)',
-      icon: 'sf keyboard',
+      icon: 'sf keyboard'
     },
     Question: {
       title: 'Docs',
       icon: 'sf question',
       onClick: (ev, el, s) => {
         el.call('setWindow', 'explorer', 'onboarding')
-      },
+      }
     },
     Chat: {
       title: 'Support',
       icon: 'support',
       onClick: (ev, el, s) => {
         el.call('loadIntercom')
-      },
-    },
+      }
+    }
   },
   NavbarTooltip: {
     top: '-65%',
     tooltipPosition: 'top',
-    shapeDirection: 'bottom',
+    shapeDirection: 'bottom'
   },
   extend: 'Navbar',
   props: {
@@ -92,6 +92,6 @@ export const Zoombar = {
     padding: 'V Z',
     round: 'C1',
     fontSize: 'Z',
-    userSelect: 'none',
-  },
-};
+    userSelect: 'none'
+  }
+}

@@ -1,15 +1,15 @@
 export const AvatarHgroup = {
   Avatar: {
-    margin: '-X - - -',
+    margin: '-X - - -'
   },
   Hgroup: {
     gap: 'X2',
     H: {
-      tag: 'h6',
+      tag: 'h6'
     },
-    P: {},
+    P: {}
   },
   extends: 'Flex',
   gap: 'Z',
-  align: 'center flex-start',
-};
+  align: 'center flex-start'
+}

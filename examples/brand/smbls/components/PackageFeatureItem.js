@@ -6,8 +6,8 @@ export const PackageFeatureItem = {
     display: 'none',
     type: 'checkbox',
     ':checked + hgroup': {
-      outline: '1.5px solid #0079FD',
-    },
+      outline: '1.5px solid #0079FD'
+    }
   },
   Hgroup: {
     width: '100%',
@@ -17,7 +17,7 @@ export const PackageFeatureItem = {
     Icon: {
       order: '-1',
       margin: '- - A2',
-      name: 'logo',
-    },
-  },
-};
+      name: 'logo'
+    }
+  }
+}

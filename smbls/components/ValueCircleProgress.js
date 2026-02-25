@@ -1,6 +1,6 @@
 export const ValueCircleProgress = {
   CircleProgress: {
-    ':after': {},
+    ':after': {}
   },
   UnitValue: {
     position: 'absolute',
@@ -11,11 +11,11 @@ export const ValueCircleProgress = {
     zIndex: '5',
     gap: 'V',
     Value: {
-      text: '73',
+      text: '73'
     },
     Unit: {
-      text: '%',
-    },
+      text: '%'
+    }
   },
-  border: '2',
-};
+  border: '2'
+}

@@ -7,7 +7,7 @@ export const Tag = {
     order: -s.frequency,
     isActive: s.parent?.tags.indexOf(s.value) > -1,
     '.isActive': {
-      theme: 'space',
+      theme: 'space'
     },
     onClick: (ev, el, s, ctx) => {
       const tags = s.parent?.tags || []
@@ -24,6 +24,6 @@ export const Tag = {
       s.parent?.replace({
         tags
       })
-    },
-  }),
-};
+    }
+  })
+}

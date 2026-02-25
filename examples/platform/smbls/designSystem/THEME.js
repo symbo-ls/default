@@ -2,19 +2,19 @@ export default {
   document: {
     '@light': {
       color: 'black',
-      background: 'white',
+      background: 'white'
     },
     '@dark': {
       color: 'white',
-      background: 'black',
-    },
+      background: 'black'
+    }
   },
   none: {
     color: 'none',
-    background: 'none',
+    background: 'none'
   },
   transparent: {
     color: 'currentColor',
-    background: 'transparent',
-  },
-};
+    background: 'transparent'
+  }
+}

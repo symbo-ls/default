@@ -2,20 +2,20 @@ export const icons = {
   SectionHeader: {
     heading: {
       Title: {
-        text: 'Icons',
-      },
+        text: 'Icons'
+      }
     },
     nav: {
       add: {
         props: () => ({
           icon: 'plus',
           href: window.location.pathname + '/add-icon'
-        }),
-      },
+        })
+      }
     },
     props: {
-      margin: '- - B1',
-    },
+      margin: '- - B1'
+    }
   },
   Flex: {
     flow: 'y',
@@ -23,6 +23,6 @@ export const icons = {
     lazyLoad: true,
     childExtends: 'IconsGroup',
     childrenAs: 'state',
-    children: el => false,
-  },
-};
+    children: el => false
+  }
+}

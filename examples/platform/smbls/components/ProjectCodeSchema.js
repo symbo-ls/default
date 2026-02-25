@@ -3,7 +3,7 @@ export const ProjectCodeSchema = {
   borderStyle: 'solid',
   borderColor: 'line',
   Header: {
-    text: (el, s) => (s.key || s.type || '') + ' schema',
+    text: (el, s) => (s.key || s.type || '') + ' schema'
   },
   CodePreviewWidget: {
     Monaco: {
@@ -13,13 +13,13 @@ export const ProjectCodeSchema = {
             type,
             key
           } = s
-          if (!type) return `// select category or file`
+          if (!type) return '// select category or file'
           const typeFactory = el.getSchema(type)
           const code = el.stringifyCode(key ? typeFactory[key] : typeFactory)
           return code
         },
         filename: 'schema.js',
-        fileTabKey: 'schema',
+        fileTabKey: 'schema'
       },
       onCodeEditCallback: (editor, _, el, s) => {
         const code = editor.getValue()
@@ -30,7 +30,7 @@ export const ProjectCodeSchema = {
             })
           }
         })
-      },
-    },
-  },
-};
+      }
+    }
+  }
+}

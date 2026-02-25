@@ -13,11 +13,11 @@ export const DragComponentsTutorial = {
             HelloWorld: {},
             Hr: {
               borderColor: 'gray',
-              margin: '0',
+              margin: '0'
             },
-            ConfirmButtons: {},
-          },
-        },
+            ConfirmButtons: {}
+          }
+        }
       },
       components: {
         ConfirmButtons: {
@@ -29,27 +29,27 @@ export const DragComponentsTutorial = {
               textAlign: 'center',
               padding: 'Z2',
               ':hover': {
-                background: 'gray .35',
-              },
+                background: 'gray .35'
+              }
             },
             Link: {
               extends: [
                 'Link',
-                'IconText',
+                'IconText'
               ],
               text: 'About me',
               theme: 'transparent',
               gap: 'X2',
               icon: 'check',
               Icon: {
-                color: 'green',
-              },
+                color: 'green'
+              }
             },
             Link_contact: {
               text: 'Contact',
-              href: '#contact',
-            },
-          },
+              href: '#contact'
+            }
+          }
         },
         HelloWorld: {
           props: {
@@ -58,40 +58,40 @@ export const DragComponentsTutorial = {
               gap: 'A',
               H4: {
                 text: '🌀',
-                order: '-1',
+                order: '-1'
               },
               Hgroup: {
                 H: {
-                  text: 'Hello World',
+                  text: 'Hello World'
                 },
                 P: {
-                  text: 'This is example paragraph page that shows you how cool is Symbols',
-                },
-              },
-            },
-          },
-        },
-      },
-    },
+                  text: 'This is example paragraph page that shows you how cool is Symbols'
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   },
   props: {
     flow: 'y',
     childProps: {
       margin: '- - B',
       P: {
-        margin: '0 0 X2',
+        margin: '0 0 X2'
       },
       ComponentThumbnailIframe: {
         margin: '- -Y1',
         height: 'F1',
         background: 'shadow',
-        round: 'B',
-      },
+        round: 'B'
+      }
     },
     children: [
       {
         P: {
-          text: '1. Add this component first',
+          text: '1. Add this component first'
         },
         ComponentThumbnailIframe: {
           state: {
@@ -99,7 +99,7 @@ export const DragComponentsTutorial = {
             title: 'Hello World',
             type: 'components',
             settings: {
-              gridOptions: {},
+              gridOptions: {}
             },
             code: `export default {
   padding: 'B',
@@ -126,7 +126,7 @@ export const DragComponentsTutorial = {
               'H4',
               'Hgroup',
               'H',
-              'P',
+              'P'
             ],
             error: null,
             value: {
@@ -136,25 +136,25 @@ export const DragComponentsTutorial = {
                   gap: 'A',
                   H4: {
                     text: '🌀',
-                    order: '-1',
+                    order: '-1'
                   },
                   Hgroup: {
                     H: {
-                      text: 'Hello World',
+                      text: 'Hello World'
                     },
                     P: {
-                      text: 'This is example paragraph page that shows you how cool is Symbols',
-                    },
-                  },
-                },
-              },
-            },
-          },
-        },
+                      text: 'This is example paragraph page that shows you how cool is Symbols'
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       },
       {
         P: {
-          text: '2. Add this next',
+          text: '2. Add this next'
         },
         ComponentThumbnailIframe: {
           state: {
@@ -162,7 +162,7 @@ export const DragComponentsTutorial = {
             title: 'Confirm Buttons',
             type: 'components',
             settings: {
-              gridOptions: {},
+              gridOptions: {}
             },
             code: `export default {
   extends: 'Flex',
@@ -197,7 +197,7 @@ export const DragComponentsTutorial = {
               'Flex',
               'Link',
               'IconText',
-              'Icon',
+              'Icon'
             ],
             value: {
               extend: 'Flex',
@@ -208,41 +208,41 @@ export const DragComponentsTutorial = {
                   textAlign: 'center',
                   padding: 'Z2',
                   ':hover': {
-                    background: 'gray .35',
-                  },
+                    background: 'gray .35'
+                  }
                 },
                 Link: {
                   extends: [
                     'Link',
-                    'IconText',
+                    'IconText'
                   ],
                   text: 'About me',
                   theme: 'transparent',
                   gap: 'X2',
                   icon: 'check',
                   Icon: {
-                    color: 'green',
-                  },
+                    color: 'green'
+                  }
                 },
                 Link_contact: {
                   text: 'Contact',
-                  href: '#contact',
-                },
-              },
-            },
-          },
-        },
+                  href: '#contact'
+                }
+              }
+            }
+          }
+        }
       },
       {
         P: {
-          text: '3. Now, lets add the page',
+          text: '3. Now, lets add the page'
         },
         ComponentThumbnailIframe: {
           state: {
             key: '/',
             type: 'pages',
             settings: {
-              gridOptions: {},
+              gridOptions: {}
             },
             code: `export default {
   extends: 'Flex',
@@ -270,7 +270,7 @@ export const DragComponentsTutorial = {
               'Window',
               'HelloWorld',
               'Hr',
-              'ConfirmButtons',
+              'ConfirmButtons'
             ],
             value: {
               extend: 'Flex',
@@ -285,15 +285,15 @@ export const DragComponentsTutorial = {
                   HelloWorld: {},
                   Hr: {
                     borderColor: 'gray',
-                    margin: '0',
+                    margin: '0'
                   },
-                  ConfirmButtons: {},
-                },
-              },
-            },
-          },
-        },
-      },
-    ],
-  },
-};
+                  ConfirmButtons: {}
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

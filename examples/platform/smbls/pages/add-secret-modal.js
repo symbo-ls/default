@@ -19,7 +19,7 @@ export const addSecretModal = {
 
     const exists = el.getFunctions(s.key)
     const action = exists ? 'updateItem' : 'addItem'
-    const res = await el.sdk[action](`functions`, s)
+    const res = await el.sdk[action]('functions', s)
 
     if (res?.version) {
       await el.call('closeModal')
@@ -33,11 +33,11 @@ export const addSecretModal = {
   },
   tag: 'form',
   state: {
-    name: '',
+    name: ''
   },
   ModalHeader: {
     title: 'Add a secret',
-    p: 'Add secret hide keys while reusing in your functions',
+    p: 'Add secret hide keys while reusing in your functions'
   },
   Flex: {
     padding: 'A C3 0',
@@ -47,7 +47,7 @@ export const addSecretModal = {
     width: '50%',
     'InputField.name': {
       Title: {
-        text: 'Key',
+        text: 'Key'
       },
       Input: {
         required: true,
@@ -58,12 +58,12 @@ export const addSecretModal = {
           s.update({
             name: val
           })
-        },
-      },
+        }
+      }
     },
     'InputField.key': {
       Title: {
-        text: 'Value',
+        text: 'Value'
       },
       Input: {
         required: true,
@@ -74,16 +74,16 @@ export const addSecretModal = {
           s.update({
             key: val
           })
-        },
-      },
-    },
+        }
+      }
+    }
   },
   ModalFooter: {
     CheckButton: {
       type: 'submit',
       reverse: true,
       icon: 'checkmark',
-      text: 'Save',
-    },
-  },
-};
+      text: 'Save'
+    }
+  }
+}

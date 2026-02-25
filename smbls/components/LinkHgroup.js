@@ -3,16 +3,16 @@ export const LinkHgroup = {
     gap: 'X2',
     H: {
       tag: 'h2',
-      text: 'Tbilisi',
+      text: 'Tbilisi'
     },
     P: {
-      text: '35 Vazha-pshavela avenue.',
-    },
+      text: '35 Vazha-pshavela avenue.'
+    }
   },
   Link: {
-    text: 'Get direction',
+    text: 'Get direction'
   },
   extends: 'Flex',
   flow: 'y',
-  gap: 'Z',
-};
+  gap: 'Z'
+}

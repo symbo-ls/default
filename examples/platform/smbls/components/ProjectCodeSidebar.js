@@ -2,8 +2,8 @@ export const ProjectCodeSidebar = {
   extends: 'DocsSidebar',
   childExtends: {
     state: {
-      show: true,
-    },
+      show: true
+    }
   },
   position: 'relative',
   top: '0',
@@ -18,10 +18,10 @@ export const ProjectCodeSidebar = {
       Numb: null,
       CaptionTitle: {
         ':hover': {
-          textDecoration: 'underline',
+          textDecoration: 'underline'
         },
         Text: {
-          text: '{{ title }}',
+          text: '{{ title }}'
         },
         onClick: (ev, el, s) => {
           ev.preventDefault()
@@ -32,13 +32,13 @@ export const ProjectCodeSidebar = {
           }, {
             forceMonacoUpdate: true
           })
-        },
+        }
       },
       Text: null,
       SquareButton: {
         extends: [
           'CanvasButton',
-          'SquareButton',
+          'SquareButton'
         ],
         margin: '-Y1 -',
         padding: 'X',
@@ -49,8 +49,8 @@ export const ProjectCodeSidebar = {
           ev.preventDefault()
           ev.stopPropagation()
           s.toggle('show')
-        },
-      },
+        }
+      }
     },
     NavLinks: {
       margin: 'Z - -',
@@ -73,10 +73,10 @@ export const ProjectCodeSidebar = {
             }, {
               forceMonacoUpdate: true
             })
-          },
-        },
-      },
-    },
+          }
+        }
+      }
+    }
   },
   children: el => {
     const arrayize = (obj = {}) => Object.keys(obj).map(key => ({
@@ -87,16 +87,16 @@ export const ProjectCodeSidebar = {
       title: '~',
       sub_links: [{
         title: 'index.html',
-        key: 'index.html',
+        key: 'index.html'
       }, {
         title: 'app.js',
-        key: 'app.js',
+        key: 'app.js'
       }, {
         title: 'package.json',
-        key: 'package.json',
+        key: 'package.json'
       }, {
         title: 'sitemap.xml',
-        key: 'sitemap.xml',
+        key: 'sitemap.xml'
       }]
     }, {
       title: 'Components',
@@ -132,10 +132,10 @@ export const ProjectCodeSidebar = {
       sub_links: arrayize(el.getData('designSystem'))
     }, {
       title: 'Dependencies',
-      key: 'dependencies',
+      key: 'dependencies'
     }, {
       title: 'Integrations',
-      key: 'integrations',
+      key: 'integrations'
     }, {
       title: 'Canvas',
       key: 'canvas'
@@ -147,5 +147,5 @@ export const ProjectCodeSidebar = {
       key: 'secrets'
     }]
     return rootData
-  },
-};
+  }
+}

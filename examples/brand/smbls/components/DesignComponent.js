@@ -8,5 +8,5 @@ export const DesignComponent = {
   overflow: 'hidden',
   userSelect: 'none',
   DesignComponentHeader: {},
-  DesignComponentProperties: {},
-};
+  DesignComponentProperties: {}
+}

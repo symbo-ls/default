@@ -15,12 +15,12 @@ export const NavigationDots = {
       isActive: (el, s) => parseInt(el.key) === s.activeIndex,
       text: '',
       '.isActive': {
-        theme: 'primary',
+        theme: 'primary'
       },
       ':active': {
-        theme: 'primary',
-      },
+        theme: 'primary'
+      }
     },
-    children: (el, s) => s.slides,
-  },
-};
+    children: (el, s) => s.slides
+  }
+}

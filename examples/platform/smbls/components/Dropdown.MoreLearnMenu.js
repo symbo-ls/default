@@ -13,15 +13,15 @@ const Dropdownmorelearnmenu = {
         color: 'currentColor',
         opacity: '1',
         margin: '- Y1 - -',
-        fontWeight: '100',
+        fontWeight: '100'
       },
       ':hover': {
         style: {
           svg: {
-            opacity: 1,
-          },
-        },
-      },
+            opacity: 1
+          }
+        }
+      }
     },
     childrenAs: 'props',
     children: el => [{
@@ -49,14 +49,14 @@ const Dropdownmorelearnmenu = {
       onClick: (ev, el) => {
         el.setWindow('docs', '/props')
       }
-    }],
+    }]
   },
   GeneralNav: {
     CaptionTitle: {
       margin: 'X - X2',
       Text: {
-        text: 'More',
-      },
+        text: 'More'
+      }
     },
     ListInDropdown: {
       margin: '- -Z2',
@@ -70,12 +70,12 @@ const Dropdownmorelearnmenu = {
         ':hover': {
           style: {
             svg: {
-              opacity: 1,
-            },
-          },
+              opacity: 1
+            }
+          }
         },
         Text: null,
-        color: 'title',
+        color: 'title'
       },
       childrenAs: 'props',
       children: el => [{
@@ -93,15 +93,15 @@ const Dropdownmorelearnmenu = {
         onClick: (ev, el) => {
           el.setWindow('docs', '/symbols-developer')
         }
-      }],
-    },
+      }]
+    }
   },
   extend: 'Flex',
   props: {
     padding: 'Z1 A',
     gap: 'A',
-    flexFlow: 'y',
-  },
-};
+    flexFlow: 'y'
+  }
+}
 
 export { Dropdownmorelearnmenu as 'Dropdown.MoreLearnMenu' }

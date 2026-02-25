@@ -5,23 +5,23 @@ export const InsertPanel = {
     fontSize: 'Z2',
     padding: 'A+Z Z2',
     gap: 'C',
-    overflow: 'hidden auto',
+    overflow: 'hidden auto'
   },
   QuickAddPanel: {},
   Line: {
-    margin: '-A -A -Z',
+    margin: '-A -A -Z'
   },
   ImportInInsert: {},
   Line_2: {
-    margin: '- -A',
+    margin: '- -A'
   },
   LibraryFromInsert: {},
   Line_3: {
-    margin: '- -A',
+    margin: '- -A'
   },
   DataSourcesInInsert: {},
   Line_4: {
-    margin: '- -A',
+    margin: '- -A'
   },
-  IntegrationsInInsert: {},
-};
+  IntegrationsInInsert: {}
+}

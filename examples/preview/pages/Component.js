@@ -37,8 +37,7 @@ export const Component = {
           'code.symbo.ls',
           'miscellaneous.symbo.ls'
         ]
-        if (marketplaceProjects.includes(window.location))
-          return 'http://symbols.app/explore'
+        if (marketplaceProjects.includes(window.location)) { return 'http://symbols.app/explore' }
         return '/'
       },
       text: null

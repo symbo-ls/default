@@ -13,15 +13,15 @@ export const WaitlistForm = {
       s.update({
         [el.key.toLowerCase()]: el.node.value
       })
-    },
+    }
   },
   Name: {
     placeholder: 'Name',
-    required: true,
+    required: true
   },
   Email: {
     placeholder: 'Email',
     required: true,
-    type: 'email',
-  },
-};
+    type: 'email'
+  }
+}

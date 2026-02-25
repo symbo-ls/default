@@ -3,8 +3,8 @@ export const AvatarStatus = {
   StatusDot: {
     position: 'absolute',
     bottom: 'W2',
-    right: '0',
+    right: '0'
   },
   extends: 'Flex',
-  position: 'relative',
-};
+  position: 'relative'
+}

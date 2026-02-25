@@ -3,7 +3,7 @@ export const publishModal = {
   tag: 'form',
   state: {
     isLoading: false,
-    isConfirming: false,
+    isConfirming: false
   },
   maxWidth: '65vw',
   width: '100%',
@@ -97,42 +97,44 @@ export const publishModal = {
     p: 'Publish changes and release version.',
     Article: {
       P: {
-        margin: '0',
-      },
-    },
+        margin: '0'
+      }
+    }
   },
   Cnt: {
     margin: 'auto',
     padding: 'C1',
     LoadingGif: {
       hide: (el, s) => s.changes,
-      inCenter: null,
+      inCenter: null
     },
     P: {
       hide: (el, s) => !s.changes,
       text: (el, s) =>
-        s.changes && Object.keys(s.changes).length ?
-        'Changes to release:' : 'No new data to release.',
+        s.changes && Object.keys(s.changes).length
+          ? 'Changes to release:'
+          : 'No new data to release.'
     },
     Changes: {
       children: (el, s) => s.changes &&
         Object.keys(s.changes)
-        .filter(
-          key => s.changes[key].length || Object.keys(s.changes[key]).length
-        )
-        .map(key => ({
-          extends: 'P',
-          text: () =>
-            key === 'other' ?
-            `Other changed paths:` : `${key}: ${s.changes[key].join(', ')}`
-        })),
-    },
+          .filter(
+            key => s.changes[key].length || Object.keys(s.changes[key]).length
+          )
+          .map(key => ({
+            extends: 'P',
+            text: () =>
+              key === 'other'
+                ? 'Other changed paths:'
+                : `${key}: ${s.changes[key].join(', ')}`
+          }))
+    }
   },
   ConfirmTip: {
     hide: (el, s) => !s.isConfirming,
     tag: 'P',
     color: 'paragraph',
-    text: 'Click "Publish" again to confirm.',
+    text: 'Click "Publish" again to confirm.'
   },
   ModalFooter: {
     CheckButton: null,
@@ -142,11 +144,11 @@ export const publishModal = {
         height: '1.8em',
         hide: (el, s) => !s.isLoading,
         margin: '0 auto',
-        opacity: '.9',
+        opacity: '.9'
       },
       extends: [
         'Button',
-        'ClickableItem',
+        'ClickableItem'
       ],
       icon: (el, s) => s.isLoading ? '' : 'checkmark',
       type: 'submit',
@@ -160,8 +162,8 @@ export const publishModal = {
       gap: 'X2',
       ':disabled': {
         opacity: '.35',
-        theme: 'secondary',
-      },
-    },
-  },
-};
+        theme: 'secondary'
+      }
+    }
+  }
+}

@@ -7,16 +7,16 @@ export const DisabledPage = {
   height: '100%',
   '.isActive': {
     maxHeight: '100dvh',
-    overflow: 'hidden',
+    overflow: 'hidden'
   },
   '!isActive': {
     maxHeight: 'none',
-    overflow: 'visible',
+    overflow: 'visible'
   },
   overlay: {
     extend: [
       'Overlay',
-      'Flex',
+      'Flex'
     ],
     props: {
       overflow: 'hidden',
@@ -29,12 +29,12 @@ export const DisabledPage = {
         opacity: '0',
         visibility: 'hidden',
         transform: 'translate3d(0, 12.5%, 0)',
-        pointerEvents: 'none',
+        pointerEvents: 'none'
       },
       '.isActive': {
         animation: 'fadeInUp',
-        animationDuration: 'G',
-      },
+        animationDuration: 'G'
+      }
     },
     message: {
       props: {
@@ -52,13 +52,13 @@ export const DisabledPage = {
             margin: 'X 0 0',
             animation: 'fadeInUpShort',
             animationDuration: 'G',
-            animationDelay: 'G1',
-          },
-        },
+            animationDelay: 'G1'
+          }
+        }
       },
       ArticleBig: {
-        P: 'Add components from the marketplace.',
-      },
-    },
-  },
-};
+        P: 'Add components from the marketplace.'
+      }
+    }
+  }
+}

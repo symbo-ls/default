@@ -1,11 +1,11 @@
 export const CanvasSearch = {
   extend: [
-    'DropdownParentFocus',
+    'DropdownParentFocus'
   ],
   tag: 'search',
   state: {
     recents: [
-    ],
+    ]
   },
   Form: {
     extends: 'Flex',
@@ -15,7 +15,7 @@ export const CanvasSearch = {
     Icon: {
       fontSize: 'Z1',
       margin: '- -B2 - A',
-      name: 'search',
+      name: 'search'
     },
     Input: {
       autofocus: 'autofocus',
@@ -25,32 +25,32 @@ export const CanvasSearch = {
       theme: 'transparent',
       outline: 'none',
       style: {
-        appearance: 'none',
+        appearance: 'none'
       },
       ':focus-visible': {
-        outline: 'none',
+        outline: 'none'
       },
       '::-webkit-search-cancel-button': {
-        display: 'none',
+        display: 'none'
       },
       '::placeholder': {
-        color: 'placeholder',
+        color: 'placeholder'
       },
       onInput: (ev, el, s) => {
         s.update({
           searchTerm: el.node.value
         })
       },
-      flex: 1,
-    },
+      flex: 1
+    }
   },
   CanvasSearchDropdown: {
     width: '100%',
     left: '0',
     extends: [
       'CanvasSearchDropdown',
-      'Dropdown',
-    ],
+      'Dropdown'
+    ]
   },
   props: {
     onInit: (el, s) => {
@@ -59,11 +59,13 @@ export const CanvasSearch = {
       const recentsValue = window.localStorage.getItem(recentKey)
       let recents = JSON.parse(recentsValue || '[]')
 
-      if (!recents.length) recents = Object.values(el.getSchema('components')).map(v => ({
-        key: v.key,
-        type: v.type,
-        title: v.title
-      }))
+      if (!recents.length) {
+        recents = Object.values(el.getSchema('components')).map(v => ({
+          key: v.key,
+          type: v.type,
+          title: v.title
+        }))
+      }
 
       s.recents = recents.slice(0, 15)
     },
@@ -71,6 +73,6 @@ export const CanvasSearch = {
     theme: 'quinary',
     round: 'C',
     minWidth: 'D3',
-    margin: '-V - - -',
-  },
-};
+    margin: '-V - - -'
+  }
+}

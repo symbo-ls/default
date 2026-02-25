@@ -1,14 +1,14 @@
 export const NavbarButton = {
   extends: [
     'CanvasButton',
-    'CircleButton',
+    'CircleButton'
   ],
   position: 'relative',
   padding: 'Y2',
   round: 'C1',
   theme: null,
   attr: {
-    tilte: null,
+    tilte: null
   },
   onMouseover: (ev, el, s) => {
     if (!s.hover) {
@@ -29,5 +29,5 @@ export const NavbarButton = {
         })
       }
     }
-  },
-};
+  }
+}

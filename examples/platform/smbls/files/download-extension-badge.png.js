@@ -30,20 +30,20 @@ export default {
         base: '/core/files',
         file: '/core/files/692d9bf7d181acc7ae764e8a',
         download: '/core/files/public/692d9bf7d181acc7ae764e8a/download',
-        publicDownload: '/core/files/public/692d9bf7d181acc7ae764e8a/download',
+        publicDownload: '/core/files/public/692d9bf7d181acc7ae764e8a/download'
       },
       absolute: {
         base: 'https://api.symbols.app/core/files',
         file: 'https://api.symbols.app/core/files/692d9bf7d181acc7ae764e8a',
         download: 'https://api.symbols.app/core/files/public/692d9bf7d181acc7ae764e8a/download',
-        publicDownload: 'https://api.symbols.app/core/files/public/692d9bf7d181acc7ae764e8a/download',
+        publicDownload: 'https://api.symbols.app/core/files/public/692d9bf7d181acc7ae764e8a/download'
       },
-      storage: 'https://storage.googleapis.com/smbls-api-media/media/projects/686848620cf470c589093511/users/6868484c0cf470c5890933cc/rH_vTEIyclFIjxjrCXrZ4.png',
+      storage: 'https://storage.googleapis.com/smbls-api-media/media/projects/686848620cf470c589093511/users/6868484c0cf470c5890933cc/rH_vTEIyclFIjxjrCXrZ4.png'
     },
-    src: 'https://api.symbols.app/core/files/public/692d9bf7d181acc7ae764e8a/download',
+    src: 'https://api.symbols.app/core/files/public/692d9bf7d181acc7ae764e8a/download'
   },
   code: '',
   key: 'download-extension-badge.png',
   type: 'files',
-  format: 'png',
-};
+  format: 'png'
+}

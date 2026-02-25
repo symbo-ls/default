@@ -18,11 +18,11 @@ export const ModalWindowCopy = {
     top: 'Z2',
     right: 'Z2',
     color: 'dim',
-    onClick: (ev, el, s, ctx) => ctx.utils.closeModal(el, s, ctx),
+    onClick: (ev, el, s, ctx) => ctx.utils.closeModal(el, s, ctx)
   },
   ModalHeader: {
     onDrag: (event, element, state) => {
       state.dragging = true
-    },
-  },
-};
+    }
+  }
+}

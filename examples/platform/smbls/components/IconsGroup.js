@@ -18,5 +18,5 @@ export const IconsGroup = {
     const data = s.data || el.props.data ? await el.call('exec', el.props.data) : []
     if (limit) return data.slice(0, limit)
     return data
-  },
-};
+  }
+}

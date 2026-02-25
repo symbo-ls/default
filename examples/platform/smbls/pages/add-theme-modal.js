@@ -28,6 +28,6 @@ export const addThemeModal = {
   },
   ModalHeader: {
     title: 'Add a new theme',
-    p: null,
-  },
-};
+    p: null
+  }
+}

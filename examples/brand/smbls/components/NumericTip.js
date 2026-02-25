@@ -3,13 +3,13 @@ export const NumericTip = {
   gap: 'Z',
   tag: 'nav',
   IconText: {
-    icon: 'magicstar',
+    icon: 'magicstar'
   },
   Flex: {
     flow: 'y',
     gap: 'X',
     Title: null,
     P: null,
-    childrenExtends: 'NumericBulletin',
-  },
-};
+    childrenExtends: 'NumericBulletin'
+  }
+}

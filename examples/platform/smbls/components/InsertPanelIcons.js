@@ -4,7 +4,7 @@ export const InsertPanelIcons = {
     width: '100%',
     gap: 'C',
     flow: 'y',
-    overflowY: 'auto',
+    overflowY: 'auto'
   },
   LibraryNavbar: {},
   Flex: {
@@ -15,10 +15,10 @@ export const InsertPanelIcons = {
       childProps: {
         padding: 'auto',
         Icon: {
-          fontSize: 'A',
-        },
-      },
+          fontSize: 'A'
+        }
+      }
     },
-    padding: 'A',
-  },
-};
+    padding: 'A'
+  }
+}

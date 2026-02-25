@@ -1,4 +1,4 @@
 export const GroupField = {
   extends: 'Group',
-  tag: 'label',
-};
+  tag: 'label'
+}

@@ -1,12 +1,12 @@
 export const CounterIconButton = {
   Icon: {
-    name: 'smile',
+    name: 'smile'
   },
   NotificationCounter: {
     position: 'absolute',
     right: '-Y',
-    top: '-W2',
+    top: '-W2'
   },
   extends: 'IconButton',
-  position: 'relative',
-};
+  position: 'relative'
+}

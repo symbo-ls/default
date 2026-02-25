@@ -8,13 +8,13 @@ export const ButtonTitle = {
   width: 'fit-content',
   ':hover > div': {
     background: '#252527',
-    color: 'white',
+    color: 'white'
   },
   IconButton: {
     padding: 'X2',
-    round: 'Z',
+    round: 'Z'
   },
   Caption: {
-    fontSize: 'Z',
-  },
-};
+    fontSize: 'Z'
+  }
+}

@@ -5,19 +5,19 @@ export const GovernanceFields = {
   gap: 'C',
   childExtends: [
     'IconText',
-    'DropdownParentFocus',
+    'DropdownParentFocus'
   ],
   childProps: {
     gap: 'Y',
     Icon: {
-      color: 'placeholder',
-    },
+      color: 'placeholder'
+    }
   },
   Env: {
     icon: 'fuse',
     Icon_arrow: {
       color: 'dim',
-      name: 'arrow angle down',
+      name: 'arrow angle down'
     },
     Dropdown: {
       hide: (el) => !el.getAppKey(),
@@ -26,7 +26,7 @@ export const GovernanceFields = {
       align: 'start',
       ListInDropdown: {
         childExtends: [
-          'Link',
+          'Link'
         ],
         onClick: (ev) => ev.stopPropagation(),
         childProps: {
@@ -39,35 +39,35 @@ export const GovernanceFields = {
           align: 'center start',
           Icon: {
             order: 2,
-            margin: '- - - auto',
+            margin: '- - - auto'
           },
           ':hover': {
-            theme: 'field',
+            theme: 'field'
           },
           '.isActive': {
-            theme: 'field',
-          },
+            theme: 'field'
+          }
         },
         childrenAs: 'props',
         children: () => [{
-            href: `https://dev.symbols.app${window.location.pathname}`,
-            target: '_blank',
-            text: 'Development'
-          },
-          {
-            href: `https://staging.symbols.app${window.location.pathname}`,
-            target: '_blank',
-            text: 'Staging'
-          },
-          {
-            href: `https://symbols.app${window.location.pathname}`,
-            target: '_blank',
-            text: 'Production'
-          }
-        ],
-      },
+          href: `https://dev.symbols.app${window.location.pathname}`,
+          target: '_blank',
+          text: 'Development'
+        },
+        {
+          href: `https://staging.symbols.app${window.location.pathname}`,
+          target: '_blank',
+          text: 'Staging'
+        },
+        {
+          href: `https://symbols.app${window.location.pathname}`,
+          target: '_blank',
+          text: 'Production'
+        }
+        ]
+      }
     },
-    text: el => el.getRootState('evn'),
+    text: el => el.getRootState('evn')
   },
   PlatformVersion: {
     icon: 'state',
@@ -79,7 +79,7 @@ export const GovernanceFields = {
     },
     Icon_arrow: {
       color: 'dim',
-      name: 'arrow angle down',
+      name: 'arrow angle down'
     },
     Dropdown: {
       hide: (el) => !el.getAppKey(),
@@ -88,7 +88,7 @@ export const GovernanceFields = {
       align: 'start',
       ListInDropdown: {
         childExtends: [
-          'Link',
+          'Link'
         ],
         onClick: (ev) => ev.stopPropagation(),
         childProps: {
@@ -101,49 +101,49 @@ export const GovernanceFields = {
           align: 'center start',
           Icon: {
             order: 2,
-            margin: '- - - auto',
+            margin: '- - - auto'
           },
           ':hover': {
-            theme: 'field',
+            theme: 'field'
           },
           '.isActive': {
-            theme: 'field',
-          },
+            theme: 'field'
+          }
         },
         childrenAs: 'props',
         children: () => [{
-            href: (el) =>
-              'https://github.com/symbo-ls/platform/commits/' +
+          href: (el) =>
+            'https://github.com/symbo-ls/platform/commits/' +
               `v${el.getPlatformVersion()}`,
-            target: '_blank',
-            text: 'Commit'
-          },
-          {
-            href: (el) =>
-              ({
-                production: `https://github.com/symbo-ls/platform/actions?query=branch%3Av${el.getPlatformVersion()}+event%3Aworkflow_dispatch`,
-                staging: `https://github.com/symbo-ls/platform/actions?query=branch%3Av${el.getPlatformVersion()}+event%3Arelease`,
-                development: `https://github.com/symbo-ls/platform/actions`
-              })[el.getRootState('env')],
-            target: '_blank',
-            text: 'Github workflow'
-          },
-          {
-            href: (el) =>
-              'https://github.com/symbo-ls/platform/tree/refs/tags/' +
+          target: '_blank',
+          text: 'Commit'
+        },
+        {
+          href: (el) =>
+            ({
+              production: `https://github.com/symbo-ls/platform/actions?query=branch%3Av${el.getPlatformVersion()}+event%3Aworkflow_dispatch`,
+              staging: `https://github.com/symbo-ls/platform/actions?query=branch%3Av${el.getPlatformVersion()}+event%3Arelease`,
+              development: 'https://github.com/symbo-ls/platform/actions'
+            })[el.getRootState('env')],
+          target: '_blank',
+          text: 'Github workflow'
+        },
+        {
+          href: (el) =>
+            'https://github.com/symbo-ls/platform/tree/refs/tags/' +
               `v${el.getPlatformVersion()}`,
-            target: '_blank',
-            text: 'Code'
-          },
-          {
-            target: '_blank',
-            text: 'Release notes',
-            href: (el) =>
-              'https://github.com/symbo-ls/platform/releases' +
+          target: '_blank',
+          text: 'Code'
+        },
+        {
+          target: '_blank',
+          text: 'Release notes',
+          href: (el) =>
+            'https://github.com/symbo-ls/platform/releases' +
               `?after=v${el.getPlatformVersion()}`
-          }
-        ],
-      },
-    },
-  },
-};
+        }
+        ]
+      }
+    }
+  }
+}

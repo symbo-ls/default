@@ -2,12 +2,12 @@ export const RadioStep = {
   RadioMark: {
     theme: 'field',
     '.isActive': {
-      theme: 'primary',
+      theme: 'primary'
     },
-    ':after': {},
+    ':after': {}
   },
   H6: {
-    text: 'Step',
+    text: 'Step'
   },
   Progress: {
     minWidth: 'E',
@@ -16,10 +16,10 @@ export const RadioStep = {
     height: 'V',
     margin: '- - - W',
     '.isActive': {
-      value: 1,
-    },
+      value: 1
+    }
   },
   extends: 'Flex',
   align: 'center flex-start',
-  gap: 'Y2',
-};
+  gap: 'Y2'
+}

@@ -1,17 +1,17 @@
 export const settings = {
   extends: [
-    'Page',
+    'Page'
   ],
   flow: 'y',
   gap: 'D1',
   SettingsSection: {
     extends: 'SettingsSection',
     Title: {
-      text: 'Platform Options',
+      text: 'Platform Options'
     },
     Grid: {
       '@tabletM': {
-        columns: 'repeat(3, 1fr)',
+        columns: 'repeat(3, 1fr)'
       },
       children: [
         {
@@ -21,37 +21,37 @@ export const settings = {
           borderStyle: 'solid',
           padding: 'B1 - -',
           '@dark': {
-            borderColor: '--color-line-dark',
+            borderColor: '--color-line-dark'
           },
           '@light': {
-            borderColor: '--color-line-light',
+            borderColor: '--color-line-light'
           },
           Title: {
             opacity: '.65',
             color: 'gray7',
-            text: 'Default global theme',
+            text: 'Default global theme'
           },
           SelectDropdown: {
             Value: {
               Text: {
-                text: (el) => el.getRootState('globalTheme'),
-              },
+                text: (el) => el.getRootState('globalTheme')
+              }
             },
             Dropdown: {
               top: '121%',
               options: [
                 {
                   key: 'auto',
-                  text: 'Auto',
+                  text: 'Auto'
                 },
                 {
                   key: 'dark',
-                  text: 'Dark',
+                  text: 'Dark'
                 },
                 {
                   key: 'light',
-                  text: 'Light',
-                },
+                  text: 'Light'
+                }
               ],
               onChoose: (ev, el, s, ctx, calleeElement) => {
                 const theme = calleeElement.state.key
@@ -65,29 +65,29 @@ export const settings = {
                 el.getRoot().call('setCookie', 'globalTheme', theme)
               },
               DropdownHeader: {
-                text: 'Global theme',
+                text: 'Global theme'
               },
               ListInDropdown: {
                 childProps: {
                   extends: 'KeyValueColumnFields',
                   isActive: (el, s) => el.getRootState('globalTheme') === s.key,
                   text: (el, s) => s.text,
-                  fontWeight: '400',
-                },
-              },
-            },
-          },
+                  fontWeight: '400'
+                }
+              }
+            }
+          }
         },
         {
           key: 'optimizedMode',
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Allow Symbols to optimize canvas for low performance devices',
-            },
+              tip: 'Allow Symbols to optimize canvas for low performance devices'
+            }
           },
           Caption: {
-            text: 'Low performance mode:',
+            text: 'Low performance mode:'
           },
           onChange: (ev, el) => {
             const val = el.getUserSettings('optimizedMode')
@@ -110,82 +110,82 @@ export const settings = {
             }, {
               message: 'Reset settings'
             })
-          },
+          }
         },
         {
           key: 'explorer',
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Toggle enable file sidebar',
-            },
+              tip: 'Toggle enable file sidebar'
+            }
           },
           Caption: {
-            text: 'Enable explorer:',
-          },
+            text: 'Enable explorer:'
+          }
         },
         {
           key: 'debuggingMode',
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Logs and sends notifications on tested actions',
-            },
+              tip: 'Logs and sends notifications on tested actions'
+            }
           },
           Caption: {
-            text: 'Debugging mode:',
-          },
+            text: 'Debugging mode:'
+          }
         },
         {
           key: 'useDomql3',
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Use DOMQL3 syntax',
-            },
+              tip: 'Use DOMQL3 syntax'
+            }
           },
           Caption: {
-            text: 'DOMQL3:',
-          },
+            text: 'DOMQL3:'
+          }
         },
         {
           key: 'useGlassmorphism',
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Whether to use glass blurry effect on sidebar items',
-            },
+              tip: 'Whether to use glass blurry effect on sidebar items'
+            }
           },
           Caption: {
-            text: 'Glass effect on sidebars:',
-          },
+            text: 'Glass effect on sidebars:'
+          }
         },
         {
           key: 'allowFilesidebarPreview',
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Enable preview of components when you mouse over on file sidebar',
-            },
+              tip: 'Enable preview of components when you mouse over on file sidebar'
+            }
           },
           Caption: {
-            text: 'Enable file sidebar previews:',
-          },
+            text: 'Enable file sidebar previews:'
+          }
         },
         {
           key: 'explorerAutoscroll',
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Scroll sidebar when a new component is selected',
-            },
+              tip: 'Scroll sidebar when a new component is selected'
+            }
           },
           Caption: {
-            text: 'Scroll files sidebar on active item:',
-          },
-        },
-      ],
-    },
+            text: 'Scroll files sidebar on active item:'
+          }
+        }
+      ]
+    }
   },
   CanvasSettings: {
     extends: 'SettingsSection',
@@ -205,12 +205,12 @@ export const settings = {
           }, {
             message: 'Reset settings'
           })
-        },
-      },
+        }
+      }
     },
     Grid: {
       '@tabletM': {
-        columns: 'repeat(3, 1fr)',
+        columns: 'repeat(3, 1fr)'
       },
       children: [
         {
@@ -218,209 +218,209 @@ export const settings = {
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Use thumbnail image previews on components when available to save rendering performance',
-            },
+              tip: 'Use thumbnail image previews on components when available to save rendering performance'
+            }
           },
           Caption: {
-            text: 'Use image previews:',
-          },
+            text: 'Use image previews:'
+          }
         },
         {
           key: 'allowTeamCursors',
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Enable showing up team members cursors',
-            },
+              tip: 'Enable showing up team members cursors'
+            }
           },
           Caption: {
-            text: 'Show team cursors:',
-          },
+            text: 'Show team cursors:'
+          }
         },
         {
           key: 'showReferences',
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Show other places where component is reused',
-            },
+              tip: 'Show other places where component is reused'
+            }
           },
           Caption: {
-            text: 'Show component references:',
-          },
+            text: 'Show component references:'
+          }
         },
         {
           key: 'allowCanvasReplaceRouter',
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Allow canvas to scroll to links with URLs to pages',
-            },
+              tip: 'Allow canvas to scroll to links with URLs to pages'
+            }
           },
           Caption: {
-            text: 'Allow links to scroll to pages:',
-          },
+            text: 'Allow links to scroll to pages:'
+          }
         },
         {
           key: 'openOnDblClick',
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Enable double click to open components from canvas and sidebar',
-            },
+              tip: 'Enable double click to open components from canvas and sidebar'
+            }
           },
           Caption: {
-            text: 'Double click to open:',
-          },
+            text: 'Double click to open:'
+          }
         },
         {
           key: 'autoSelectSidebar',
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Auto switch sidebar when artboard is selected',
-            },
+              tip: 'Auto switch sidebar when artboard is selected'
+            }
           },
           Caption: {
-            text: 'Double click to open:',
-          },
+            text: 'Double click to open:'
+          }
         },
         {
           key: 'showGrid',
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Enable movable dotted background on the Canvas',
-            },
+              tip: 'Enable movable dotted background on the Canvas'
+            }
           },
           Caption: {
-            text: 'Show canvas grid:',
-          },
+            text: 'Show canvas grid:'
+          }
         },
         {
           key: 'allowTitleOnArtboard',
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Allow showing titles when hovering artboards',
-            },
+              tip: 'Allow showing titles when hovering artboards'
+            }
           },
           Caption: {
-            text: 'Allow titles on artboard:',
-          },
+            text: 'Allow titles on artboard:'
+          }
         },
         {
           key: 'allowZoombar',
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Enable zoom bar on Canvas',
-            },
+              tip: 'Enable zoom bar on Canvas'
+            }
           },
           Caption: {
-            text: 'Enable zoom bar:',
-          },
+            text: 'Enable zoom bar:'
+          }
         },
         {
           key: 'allowAutoPosition',
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Enable canvas windows auto positioning',
-            },
+              tip: 'Enable canvas windows auto positioning'
+            }
           },
           Caption: {
-            text: 'Auto positioning:',
-          },
+            text: 'Auto positioning:'
+          }
         },
         {
           key: 'allowInitialSelection',
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Enable canvas load previously selected component after initial load',
-            },
+              tip: 'Enable canvas load previously selected component after initial load'
+            }
           },
           Caption: {
-            text: 'Auto initial selection:',
-          },
+            text: 'Auto initial selection:'
+          }
         },
         {
           key: 'useAnimations',
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Enable animations during navigating on canvas',
-            },
+              tip: 'Enable animations during navigating on canvas'
+            }
           },
           Caption: {
-            text: 'Enable animations:',
-          },
+            text: 'Enable animations:'
+          }
         },
         {
           key: 'autoCleanConsole',
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Auto clean console on platform updates',
-            },
+              tip: 'Auto clean console on platform updates'
+            }
           },
           Caption: {
-            text: 'Auto clean console:',
-          },
-        },
-      ],
-    },
+            text: 'Auto clean console:'
+          }
+        }
+      ]
+    }
   },
   DesignSystemOptions: {},
   SyncingSettings: {
     extends: 'SettingsSection',
     state: 'settings',
     Title: {
-      text: 'Syncing options',
+      text: 'Syncing options'
     },
     Grid: {
       '@tabletM': {
-        columns: 'repeat(3, 1fr)',
+        columns: 'repeat(3, 1fr)'
       },
       children: [
         {
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Sync platform navigation across the devices',
-            },
+              tip: 'Sync platform navigation across the devices'
+            }
           },
           onChange: (ev, el) => {
             el.toggleUserSettings('presentMode')
           },
           Caption: {
-            text: 'Allow navigation sync:',
+            text: 'Allow navigation sync:'
           },
           Input: {
-            checked: (el) => el.getUserSettings('presentMode'),
-          },
+            checked: (el) => el.getUserSettings('presentMode')
+          }
         },
         {
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Sync platform navigation across project members',
-            },
+              tip: 'Sync platform navigation across project members'
+            }
           },
           Caption: {
-            text: 'Allow team navigation sync:',
-          },
+            text: 'Allow team navigation sync:'
+          }
         },
         {
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Sync platform navigation across project members',
-            },
+              tip: 'Sync platform navigation across project members'
+            }
           },
           Caption: {
-            text: 'Force reload:',
+            text: 'Force reload:'
           },
           Input: null,
           SwitchField: null,
@@ -437,18 +437,18 @@ export const settings = {
                   preventShModalUpdate: true
                 })
               }
-            },
-          },
+            }
+          }
         },
         {
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Sync platform navigation across project members',
-            },
+              tip: 'Sync platform navigation across project members'
+            }
           },
           Caption: {
-            text: 'Force navigate:',
+            text: 'Force navigate:'
           },
           Input: null,
           SwitchField: null,
@@ -464,69 +464,69 @@ export const settings = {
                 forceNavigate: url,
                 preventShModalUpdate: true
               })
-            },
-          },
-        },
-      ],
-    },
+            }
+          }
+        }
+      ]
+    }
   },
   WebsiteSettings: {
     extends: 'SettingsSection',
     state: 'settings',
     Title: {
-      text: 'Website controls',
+      text: 'Website controls'
     },
     Grid: {
       '@tabletM': {
-        columns: 'repeat(3, 1fr)',
+        columns: 'repeat(3, 1fr)'
       },
       children: [
         {
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Allow symbols server fetching while app is loaded',
-            },
+              tip: 'Allow symbols server fetching while app is loaded'
+            }
           },
           Caption: {
-            text: 'Fetch symbols data:',
-          },
+            text: 'Fetch symbols data:'
+          }
         },
         {
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Load data asynchronically during app creation',
-            },
+              tip: 'Load data asynchronically during app creation'
+            }
           },
           Caption: {
-            text: 'Use async loading:',
-          },
+            text: 'Use async loading:'
+          }
         },
         {
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Allow users to inspect elements on the website',
-            },
+              tip: 'Allow users to inspect elements on the website'
+            }
           },
           Caption: {
-            text: 'Allow inspecting:',
-          },
+            text: 'Allow inspecting:'
+          }
         },
         {
           QuestionMarkTooltip: {
             TooltipHidden: {
               shapeDirection: 'top',
-              tip: 'Allow users to sync platform updates to the website',
-            },
+              tip: 'Allow users to sync platform updates to the website'
+            }
           },
           Caption: {
-            text: 'Allow website live sync:',
-          },
-        },
-      ],
-    },
+            text: 'Allow website live sync:'
+          }
+        }
+      ]
+    }
   },
   CodeEditor: {
     extends: 'Flex',
@@ -534,24 +534,24 @@ export const settings = {
     state: 'settings/codeEditor',
     SectionTitle: {
       text: 'Code Editor',
-      margin: '- - A2',
+      margin: '- - A2'
     },
     Flex: {
       gap: 'C1',
       childProps: {
-        flex: 1,
+        flex: 1
       },
       Flex: {
         props: {
           flow: 'y',
-          gap: 'B1',
+          gap: 'B1'
         },
         childExtend: {
           extend: 'Grid',
           props: {
             gap: 'B1 C3',
-            templateColumns: 'repeat(2, 1fr)',
-          },
+            templateColumns: 'repeat(2, 1fr)'
+          }
         },
         inputs: {
           childExtend: {
@@ -565,51 +565,51 @@ export const settings = {
                 //       forceMonacoUpdate: true
                 //     })
                 // )
-              },
-            },
+              }
+            }
           },
           fontFamily: {
             Title: {
-              text: 'Font family',
+              text: 'Font family'
             },
             Input: {
               placeholder: 'default',
-              value: '{{ fontFamily }}',
-            },
+              value: '{{ fontFamily }}'
+            }
           },
           fontSize: {
             Title: {
-              text: 'Font size',
+              text: 'Font size'
             },
             Input: {
               placeholder: '14',
-              value: '{{ fontSize }}',
-            },
+              value: '{{ fontSize }}'
+            }
           },
           lineHeight: {
             Title: {
-              text: 'Line height',
+              text: 'Line height'
             },
             Input: {
               placeholder: '20',
-              value: '{{ lineHeight }}',
-            },
+              value: '{{ lineHeight }}'
+            }
           },
           editorDebounce: {
             Title: {
-              text: 'Editor debounce',
+              text: 'Editor debounce'
             },
             Input: {
               placeholder: '20',
-              value: (el, s) => s.editorDebounce || 250,
-            },
-          },
+              value: (el, s) => s.editorDebounce || 250
+            }
+          }
         },
         selects: {
           childExtend: {
             extend: 'SelectDropdownWithTitle',
             Title: {
-              text: (el, s) => s[el.parent.key],
+              text: (el, s) => s[el.parent.key]
             },
             SelectDropdown: {
               Dropdown: {
@@ -634,64 +634,64 @@ export const settings = {
                       ] === s.value,
                       text: s.value,
                       fontWeight: '400'
-                    }),
-                  },
-                },
-              },
-            },
+                    })
+                  }
+                }
+              }
+            }
           },
           tabSize: {
             props: {},
             Title: {
-              text: 'Tab size',
+              text: 'Tab size'
             },
             SelectDropdown: {
               Value: {
                 Text: {
                   text: ({
                     state
-                  }) => state.tabSize || 2,
-                },
+                  }) => state.tabSize || 2
+                }
               },
               Dropdown: {
                 options: [
                   2,
                   4,
                   6,
-                  8,
+                  8
                 ],
                 DropdownHeader: {
-                  text: 'Tab size',
-                },
-              },
-            },
+                  text: 'Tab size'
+                }
+              }
+            }
           },
           wordWrap: {
             props: {},
             Title: {
-              text: 'Word wrap',
+              text: 'Word wrap'
             },
             SelectDropdown: {
               Value: {
                 Text: {
                   text: ({
                     state
-                  }) => state.wordWrap || 'off',
-                },
+                  }) => state.wordWrap || 'off'
+                }
               },
               Dropdown: {
                 options: [
                   'off',
                   'on',
                   'wordWrapColumn',
-                  'bounded',
+                  'bounded'
                 ],
                 DropdownHeader: {
-                  text: 'Word wrap',
-                },
-              },
-            },
-          },
+                  text: 'Word wrap'
+                }
+              }
+            }
+          }
         },
         toggles: {
           childExtend: {
@@ -700,10 +700,10 @@ export const settings = {
               cursor: 'pointer',
               borderWidth: '1px 0 0 0',
               '@dark': {
-                borderColor: '--color-line-dark',
+                borderColor: '--color-line-dark'
               },
               '@light': {
-                borderColor: '--color-line-light',
+                borderColor: '--color-line-light'
               },
               borderStyle: 'solid',
               padding: 'B1 - -',
@@ -718,57 +718,57 @@ export const settings = {
                   message: `Updated ${key} settings`,
                   forceMonacoUpdate: true
                 })
-              },
+              }
             },
             Input: {
               checked: ({
                 parent,
                 state
-              }) => state[parent.key],
+              }) => state[parent.key]
             },
             Caption: {},
-            SwitchField: {},
+            SwitchField: {}
           },
           fontLigatures: {
             props: {
               QuestionMarkTooltip: {
                 TooltipHidden: {
                   shapeDirection: 'top',
-                  tip: 'Allow symbols server fetching while app is loaded',
-                },
+                  tip: 'Allow symbols server fetching while app is loaded'
+                }
               },
               Caption: {
-                text: 'Font ligature:',
-              },
-            },
+                text: 'Font ligature:'
+              }
+            }
           },
           'minimap.enabled': {
             props: {
               QuestionMarkTooltip: {
                 TooltipHidden: {
                   shapeDirection: 'top',
-                  tip: 'Allow symbols server fetching while app is loaded',
-                },
+                  tip: 'Allow symbols server fetching while app is loaded'
+                }
               },
               Caption: {
-                text: 'Minimap:',
-              },
-            },
+                text: 'Minimap:'
+              }
+            }
           },
           folding: {
             props: {
               QuestionMarkTooltip: {
                 TooltipHidden: {
                   shapeDirection: 'top',
-                  tip: 'Allow symbols server fetching while app is loaded',
-                },
+                  tip: 'Allow symbols server fetching while app is loaded'
+                }
               },
               Caption: {
-                text: 'Folding:',
-              },
-            },
-          },
-        },
+                text: 'Folding:'
+              }
+            }
+          }
+        }
       },
       CodePreviewWidget: {
         props: (el, s) => ({
@@ -787,8 +787,8 @@ export const settings = {
               })
             }
           }
-        }),
-      },
+        })
+      }
     },
     IconText: {
       extends: 'DocsLink',
@@ -801,8 +801,8 @@ export const settings = {
       href: 'https://microsoft.github.io/monaco-editor/typedoc/variables/editor.EditorOptions.html',
       icon: 'questionMarkFill',
       text: 'Monaco options',
-      fontWeight: 400,
-    },
+      fontWeight: 400
+    }
   },
-  SettingsFooter: {},
-};
+  SettingsFooter: {}
+}

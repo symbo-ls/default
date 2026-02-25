@@ -37,7 +37,7 @@ export const MembersTable = {
     errorMessage: null,
     projectMembers: [
     ],
-    toUpdate: null,
+    toUpdate: null
   },
   TableHeader: {
     extends: 'Grid',
@@ -47,40 +47,40 @@ export const MembersTable = {
     fontWeight: 'bold',
     background: 'background-alt',
     AvatarHeader: {
-      text: '',
+      text: ''
     },
     NameHeader: {
-      text: 'Name',
+      text: 'Name'
     },
     EmailHeader: {
-      text: 'Email',
+      text: 'Email'
     },
     RoleHeader: {
-      text: 'Role',
+      text: 'Role'
     },
     ActionsHeader: {
       show: (el) => el.isAdmin(),
-      text: 'Actions',
-    },
+      text: 'Actions'
+    }
   },
   TableBody: {
     childProps: {
       Avatar: {
         boxSize: 'B',
-        text: '{{name}}',
+        text: '{{name}}'
       },
       NameCell: {
-        text: '{{name}}',
+        text: '{{name}}'
       },
       EmailCell: {
-        text: '{{email}}',
+        text: '{{email}}'
       },
       RoleCell: {
         HiddenElement: {
           show: false,
           tag: 'div',
           display: 'none',
-          text: '',
+          text: ''
         },
         RoleSelectField: {
           show: (el, s) => s.parent.memberRoleBeingEdited === s.id,
@@ -103,35 +103,35 @@ export const MembersTable = {
             },
             childrenAs: 'props',
             children: () => [{
-                value: 'owner',
-                text: 'Owner'
-              },
-              {
-                value: 'admin',
-                text: 'Admin'
-              },
-              {
-                value: 'editor',
-                text: 'Editor'
-              },
-              {
-                value: 'guest',
-                text: 'Guest'
-              }
+              value: 'owner',
+              text: 'Owner'
+            },
+            {
+              value: 'admin',
+              text: 'Admin'
+            },
+            {
+              value: 'editor',
+              text: 'Editor'
+            },
+            {
+              value: 'guest',
+              text: 'Guest'
+            }
             ],
             childProps: {
               tag: 'option',
               attr: {
                 disabled: (el) => !el.isAdmin(),
-                selected: (el, s) => s.role === el.props.value,
-              },
-            },
-          },
+                selected: (el, s) => s.role === el.props.value
+              }
+            }
+          }
         },
         CurrentRole: {
           show: (el, s) => s.parent.memberRoleBeingEdited !== s.id,
-          text: '{{role}}',
-        },
+          text: '{{role}}'
+        }
       },
       ActionsCell: {
         extends: 'Flex',
@@ -145,7 +145,7 @@ export const MembersTable = {
           color: 'gray8',
           ':hover': {
             background: 'gray4',
-            color: 'white',
+            color: 'white'
           },
           icon: 'edit',
           onClick: (ev, el, s) => {
@@ -153,7 +153,7 @@ export const MembersTable = {
               memberRoleBeingEdited: s.id,
               toUpdate: null
             })
-          },
+          }
         },
         ConfirmUpdateRoleButton: {
           show: (el, s) => s.parent.memberRoleBeingEdited === s.id,
@@ -162,7 +162,7 @@ export const MembersTable = {
           icon: 'check',
           ':hover': {
             background: 'gray4',
-            color: 'white',
+            color: 'white'
           },
           onClick: async (ev, el, s) => {
             ev.preventDefault()
@@ -215,7 +215,7 @@ export const MembersTable = {
                 toUpdate: null
               })
             }
-          },
+          }
         },
         CrossmarkButton: {
           show: (el, s) => s.parent.memberRoleBeingEdited === s.id,
@@ -223,7 +223,7 @@ export const MembersTable = {
           color: 'gray8',
           ':hover': {
             background: 'gray4',
-            color: 'white',
+            color: 'white'
           },
           icon: 'crossmark',
           onClick: (ev, el, s) => {
@@ -231,7 +231,7 @@ export const MembersTable = {
               memberRoleBeingEdited: null,
               toUpdate: null
             })
-          },
+          }
         },
         TrashButton: {
           show: (el, s) =>
@@ -240,7 +240,7 @@ export const MembersTable = {
           color: 'gray8',
           ':hover': {
             background: 'gray4',
-            color: 'white',
+            color: 'white'
           },
           icon: 'trash',
           onClick: async (ev, el, s) => {
@@ -271,8 +271,8 @@ export const MembersTable = {
                 })
               }
             }
-          },
-        },
+          }
+        }
       },
       columns: '2.2em 1fr 2fr 1fr 1fr',
       width: '100%',
@@ -280,8 +280,8 @@ export const MembersTable = {
       padding: 'A1',
       borderBottom: '1px solid var(--color-border-light)',
       ':hover': {
-        background: 'var(--color-background-hover)',
-      },
+        background: 'var(--color-background-hover)'
+      }
     },
     extends: 'Flex',
     flow: 'y',
@@ -290,13 +290,13 @@ export const MembersTable = {
     childrenAs: 'state',
     children: ({
       state
-    }) => state.projectMembers,
+    }) => state.projectMembers
   },
   EmptyMessage: {
     show: (el, s) => !s.projectMembers || s.projectMembers.length === 0,
     text: 'No team members found.',
     padding: 'B1',
     textAlign: 'center',
-    opacity: '0.7',
-  },
-};
+    opacity: '0.7'
+  }
+}

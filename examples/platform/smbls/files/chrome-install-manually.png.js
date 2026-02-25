@@ -30,20 +30,20 @@ export default {
         base: '/core/files',
         file: '/core/files/692d9b59d181acc7ae764d59',
         download: '/core/files/public/692d9b59d181acc7ae764d59/download',
-        publicDownload: '/core/files/public/692d9b59d181acc7ae764d59/download',
+        publicDownload: '/core/files/public/692d9b59d181acc7ae764d59/download'
       },
       absolute: {
         base: 'https://api.symbols.app/core/files',
         file: 'https://api.symbols.app/core/files/692d9b59d181acc7ae764d59',
         download: 'https://api.symbols.app/core/files/public/692d9b59d181acc7ae764d59/download',
-        publicDownload: 'https://api.symbols.app/core/files/public/692d9b59d181acc7ae764d59/download',
+        publicDownload: 'https://api.symbols.app/core/files/public/692d9b59d181acc7ae764d59/download'
       },
-      storage: 'https://storage.googleapis.com/smbls-api-media/media/projects/686848620cf470c589093511/users/6868484c0cf470c5890933cc/kkNCSv6HAmIvC4uMPSV2V.png',
+      storage: 'https://storage.googleapis.com/smbls-api-media/media/projects/686848620cf470c589093511/users/6868484c0cf470c5890933cc/kkNCSv6HAmIvC4uMPSV2V.png'
     },
-    src: 'https://api.symbols.app/core/files/public/692d9b59d181acc7ae764d59/download',
+    src: 'https://api.symbols.app/core/files/public/692d9b59d181acc7ae764d59/download'
   },
   code: '',
   key: 'chrome-install-manually.png',
   type: 'files',
-  format: 'png',
-};
+  format: 'png'
+}

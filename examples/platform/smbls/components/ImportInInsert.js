@@ -2,12 +2,12 @@ export const ImportInInsert = {
   extend: 'Flex',
   props: {
     flow: 'y',
-    gap: 'A',
+    gap: 'A'
   },
   CaptionTitle: {
     Text: {
-      text: 'Import',
-    },
+      text: 'Import'
+    }
   },
   Flex: {
     gap: 'A',
@@ -18,14 +18,14 @@ export const ImportInInsert = {
     childProps: {
       Hgroup: {
         H: {
-          text: '{{ title }}',
+          text: '{{ title }}'
         },
         P: {
-          text: '{{ descr }}',
-        },
+          text: '{{ descr }}'
+        }
       },
       Icon: {
-        name: '{{ icon }}',
+        name: '{{ icon }}'
       },
       Button: {
         margin: '-Y -Z2 - auto',
@@ -34,35 +34,35 @@ export const ImportInInsert = {
         gap: 'Y1',
         Icon: {
           order: 2,
-          color: 'blue',
+          color: 'blue'
         },
         extends: [
           'CanvasButton',
-          'Button',
+          'Button'
         ],
         padding: 'Y2 Z2',
         fontSize: 'Z2',
-        onClick: (ev, el, s) => s.onAdd?.(el, s),
+        onClick: (ev, el, s) => s.onAdd?.(el, s)
       },
       align: 'start',
-      Upgrade: null,
+      Upgrade: null
     },
     children: [
       {
         icon: 'globe',
         title: 'Live website',
-        descr: 'Open any website and select what to import',
+        descr: 'Open any website and select what to import'
       },
       {
         icon: 'figma',
         title: 'Figma',
-        descr: 'Import tokens, layers and artboards',
+        descr: 'Import tokens, layers and artboards'
       },
       {
         icon: 'terminal',
         title: 'Local Files',
-        descr: 'Import your local starter-kit using CLI',
-      },
-    ],
-  },
-};
+        descr: 'Import your local starter-kit using CLI'
+      }
+    ]
+  }
+}

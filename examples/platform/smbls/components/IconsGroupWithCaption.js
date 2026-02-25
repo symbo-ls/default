@@ -6,9 +6,9 @@ export const IconsGroupWithCaption = {
     userSelect: 'none',
     color: 'dim',
     fontSize: 'Y',
-    textTransform: 'uppercase',
+    textTransform: 'uppercase'
   },
   IconsGroup: {
-    if: (el, s) => Object.keys(s.data).length,
-  },
-};
+    if: (el, s) => Object.keys(s.data).length
+  }
+}

@@ -4,26 +4,26 @@ export const ConnectionLabel = {
   color: 'paragraph',
   isActive: true,
   '.isActive': {
-    color: 'caption',
+    color: 'caption'
   },
   Circle: {
     round: 'A',
     boxSize: 'Z',
     isActive: el => el.parent.props.isActive,
     '.isActive': {
-      background: 'green',
+      background: 'green'
     },
     '!isActive': {
-      background: 'shadow',
-    },
+      background: 'shadow'
+    }
   },
   Text: {
-    text: el => el.parent.props.isActive ? 'Connected' : 'Not connected',
+    text: el => el.parent.props.isActive ? 'Connected' : 'Not connected'
   },
   CopyButton: {
     hide: el => !el.parent.props.isActive,
     value: el => `https://${el.getAppKey()}/`,
     icon: 'copy outline',
-    background: 'transparent',
-  },
-};
+    background: 'transparent'
+  }
+}

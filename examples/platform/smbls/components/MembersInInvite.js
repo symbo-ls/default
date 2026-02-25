@@ -2,22 +2,22 @@ export const MembersInInvite = {
   extend: 'Flex',
   props: {
     flow: 'y',
-    gap: 'A',
+    gap: 'A'
   },
   CaptionTitle: {
     Text: {
-      text: 'Members',
-    },
+      text: 'Members'
+    }
   },
   Flex: {
     flow: 'y',
     onInit: async el => {
-        const members = await el.call('getProjectMembers')
-        el.props.membersList = members.map(v => ({
-          ...v.user,
-          role: v.role
-        }))
-      },
+      const members = await el.call('getProjectMembers')
+      el.props.membersList = members.map(v => ({
+        ...v.user,
+        role: v.role
+      }))
+    },
     children: el => el.props.membersList,
     childrenAs: 'state',
     childExtends: 'Flex',
@@ -27,15 +27,15 @@ export const MembersInInvite = {
       gap: 'Z',
       Avatar: {
         props: (el, s) => ({
-            boxSize: 'B',
-            key: s.name
-          }),
+          boxSize: 'B',
+          key: s.name
+        })
       },
       P: {
         margin: '0',
         flex: 1,
         hide: (el, s) => !s.username,
-        text: '{{ username }}',
+        text: '{{ username }}'
       },
       Select: {
         padding: 'X Y2',
@@ -44,40 +44,40 @@ export const MembersInInvite = {
         color: 'currentColor',
         width: 'D2',
         onChange: (ev, el, s, ctx) => {
-            const value = ev.target.value
-            if (value) {
-              s.update({
-                action: value
-              })
-            }
-          },
+          const value = ev.target.value
+          if (value) {
+            s.update({
+              action: value
+            })
+          }
+        },
         childrenAs: 'props',
         childProps: {
           tag: 'option',
           attr: {
             selected: (el, s) => {
-                const userRole = s.role || -1
-                const optionValue = el.props.value
-                return userRole === optionValue
-              },
-          },
+              const userRole = s.role || -1
+              const optionValue = el.props.value
+              return userRole === optionValue
+            }
+          }
         },
         children: [
           {
             value: 'guest',
-            text: 'Guest',
+            text: 'Guest'
           },
           {
             value: 'editor',
-            text: 'Editor',
+            text: 'Editor'
           },
           {
             value: 'admin',
-            text: 'Admin',
-          },
+            text: 'Admin'
+          }
         ],
-        if: (el, s) => el.isAdmin() && s.role !== 'owner',
-      },
-    },
-  },
-};
+        if: (el, s) => el.isAdmin() && s.role !== 'owner'
+      }
+    }
+  }
+}

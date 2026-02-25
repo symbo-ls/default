@@ -1,7 +1,8 @@
 {
   "key": "default.symbo.ls",
   "distDir": "./smbls",
-  "version": "1.12.10",
+  "version": "1.12.11",
   "branch": "main",
-  "packageManager": "npm"
+  "packageManager": "npm",
+  "versionId": "699e573bd87124d7d010b409"
 }

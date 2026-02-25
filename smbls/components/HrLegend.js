@@ -10,13 +10,13 @@ export const HrLegend = {
     height: 'V',
     theme: 'dialog',
     round: 'C',
-    flex: '1',
+    flex: '1'
   },
   ':after': {
     content: '""',
     height: 'V',
     theme: 'dialog',
     round: 'C',
-    flex: '1',
-  },
-};
+    flex: '1'
+  }
+}

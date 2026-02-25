@@ -1,14 +1,14 @@
 export const RadioCaption = {
   Caption: {
-    text: 'Caption',
+    text: 'Caption'
   },
   Radio: {
     Input: {},
     FLex: {
-      ':after': {},
-    },
+      ':after': {}
+    }
   },
   extends: 'Flex',
   align: 'center flex-start',
-  gap: 'Z',
-};
+  gap: 'Z'
+}

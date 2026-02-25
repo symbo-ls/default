@@ -13,15 +13,15 @@ const Dropdownmoretoolsmenu = {
         color: 'currentColor',
         opacity: '1',
         margin: '- Y1 - -',
-        fontWeight: '100',
+        fontWeight: '100'
       },
       ':hover': {
         style: {
           svg: {
-            opacity: 1,
-          },
-        },
-      },
+            opacity: 1
+          }
+        }
+      }
     },
     childrenAs: 'props',
     children: el => [{
@@ -68,14 +68,14 @@ const Dropdownmoretoolsmenu = {
         el.setWindow('explorer', val)
         el.parent.update()
       }
-    }],
+    }]
   },
   DashboardNav: {
     CaptionTitle: {
       margin: 'X - X2',
       Text: {
-        text: 'Tools',
-      },
+        text: 'Tools'
+      }
     },
     ListInDropdown: {
       margin: '- -Z2',
@@ -84,9 +84,9 @@ const Dropdownmoretoolsmenu = {
         ':hover': {
           style: {
             svg: {
-              opacity: 1,
-            },
-          },
+              opacity: 1
+            }
+          }
         },
         padding: 'Z Z2',
         fontSize: 'A',
@@ -98,8 +98,8 @@ const Dropdownmoretoolsmenu = {
           color: 'currentColor',
           opacity: '1',
           margin: '- Y1 - -',
-          fontWeight: '100',
-        },
+          fontWeight: '100'
+        }
       },
       childrenAs: 'props',
       children: el => [{
@@ -119,7 +119,7 @@ const Dropdownmoretoolsmenu = {
         hide: true,
         Icon: {
           name: 'play oval'
-        },
+        }
       }, {
         text: 'Props reference',
         Icon: {
@@ -140,15 +140,15 @@ const Dropdownmoretoolsmenu = {
             }
           })
         }
-      }],
-    },
+      }]
+    }
   },
   GeneralNav: {
     CaptionTitle: {
       margin: 'X - X2',
       Text: {
-        text: 'More',
-      },
+        text: 'More'
+      }
     },
     ListInDropdown: {
       margin: '- -Z2',
@@ -162,12 +162,12 @@ const Dropdownmoretoolsmenu = {
         ':hover': {
           style: {
             svg: {
-              opacity: 1,
-            },
-          },
+              opacity: 1
+            }
+          }
         },
         Text: null,
-        color: 'title',
+        color: 'title'
       },
       childrenAs: 'props',
       children: el => [{
@@ -190,15 +190,15 @@ const Dropdownmoretoolsmenu = {
         onClick: (ev, el) => {
           el.setWindow('docs', '/symbols-developer')
         }
-      }],
-    },
+      }]
+    }
   },
   extend: 'Flex',
   props: {
     padding: 'Z1 A',
     gap: 'A',
-    flexFlow: 'y',
-  },
-};
+    flexFlow: 'y'
+  }
+}
 
 export { Dropdownmoretoolsmenu as 'Dropdown.MoreToolsMenu' }

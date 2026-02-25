@@ -1,13 +1,13 @@
 export const ButtonHeading = {
   H: {
     tag: 'h6',
-    text: 'Heading',
+    text: 'Heading'
   },
   Button: {
     text: 'Button',
-    theme: 'dialog',
+    theme: 'dialog'
   },
   extends: 'Flex',
   align: 'center flex-start',
-  gap: 'Z',
-};
+  gap: 'Z'
+}

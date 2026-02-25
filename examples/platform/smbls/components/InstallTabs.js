@@ -13,26 +13,26 @@ export const InstallTabs = {
     '.isActive': {
       color: 'title',
       fontWeight: 'bold',
-      borderWidth: '0 0 3px',
+      borderWidth: '0 0 3px'
     },
     onClick: (ev, el, s) => {
       s.update({
         installTab: el.key
       })
       el.call('setCookie', 'installTab', el.key)
-    },
+    }
   },
   Development: {
-    text: 'Development',
+    text: 'Development'
   },
   Domain: {
     extends: 'SubscribeButton',
     Text: {
       order: '-1',
-      text: 'Domain',
-    },
+      text: 'Domain'
+    }
   },
   Live: {
-    text: 'Live website',
-  },
-};
+    text: 'Live website'
+  }
+}

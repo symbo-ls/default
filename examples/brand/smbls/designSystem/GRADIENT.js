@@ -6,15 +6,15 @@ export default {
   transparentBg: 'linear-gradient(45deg, #1c1c1f 25%, transparent 25%), linear-gradient(-45deg, #1c1c1f 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #1c1c1f 75%), linear-gradient(-45deg, transparent 75%, #1c1c1f 75%)',
   'shadow-overlay': {
     '@dark': 'linear-gradient(0deg, var(--theme-document-dark-background) 0%, transparent 100%)',
-    '@light': 'linear-gradient(0deg, var(--theme-document-light-background) 0%, transparent 100%)',
+    '@light': 'linear-gradient(0deg, var(--theme-document-light-background) 0%, transparent 100%)'
   },
   'shadow-overlay-reversed': {
     '@dark': 'linear-gradient(180deg, var(--theme-document-dark-background) 0%, transparent 100%)',
-    '@light': 'linear-gradient(180deg, var(--theme-document-light-background) 0%, transparent 100%)',
+    '@light': 'linear-gradient(180deg, var(--theme-document-light-background) 0%, transparent 100%)'
   },
   'panel-overlay': {
     '@dark': 'linear-gradient(to top, rgba(8, 8, 8, 1) 0%, rgba(8, 8, 8, .85) 45%, rgba(8, 8, 8, .65) 65%, rgba(8, 8, 8, 0) 100%)',
-    '@light': 'linear-gradient(to top, rgba(241, 241, 243, 1) 0%, rgba(241, 241, 243, 0.85) 65%, rgba(241, 241, 243, 0.65) 40%, rgba(241, 241, 243, 0) 100%)',
+    '@light': 'linear-gradient(to top, rgba(241, 241, 243, 1) 0%, rgba(241, 241, 243, 0.85) 65%, rgba(241, 241, 243, 0.65) 40%, rgba(241, 241, 243, 0) 100%)'
   },
   'button-gradient': 'linear-gradient(to top, rgba(50, 114, 184, .2), rgba(0, 121, 253, .27), rgba(0, 121, 253, .27))',
   'button-gradient-active': 'linear-gradient(to top, rgba(50, 114, 184, .25), rgba(0, 121, 253, .32), rgba(0, 121, 253, .32))',
@@ -49,5 +49,5 @@ export default {
     #1E54F0 32%,
     #8B4CCA 75%,
     #C66894 100%
-  )`,
-};
+  )`
+}

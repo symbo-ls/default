@@ -1,7 +1,7 @@
 export const ArticleLink = {
   extends: [
     'Link',
-    'ClickableButton',
+    'ClickableButton'
   ],
   padding: 'Z1',
   round: 'Z2',
@@ -11,27 +11,27 @@ export const ArticleLink = {
   '@dark': {
     theme: null,
     color: 'gray11',
-    border: 'gray2, solid',
+    border: 'gray2, solid'
   },
   '@light': {
     theme: null,
     color: 'gray11',
-    border: 'gray11, solid',
+    border: 'gray11, solid'
   },
   Caption: {
     fontSize: 'Y',
     color: 'gray7',
     fontWeight: '500',
-    textTransform: 'uppercase',
+    textTransform: 'uppercase'
   },
   Title: {
     margin: '0',
     fontWeight: '500',
     '@dark': {
-      color: 'gray11',
+      color: 'gray11'
     },
     '@light': {
-      color: 'gray3',
-    },
-  },
-};
+      color: 'gray3'
+    }
+  }
+}

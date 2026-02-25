@@ -25,26 +25,26 @@ export const addFontFamilyModal = {
     value: {
       type: 'serif',
       value: [
-        'inherit',
-      ],
-    },
+        'inherit'
+      ]
+    }
   },
   ModalHeader: {
     title: 'Font Family',
-    p: 'Set up font-family and fonts ordering',
+    p: 'Set up font-family and fonts ordering'
   },
   Flex: {
     props: {
       flexAlign: 'stretch center',
       gap: 'C',
-      padding: '0 E 0 0',
+      padding: '0 E 0 0'
     },
     Fields: {
       flexFlow: 'y',
       gap: 'B1',
       InputField: {
         Title: {
-          text: 'Family name',
+          text: 'Family name'
         },
         Input: {
           placeholder: 'Name the family',
@@ -60,30 +60,30 @@ export const addFontFamilyModal = {
             s.update({
               familyName
             })
-          },
-        },
+          }
+        }
       },
       GroupField: {
         Title: {
-          text: 'Family type',
+          text: 'Family type'
         },
         DropdownField: {
           Value: {
             Text: {
-              text: (el, s) => (s.value && s.value.type) || 'All Categories',
-            },
-          },
-        },
-      },
+              text: (el, s) => (s.value && s.value.type) || 'All Categories'
+            }
+          }
+        }
+      }
     },
     Group: {
       state: 'value',
       padding: '0 0 0 B2',
       style: {
-        borderLeft: '1px solid rgba(255, 255, 255, .06)',
+        borderLeft: '1px solid rgba(255, 255, 255, .06)'
       },
       Title: {
-        text: 'Define ordering',
+        text: 'Define ordering'
       },
       Content: {
         Tools: {
@@ -93,7 +93,7 @@ export const addFontFamilyModal = {
           children: (el, state) => {
             return Object.values(state.value)
           },
-          childrenAs: 'state',
+          childrenAs: 'state'
         },
         SquareButton: {
           theme: 'quaternary',
@@ -101,12 +101,12 @@ export const addFontFamilyModal = {
           margin: 'A 0 B1 A1',
           onClick: (ev, el, s) => {
             s.add('inherit')
-          },
+          }
         },
         OrderingItem: {
           Buttons: null,
           Span: {
-            text: (el, s) => `${parseInt(s.parent.value?.length + 1)}. `,
+            text: (el, s) => `${parseInt(s.parent.value?.length + 1)}. `
           },
           Tool: {
             width: '22em',
@@ -114,26 +114,26 @@ export const addFontFamilyModal = {
             Value: {
               color: 'rgba(255, 255, 255, .5)',
               Text: {
-                text: 'Helvetica, Arial, sans-serif, --system-default',
-              },
+                text: 'Helvetica, Arial, sans-serif, --system-default'
+              }
             },
             Buttons: {
               children: [
                 {
-                  theme: 'transparent',
-                },
+                  theme: 'transparent'
+                }
               ],
-              childrenAs: 'props',
-            },
-          },
-        },
-      },
-    },
+              childrenAs: 'props'
+            }
+          }
+        }
+      }
+    }
   },
   ModalFooter: {
     CheckButton: {
       type: 'submit',
-      text: 'Okay',
-    },
-  },
-};
+      text: 'Okay'
+    }
+  }
+}

@@ -14,7 +14,7 @@ export const FileItem = {
       return Boolean(item?.state?.error)
     },
     '.hasError': {
-      color: 'red',
+      color: 'red'
     },
     Icon: {
       left: 0,
@@ -28,7 +28,7 @@ export const FileItem = {
       transitionProperty: 'opacity, transform',
       hasLayers: (el, s) => Boolean(el.call('hasArtboard', s.type)),
       '!hasLayers': {
-        pointerEvents: 'none',
+        pointerEvents: 'none'
       },
       onClick: (ev, el, s) => {
         ev.stopPropagation()
@@ -49,8 +49,8 @@ export const FileItem = {
             showLayers: !s.showLayers
           })
         }
-      },
-    },
+      }
+    }
   },
   Text: {
     class: 'text',
@@ -60,7 +60,7 @@ export const FileItem = {
     overflow: 'hidden',
     padding: '.1em - .1em',
     position: 'relative',
-    textOverflow: 'ellipsis',
+    textOverflow: 'ellipsis'
   },
   EditCode: {
     extends: 'NavbarButton',
@@ -75,7 +75,7 @@ export const FileItem = {
       ev.stopPropagation()
       el.setWindow('componentEditor', 'code')
       el.activateSelected(s.key)
-    },
+    }
   },
   Rename: {
     extends: 'FileSidebarAddNewItem',
@@ -89,11 +89,11 @@ export const FileItem = {
         flex: 1,
         value: (el, s) => s.key,
         name: 'new-key',
-        onInput: () => {},
+        onInput: () => {}
       },
       Flex: {
         Save: {
-          type: 'submit',
+          type: 'submit'
         },
         Close: {
           onClick: (ev, el, s) => {
@@ -102,8 +102,8 @@ export const FileItem = {
             s.update({
               editing: false
             })
-          },
-        },
+          }
+        }
       },
       Err: {
         whiteSpace: 'pre-line',
@@ -111,8 +111,8 @@ export const FileItem = {
         theme: 'modal',
         round: 'X',
         fontSize: 'Y2',
-        position: 'static',
-      },
+        position: 'static'
+      }
     },
     onSubmit: async (ev, el, s) => {
       ev.preventDefault()
@@ -121,7 +121,7 @@ export const FileItem = {
         editing: false,
         key: newKey
       })
-    },
+    }
   },
   content: (el, s) => {
     if (!s.value) return
@@ -160,11 +160,11 @@ export const FileItem = {
       color: 'transparent',
       '& svg': {
         opacity: 1,
-        visibility: 'visible',
-      },
+        visibility: 'visible'
+      }
     },
     ':hover .layer-controls': {
-      opacity: 1,
+      opacity: 1
     },
     ':after': {
       content: '""',
@@ -172,7 +172,7 @@ export const FileItem = {
       borderColor: 'dim',
       borderWidth: '0 0 0 0',
       position: 'absolute',
-      inset: '-W auto -W -Z',
+      inset: '-W auto -W -Z'
     },
     '.isActive': {
       theme: 'layer',
@@ -180,27 +180,27 @@ export const FileItem = {
         color: 'transparent',
         '& svg': {
           opacity: 1,
-          visibility: 'visible',
-        },
+          visibility: 'visible'
+        }
       },
       '.isCurrent': {
-        theme: 'field',
+        theme: 'field'
       },
       '& .layer-controls': {
-        opacity: 1,
-      },
+        opacity: 1
+      }
     },
     '!isActive': {
       color: 'caption',
       fontWeight: 400,
       opacity: '.85',
       '.isCurrent': {
-        theme: 'field',
+        theme: 'field'
       },
       '& .layer-controls': {
-        opacity: 0,
-      },
+        opacity: 0
+      }
     },
-    sidebarItem: true,
-  },
-};
+    sidebarItem: true
+  }
+}

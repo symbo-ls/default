@@ -1,6 +1,6 @@
 export const UploadIcon = {
   extends: [
-    'Focusable',
+    'Focusable'
   ],
   tag: 'label',
   position: 'relative',
@@ -16,12 +16,12 @@ export const UploadIcon = {
     position: 'absolute',
     inset: '0 0 0 0',
     opacity: '0',
-    visibility: 'hidden',
+    visibility: 'hidden'
   },
   Icon: {
     name: 'upload',
     fontSize: 'B',
-    opacity: '.2',
+    opacity: '.2'
   },
   P: {
     text: ' or click and upload from your computer',
@@ -31,7 +31,7 @@ export const UploadIcon = {
     margin: '0',
     Span: {
       text: 'Drag and drop your font file',
-      display: 'block',
-    },
-  },
-};
+      display: 'block'
+    }
+  }
+}

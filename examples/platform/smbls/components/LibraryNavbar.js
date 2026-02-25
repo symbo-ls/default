@@ -10,7 +10,7 @@ export const LibraryNavbar = {
     position: 'sticky',
     theme: 'common-box',
     zIndex: 2,
-    gap: 'X',
+    gap: 'X'
   },
   CanvasSearch: {
     round: 'C1',
@@ -22,12 +22,12 @@ export const LibraryNavbar = {
         paddingBlock: 'Z',
         placeholder: 'Search library...',
         onInput: (ev, el, s) => {
-            s.update({
-              search: el.node.value
-            })
-          },
-      },
-    },
+          s.update({
+            search: el.node.value
+          })
+        }
+      }
+    }
   },
   NavbarButtonSet: {
     gap: 'X2',
@@ -38,8 +38,8 @@ export const LibraryNavbar = {
       title: 'How it works?',
       icon: 'question mark',
       onClick: (ev, el) => {
-          el.setWindow('docs', '/components')
-        },
-    },
-  },
-};
+        el.setWindow('docs', '/components')
+      }
+    }
+  }
+}

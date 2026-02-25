@@ -5,30 +5,30 @@ export const IconLinkWithPath = {
   IconCaption: {
     extends: [
       'IconCaption',
-      'DocsLink',
+      'DocsLink'
     ],
     href: '{{ href }}',
     margin: '0 0 0 -A1',
     target: '_blank',
     gap: 'X1',
     Icon: {
-      icon: 'github',
+      icon: 'github'
     },
     Text: {
       text: '{{ title }}',
-      color: 'title',
-    },
+      color: 'title'
+    }
   },
   P: {
     color: 'paragraph',
     margin: '0',
-    text: '{{ description }}',
+    text: '{{ description }}'
   },
   DocsLink: {
     text: '{{ href }}',
     href: '{{ href }}',
     target: '_blank',
     color: 'grassgreen .85',
-    fontWeight: '400',
-  },
-};
+    fontWeight: '400'
+  }
+}

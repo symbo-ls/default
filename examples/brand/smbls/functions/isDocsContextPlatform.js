@@ -1,3 +1,3 @@
-export const isDocsContextPlatform = function isDocsContextPlatform() {
+export const isDocsContextPlatform = function isDocsContextPlatform () {
   return this.getRootState('docsContext') === 'Platform'
 }

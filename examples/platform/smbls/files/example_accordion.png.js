@@ -29,20 +29,20 @@ export default {
         base: '/core/files',
         file: '/core/files/692d1b9cd181acc7ae756070',
         download: '/core/files/public/692d1b9cd181acc7ae756070/download',
-        publicDownload: '/core/files/public/692d1b9cd181acc7ae756070/download',
+        publicDownload: '/core/files/public/692d1b9cd181acc7ae756070/download'
       },
       absolute: {
         base: 'https://api.symbols.app/core/files',
         file: 'https://api.symbols.app/core/files/692d1b9cd181acc7ae756070',
         download: 'https://api.symbols.app/core/files/public/692d1b9cd181acc7ae756070/download',
-        publicDownload: 'https://api.symbols.app/core/files/public/692d1b9cd181acc7ae756070/download',
+        publicDownload: 'https://api.symbols.app/core/files/public/692d1b9cd181acc7ae756070/download'
       },
-      storage: 'https://storage.googleapis.com/smbls-api-media/media/projects/686848670cf470c589093536/users/6868484c0cf470c5890933cc/73_1Jpv4gSdzN2HkjCvqF.png',
+      storage: 'https://storage.googleapis.com/smbls-api-media/media/projects/686848670cf470c589093536/users/6868484c0cf470c5890933cc/73_1Jpv4gSdzN2HkjCvqF.png'
     },
-    src: 'https://api.symbols.app/core/files/public/692d1b9cd181acc7ae756070/download',
+    src: 'https://api.symbols.app/core/files/public/692d1b9cd181acc7ae756070/download'
   },
   code: '',
   key: 'example_accourdion.png',
   type: 'files',
-  format: 'png',
-};
+  format: 'png'
+}

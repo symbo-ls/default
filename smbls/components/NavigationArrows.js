@@ -3,18 +3,18 @@ export const NavigationArrows = {
   childExtends: 'IconButton',
   gap: 'Z',
   childProps: {
-    round: '100%',
+    round: '100%'
   },
   children: [
     {
       Icon: {
-        name: 'chevronLeft',
-      },
+        name: 'chevronLeft'
+      }
     },
     {
       Icon: {
-        name: 'chevronRight',
-      },
-    },
-  ],
-};
+        name: 'chevronRight'
+      }
+    }
+  ]
+}

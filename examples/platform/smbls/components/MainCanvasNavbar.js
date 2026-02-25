@@ -14,16 +14,16 @@ export const MainCanvasNavbar = {
     align: 'center',
     gap: 'X',
     LogoDropdown: {},
-    TextNavbar: {},
+    TextNavbar: {}
   },
   ModesInNavbar: {
-    margin: '- -Z',
+    margin: '- -Z'
   },
   CanvasPagesDropdown: {
-    margin: '- -Z',
+    margin: '- -Z'
   },
   CanvasSearch: {
-    flex: 1,
+    flex: 1
   },
   History: {
     extends: 'NavbarButtonSet',
@@ -34,14 +34,14 @@ export const MainCanvasNavbar = {
       icon: 'undo',
       onClick: (ev, el, s) => {
         el.sdk.undo()
-      },
+      }
     },
     Redo: {
       title: 'Redo',
       icon: 'redo',
       onClick: (ev, el, s) => {
         el.sdk.redo()
-      },
+      }
     },
     History: {
       title: 'History',
@@ -51,15 +51,15 @@ export const MainCanvasNavbar = {
           preventUpdate: true
         })
         el.getVersionsAside()?.update()
-      },
-    },
+      }
+    }
   },
   EnvsNavbar: {
-    if: () => false,
+    if: () => false
   },
   PublishNavbar: {},
   MembersNavbar: {
-    margin: '- -Z2 - -',
+    margin: '- -Z2 - -'
   },
-  SharingNavbar: {},
-};
+  SharingNavbar: {}
+}

@@ -2,19 +2,19 @@ export const NavigationArrows = {
   gap: 'Z',
   childProps: {
     round: '100%',
-    theme: 'dialog',
+    theme: 'dialog'
   },
   childExtends: 'IconButton',
   children: [
     {
       Icon: {
-        name: 'chevronLeft',
-      },
+        name: 'chevronLeft'
+      }
     },
     {
       Icon: {
-        name: 'chevronRight',
-      },
-    },
-  ],
-};
+        name: 'chevronRight'
+      }
+    }
+  ]
+}

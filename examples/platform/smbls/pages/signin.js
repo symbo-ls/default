@@ -21,11 +21,11 @@ export const signin = {
 
       try {
         const pluginSession = el.call('getPluginSessionFromUrl')
-        const loginResult = pluginSession ?
-          await el.sdk.login(identifier, password, {
+        const loginResult = pluginSession
+          ? await el.sdk.login(identifier, password, {
             session: pluginSession
-          }) :
-          await el.sdk.login(identifier, password)
+          })
+          : await el.sdk.login(identifier, password)
 
         s.update({
           loading: true
@@ -37,7 +37,7 @@ export const signin = {
         })
 
         await el.call('initializeUserSession', {
-          loginData: loginResult,
+          loginData: loginResult
         })
 
         el.router('/dashboard', el.getRoot())
@@ -59,25 +59,25 @@ export const signin = {
       })
     },
     '@tabletS': {
-      boxSize: 'auto I',
+      boxSize: 'auto I'
     },
     '@mobileL': {
       boxSize: 'auto H',
-      padding: '- C',
+      padding: '- C'
     },
     '@mobileS': {
       boxSize: 'auto G2',
-      padding: '- B1',
+      padding: '- B1'
     },
     '@mobileXS': {
-      boxSize: 'auto G1',
+      boxSize: 'auto G1'
     },
     ModalHeader: {
       '@mobileL': {
-        gap: '0',
+        gap: '0'
       },
       title: 'Sign in to Symbols',
-      p: null,
+      p: null
     },
     Flex: {
       LoginForm: {},
@@ -90,23 +90,23 @@ export const signin = {
             href: '/signup',
             '@mobileL': {
               minWidth: '100%',
-              padding: 'Z1 -',
-            },
+              padding: 'Z1 -'
+            }
           },
           childProps: {
             '@tabletS': {
-              padding: '- - - C',
+              padding: '- - - C'
             },
             '@mobileL': {
               align: 'center center',
               maxWidth: '100%',
               textAlign: 'center',
-              border: 'none',
-            },
-          },
-        },
-      },
-    },
+              border: 'none'
+            }
+          }
+        }
+      }
+    }
   },
-  LandingFooterLite: {},
-};
+  LandingFooterLite: {}
+}

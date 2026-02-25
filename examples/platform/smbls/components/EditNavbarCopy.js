@@ -13,18 +13,18 @@ export const EditNavbarCopy = {
     padding: '0',
     Text: {
       ignoreChildExtend: true,
-      text: '{{ key }}',
+      text: '{{ key }}'
     },
     CopyButton: {
       title: 'Copy title',
-      value: (el, s) => s.parent.key,
-    },
+      value: (el, s) => s.parent.key
+    }
   },
   EditorTools: {
     hide: true,
     margin: '- auto - C3',
     color: 'dim',
-    fontSize: 'Z1',
+    fontSize: 'Z1'
   },
   NavbarButtonSet_meta: {
     class: 'close',
@@ -38,7 +38,7 @@ export const EditNavbarCopy = {
       margin: '- - - auto',
       onClick: (ev, el) => {
         el.setWindow('docs', '/properties')
-      },
+      }
     },
     Close: {
       title: 'Close',
@@ -47,7 +47,7 @@ export const EditNavbarCopy = {
       margin: '- - - X',
       onClick: (ev, el) => {
         el.closeWindow('componentEditor')
-      },
-    },
-  },
-};
+      }
+    }
+  }
+}

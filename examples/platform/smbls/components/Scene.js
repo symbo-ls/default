@@ -8,7 +8,7 @@ export const Scene = {
     position: 'absolute',
     inset: '0 0 0 0',
     width: '100%',
-    height: '100%',
+    height: '100%'
   },
   Iframe: {
     srcdoc: '',
@@ -53,11 +53,12 @@ export const Scene = {
       el.node.onload = () => el.props.onRenderScene(el, s, ctx)
     },
     onUpdate: (el, s) => {
-      if (el.props.scrollToTop)
+      if (el.props.scrollToTop) {
         el.getRoot().node.scrollTo({
           top: 0,
           behavior: 'smooth'
         })
+      }
     },
     onBeforeUpdate: (ch, el, s, ctx, opts) => {
       if (!opts.forcePreviewUpdate) return
@@ -65,6 +66,6 @@ export const Scene = {
       const forcedAction = opts.fromLayers ? 'update' : el.parent.props.action
       el.call('sceneActions')[forcedAction].call(frameWindow, el, s, ctx)
       return false
-    },
-  },
-};
+    }
+  }
+}

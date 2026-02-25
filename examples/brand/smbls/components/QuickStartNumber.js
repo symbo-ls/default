@@ -8,15 +8,15 @@ export const QuickStartNumber = {
   fontWeight: '900',
   margin: '0',
   style: {
-    userSelect: 'none',
+    userSelect: 'none'
   },
   '@tabletL': {
-    margin: '5px 0 0 0',
+    margin: '5px 0 0 0'
   },
   '@dark': {
-    textStroke: '1px, gray6',
+    textStroke: '1px, gray6'
   },
   '@light': {
-    textStroke: '1px, gray11',
-  },
-};
+    textStroke: '1px, gray11'
+  }
+}

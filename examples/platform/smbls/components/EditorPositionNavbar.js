@@ -13,7 +13,7 @@ export const EditorPositionNavbar = {
       EditorPanels.setProps({
         isExpanded: true
       })
-    },
+    }
   },
   Minimize: {
     title: 'Minimize',
@@ -28,7 +28,7 @@ export const EditorPositionNavbar = {
       EditorPanels.setProps({
         isExpanded: false
       })
-    },
+    }
   },
   Left: {
     title: 'Align to left',
@@ -38,7 +38,7 @@ export const EditorPositionNavbar = {
       const EditorPanels = el.getEditorPanels()
       el.call('setUserSettings', 'editorPanelsAtRight', false)
       EditorPanels.update()
-    },
+    }
   },
   Right: {
     title: 'Align to right',
@@ -48,6 +48,6 @@ export const EditorPositionNavbar = {
       const EditorPanels = el.getEditorPanels()
       el.call('setUserSettings', 'editorPanelsAtRight', true)
       EditorPanels.update()
-    },
-  },
-};
+    }
+  }
+}

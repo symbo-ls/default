@@ -5,6 +5,6 @@ export const grids = {
     userSelect: 'none',
     color: 'dim',
     fontSize: 'Y',
-    textTransform: 'uppercase',
-  },
-};
+    textTransform: 'uppercase'
+  }
+}

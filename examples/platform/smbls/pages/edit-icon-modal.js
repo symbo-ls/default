@@ -21,7 +21,7 @@ export const editIconModal = {
   },
   ModalHeader: {
     title: 'Icon Preview',
-    p: null,
+    p: null
   },
   Flex: {},
   ModalFooter: {
@@ -41,7 +41,7 @@ export const editIconModal = {
           })
           el.context.closeModal(el, s)
         }
-      },
-    },
-  },
-};
+      }
+    }
+  }
+}

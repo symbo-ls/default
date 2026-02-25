@@ -1,6 +1,6 @@
 export const DashboardNavbar = {
   extends: [
-    'CanvasButton',
+    'CanvasButton'
   ],
   round: 'C1',
   align: 'center',
@@ -9,25 +9,25 @@ export const DashboardNavbar = {
   '!isActive': {
     ':hover': {
       '@dark': {
-        backgroundColor: 'gray4 .5',
+        backgroundColor: 'gray4 .5'
       },
       '@light': {
-        backgroundColor: 'gray13 .5',
-      },
+        backgroundColor: 'gray13 .5'
+      }
     },
     ':active': {
       '@dark': {
-        backgroundColor: 'gray4 .5',
+        backgroundColor: 'gray4 .5'
       },
       '@light': {
-        backgroundColor: 'gray13 .5',
-      },
-    },
+        backgroundColor: 'gray13 .5'
+      }
+    }
   },
   Button: {
     extends: [
       'CanvasButton',
-      'Button',
+      'Button'
     ],
     padding: 'Y Y2 Y Z',
     round: 'C1 0 0 C1',
@@ -36,12 +36,12 @@ export const DashboardNavbar = {
     gap: 'Y',
     icon: 'play oval',
     text: 'Preview',
-    aspectRatio: 'none',
+    aspectRatio: 'none'
   },
   IconButton: {
     extends: [
       'CanvasButton',
-      'IconButton',
+      'IconButton'
     ],
     round: '0 C1 C1 0',
     theme: null,
@@ -49,6 +49,6 @@ export const DashboardNavbar = {
     padding: 'Y2 Y2 Y2 Y',
     margin: '- - - -X',
     icon: null,
-    DropdownArrow: {},
-  },
-};
+    DropdownArrow: {}
+  }
+}

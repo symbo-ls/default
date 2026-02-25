@@ -18,27 +18,27 @@ export const IntroPanel = {
             username
           } = el.getRootState()
           return `Hi ${username || name || ''} 👋`
-        },
+        }
       },
       P: {
         margin: '0',
         fontSize: 'Z2',
         color: 'paragraph',
-        text: 'Welcome to your Symbols canvas! This quick guide will walk you through the basics of your workspace.',
-      },
+        text: 'Welcome to your Symbols canvas! This quick guide will walk you through the basics of your workspace.'
+      }
     },
     DragParagraph: {
       fontSize: 'Z1',
-      margin: 'Z auto A',
+      margin: 'Z auto A'
     },
     DragComponentsTutorial: {},
     Line: {
-      margin: '0',
+      margin: '0'
     },
     MovingOn: {
       P: {
         color: 'paragraph',
-        text: `Let's continue your journey using Symbols`,
+        text: 'Let\'s continue your journey using Symbols'
       },
       Flex: {
         flow: 'y',
@@ -54,66 +54,66 @@ export const IntroPanel = {
           color: 'title',
           borderColor: 'line',
           ':hover': {
-            textDecoration: 'underline',
+            textDecoration: 'underline'
           },
           Icon: {
             order: '-2',
-            name: 'arrow up right',
-          },
+            name: 'arrow up right'
+          }
         },
         children: [
           {
             Text: {
-              text: 'My content',
-            },
+              text: 'My content'
+            }
           },
           {
             Text: {
-              text: 'Chat with AI',
-            },
+              text: 'Chat with AI'
+            }
           },
           {
             Text: {
-              text: 'More tutorials',
-            },
+              text: 'More tutorials'
+            }
           },
           {
             Text: {
-              text: 'More examples',
-            },
+              text: 'More examples'
+            }
           },
           {
             Text: {
-              text: 'Library components',
-            },
+              text: 'Library components'
+            }
           },
           {
             Text: {
-              text: 'My code',
-            },
+              text: 'My code'
+            }
           },
           {
             Text: {
-              text: 'Documentation',
-            },
+              text: 'Documentation'
+            }
           },
           {
             Text: {
-              text: 'How to export',
-            },
+              text: 'How to export'
+            }
           },
           {
             Text: {
-              text: 'Support & Resources',
-            },
-          },
-        ],
-      },
+              text: 'Support & Resources'
+            }
+          }
+        ]
+      }
     },
     Dismiss: {
       extends: [
         'CanvasButton',
-        'Button',
+        'Button'
       ],
       alignSelf: 'start',
       fontSize: 'Z',
@@ -126,7 +126,7 @@ export const IntroPanel = {
       onClick: (ev, el) => {
         el.call('setCookie', 'tutorialMarked_intro', true)
         el.closeWindow('explorer')
-      },
-    },
-  },
-};
+      }
+    }
+  }
+}

@@ -4,8 +4,8 @@ const Dropdownquickadd = {
     CaptionTitle: {
       margin: '- - Z',
       Text: {
-        text: 'Add blank',
-      },
+        text: 'Add blank'
+      }
     },
     ListInDropdown: {
       margin: '- -Z2',
@@ -14,9 +14,9 @@ const Dropdownquickadd = {
         ':hover': {
           style: {
             svg: {
-              opacity: 1,
-            },
-          },
+              opacity: 1
+            }
+          }
         },
         padding: 'Z Z2',
         fontSize: 'A',
@@ -29,8 +29,8 @@ const Dropdownquickadd = {
           color: 'currentColor',
           opacity: '1',
           margin: '0',
-          fontWeight: '100',
-        },
+          fontWeight: '100'
+        }
       },
       childrenAs: 'props',
       children: el => [{
@@ -63,34 +63,34 @@ const Dropdownquickadd = {
         onClick: (ev, el, s) => {
           el.call('openModal', '/add-file')
         }
-      }],
-    },
+      }]
+    }
   },
   Line: {
-    margin: '- -Z2 X',
+    margin: '- -Z2 X'
   },
   MoreInsertMenu: {},
   Line_2: {
-    margin: '- -Z2 Z',
+    margin: '- -Z2 Z'
   },
   QuickAddPanel: {
     CaptionTitle: {
       margin: '- - Y2',
       Text: {
-        text: 'apply action',
-      },
+        text: 'apply action'
+      }
     },
     Flex: {
       flow: 'y',
       gap: 'Z2',
       childProps: {
-        width: '100%',
+        width: '100%'
       },
       Select_action: {
-        width: '100%',
+        width: '100%'
       },
       Select_type: {
-        width: '100%',
+        width: '100%'
       },
       FileSidebarAddNewItem: {
         order: 2,
@@ -101,22 +101,22 @@ const Dropdownquickadd = {
             order: 2,
             opacity: 1,
             Save: {
-              extends: 'NavbarButton',
+              extends: 'NavbarButton'
             },
-            Close: null,
-          },
-        },
-      },
-    },
+            Close: null
+          }
+        }
+      }
+    }
   },
   Line_3: {
-    margin: '- -Z2 Z',
+    margin: '- -Z2 Z'
   },
   ComingSoonMenu: {
     CaptionTitle_soon: {
       Text: {
-        text: 'Coming soon',
-      },
+        text: 'Coming soon'
+      }
     },
     ListInDropdown: {
       margin: '- -Z2',
@@ -132,15 +132,15 @@ const Dropdownquickadd = {
           color: 'currentColor',
           opacity: '1',
           margin: '- Y1 - -',
-          fontWeight: '100',
+          fontWeight: '100'
         },
         ':hover': {
           style: {
             svg: {
-              opacity: 1,
-            },
-          },
-        },
+              opacity: 1
+            }
+          }
+        }
       },
       childrenAs: 'props',
       children: el => [{
@@ -198,8 +198,8 @@ const Dropdownquickadd = {
         onClick: (ev, el) => {
           el.setWindow('explorer', 'insert:fonts')
         }
-      }],
-    },
+      }]
+    }
   },
   extend: 'Flex',
   props: {
@@ -207,8 +207,8 @@ const Dropdownquickadd = {
     flow: 'y',
     gap: 'A',
     padding: 'A A1',
-    textAlign: 'start',
-  },
-};
+    textAlign: 'start'
+  }
+}
 
 export { Dropdownquickadd as 'Dropdown.QuickAdd' }

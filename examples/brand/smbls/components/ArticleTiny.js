@@ -3,6 +3,6 @@ export const ArticleTiny = {
   gap: '0',
   Title: {},
   P: {
-    fontSize: 'Z',
-  },
-};
+    fontSize: 'Z'
+  }
+}

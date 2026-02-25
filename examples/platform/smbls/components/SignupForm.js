@@ -3,15 +3,15 @@ export const SignupForm = {
   gap: 'A',
   flex: '1',
   '@mobileL': {
-    minWidth: '100%',
+    minWidth: '100%'
   },
   childExtends: {
     extend: 'InputField',
     props: {
       width: '100%',
       '@mobileL': {
-        maxWidth: '100%',
-      },
+        maxWidth: '100%'
+      }
     },
     Title: {},
     Input: {
@@ -20,13 +20,13 @@ export const SignupForm = {
         s.update({
           [el.parent.key.toLowerCase()]: el.node.value
         })
-      },
-    },
+      }
+    }
   },
   Email: {
     Title: {
       text: 'Email',
-      padding: '- - 0',
+      padding: '- - 0'
     },
     Input: (_, s) => ({
       height: 'B2',
@@ -39,34 +39,34 @@ export const SignupForm = {
       value: s.email ? s.email : s.value,
       placeholder: 'e.g. hello@symbo.ls',
       disabled: s.hasToken
-    }),
+    })
   },
   Name: {
     Title: {
       text: 'Full name',
-      padding: '- - 0',
+      padding: '- - 0'
     },
     Input: {
       height: 'B2',
       '@mobileL': {
-        height: 'unset',
+        height: 'unset'
       },
       autocomplete: '{{ value }}',
       required: true,
       value: '{{ value }}',
       placeholder: 'e.g. Mike',
-      type: 'text',
-    },
+      type: 'text'
+    }
   },
   Password: {
     Title: {
       text: 'Password',
-      padding: '- - 0',
+      padding: '- - 0'
     },
     Input: {
       height: 'B2',
       '@mobileL': {
-        height: 'unset',
+        height: 'unset'
       },
       autocomplete: 'current-password',
       value: '{{ value }}',
@@ -78,8 +78,8 @@ export const SignupForm = {
         s.update({
           password: el.node.value
         })
-      },
-    },
+      }
+    }
   },
   ModalFooter: {
     padding: 'B1 - - -',
@@ -88,12 +88,12 @@ export const SignupForm = {
       text: 'Sign up',
       height: 'B2',
       '@mobileL': {
-        height: 'unset',
+        height: 'unset'
       },
       type: 'submit',
-      icon: null,
+      icon: null
     },
     Title: null,
-    Input: null,
-  },
-};
+    Input: null
+  }
+}

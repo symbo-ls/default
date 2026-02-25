@@ -1,12 +1,12 @@
 export const AvatarParagraph = {
   Avatar: {
-    boxSize: 'B1',
+    boxSize: 'B1'
   },
   P: {
     text: 'Can you join us today?',
-    margin: '0',
+    margin: '0'
   },
   extends: 'Flex',
   align: 'center flex-start',
-  gap: 'Y1',
-};
+  gap: 'Y1'
+}

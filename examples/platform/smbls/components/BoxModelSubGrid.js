@@ -1,6 +1,6 @@
 export const BoxModelSubGrid = {
   style: {
-    border: '.5px solid rgba(139, 147, 92, .25)',
+    border: '.5px solid rgba(139, 147, 92, .25)'
   },
   extend: 'Grid',
   props: {
@@ -14,16 +14,16 @@ export const BoxModelSubGrid = {
     childrenAs: 'props',
     children: [
       {
-        boxSize: '100%',
+        boxSize: '100%'
       },
       {
-        boxSize: '100%',
+        boxSize: '100%'
       },
       {
-        boxSize: '100%',
+        boxSize: '100%'
       },
       {
-        boxSize: '100%',
+        boxSize: '100%'
       },
       {
         extends: 'Icon',
@@ -32,7 +32,7 @@ export const BoxModelSubGrid = {
         left: 'Y1',
         icon: 'paddingColored',
         fontSize: 'A',
-        color: '#8B935C',
+        color: '#8B935C'
       },
       {
         extends: 'Icon',
@@ -41,52 +41,52 @@ export const BoxModelSubGrid = {
         top: '-Z1',
         left: '-Z1',
         fontSize: 'A',
-        color: 'yellow',
+        color: 'yellow'
       },
       {
         extends: 'BoxModelAside',
         gridArea: 't',
         SizeUnits: {
           LetterValue: {
-            color: '#8F9959',
+            color: '#8F9959'
           },
-          NumberValue: {},
-        },
+          NumberValue: {}
+        }
       },
       {
         extends: 'BoxModelAside',
         gridArea: 'r',
         SizeUnits: {
           LetterValue: {
-            color: '#8F9959',
+            color: '#8F9959'
           },
-          NumberValue: {},
-        },
+          NumberValue: {}
+        }
       },
       {
         extends: 'BoxModelMiddle',
-        gridArea: 'content',
+        gridArea: 'content'
       },
       {
         extends: 'BoxModelAside',
         gridArea: 'b',
         SizeUnits: {
           LetterValue: {
-            color: '#8F9959',
+            color: '#8F9959'
           },
-          NumberValue: {},
-        },
+          NumberValue: {}
+        }
       },
       {
         extends: 'BoxModelAside',
         gridArea: 'l',
         SizeUnits: {
           LetterValue: {
-            color: '#8F9959',
+            color: '#8F9959'
           },
-          NumberValue: {},
-        },
-      },
-    ],
-  },
-};
+          NumberValue: {}
+        }
+      }
+    ]
+  }
+}

@@ -8,20 +8,20 @@ export const Pills = {
     cursor: 'pointer',
     text: '',
     '.isActive': {
-      theme: 'primary',
+      theme: 'primary'
     },
     '!isActive': {
-      theme: 'tertiary',
+      theme: 'tertiary'
     },
     ':active': {
-      theme: 'primary',
-    },
+      theme: 'primary'
+    }
   },
   children: [
     {},
     {
-      isActive: true,
-    },
+      isActive: true
+    }
   ],
-  tag: 'nav',
-};
+  tag: 'nav'
+}

@@ -5,20 +5,20 @@ export const CheckStepSet = {
   childProps: {
     Icon: {
       '.isActive': {
-        theme: 'primary',
-      },
+        theme: 'primary'
+      }
     },
     Progress: {},
     ':last-child > progress': {
-      hide: true,
-    },
+      hide: true
+    }
   },
   children: [
     {
       Icon: {
-        isActive: true,
-      },
+        isActive: true
+      }
     },
-    {},
-  ],
-};
+    {}
+  ]
+}

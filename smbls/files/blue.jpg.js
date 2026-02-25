@@ -31,19 +31,19 @@ export default {
         base: '/core/files',
         file: '/core/files/69325d73ebee5529e0392105',
         download: '/core/files/public/69325d73ebee5529e0392105/download',
-        publicDownload: '/core/files/public/69325d73ebee5529e0392105/download',
+        publicDownload: '/core/files/public/69325d73ebee5529e0392105/download'
       },
       absolute: {
         base: 'https://api.symbols.app/core/files',
         file: 'https://api.symbols.app/core/files/69325d73ebee5529e0392105',
         download: 'https://api.symbols.app/core/files/public/69325d73ebee5529e0392105/download',
-        publicDownload: 'https://api.symbols.app/core/files/public/69325d73ebee5529e0392105/download',
+        publicDownload: 'https://api.symbols.app/core/files/public/69325d73ebee5529e0392105/download'
       },
-      storage: 'https://storage.googleapis.com/smbls-api-media/media/projects/686848570cf470c5890934c5/users/6868484c0cf470c5890933cc/otii8v__8YgnCMB-BK9ei.png',
-    },
+      storage: 'https://storage.googleapis.com/smbls-api-media/media/projects/686848570cf470c5890934c5/users/6868484c0cf470c5890933cc/otii8v__8YgnCMB-BK9ei.png'
+    }
   },
   code: '',
   key: 'blue.jpg',
   type: 'file',
-  format: 'png',
-};
+  format: 'png'
+}

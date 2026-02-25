@@ -1,6 +1,6 @@
 export const DropdownField = {
   extends: [
-    'FocusableComponent',
+    'FocusableComponent'
   ],
   tag: 'button',
   theme: 'field',
@@ -19,8 +19,8 @@ export const DropdownField = {
       tabindex: '-1',
       theme: 'field-highlight',
       round: 'Y1',
-      padding: 'Y1',
-    },
+      padding: 'Y1'
+    }
   },
   Value: {
     extends: 'Flex',
@@ -28,9 +28,9 @@ export const DropdownField = {
     padding: '0 B 0 0',
     gap: 'Y2',
     Text: {
-      text: (el, s) => s.value || s.defaultValue || 'default',
+      text: (el, s) => s.value || s.defaultValue || 'default'
     },
-    Suffix: null,
+    Suffix: null
   },
   Buttons: {
     extends: 'Flex',
@@ -41,14 +41,14 @@ export const DropdownField = {
       tabindex: '-1',
       theme: 'field-highlight',
       round: 'Y1',
-      padding: 'Y1',
+      padding: 'Y1'
     },
     Arrow: {
-      icon: 'arrow angle mirroring vertical',
-    },
+      icon: 'arrow angle mirroring vertical'
+    }
   },
   Dropdown: {
     top: '110%',
-    left: '0',
-  },
-};
+    left: '0'
+  }
+}

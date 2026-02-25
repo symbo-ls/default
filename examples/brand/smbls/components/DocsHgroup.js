@@ -1,11 +1,11 @@
 export const DocsHgroup = {
   extends: [
-    'Hgroup',
+    'Hgroup'
   ],
   flow: 'y',
   gap: 'Z',
   H: {},
   P: {
-    maxWidth: '50%',
-  },
-};
+    maxWidth: '50%'
+  }
+}

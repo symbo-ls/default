@@ -1,6 +1,6 @@
 export const Item = {
   extends: [
-    'Link',
+    'Link'
   ],
   width: '100%',
   padding: 'B B1 A2 B1',
@@ -13,29 +13,29 @@ export const Item = {
   '@tabletL': {
     padding: 'B',
     width: '100%',
-    maxWidth: 'none',
+    maxWidth: 'none'
   },
   state: {
     icon: 'tree outline',
     title: 'Design System',
-    p: 'Organized brand tokens into design and code',
+    p: 'Organized brand tokens into design and code'
   },
   Icon: {
     fontSize: 'B2',
-    icon: '{{ icon }}',
+    icon: '{{ icon }}'
   },
   Hgroup: {
     H: {
       tag: 'h6',
       fontSize: 'A1',
-      text: '{{ title }}',
+      text: '{{ title }}'
     },
     P: {
       height: 'C1',
-      text: '{{ p }}',
+      text: '{{ p }}'
     },
     '@screenL': {
-      maxWidth: 'F1',
-    },
-  },
-};
+      maxWidth: 'F1'
+    }
+  }
+}

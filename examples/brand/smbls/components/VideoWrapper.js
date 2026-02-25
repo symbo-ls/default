@@ -8,7 +8,7 @@ export const VideoWrapper = {
     position: 'absolute',
     inset: '0',
     width: '100%',
-    height: '100%',
+    height: '100%'
   },
   onClick: (e, el) => {
     el.Picture.setProps({
@@ -28,7 +28,7 @@ export const VideoWrapper = {
     opacity: '0.65',
     transition: 'opacity defaultBezier A',
     ':hover': {
-      opacity: 1,
+      opacity: 1
     },
     Button: {
       text: 'Watch the Video',
@@ -47,9 +47,9 @@ export const VideoWrapper = {
       padding: 'Y2 Z2',
       Icon: {
         name: 'playOutline',
-        fontSize: 'B',
-      },
-    },
+        fontSize: 'B'
+      }
+    }
   },
   Iframe: {
     minWidth: 'none',
@@ -58,6 +58,6 @@ export const VideoWrapper = {
     round: 'A',
     hide: true,
     src: 'https://www.youtube.com/embed/{{code}}?autoplay=1',
-    allowfullscreen: true,
-  },
-};
+    allowfullscreen: true
+  }
+}

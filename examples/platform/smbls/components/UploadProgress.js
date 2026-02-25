@@ -6,7 +6,7 @@ export const UploadProgress = {
   align: 'center flex-start',
   gap: 'Z',
   '@mobileS': {
-    fontSize: 'Z2',
+    fontSize: 'Z2'
   },
   Icon: {
     theme: 'bordered',
@@ -14,7 +14,7 @@ export const UploadProgress = {
     boxSizing: 'content-box',
     padding: 'Y2',
     fontSize: 'C',
-    round: 'Z',
+    round: 'Z'
   },
   XBtn: {
     position: 'absolute',
@@ -23,8 +23,8 @@ export const UploadProgress = {
     padding: 'Y',
     $isSafari: {
       top: '0',
-      right: 'Y',
-    },
+      right: 'Y'
+    }
   },
   Flex: {
     flow: 'y',
@@ -33,11 +33,11 @@ export const UploadProgress = {
     H6: {
       text: 'Image.jpg',
       alignSelf: 'flex-start',
-      fontWeight: '700',
+      fontWeight: '700'
     },
     ProgressLineValue: {
       ProgressLine: {},
-      UnitValue: {},
-    },
-  },
-};
+      UnitValue: {}
+    }
+  }
+}

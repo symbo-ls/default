@@ -15,14 +15,14 @@ export const NavbarTooltip = {
   description: '',
   background: 'highlight-reversed',
   ':before': {
-    color: 'highlight-reversed',
+    color: 'highlight-reversed'
   },
   style: {
-    pointerEvents: 'none !important',
+    pointerEvents: 'none !important'
   },
   Title: null,
   P: {
     color: 'highlight',
-    fontSize: 'Z2',
-  },
-};
+    fontSize: 'Z2'
+  }
+}

@@ -1,9 +1,9 @@
 export const BadgeCaption = {
   Caption: {
-    text: 'CAPTION',
+    text: 'CAPTION'
   },
   Badge: {},
   extends: 'Flex',
   align: 'center flex-start',
-  gap: 'Y',
-};
+  gap: 'Y'
+}

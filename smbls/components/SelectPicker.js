@@ -20,27 +20,27 @@ export const SelectPicker = {
     pointerEvents: 'All',
     color: 'title',
     ':focus-visible': {
-      outline: 'none',
+      outline: 'none'
     },
     children: [
       {
         text: 'Nikoloza',
-        value: 'Nikoloza',
+        value: 'Nikoloza'
       },
       {
         text: 'Svinchy',
-        value: 'Svinchy',
-      },
+        value: 'Svinchy'
+      }
     ],
     childProps: {
-      tag: 'option',
-    },
+      tag: 'option'
+    }
   },
   Icon: {
     name: 'chevronDown',
     position: 'absolute',
     right: '0',
     margin: 'V - - -',
-    fontSize: 'B',
-  },
-};
+    fontSize: 'B'
+  }
+}

@@ -10,7 +10,7 @@ export const SearchField = {
   height: '2.25em',
   Icon: {
     name: 'search outline',
-    fontSize: 'Z',
+    fontSize: 'Z'
   },
   Input: {
     fontSize: 'Z',
@@ -19,6 +19,6 @@ export const SearchField = {
     background: 'transparent',
     color: 'white .85',
     padding: '0',
-    outline: 'none',
-  },
-};
+    outline: 'none'
+  }
+}

@@ -1,4 +1,4 @@
 export const CircleButton = {
   extends: 'SquareButton',
-  round: 'C',
-};
+  round: 'C'
+}

@@ -2,14 +2,14 @@ export const EnvsNavbar = {
   extend: [
     'CanvasButton',
     'DropdownParentFocus',
-    'Button',
+    'Button'
   ],
   props: {
     padding: 'Y1 Y2 Y1 Z2',
     align: 'center',
     gap: 'Y1',
     margin: '- -Y1',
-    lineHeight: 1,
+    lineHeight: 1
   },
   ConnectionLabel: {
     Circle: {
@@ -20,10 +20,10 @@ export const EnvsNavbar = {
       animationIterationCount: 'infinite',
       '.isLoading': {
         animation: 'blinking',
-        animationDuration: 'G2',
+        animationDuration: 'G2'
       },
       '!isLoading': {
-        animation: null,
+        animation: null
       },
       onRender: (el, s) => {
         const handler = ({
@@ -39,14 +39,14 @@ export const EnvsNavbar = {
           }
         }
         el.sdk.rootBus.on('checkpoint:done', handler)
-      },
+      }
     },
     Text: {
       maxWidth: '100%',
       text: el => 'development',
       textOverflow: 'ellipsis',
       overflow: 'hidden',
-      padding: '- - .1em',
+      padding: '- - .1em'
     },
     CopyButton: null,
     onMouseover: (ev, el, s) => {
@@ -69,12 +69,12 @@ export const EnvsNavbar = {
         }
       }
     },
-    title: 'Environments',
+    title: 'Environments'
   },
   DropdownArrow: {},
   Dropdown: {
     left: '0',
     onClick: () => {},
-    'Dropdown.Envs': {},
-  },
-};
+    'Dropdown.Envs': {}
+  }
+}

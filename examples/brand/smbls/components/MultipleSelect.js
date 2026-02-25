@@ -8,7 +8,7 @@ export const MultipleSelect = {
   padding: 'Y X',
   overflow: 'auto',
   '& svg': {
-    opacity: 0,
+    opacity: 0
   },
   childProps: {
     width: '100%',
@@ -17,12 +17,12 @@ export const MultipleSelect = {
     cursor: 'pointer',
     Icon: {
       name: 'checkmark',
-      opacity: '0',
+      opacity: '0'
     },
     ':hover': {
       '& svg': {
-        opacity: '1',
-      },
-    },
-  },
-};
+        opacity: '1'
+      }
+    }
+  }
+}

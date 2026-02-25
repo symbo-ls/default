@@ -7,8 +7,8 @@ export const ZoomInNavbar = {
     } = data
     const scale = positions?.scale
     el.variables({
-        scale
-      })
+      scale
+    })
       .changed(_ => {
         el.Box.node.innerText = scale ? parseInt(scale * 100) + '%' : '100%'
       })
@@ -18,7 +18,7 @@ export const ZoomInNavbar = {
     title: 'Zoom out',
     icon: 'sf zoom out',
     ':not(:hover)': {
-      theme: 'transparent',
+      theme: 'transparent'
     },
     onClick: (ev, el, s) => {
       const data = el.getCanvasScope()
@@ -32,7 +32,7 @@ export const ZoomInNavbar = {
         innerHeight
       } = frameWindow
       data.panzoomInstance.smoothZoom(x + innerWidth / 2, y + innerHeight / 2, 0.75)
-    },
+    }
   },
   Box: {
     width: '7ch',
@@ -59,14 +59,14 @@ export const ZoomInNavbar = {
         y + innerHeight / 2,
         1
       )
-    },
+    }
   },
   NavbarButton_in: {
     isActive: (el, s) => el.getRootState().zoomLevel > 1,
     title: 'Zoom in',
     icon: 'sf zoom in',
     ':not(:hover)': {
-      theme: 'transparent',
+      theme: 'transparent'
     },
     onClick: (ev, el, s) => {
       const data = el.getCanvasScope()
@@ -82,9 +82,9 @@ export const ZoomInNavbar = {
         innerHeight
       } = frameWindow
       data.panzoomInstance.smoothZoom(x + innerWidth / 2, y + innerHeight / 2, 1.25)
-    },
+    }
   },
   DropdownArrow: {
-    margin: '- - - X2',
-  },
-};
+    margin: '- - - X2'
+  }
+}

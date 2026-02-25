@@ -17,8 +17,8 @@ export const DesignSystemOptions = {
         }, {
           preventShModalUpdate: true
         })
-      },
-    },
+      }
+    }
   },
   Grid: {
     childExtends: {
@@ -33,11 +33,11 @@ export const DesignSystemOptions = {
             message: `Set ${key} design system settings to ${!val}`
           })
           el.call('setCookie', key, !val)
-        },
+        }
       },
       Input: {
-        checked: (el) => el.getDesignSystem()[el.parent.props.key],
-      },
+        checked: (el) => el.getDesignSystem()[el.parent.props.key]
+      }
     },
     children: [
       {
@@ -45,96 +45,96 @@ export const DesignSystemOptions = {
         QuestionMarkTooltip: {
           TooltipHidden: {
             shapeDirection: 'top',
-            tip: 'Reset CSS browser defaults and matching Symbols Design System',
-          },
+            tip: 'Reset CSS browser defaults and matching Symbols Design System'
+          }
         },
         Caption: {
-          text: 'Apply Symbols normalizing:',
-        },
+          text: 'Apply Symbols normalizing:'
+        }
       },
       {
         key: 'useVariable',
         QuestionMarkTooltip: {
           TooltipHidden: {
             shapeDirection: 'top',
-            tip: 'Apply CSS values as variables',
-          },
+            tip: 'Apply CSS values as variables'
+          }
         },
         Caption: {
-          text: 'Use CSS variables:',
-        },
+          text: 'Use CSS variables:'
+        }
       },
       {
         key: 'useDocumentTheme',
         QuestionMarkTooltip: {
           TooltipHidden: {
             shapeDirection: 'top',
-            tip: 'Apply global @dark @light, and other themes to the document',
-          },
+            tip: 'Apply global @dark @light, and other themes to the document'
+          }
         },
         Caption: {
-          text: 'Apply Global Themes:',
-        },
+          text: 'Apply Global Themes:'
+        }
       },
       {
         key: 'useFontImport',
         QuestionMarkTooltip: {
           TooltipHidden: {
             shapeDirection: 'top',
-            tip: 'Import fonts via @font-face from Symbols cdn',
-          },
+            tip: 'Import fonts via @font-face from Symbols cdn'
+          }
         },
         Caption: {
-          text: 'Import Fonts:',
-        },
+          text: 'Import Fonts:'
+        }
       },
       {
         key: 'useIconSprite',
         QuestionMarkTooltip: {
           TooltipHidden: {
             shapeDirection: 'top',
-            tip: 'Bundle icons as SVG sprites',
-          },
+            tip: 'Bundle icons as SVG sprites'
+          }
         },
         Caption: {
-          text: 'Use Sprite for Icons:',
-        },
+          text: 'Use Sprite for Icons:'
+        }
       },
       {
         key: 'useSvgSprite',
         QuestionMarkTooltip: {
           TooltipHidden: {
             shapeDirection: 'top',
-            tip: 'Bundle SVGs as SVG sprites',
-          },
+            tip: 'Bundle SVGs as SVG sprites'
+          }
         },
         Caption: {
-          text: 'Use Sprite for SVG:',
-        },
+          text: 'Use Sprite for SVG:'
+        }
       },
       {
         key: 'useDefaultConfig',
         QuestionMarkTooltip: {
           TooltipHidden: {
             shapeDirection: 'top',
-            tip: 'Use default config as fallback for components',
-          },
+            tip: 'Use default config as fallback for components'
+          }
         },
         Caption: {
-          text: 'Use default config:',
-        },
+          text: 'Use default config:'
+        }
       },
       {
         key: 'verbose',
         QuestionMarkTooltip: {
           TooltipHidden: {
             shapeDirection: 'top',
-            tip: 'Design System verbose mode in console',
-          },
+            tip: 'Design System verbose mode in console'
+          }
         },
         Caption: {
-          text: 'Verbose mode:',
-        },
+          text: 'Verbose mode:'
+        }
       },
       {
         extends: 'SelectDropdownWithTitle',
@@ -143,15 +143,15 @@ export const DesignSystemOptions = {
         borderStyle: 'solid',
         padding: 'B1 - -',
         '@dark': {
-          borderColor: '--color-line-dark',
+          borderColor: '--color-line-dark'
         },
         '@light': {
-          borderColor: '--color-line-light',
+          borderColor: '--color-line-light'
         },
         Title: {
           opacity: '.65',
           color: 'gray7',
-          text: 'Default global theme',
+          text: 'Default global theme'
         },
         SelectDropdown: {
           Value: {
@@ -160,28 +160,28 @@ export const DesignSystemOptions = {
                 el.call(
                   'toDescriptionCase',
                   el.getDesignSystem('globalTheme')
-                ) || 'Auto',
-            },
+                ) || 'Auto'
+            }
           },
           Dropdown: {
             top: '121%',
             options: [
               {
                 key: 'auto',
-                text: 'Auto',
+                text: 'Auto'
               },
               {
                 key: 'dark',
-                text: 'Dark',
+                text: 'Dark'
               },
               {
                 key: 'light',
-                text: 'Light',
+                text: 'Light'
               },
               {
                 key: 'custom',
-                text: 'Custom',
-              },
+                text: 'Custom'
+              }
             ],
             onChoose: async (ev, el, s, ctx, calleeElement) => {
               const globalTheme = calleeElement.state.key
@@ -205,7 +205,7 @@ export const DesignSystemOptions = {
               )
             },
             DropdownHeader: {
-              text: 'Global theme',
+              text: 'Global theme'
             },
             ListInDropdown: {
               childExtends: {
@@ -214,13 +214,13 @@ export const DesignSystemOptions = {
                   isActive: el.getDesignSystem('globalTheme') === s.key,
                   text: s.text,
                   fontWeight: '400'
-                }),
-              },
-            },
-          },
-        },
-      },
+                })
+              }
+            }
+          }
+        }
+      }
     ],
-    childrenAs: 'props',
-  },
-};
+    childrenAs: 'props'
+  }
+}

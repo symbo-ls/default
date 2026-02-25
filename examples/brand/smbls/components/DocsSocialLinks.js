@@ -3,12 +3,12 @@ export const DocsSocialLinks = {
   maxWidth: 'G2',
   padding: '0 E1 0 0',
   H6: {
-    text: 'Discussions',
+    text: 'Discussions'
   },
   P: {
     color: 'paragraph',
     margin: '0 0 A',
-    text: 'Join our discussion boards at Github and Discord',
+    text: 'Join our discussion boards at Github and Discord'
   },
   Flex: {
     tag: 'nav',
@@ -18,17 +18,17 @@ export const DocsSocialLinks = {
     Discord: {
       target: '_blank',
       href: 'https://discord.com/invite/crdFSkapFY',
-      icon: 'discord',
+      icon: 'discord'
     },
     Github: {
       target: '_blank',
       href: 'https://github.com/symbo-ls/',
-      icon: 'github',
+      icon: 'github'
     },
     X: {
       target: '_blank',
       href: 'https://twitter.com/symbo_ls',
-      icon: 'twitter',
-    },
-  },
-};
+      icon: 'twitter'
+    }
+  }
+}

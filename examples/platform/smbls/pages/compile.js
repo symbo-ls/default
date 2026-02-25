@@ -6,11 +6,11 @@ export const compile = {
   padding: 'Y1',
   height: '100%',
   style: {
-    padding: '0 !important',
+    padding: '0 !important'
   },
   ':hover .close': {
     opacity: 1,
-    visibility: 'visible',
+    visibility: 'visible'
   },
   onInit: async (el, s) => {
     const dist = await el.call('compileCode', s.source, s.compilingMethod)
@@ -48,18 +48,18 @@ Welcome to the **Markdown to Symbols** compiler! This tool converts markdown syn
 
 `,
     dist: '',
-    compilingMethod: 'markdown-to-symbols',
+    compilingMethod: 'markdown-to-symbols'
   },
   Flex_header: {
     align: 'end space-between',
     padding: '0 A X',
     fontSize: 'Z1',
     Strong: {
-      text: 'Symbols compiler tools',
+      text: 'Symbols compiler tools'
     },
     P: {
       margin: '0',
-      text: 'Choose source and target to use compiler tools',
+      text: 'Choose source and target to use compiler tools'
     },
     Toolbar: {
       flexFlow: 'y',
@@ -69,7 +69,7 @@ Welcome to the **Markdown to Symbols** compiler! This tool converts markdown syn
       Button_dropdown: {
         extends: [
           'Button',
-          'DropdownParentFocus',
+          'DropdownParentFocus'
         ],
         theme: 'secondary',
         gap: 'Z',
@@ -107,42 +107,42 @@ Welcome to the **Markdown to Symbols** compiler! This tool converts markdown syn
               fontWeight: '400',
               align: 'center start',
               ':hover': {
-                theme: 'field',
+                theme: 'field'
               },
               '.isActive': {
-                theme: 'field',
+                theme: 'field'
               },
               isActive: (_, s) => {
                 return s.parent.parent.compilingMethod === s.value
-              },
+              }
             },
             childrenAs: 'state',
             children: [
               {
                 value: 'markdown-to-symbols',
-                text: 'Markdown → Symbols',
+                text: 'Markdown → Symbols'
               },
               {
                 value: 'editorjs-to-symbols',
-                text: 'EditorJS → Symbols',
+                text: 'EditorJS → Symbols'
               },
               {
                 value: 'tailwind-to-symbols',
-                text: 'Tailwind → Symbols',
+                text: 'Tailwind → Symbols'
               },
               {
                 value: 'symbols-to-tailwind',
-                text: 'Symbols → Tailwind',
+                text: 'Symbols → Tailwind'
               },
               {
                 value: 'symbols-to-react',
-                text: 'Symbols → React',
-              },
-            ],
-          },
-        },
-      },
-    },
+                text: 'Symbols → React'
+              }
+            ]
+          }
+        }
+      }
+    }
   },
   Flex: {
     align: 'stretch start',
@@ -167,7 +167,7 @@ Welcome to the **Markdown to Symbols** compiler! This tool converts markdown syn
         color: 'dim',
         fontSize: 'Y',
         textTransform: 'uppercase',
-        text: 'Source Code',
+        text: 'Source Code'
       },
       Monaco: {
         foldLevel: false,
@@ -185,12 +185,11 @@ Welcome to the **Markdown to Symbols** compiler! This tool converts markdown syn
           },
           filename: (_, s) => {
             if (s.compilingMethod === 'markdown-to-symbols') return 'source.md'
-            if (s.compilingMethod === 'editorjs-to-symbols')
-              return 'source.json'
+            if (s.compilingMethod === 'editorjs-to-symbols') { return 'source.json' }
             if (s.compilingMethod === 'tailwind-to-symbols') return 'source.css'
             if (s.compilingMethod === 'symbols-to-tailwind') return 'source.js'
             return 'source.js'
-          },
+          }
         },
         onCodeEditCallback: async (editor, _2, _el, s) => {
           const source = editor.getValue()
@@ -214,8 +213,8 @@ Welcome to the **Markdown to Symbols** compiler! This tool converts markdown syn
             forceMonacoUpdate: true,
             preventUpdate: ['CodePreviewWidget_from']
           })
-        },
-      },
+        }
+      }
     },
     CodePreviewWidget_to: {
       flex: 1,
@@ -233,7 +232,7 @@ Welcome to the **Markdown to Symbols** compiler! This tool converts markdown syn
         color: 'dim',
         fontSize: 'Y',
         textTransform: 'uppercase',
-        text: 'Target Code',
+        text: 'Target Code'
       },
       Monaco: {
         foldLevel: false,
@@ -242,10 +241,10 @@ Welcome to the **Markdown to Symbols** compiler! This tool converts markdown syn
         fileTab: {
           code: (_, s) => s.dist || '// Compiling...',
           type: 'javascript',
-          filename: 'output.js',
+          filename: 'output.js'
         },
-        onCodeEditCallback: async () => {},
-      },
+        onCodeEditCallback: async () => {}
+      }
     },
     PreviewContainer: {
       if: (_, s) => s.compilingMethod.endsWith('-to-symbols'),
@@ -262,7 +261,7 @@ Welcome to the **Markdown to Symbols** compiler! This tool converts markdown syn
         color: 'dim',
         fontSize: 'Y',
         textTransform: 'uppercase',
-        text: 'Preview',
+        text: 'Preview'
       },
       Content: {
         padding: 'A B',
@@ -271,9 +270,11 @@ Welcome to the **Markdown to Symbols** compiler! This tool converts markdown syn
         flexFlow: 'column',
         gap: '0',
         children: (_, s) => {
-          if (!s.dist) return [{
-            text: 'Compiling...'
-          }]
+          if (!s.dist) {
+            return [{
+              text: 'Compiling...'
+            }]
+          }
 
           try {
             let code = s.dist.replace(/^export\s+const\s+\w+\s*=\s*/, '').trim()
@@ -300,8 +301,8 @@ Welcome to the **Markdown to Symbols** compiler! This tool converts markdown syn
               }
             }]
           }
-        },
-      },
-    },
-  },
-};
+        }
+      }
+    }
+  }
+}

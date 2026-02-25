@@ -1,7 +1,7 @@
 export const DesignComponentHeader = {
   tag: 'header',
   extends: [
-    'DesignElement',
+    'DesignElement'
   ],
   props: ({
     state
@@ -36,5 +36,5 @@ export const DesignComponentHeader = {
         maxWidth: 'F1'
       }
     }
-  }),
-};
+  })
+}

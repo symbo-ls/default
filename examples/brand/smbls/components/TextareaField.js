@@ -9,7 +9,7 @@ export const TextareaField = {
     position: 'absolute',
     zIndex: '10',
     boxSize: '30px 100%',
-    pointerEvents: 'none',
+    pointerEvents: 'none'
   },
   ':before': {
     bottom: '-10px',
@@ -19,7 +19,7 @@ export const TextareaField = {
         to top,
         var(--quaternary-dark-background) 0%,
         var(--quaternary-dark-background) 100%
-      )`,
+      )`
   },
   ':after': {
     top: '0',
@@ -28,7 +28,7 @@ export const TextareaField = {
         to bottom,
         var(--quaternary-dark-background) 0%,
         var(--quaternary-dark-background) 100%
-      )`,
+      )`
   },
   Textarea: {
     variant: 'simple',
@@ -43,13 +43,13 @@ export const TextareaField = {
     resize: 'none',
     scrollBehavior: 'smooth',
     '@mobileXS': {
-      fontSize: 'Z2',
+      fontSize: 'Z2'
     },
     '::-webkit-scrollbar': {
-      display: 'none',
+      display: 'none'
     },
     '.simple': {
-      theme: 'field',
-    },
-  },
-};
+      theme: 'field'
+    }
+  }
+}

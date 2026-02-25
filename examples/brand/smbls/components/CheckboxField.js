@@ -9,12 +9,12 @@ export const CheckboxField = {
     display: 'none',
     ':checked': {
       '~ span': {
-        opacity: '.85',
+        opacity: '.85'
       },
       '~ svg': {
-        color: 'title',
-      },
-    },
+        color: 'title'
+      }
+    }
   },
   Icon: {
     name: 'checkmark',
@@ -24,12 +24,12 @@ export const CheckboxField = {
     boxSizing: 'content-box',
     cursor: 'pointer',
     background: 'line',
-    color: 'disabled .35',
+    color: 'disabled .35'
   },
   Span: {
     userSelect: 'none',
     text: 'This is variable font',
     opacity: '.5',
-    cursor: 'pointer',
-  },
-};
+    cursor: 'pointer'
+  }
+}

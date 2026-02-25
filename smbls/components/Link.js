@@ -1,4 +1,4 @@
 export const Link = {
   text: 'Link',
-  extends: 'smbls.Link',
-};
+  extends: 'smbls.Link'
+}

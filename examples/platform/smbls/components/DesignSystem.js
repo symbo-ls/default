@@ -10,11 +10,11 @@ export const DesignSystem = {
         gap: 'B2',
         width: '100%',
         href: '{{ href }}',
-        "@tabletL": {
+        '@tabletL': {
           maxWidth: 'none'
         },
-        ":nth-child(2)": {
-          "> div > p": {
+        ':nth-child(2)': {
+          '> div > p': {
             maxWidth: 'E3'
           }
         },
@@ -35,12 +35,12 @@ export const DesignSystem = {
             text: '{{ p }}',
             fontSize: 'Z',
             maxWidth: s.maxWidth,
-            "@tabletL": {
+            '@tabletL': {
               maxWidth: 'E3+A1'
             }
           }
         }
-      }),
+      })
     },
     children: () => [{
       title: 'Colors',
@@ -59,37 +59,37 @@ export const DesignSystem = {
     }, {
       title: 'Spacing',
       href: '/docs/space',
-      p: "Manage properties of a size",
+      p: 'Manage properties of a size',
       maxWidth: 'E2',
       icon: 'space',
       theme: 'space'
     }, {
       title: 'Shapes',
       href: '/docs/shapes',
-      p: "Design an outline\n      to a chosen component",
+      p: 'Design an outline\n      to a chosen component',
       icon: 'shape',
       theme: 'shape'
     }, {
       title: 'Icons',
       href: '/docs/icons',
-      p: "Label a role of subject\n      with glyphs",
+      p: 'Label a role of subject\n      with glyphs',
       icon: 'icons',
       theme: 'icons'
     }, {
       title: 'Breakpoints',
       href: '/docs/media',
-      p: "The devices and the breakpoints",
+      p: 'The devices and the breakpoints',
       icon: 'deviceMobileOutline'
     }, {
       title: 'Sequence',
       href: '/docs/sequence',
-      p: "The mapping system of\n      generative sizing units",
+      p: 'The mapping system of\n      generative sizing units',
       icon: 'stateColored'
     }, {
       title: 'Timing',
       href: '/docs/timing',
-      p: "Tokens for transitions and animations",
+      p: 'Tokens for transitions and animations',
       icon: 'clock'
-    }],
-  },
-};
+    }]
+  }
+}

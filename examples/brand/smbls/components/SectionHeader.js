@@ -16,7 +16,7 @@ export const SectionHeader = {
       text: ({
         parent,
         state
-      }) => parent.parent.props.title || state.title,
+      }) => parent.parent.props.title || state.title
     },
     P: {
       lineHeight: '1.5em',
@@ -30,8 +30,8 @@ export const SectionHeader = {
       text: ({
         parent,
         state
-      }) => parent.parent.props.p || state.p,
-    },
+      }) => parent.parent.props.p || state.p
+    }
   },
   Nav: {
     extends: 'Flex',
@@ -39,18 +39,18 @@ export const SectionHeader = {
     fontSize: 'A2',
     gap: 'A',
     childProps: {
-      scrollToTop: false,
+      scrollToTop: false
     },
     childExtends: [
-      'MenuItem',
+      'MenuItem'
     ],
     children: ({
       state
     }) => state.nav,
     Toggle: {
       if: ({
-          state
-        }) =>
+        state
+      }) =>
         // eslint-disable-next-line no-undefined
         state[state.__element.key] || state.toggleShow !== undefined,
       props: ({
@@ -66,8 +66,8 @@ export const SectionHeader = {
           state.update({
             toggleShow: !state.toggleShow
           })
-        },
-      },
-    },
-  },
-};
+        }
+      }
+    }
+  }
+}

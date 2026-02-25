@@ -2,11 +2,11 @@ export const AssetsFromInsert = {
   extend: 'Flex',
   props: {
     flow: 'y',
-    gap: 'Z',
+    gap: 'Z'
   },
   CaptionTitle: {
     Text: {
-      text: 'Assets',
-    },
-  },
-};
+      text: 'Assets'
+    }
+  }
+}

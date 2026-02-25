@@ -8,24 +8,24 @@ export const resetModal = {
   state: null,
   ModalHeader: {
     title: 'Reset',
-    p: 'Do you want to revert to the latest release?',
+    p: 'Do you want to revert to the latest release?'
   },
   cnt: {
     props: {
-      padding: '- B1 - -',
+      padding: '- B1 - -'
     },
     P: {
       props: {
-        color: 'paragraph',
+        color: 'paragraph'
       },
-      text: el => 'Reverting to v1.' + el.getRootState().version,
-    },
+      text: el => 'Reverting to v1.' + el.getRootState().version
+    }
   },
   ModalFooter: {
     CheckButton: {
       theme: 'primary',
       type: 'submit',
-      text: 'Reset',
-    },
-  },
-};
+      text: 'Reset'
+    }
+  }
+}

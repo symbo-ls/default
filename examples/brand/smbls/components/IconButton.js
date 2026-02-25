@@ -1,9 +1,9 @@
 export const IconButton = {
   extends: [
-    'SquareButton',
+    'SquareButton'
   ],
   theme: 'tertiary',
   position: 'relative',
   round: 'Z',
-  draggable: false,
-};
+  draggable: false
+}

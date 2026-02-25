@@ -6,26 +6,26 @@ export const ResetEmailForm = {
   childExtends: {
     extend: 'InputField',
     props: {
-      width: '100%',
+      width: '100%'
     },
     Title: {},
     Input: {
-      width: '100%',
-    },
+      width: '100%'
+    }
   },
   '@mobileL': {
     justifyContent: 'unset',
-    height: 'unset',
+    height: 'unset'
   },
   if: (el, s) => !s.token,
   Email: {
     Title: {
-      text: 'Email',
+      text: 'Email'
     },
     Input: {
       height: 'B2',
       '@mobileL': {
-        height: 'unset',
+        height: 'unset'
       },
       autocomplete: 'username',
       value: '{{ email }}',
@@ -35,13 +35,13 @@ export const ResetEmailForm = {
           touched: true,
           email: el.node.value
         })
-      },
+      }
     },
     Label: {
       show: (el, st) => st.touched === true && !st.email,
       color: 'red',
-      text: 'Email field is required',
-    },
+      text: 'Email field is required'
+    }
   },
   ModalFooter: {
     ignoreChildExtend: true,
@@ -57,8 +57,8 @@ export const ResetEmailForm = {
       flow: 'column',
       gap: 'A2',
       childProps: {
-        width: '100%',
-      },
+        width: '100%'
+      }
     },
     CheckButton: {
       theme: 'primary',
@@ -71,8 +71,8 @@ export const ResetEmailForm = {
       '@mobileL': {
         width: '100%',
         maxWidth: '100%',
-        height: 'unset',
-      },
-    },
-  },
-};
+        height: 'unset'
+      }
+    }
+  }
+}

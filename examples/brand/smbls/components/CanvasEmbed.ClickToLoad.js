@@ -7,7 +7,7 @@ const Canvasembedclicktoload = {
     el.LoaderRatio.setProps({
       animation: 'scaleInOut',
       animationDelay: 'F',
-      pointerEvents: 'none',
+      pointerEvents: 'none'
     })
     el.CanvasEmbed.setProps({
       hide: false,
@@ -26,8 +26,8 @@ const Canvasembedclicktoload = {
       transform: 'none',
       icon: 'play',
       theme: 'quaternary',
-      text: 'Click to preview',
-    },
+      text: 'Click to preview'
+    }
   },
   CanvasEmbed: {
     minWidth: 'auto',
@@ -38,8 +38,8 @@ const Canvasembedclicktoload = {
     inset: '0',
     project: '/nikoloza/default',
     src: el => 'https://symbols.app/embed' + (el.parent.props.project || el.props.project),
-    round: 'Z2',
-  },
-};
+    round: 'Z2'
+  }
+}
 
 export { Canvasembedclicktoload as 'CanvasEmbed.ClickToLoad' }

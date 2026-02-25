@@ -8,14 +8,14 @@ export const FieldCaption = {
     padding: '- Y2 Z X',
     alignSelf: 'flex-start',
     whiteSpace: 'nowrap',
-    textAlign: 'left',
+    textAlign: 'left'
   },
   Field: {
     width: '100%',
     Input: {},
-    Icon: {},
+    Icon: {}
   },
   extends: 'Flex',
   flow: 'column',
-  boxSize: 'fit-content fit-content',
-};
+  boxSize: 'fit-content fit-content'
+}

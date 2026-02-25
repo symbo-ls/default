@@ -4,16 +4,16 @@ export const IconHgroup = {
     display: 'block',
     color: 'blue',
     margin: '- X - -',
-    fontSize: 'E',
+    fontSize: 'E'
   },
   Hgroup: {
     gap: 'Y',
     H: {
-      tag: 'h2',
+      tag: 'h2'
     },
-    P: {},
+    P: {}
   },
   extends: 'Flex',
   gap: 'X',
-  align: 'flex-start',
-};
+  align: 'flex-start'
+}

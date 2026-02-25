@@ -11,16 +11,16 @@ export const SectionHeaderWithNav = {
       if: (el, s) => s[s.__element.key] || s.toggleShow !== undefined,
       isActive: (el, s) => !s.toggleShow,
       Icon: {
-        name: (el, s) => 'arrowAngle' + (s.toggleShow ? 'Up' : 'Down'),
+        name: (el, s) => 'arrowAngle' + (s.toggleShow ? 'Up' : 'Down')
       },
       onClick: (event, el, s) => {
         s.update({
           toggleShow: !s.toggleShow
         })
-      },
+      }
     },
     childProps: {
-      scrollToTop: false,
-    },
-  },
-};
+      scrollToTop: false
+    }
+  }
+}

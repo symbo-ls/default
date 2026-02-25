@@ -2,12 +2,12 @@ export default {
   document: {
     '@dark': {
       background: 'codGray',
-      color: 'title',
+      color: 'title'
     },
     '@light': {
       background: 'gray 1 +168',
-      color: 'title',
-    },
+      color: 'title'
+    }
   },
   dialog: {
     '@dark': {
@@ -15,15 +15,15 @@ export default {
       color: 'title',
       backdropFilter: 'blur(3px)',
       borderColor: 'gray 0',
-      outlineColor: 'blue',
+      outlineColor: 'blue'
     },
     '@light': {
       background: 'gray .95 +150',
       color: 'title',
       backdropFilter: 'blur(3px)',
       borderColor: 'gray 0',
-      outlineColor: 'blue',
-    },
+      outlineColor: 'blue'
+    }
   },
   'dialog-elevated': {
     '@dark': {
@@ -31,85 +31,85 @@ export default {
       background: 'gray 1 +68',
       borderColor: 'gray 0',
       outlineColor: 'blue',
-      backgroundKey: 'caption',
+      backgroundKey: 'caption'
     },
     '@light': {
       color: 'title',
       background: 'gray 0.95 +140',
       borderColor: 'gray 0',
-      outlineColor: 'blue',
-    },
+      outlineColor: 'blue'
+    }
   },
   field: {
     '@dark': {
       color: 'white',
       background: 'gray 0.95 -65',
       '::placeholder': {
-        color: 'white 1 -78',
-      },
+        color: 'white 1 -78'
+      }
     },
     '@light': {
       color: 'black',
       '::placeholder': {
-        color: 'gray 1 -68',
-      },
-    },
+        color: 'gray 1 -68'
+      }
+    }
   },
   'field-dialog': {
     '@dark': {
       background: 'gray 1 -16',
-      color: 'title',
+      color: 'title'
     },
     '@light': {
       color: 'title',
-      background: 'gray 1 -96',
-    },
+      background: 'gray 1 -96'
+    }
   },
   primary: {
     '@dark': {
       background: 'blue',
-      color: 'white',
+      color: 'white'
     },
     '@light': {
       color: 'white',
-      background: 'blue',
-    },
+      background: 'blue'
+    }
   },
   warning: {
     '@dark': {
       background: 'red',
-      color: 'white',
+      color: 'white'
     },
     '@light': {
       color: 'white',
-      background: 'red',
-    },
+      background: 'red'
+    }
   },
   success: {
     '@dark': {
       background: 'green',
-      color: 'white',
+      color: 'white'
     },
     '@light': {
       background: 'green',
-      color: 'white',
-    },
+      color: 'white'
+    }
   },
   none: {
     color: 'none',
-    background: 'none',
+    background: 'none'
   },
   transparent: {
     color: 'currentColor',
-    background: 'transparent',
+    background: 'transparent'
   },
   bordered: {
     background: 'transparent',
     '@dark': {
-      border: '1px solid #4e4e50',
+      border: '1px solid #4e4e50'
     },
     '@light': {
-      border: '1px solid #a3cdfd',
-    },
-  },
-};
+      border: '1px solid #a3cdfd'
+    }
+  }
+}

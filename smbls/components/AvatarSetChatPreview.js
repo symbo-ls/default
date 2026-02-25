@@ -13,44 +13,44 @@ export const AvatarSetChatPreview = {
       left: '50%',
       transform: 'translate(-50%, -50%)',
       ':first-child': {
-        margin: 'Z2 0 0 0',
+        margin: 'Z2 0 0 0'
       },
       ':nth-child(2)': {
-        margin: '0 0 0 Z1',
+        margin: '0 0 0 Z1'
       },
       ':nth-child(3)': {
-        margin: '-W 0 0 -Z1',
-      },
-    },
+        margin: '-W 0 0 -Z1'
+      }
+    }
   },
   Flex: {
     flow: 'y',
     flex: '1',
     gap: 'W2',
     '> *': {
-      minWidth: '100%',
+      minWidth: '100%'
     },
     ValueHeading: {
       minWidth: '0',
       maxWidth: '100%',
       H: {
-        text: 'Design',
+        text: 'Design'
       },
       UnitValue: {
         flow: 'row-reverse',
         Unit: {
-          text: 'am',
+          text: 'am'
         },
         Value: {
-          text: '2:20',
-        },
-      },
+          text: '2:20'
+        }
+      }
     },
     Flex: {
       gap: 'X2',
       Caption: {
         text: 'nick:',
-        color: 'paragraph',
+        color: 'paragraph'
       },
       NotCounterParagraph: {
         flex: '1',
@@ -58,14 +58,14 @@ export const AvatarSetChatPreview = {
         P: {
           maxWidth: 'F2',
           whiteSpace: 'nowrap',
-          overflow: 'hidden',
+          overflow: 'hidden'
         },
-        NotificationCounter: {},
-      },
-    },
+        NotificationCounter: {}
+      }
+    }
   },
   extends: 'Flex',
   gap: 'Z1',
   minWidth: 'G3',
-  align: 'center flex-start',
-};
+  align: 'center flex-start'
+}

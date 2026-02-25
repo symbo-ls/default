@@ -2,7 +2,7 @@ export const CanvasPagesDropdown = {
   extend: [
     'CanvasButton',
     'DropdownParentFocus',
-    'Button',
+    'Button'
   ],
   Text: {
     lineHeight: 0.9,
@@ -30,19 +30,19 @@ export const CanvasPagesDropdown = {
         }
       }
     },
-    title: 'Selected Canvas',
+    title: 'Selected Canvas'
   },
   Dropdown: {
     left: '0',
     ChooseCanvas: {
-      padding: 'X',
-    },
+      padding: 'X'
+    }
   },
   DropdownArrow: {},
   props: {
     padding: 'Y2 Y2 Y2 Z2',
     align: 'center',
     gap: 'Y',
-    aspectRatio: 'none',
-  },
-};
+    aspectRatio: 'none'
+  }
+}

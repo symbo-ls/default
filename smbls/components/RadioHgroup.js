@@ -2,16 +2,16 @@ export const RadioHgroup = {
   Hgroup: {
     gap: 'W2',
     H: {
-      tag: 'h6',
+      tag: 'h6'
     },
-    P: {},
+    P: {}
   },
   Radio: {
     Input: {},
     FLex: {
-      ':after': {},
-    },
+      ':after': {}
+    }
   },
   extends: 'Flex',
-  gap: 'Z',
-};
+  gap: 'Z'
+}

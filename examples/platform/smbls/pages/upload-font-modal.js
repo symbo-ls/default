@@ -46,10 +46,10 @@ export const uploadFontModal = {
   state: {
     isVariable: false,
     sampleText: 'Today is a big day for our tribe. The year ends.',
-    value: {},
+    value: {}
   },
   ModalHeader: {
-    title: 'Upload font',
+    title: 'Upload font'
   },
   Flex: {
     align: 'stretch center',
@@ -65,11 +65,11 @@ export const uploadFontModal = {
       position: 'sticky',
       top: '0',
       style: {
-        borderRight: '1px solid rgba(255, 255, 255, .06)',
+        borderRight: '1px solid rgba(255, 255, 255, .06)'
       },
       InputField: {
         Title: {
-          text: 'Font name',
+          text: 'Font name'
         },
         Input: {
           placeholder: 'Name the font',
@@ -83,8 +83,8 @@ export const uploadFontModal = {
             s.update({
               key: el.node.value
             })
-          },
-        },
+          }
+        }
       },
       CheckboxField: (el, s) => ({
         Input: {
@@ -107,12 +107,12 @@ export const uploadFontModal = {
           }
           s.toggle('isVariable')
         }
-      }),
+      })
     },
     Group: {
       tag: 'section',
       Title: {
-        text: 'Weights',
+        text: 'Weights'
       },
       Flex: {
         flow: 'column',
@@ -125,14 +125,14 @@ export const uploadFontModal = {
             zIndex: 1001,
             position: 'absolute',
             inset: '0',
-            theme: 'quaternary',
-          },
+            theme: 'quaternary'
+          }
         },
         children: (el, s) => {
           if (s.isVariable) return [s.value]
           return s.value
         },
-        childrenAs: 'state',
+        childrenAs: 'state'
       },
       UploadIcon: {
         width: '100%',
@@ -179,12 +179,12 @@ export const uploadFontModal = {
               if (el.call('isArray', s.value)) {
                 s.applyFunction(s => value[value.length - 1] = {
                   url,
-                  loading: false,
+                  loading: false
                 })
               } else {
                 s.update({
                   url,
-                  loading: false,
+                  loading: false
                 })
               }
 
@@ -208,15 +208,15 @@ export const uploadFontModal = {
               }
               el.error(e)
             }
-          },
-        },
-      },
-    },
+          }
+        }
+      }
+    }
   },
   ModalFooter: {
     CheckButton: {
       type: 'submit',
-      text: 'Save',
-    },
-  },
-};
+      text: 'Save'
+    }
+  }
+}

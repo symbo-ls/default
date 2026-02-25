@@ -31,19 +31,19 @@ export default {
         base: '/core/files',
         file: '/core/files/69325d2bebee5529e0391fbb',
         download: '/core/files/public/69325d2bebee5529e0391fbb/download',
-        publicDownload: '/core/files/public/69325d2bebee5529e0391fbb/download',
+        publicDownload: '/core/files/public/69325d2bebee5529e0391fbb/download'
       },
       absolute: {
         base: 'https://api.symbols.app/core/files',
         file: 'https://api.symbols.app/core/files/69325d2bebee5529e0391fbb',
         download: 'https://api.symbols.app/core/files/public/69325d2bebee5529e0391fbb/download',
-        publicDownload: 'https://api.symbols.app/core/files/public/69325d2bebee5529e0391fbb/download',
+        publicDownload: 'https://api.symbols.app/core/files/public/69325d2bebee5529e0391fbb/download'
       },
-      storage: 'https://storage.googleapis.com/smbls-api-media/media/projects/686848570cf470c5890934c5/users/6868484c0cf470c5890933cc/Npt7hnd-WvtFUaBml9Kxt.png',
-    },
+      storage: 'https://storage.googleapis.com/smbls-api-media/media/projects/686848570cf470c5890934c5/users/6868484c0cf470c5890933cc/Npt7hnd-WvtFUaBml9Kxt.png'
+    }
   },
   code: '',
   key: 'basket.jpg',
   type: 'file',
-  format: 'png',
-};
+  format: 'png'
+}

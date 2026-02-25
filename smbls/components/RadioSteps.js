@@ -6,15 +6,15 @@ export const RadioSteps = {
     RadioMark: {},
     Progress: {},
     ':last-child > progress': {
-      hide: true,
-    },
+      hide: true
+    }
   },
   children: [
     {
       RadioMark: {
-        isActive: true,
-      },
+        isActive: true
+      }
     },
-    {},
-  ],
-};
+    {}
+  ]
+}

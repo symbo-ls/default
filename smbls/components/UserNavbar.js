@@ -2,27 +2,27 @@ export const UserNavbar = {
   AvatarStatus: {
     margin: '-W - - -',
     Avatar: {},
-    Status: {},
+    Status: {}
   },
   Hgroup: {
     gap: 'W',
     H: {
       tag: 'h5',
-      text: 'Nika Tomadze',
+      text: 'Nika Tomadze'
     },
     P: {
-      text: 'active now',
-    },
+      text: 'active now'
+    }
   },
   IconButtonSet: {
     margin: '- - - auto',
     childProps: {
-      Icon: {},
+      Icon: {}
     },
-    children: () => [{}, {}],
+    children: () => [{}, {}]
   },
   extends: 'Flex',
   minWidth: 'G2',
   align: 'center flex-start',
-  gap: 'Z',
-};
+  gap: 'Z'
+}

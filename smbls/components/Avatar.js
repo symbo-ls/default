@@ -1,4 +1,4 @@
 export const Avatar = {
   extends: 'smbls.Avatar',
-  boxSize: 'C2',
-};
+  boxSize: 'C2'
+}

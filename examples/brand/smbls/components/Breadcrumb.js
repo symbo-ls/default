@@ -11,11 +11,11 @@ export const Breadcrumb = {
     '&[href]': {
       color: 'title',
       '&:hover': {
-        textDecoration: 'underline',
-      },
+        textDecoration: 'underline'
+      }
     },
     '&:not([href])': {
-      cursor: 'default',
+      cursor: 'default'
     },
     '&:not(:first-child):before': {
       content: '""',
@@ -26,8 +26,8 @@ export const Breadcrumb = {
       background: 'white',
       verticalAlign: '0.2em',
       marginInline: '.65em',
-      opacity: '.5',
-    },
+      opacity: '.5'
+    }
   },
   children: (el, s, ctx) => {
     const routeArr = (window.top.location.pathname || window.location.pathname)
@@ -35,17 +35,20 @@ export const Breadcrumb = {
       .slice(1)
     return routeArr
       .map((text, i) =>
-        text === 'page' ? {
-          href: '/pages',
-          text: 'Page'
-        } :
-        el.getData('pages')[`/${text}`] ? {
-          href: `/${routeArr.slice(0, i + 1).join('/')}`,
-          text: `/${text}`
-        } : {
-          href: `/${routeArr.slice(0, i + 1).join('/')}`,
-          text: i === 0 ? el.call('toTitleCase', text) : text
-        }
+        text === 'page'
+          ? {
+              href: '/pages',
+              text: 'Page'
+            }
+          : el.getData('pages')[`/${text}`]
+            ? {
+                href: `/${routeArr.slice(0, i + 1).join('/')}`,
+                text: `/${text}`
+              }
+            : {
+                href: `/${routeArr.slice(0, i + 1).join('/')}`,
+                text: i === 0 ? el.call('toTitleCase', text) : text
+              }
       )
       .filter((_, k) => {
         const v = routeArr[k]
@@ -53,5 +56,5 @@ export const Breadcrumb = {
           !v.includes('-') && !v.includes('editor') && !v.includes('preview')
         )
       })
-  },
-};
+  }
+}

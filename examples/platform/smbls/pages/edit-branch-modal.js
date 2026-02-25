@@ -24,19 +24,19 @@ export const editBranchModal = {
   },
   ModalHeader: {
     title: 'Edit {{ branch }} branch',
-    p: 'Edit branch name or delete it',
+    p: 'Edit branch name or delete it'
   },
   state: el => ({
     branch: el.getActiveBranch()
   }),
   Flex: {
     InputField: {
-      Input: {},
+      Input: {}
     },
     Flex: {
       if: (el, s) => s.error,
-      text: (el, s) => s.error,
-    },
+      text: (el, s) => s.error
+    }
   },
   ModalFooter: {
     CheckButton: {},
@@ -53,7 +53,7 @@ export const editBranchModal = {
             error: err.message
           })
         }
-      },
-    },
-  },
-};
+      }
+    }
+  }
+}

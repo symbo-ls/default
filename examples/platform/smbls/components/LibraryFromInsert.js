@@ -2,31 +2,31 @@ export const LibraryFromInsert = {
   extend: 'Flex',
   props: {
     flow: 'y',
-    gap: 'Z',
+    gap: 'Z'
   },
   CaptionTitle: {
     align: 'center',
     Text: {
-      text: 'Insert From Library',
+      text: 'Insert From Library'
     },
     SearchButton: {
       extends: [
         'CanvasButton',
-        'IconButton',
+        'IconButton'
       ],
       icon: 'search',
-      margin: '- auto - A',
+      margin: '- auto - A'
     },
     ExpandButton: {
       extends: [
         'CanvasButton',
-        'IconButton',
+        'IconButton'
       ],
       icon: 'expand',
       onClick: (ev, el) => {
-          el.setWindow('explorer', 'insert:library')
-        },
+        el.setWindow('explorer', 'insert:library')
+      }
     },
-    width: '100%',
-  },
-};
+    width: '100%'
+  }
+}

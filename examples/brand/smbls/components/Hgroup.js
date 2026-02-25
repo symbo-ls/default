@@ -7,11 +7,11 @@ export const Hgroup = {
     text: 'Heading',
     lineHeight: '1em',
     color: 'title',
-    margin: '0',
+    margin: '0'
   },
   P: {
     text: 'Paragraph',
     margin: '0',
-    color: 'paragraph',
-  },
-};
+    color: 'paragraph'
+  }
+}

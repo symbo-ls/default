@@ -3,5 +3,5 @@ export const SectionHeader = {
   Hgroup: {},
   IconButtonSet: {},
   extends: 'Flex',
-  gap: 'C1',
-};
+  gap: 'C1'
+}

@@ -1,7 +1,7 @@
 export const SelectDropdown = {
   extends: [
     'DropdownField',
-    'DropdownParent',
+    'DropdownParent'
   ],
   Dropdown: {
     minWidth: 'F3',
@@ -12,10 +12,10 @@ export const SelectDropdown = {
     ListInDropdown: {
       childProps: {
         align: 'center flex-start',
-        text: '{{ key }}',
+        text: '{{ key }}'
       },
       children: (el, s) => el.parent.props.options || s.list,
-      childrenAs: 'state',
-    },
-  },
-};
+      childrenAs: 'state'
+    }
+  }
+}

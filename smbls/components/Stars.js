@@ -5,19 +5,19 @@ export const Stars = {
   gap: 'W',
   children: [
     {
-      name: 'star',
+      name: 'star'
     },
     {
-      name: 'star',
+      name: 'star'
     },
     {
-      name: 'star',
+      name: 'star'
     },
     {
-      name: 'star',
+      name: 'star'
     },
     {
-      name: 'star',
-    },
-  ],
-};
+      name: 'star'
+    }
+  ]
+}

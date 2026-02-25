@@ -5,7 +5,7 @@ export const StateDesignElement = {
   gap: 'Y2',
   maxWidth: 'F_default',
   style: {
-    cursor: 'alias',
+    cursor: 'alias'
   },
   WiderButton: (el, s) => {
     const COLOR_MAPING = {
@@ -30,7 +30,7 @@ export const StateDesignElement = {
     P: {
       text: null,
       childProps: {
-        tag: 'span',
+        tag: 'span'
       },
       children: [
         'Property of ',
@@ -38,14 +38,14 @@ export const StateDesignElement = {
           text: '{{ category }}',
           props: {
             '@dark': {
-              color: 'white',
+              color: 'white'
             },
             '@light': {
-              color: 'black',
-            },
-          },
-        },
-      ],
-    },
-  },
-};
+              color: 'black'
+            }
+          }
+        }
+      ]
+    }
+  }
+}

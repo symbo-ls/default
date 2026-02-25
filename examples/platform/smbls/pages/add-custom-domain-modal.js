@@ -1,7 +1,7 @@
 export const addCustomDomainModal = {
   extends: [
     'ModalWindow',
-    'Form',
+    'Form'
   ],
   width: '100%',
   maxWidth: 'I',
@@ -42,11 +42,11 @@ export const addCustomDomainModal = {
   tag: 'form',
   state: {
     domainName: '',
-    validationMessage: '',
+    validationMessage: ''
   },
   ModalHeader: {
     title: 'Add custom domain',
-    p: 'Add custom domain to manage your domain in isolation',
+    p: 'Add custom domain to manage your domain in isolation'
   },
   Flex: {
     overflow: 'auto',
@@ -56,11 +56,11 @@ export const addCustomDomainModal = {
     flexAlign: 'flex-start space-between',
     gap: 'B3',
     childProps: {
-      width: '50%',
+      width: '50%'
     },
     InputField: {
       Title: {
-        text: 'Domain name',
+        text: 'Domain name'
       },
       Input: {
         value: '{{ domainName }}',
@@ -90,14 +90,14 @@ export const addCustomDomainModal = {
             validationMessage: '',
             domainName: value
           })
-        },
+        }
       },
       Label: {
         show: (ev, st) => st.validationMessage,
         color: 'red',
-        text: (ev, st) => st.validationMessage,
-      },
-    },
+        text: (ev, st) => st.validationMessage
+      }
+    }
   },
   ModalFooter: {
     CheckButton: {
@@ -106,8 +106,8 @@ export const addCustomDomainModal = {
       text: 'Next',
       icon: 'arrow right',
       ':hover': {
-        cursor: 'pointer',
-      },
-    },
-  },
-};
+        cursor: 'pointer'
+      }
+    }
+  }
+}

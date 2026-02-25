@@ -4,7 +4,7 @@ export const IconCaption = {
   color: 'caption',
   Icon: {
     icon: 'github',
-    color: 'paragraph',
+    color: 'paragraph'
   },
-  Text: {},
-};
+  Text: {}
+}

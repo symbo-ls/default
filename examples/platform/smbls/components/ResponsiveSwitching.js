@@ -3,36 +3,36 @@ export const ResponsiveSwitching = {
   gap: 'A',
   childrenAs: 'state',
   children: () => [{
-      key: 'screenL',
-      icon: 'deviceBigScreen'
-    },
-    {
-      key: 'screenM',
-      icon: 'deviceSmallScreen'
-    },
-    {
-      key: 'tabletL',
-      icon: 'deviceTabletLandscape'
-    },
-    {
-      key: 'tabletS',
-      icon: 'deviceTabletPortrait'
-    },
-    {
-      key: 'mobileXS',
-      icon: 'deviceMobile'
-    }, {
-      key: 'canvas',
-      icon: 'columns'
-    },
-    {
-      key: 'custom',
-      icon: 'layout'
-    },
-    {
-      key: 'resizable',
-      icon: 'dimensionsAlt'
-    },
+    key: 'screenL',
+    icon: 'deviceBigScreen'
+  },
+  {
+    key: 'screenM',
+    icon: 'deviceSmallScreen'
+  },
+  {
+    key: 'tabletL',
+    icon: 'deviceTabletLandscape'
+  },
+  {
+    key: 'tabletS',
+    icon: 'deviceTabletPortrait'
+  },
+  {
+    key: 'mobileXS',
+    icon: 'deviceMobile'
+  }, {
+    key: 'canvas',
+    icon: 'columns'
+  },
+  {
+    key: 'custom',
+    icon: 'layout'
+  },
+  {
+    key: 'resizable',
+    icon: 'dimensionsAlt'
+  }
   ],
   childProps: (el, s) => {
     const isActive = el.getCanvasScope('previewSize') === s.key
@@ -61,5 +61,5 @@ export const ResponsiveSwitching = {
         })
       }
     }
-  },
-};
+  }
+}

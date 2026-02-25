@@ -1,3 +1,3 @@
-export const isDocsContextLocal = function isDocsContextLocal() {
+export const isDocsContextLocal = function isDocsContextLocal () {
   return this.getRootState('docsContext') === 'Local'
 }

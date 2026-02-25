@@ -6,20 +6,20 @@ export default {
       '"Helvetica Neue"',
       '"Helvetica"',
       '"smblsVariable"',
-      '"smbls"',
+      '"smbls"'
     ],
-    type: 'serif',
+    type: 'serif'
   },
   EditorFamily: {
     value: [
-      '"Europa"',
+      '"Europa"'
     ],
-    type: 'serif',
+    type: 'serif'
   },
   Code: {
     value: [
-      '"Droid Sans Mono for Powerline"',
+      '"Droid Sans Mono for Powerline"'
     ],
-    type: 'monospace',
-  },
-};
+    type: 'monospace'
+  }
+}

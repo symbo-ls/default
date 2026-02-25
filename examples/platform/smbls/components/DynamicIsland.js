@@ -12,17 +12,19 @@ export const DynamicIsland = {
       'insert:integrations': 'IntegrationsPanel',
       'insert:library': 'InsertPanelLibrary',
       insert: 'InsertPanel',
-      learn: 'LearnPanel',
-    },
+      learn: 'LearnPanel'
+    }
   },
   DynamicNavbar: {},
   content: (el, s) => {
     const activeWindow = el.getWindow('explorer')
 
     if (!el.call('isString', activeWindow)) {
-      return Boolean(activeWindow) ? {
-        extend: s.panelMap[s.default]
-      } : {}
+      return activeWindow
+        ? {
+            extend: s.panelMap[s.default]
+          }
+        : {}
     }
 
     // First try exact match
@@ -46,7 +48,7 @@ export const DynamicIsland = {
   PromptAI: {
     margin: 'auto - -',
     order: 2,
-    hide: true,
+    hide: true
   },
   extend: 'Flex',
   props: {
@@ -72,45 +74,44 @@ export const DynamicIsland = {
     useAnimations: true,
     '.useAnimations': {
       transition: 'A1 defaultBezier',
-      transitionProperty: 'transform, visibility, opacity, width',
+      transitionProperty: 'transform, visibility, opacity, width'
     },
     isActive: (el) => Boolean(el.getWindow('explorer')),
     '.isActive': {
       transform: 'none',
       opacity: 1,
-      visibility: 'visible',
+      visibility: 'visible'
     },
     '!isActive': {
       transform: 'translate3d(0, 1.2em, 1px)',
       opacity: 0,
-      visibility: 'hidden',
+      visibility: 'hidden'
     },
     ':hover .close': {
-      opacity: 1,
+      opacity: 1
     },
     isInsertActive: (el) => el.getWindow('explorer') === 'insert',
     '.isInsertActive': {
-      width: 'H',
+      width: 'H'
     },
     isIconsActive: (el) => el.getWindow('explorer') === 'insert:icons',
     '.isIconsActive': {
-      width: 'H',
+      width: 'H'
     },
     isLibraryActive: (el) => el.getWindow('explorer') === 'insert:library',
     '.isLibraryActive': {
-      width: 'I',
+      width: 'I'
     },
     onBeforeUpdate: (_, el, s, ctx, opts) => {
       if (opts.skipRecentsIndexing) return
       const recents = s.recents || []
       const recent = recents[0]
       const activeWindow = el.getWindow('explorer')
-      if (activeWindow && activeWindow !== recent)
-        recents.unshift(activeWindow)
+      if (activeWindow && activeWindow !== recent) { recents.unshift(activeWindow) }
       s.recents = recents
       s.recentsIndex = 0
       // else s.recents = recents
     },
-    onRender: (el) => Boolean(el.getWindow('explorer')) && el.update(),
-  },
-};
+    onRender: (el) => Boolean(el.getWindow('explorer')) && el.update()
+  }
+}

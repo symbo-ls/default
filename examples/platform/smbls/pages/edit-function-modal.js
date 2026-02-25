@@ -11,7 +11,7 @@ export const editFunctionModal = {
     await el.call('closeModal')
   },
   ModalHeader: {
-    title: 'Edit {{ key }} function',
+    title: 'Edit {{ key }} function'
   },
   Flex: {
     'Flex.info': {
@@ -20,14 +20,14 @@ export const editFunctionModal = {
         pointerEvents: 'none',
         Input: {
           opacity: '.65',
-          disabled: 'disabled',
-        },
-      },
+          disabled: 'disabled'
+        }
+      }
     },
     'Group.code': {
       minWidth: '100%',
       Title: {
-        text: 'Function code',
+        text: 'Function code'
       },
       CodePreviewWidget: {
         props: (el, s) => ({
@@ -68,22 +68,22 @@ export const editFunctionModal = {
               })
             }
           }
-        }),
-      },
-    },
+        })
+      }
+    }
   },
   ModalFooter: {
     CheckButton: {
       type: 'submit',
       icon: 'checkmark',
-      text: 'Save',
+      text: 'Save'
     },
     IconButton: {
       icon: 'trash outline',
       onClick: async (ev, el, s) => {
         el.call('removeItem', 'function', s.key)
         el.call('closeModal')
-      },
-    },
-  },
-};
+      }
+    }
+  }
+}

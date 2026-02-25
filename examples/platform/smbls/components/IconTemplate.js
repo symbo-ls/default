@@ -1,6 +1,6 @@
 export const IconTemplate = {
   extends: [
-    'CanvasButton',
+    'CanvasButton'
   ],
   round: 'X',
   aspectRatio: '1 / 1',
@@ -12,12 +12,12 @@ export const IconTemplate = {
     border: '10px solid blue',
     color: 'red !important',
     style: {
-      color: 'red !important',
-    },
+      color: 'red !important'
+    }
   },
   Icon: {
     transition: 'A defaultBezier font-size',
     fontSize: 'D2',
-    src: (el, s) => s.value,
-  },
-};
+    src: (el, s) => s.value
+  }
+}

@@ -16,6 +16,6 @@ export const DropdownHeader = {
     zIndex: '1',
     theme: 'field-static',
     backdropFilter: 'blur(3px)',
-    text: 'Dropdown title',
-  },
-};
+    text: 'Dropdown title'
+  }
+}

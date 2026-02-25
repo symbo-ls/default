@@ -6,11 +6,11 @@ export const SearchDropdown_copy = {
       'Los Angeles',
       'New York',
       'San Fransisco',
-      'San Diego',
+      'San Diego'
     ],
     filtered: [
     ],
-    searchValue: '',
+    searchValue: ''
   },
   SelectedContainer: {
     text: '{{ selected }}',
@@ -23,9 +23,9 @@ export const SearchDropdown_copy = {
     cursor: 'pointer',
     isSelected: (el, s) => s.selected !== 'Search and Select',
     '.isSelected': {
-      color: 'title',
+      color: 'title'
     },
-    onClick: (e, el, s) => s.toggle('isOpen'),
+    onClick: (e, el, s) => s.toggle('isOpen')
   },
   Options: {
     show: (el, s) => s.isOpen,
@@ -47,14 +47,14 @@ export const SearchDropdown_copy = {
       border: 'none',
       outline: 'none',
       onInput: (e, el, state) => {
-          const value = e.target.value.trim().toLowerCase()
-          const filtered = state.data.filter(item =>
-            item.toLowerCase().includes(value))
-          state.replace({
-            searchValue: value,
-            filtered: filtered
-          })
-        },
+        const value = e.target.value.trim().toLowerCase()
+        const filtered = state.data.filter(item =>
+          item.toLowerCase().includes(value))
+        state.replace({
+          searchValue: value,
+          filtered
+        })
+      }
     },
     Results: {
       marginTop: 'X',
@@ -65,31 +65,31 @@ export const SearchDropdown_copy = {
         padding: 'Z',
         text: '{{ value }}',
         onClick: (ev, el, s) => {
-            s.parent.update({
-              selected: s.value,
-              isOpen: false,
-              searchValue: '',
-              //filtered: []
-            })
-          },
-      },
+          s.parent.update({
+            selected: s.value,
+            isOpen: false,
+            searchValue: ''
+            // filtered: []
+          })
+        }
+      }
     },
     Placeholder: {
       padding: 'Z',
       show: (el, s) => !s.searchValue,
       text: 'Enter name to search',
-      color: 'disabled',
+      color: 'disabled'
     },
     NoResults: {
       padding: 'Z',
       show: (el, s) => !!s.searchValue && !s.filtered.length,
       text: 'No results found',
-      color: 'disabled',
-    },
+      color: 'disabled'
+    }
   },
   color: 'black',
   position: 'relative',
   width: 'G3',
   theme: 'field',
-  round: 'A2',
-};
+  round: 'A2'
+}

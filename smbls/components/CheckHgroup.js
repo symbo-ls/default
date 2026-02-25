@@ -2,18 +2,18 @@ export const CheckHgroup = {
   Hgroup: {
     gap: 'W2',
     H: {
-      tag: 'h6',
+      tag: 'h6'
     },
-    P: {},
+    P: {}
   },
   Checkbox: {
     Input: {},
     Flex: {
       Icon: {
-        name: 'check',
-      },
-    },
+        name: 'check'
+      }
+    }
   },
   extends: 'Flex',
-  gap: 'Z',
-};
+  gap: 'Z'
+}

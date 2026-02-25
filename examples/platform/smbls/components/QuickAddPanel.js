@@ -1,21 +1,21 @@
 export const QuickAddPanel = {
   extend: 'Flex',
   state: {
-    type: 'components',
+    type: 'components'
   },
   tag: 'form',
   props: {
     flow: 'y',
     gap: 'Z',
     onSubmit: (ev, el, s) => {
-        ev.preventDefault()
-        el.call('createItem', s.type, s.key)
-      },
+      ev.preventDefault()
+      el.call('createItem', s.type, s.key)
+    }
   },
   CaptionTitle: {
     Text: {
-      text: 'Quick add',
-    },
+      text: 'Quick add'
+    }
   },
   Flex: {
     gap: 'X',
@@ -26,34 +26,34 @@ export const QuickAddPanel = {
       padding: 'X Y2',
       width: 'D3',
       onChange: (ev, el, s, ctx) => {
-          const value = ev.target.value
-          if (value) {
-            s.update({
-              action: value
-            })
-          }
-        },
+        const value = ev.target.value
+        if (value) {
+          s.update({
+            action: value
+          })
+        }
+      },
       children: [
         {
           text: 'Create',
-          value: 'create',
+          value: 'create'
         },
         {
           text: 'Reuse',
-          value: 'reuse',
+          value: 'reuse'
         },
         {
           text: 'Duplicate',
-          value: 'duplicate',
-        },
+          value: 'duplicate'
+        }
       ],
       childrenAs: 'props',
       childProps: {
         tag: 'option',
         attr: {
-          selected: (el, s) => el.node.value === s.action,
-        },
-      },
+          selected: (el, s) => el.node.value === s.action
+        }
+      }
     },
     Select_type: {
       background: 'none',
@@ -61,46 +61,46 @@ export const QuickAddPanel = {
       padding: 'X Y2',
       width: 'E+A',
       onChange: (ev, el, s, ctx) => {
-          const value = ev.target.value
-          if (value) {
-            s.update({
-              type: value
-            })
-          }
-        },
+        const value = ev.target.value
+        if (value) {
+          s.update({
+            type: value
+          })
+        }
+      },
       children: [
         {
           text: 'Component',
-          value: 'components',
+          value: 'components'
         },
         {
           text: 'Page',
-          value: 'pages',
+          value: 'pages'
         },
         {
           text: 'Function',
-          value: 'functions',
+          value: 'functions'
         },
         {
           text: 'Method',
-          value: 'methods',
+          value: 'methods'
         },
         {
           text: 'State',
-          value: 'state',
+          value: 'state'
         },
         {
           text: 'Dependency',
-          value: 'dependencies',
-        },
+          value: 'dependencies'
+        }
       ],
       childrenAs: 'props',
       childProps: {
         tag: 'option',
         attr: {
-          selected: (el, s) => el.node.value === s.action,
-        },
-      },
+          selected: (el, s) => el.node.value === s.action
+        }
+      }
     },
     FileSidebarAddNewItem: {
       Label: {
@@ -113,25 +113,32 @@ export const QuickAddPanel = {
           attr: {
             required: true,
             placeholder: (el, s) => 'Type ' + (
-                s.type === 'pages' ?
-                '/page-path' : s.type === 'components' ?
-                'ComponentName' : s.type === 'functions' ?
-                'functionName' : s.type === 'methods' ?
-                'methodName' : s.type === 'state' ?
-                'state_name' : s.type === 'secrets' ?
-                'secret_name' : s.type === 'dependencies' ?
-                '@dep/name' : '') + '...',
-          },
+              s.type === 'pages'
+                ? '/page-path'
+                : s.type === 'components'
+                  ? 'ComponentName'
+                  : s.type === 'functions'
+                    ? 'functionName'
+                    : s.type === 'methods'
+                      ? 'methodName'
+                      : s.type === 'state'
+                        ? 'state_name'
+                        : s.type === 'secrets'
+                          ? 'secret_name'
+                          : s.type === 'dependencies'
+                            ? '@dep/name'
+                            : '') + '...'
+          }
         },
         Flex: {
           margin: '- - - auto',
           Save: {
-            extends: 'NavbarButton',
+            extends: 'NavbarButton'
           },
-          Close: null,
-        },
+          Close: null
+        }
       },
-      flex: 1,
-    },
-  },
-};
+      flex: 1
+    }
+  }
+}

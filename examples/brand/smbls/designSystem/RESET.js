@@ -6,11 +6,11 @@ export default {
     minHeight: '100dvh',
     height: 'auto',
     transform: 'none',
-    overscrollBehavior: 'none',
+    overscrollBehavior: 'none'
   },
   body: {
     transform: 'none',
     overscrollBehavior: 'none',
-    minHeight: '100dvh',
-  },
-};
+    minHeight: '100dvh'
+  }
+}

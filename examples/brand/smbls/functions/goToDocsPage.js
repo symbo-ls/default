@@ -1,4 +1,4 @@
-export const goToDocsPage = function goToDocsPage(href) {
+export const goToDocsPage = function goToDocsPage (href) {
   if (!this.call('isString', href)) {
     return this.warn('Href to docs link is not defined')
   }

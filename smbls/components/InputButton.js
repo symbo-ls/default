@@ -1,11 +1,11 @@
 export const InputButton = {
   Input: {
     placeholder: 'Enter your email',
-    minWidth: 'G+B1',
+    minWidth: 'G+B1'
   },
   Button: {
     text: 'Sign up',
-    theme: 'primary',
+    theme: 'primary'
   },
   extends: 'Flex',
   gap: 'Y2',
@@ -14,6 +14,6 @@ export const InputButton = {
   '> *': {
     height: '100%',
     minHeight: '100%',
-    maxHeight: '100%',
-  },
-};
+    maxHeight: '100%'
+  }
+}

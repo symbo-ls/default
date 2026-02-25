@@ -3,24 +3,24 @@ export const SelectField = {
     children: [
       {
         value: '',
-        text: 'Select one...',
+        text: 'Select one...'
       },
       {
         value: 'mazda',
-        text: 'Mazda',
+        text: 'Mazda'
       },
       {
         value: 'bmw',
-        text: 'BMW',
-      },
-    ],
+        text: 'BMW'
+      }
+    ]
   },
   Icon: {
-    margin: '- Z2 - -',
+    margin: '- Z2 - -'
   },
   extends: 'SelectPicker',
   theme: 'field',
   minWidth: 'G',
   padding: 'A A1',
-  round: 'D',
-};
+  round: 'D'
+}

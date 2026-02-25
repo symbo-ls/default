@@ -9,10 +9,10 @@ export const DragParagraph = {
     Lottie: {
       src: 'swipe-right.json',
       fontSize: 'B1',
-      margin: '- - -X2',
+      margin: '- - -X2'
     },
     Text: {
-      text: 'Drag and drop these components to your canvas',
-    },
-  },
-};
+      text: 'Drag and drop these components to your canvas'
+    }
+  }
+}

@@ -8,5 +8,5 @@ export const SquareButton = {
   boxSize: 'fit-content fit-content',
   justifyContent: 'center',
   round: 'Z',
-  boxSizing: 'content-box',
-};
+  boxSizing: 'content-box'
+}

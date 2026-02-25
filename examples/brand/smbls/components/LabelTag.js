@@ -5,5 +5,5 @@ export const LabelTag = {
   theme: 'tertiary',
   text: '-2.902',
   padding: 'X Y',
-  lineHeight: '1em',
-};
+  lineHeight: '1em'
+}

@@ -30,20 +30,20 @@ export default {
         base: '/core/files',
         file: '/core/files/6944ea6b4c0341ca0850df63',
         download: '/core/files/public/6944ea6b4c0341ca0850df63/download',
-        publicDownload: '/core/files/public/6944ea6b4c0341ca0850df63/download',
+        publicDownload: '/core/files/public/6944ea6b4c0341ca0850df63/download'
       },
       absolute: {
         base: 'https://api.symbols.app/core/files',
         file: 'https://api.symbols.app/core/files/6944ea6b4c0341ca0850df63',
         download: 'https://api.symbols.app/core/files/public/6944ea6b4c0341ca0850df63/download',
-        publicDownload: 'https://api.symbols.app/core/files/public/6944ea6b4c0341ca0850df63/download',
+        publicDownload: 'https://api.symbols.app/core/files/public/6944ea6b4c0341ca0850df63/download'
       },
-      storage: 'https://storage.googleapis.com/smbls-api-media/media/projects/688e2195d3646fd6ae415464/users/6868484c0cf470c5890933cc/QtlEndzsotxaaAMwACfHb.png',
+      storage: 'https://storage.googleapis.com/smbls-api-media/media/projects/688e2195d3646fd6ae415464/users/6868484c0cf470c5890933cc/QtlEndzsotxaaAMwACfHb.png'
     },
-    src: 'https://api.symbols.app/core/files/public/6944ea6b4c0341ca0850df63/download',
+    src: 'https://api.symbols.app/core/files/public/6944ea6b4c0341ca0850df63/download'
   },
   code: '',
   key: 'video.png',
   type: 'files',
-  format: 'png',
-};
+  format: 'png'
+}

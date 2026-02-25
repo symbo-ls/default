@@ -30,20 +30,20 @@ export default {
         base: '/core/files',
         file: '/core/files/692d973ad181acc7ae7643df',
         download: '/core/files/public/692d973ad181acc7ae7643df/download',
-        publicDownload: '/core/files/public/692d973ad181acc7ae7643df/download',
+        publicDownload: '/core/files/public/692d973ad181acc7ae7643df/download'
       },
       absolute: {
         base: 'https://api.symbols.app/core/files',
         file: 'https://api.symbols.app/core/files/692d973ad181acc7ae7643df',
         download: 'https://api.symbols.app/core/files/public/692d973ad181acc7ae7643df/download',
-        publicDownload: 'https://api.symbols.app/core/files/public/692d973ad181acc7ae7643df/download',
+        publicDownload: 'https://api.symbols.app/core/files/public/692d973ad181acc7ae7643df/download'
       },
-      storage: 'https://storage.googleapis.com/smbls-api-media/media/projects/688e2195d3646fd6ae415464/users/6868484c0cf470c5890933cc/MRpDgK94HecveGH5pWmBr.png',
+      storage: 'https://storage.googleapis.com/smbls-api-media/media/projects/688e2195d3646fd6ae415464/users/6868484c0cf470c5890933cc/MRpDgK94HecveGH5pWmBr.png'
     },
-    src: 'https://api.symbols.app/core/files/public/692d973ad181acc7ae7643df/download',
+    src: 'https://api.symbols.app/core/files/public/692d973ad181acc7ae7643df/download'
   },
   code: '',
   key: 'chrome-ext-icon.png',
   type: 'files',
-  format: 'png',
-};
+  format: 'png'
+}

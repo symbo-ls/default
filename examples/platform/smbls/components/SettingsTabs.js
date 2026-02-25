@@ -41,7 +41,7 @@ export const SettingsTabs = {
     fontWeight: '400',
     padding: 'Z B1',
     '!isActive': {
-      fontWeight: '400',
+      fontWeight: '400'
     },
     onClick: (ev, el, s) => {
       // el.call(
@@ -55,6 +55,6 @@ export const SettingsTabs = {
       s.update({
         key: el.props.href
       })
-    },
-  },
-};
+    }
+  }
+}

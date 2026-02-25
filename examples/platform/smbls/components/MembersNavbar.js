@@ -1,7 +1,7 @@
 export const MembersNavbar = {
   extend: 'Flex',
   props: {
-    align: 'center',
+    align: 'center'
   },
   ActiveCanvasUsers: {},
   Invite: {
@@ -10,12 +10,12 @@ export const MembersNavbar = {
     borderStyle: 'solid',
     extends: [
       'IconButton',
-      'DropdownParentFocus',
+      'DropdownParentFocus'
     ],
     margin: '- - - -Z',
     round: 'C1',
     Icon: {
-      fontSize: 'Z',
+      fontSize: 'Z'
     },
     padding: 'Y+U',
     title: 'Invite Members',
@@ -24,7 +24,7 @@ export const MembersNavbar = {
     Dropdown: {
       left: '-F1',
       onClick: () => {},
-      InviteDropdown: {},
-    },
-  },
-};
+      InviteDropdown: {}
+    }
+  }
+}

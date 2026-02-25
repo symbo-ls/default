@@ -9,12 +9,12 @@ export const UploadButton = {
     cursor: 'pointer',
     top: '0',
     left: '0',
-    opacity: '0',
+    opacity: '0'
   },
   extends: 'Button',
   position: 'relative',
   padding: '0',
   cursor: 'pointer',
   theme: 'transparent',
-  color: 'blue',
-};
+  color: 'blue'
+}

@@ -36,11 +36,11 @@ export const addCaseModal = {
     key: '',
     value: () => {
       // Do nothing
-    },
+    }
   },
   ModalHeader: {
     title: 'Add a case',
-    p: 'Add case and use it across component properties',
+    p: 'Add case and use it across component properties'
   },
   Flex: {
     padding: 'A C3 0',
@@ -51,7 +51,7 @@ export const addCaseModal = {
     'InputField.key': {
       maxWidth: '50%',
       Title: {
-        text: 'Key',
+        text: 'Key'
       },
       Input: {
         value: '{{ key }}',
@@ -68,13 +68,13 @@ export const addCaseModal = {
           s.update({
             key: val
           })
-        },
-      },
+        }
+      }
     },
     'Group.code': {
       minWidth: '100%',
       Title: {
-        text: 'Case value',
+        text: 'Case value'
       },
       CodePreviewWidget: {
         props: (el, s) => ({
@@ -89,8 +89,9 @@ export const addCaseModal = {
             opacity: 1,
             debounceDuration: 0,
             fileTab: {
-              code: el.call('isString', s.value) ?
-                s.value : el.stringifyCode(s.value) || 'export default {}',
+              code: el.call('isString', s.value)
+                ? s.value
+                : el.stringifyCode(s.value) || 'export default {}',
               type: 'javascript',
               filename: 'case.js',
               fileTabKey: 'function'
@@ -100,16 +101,16 @@ export const addCaseModal = {
               s.value = value
             }
           }
-        }),
-      },
-    },
+        })
+      }
+    }
   },
   ModalFooter: {
     CheckButton: {
       type: 'submit',
       reverse: true,
       icon: 'checkmark',
-      text: 'Save',
-    },
-  },
-};
+      text: 'Save'
+    }
+  }
+}

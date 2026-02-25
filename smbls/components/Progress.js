@@ -9,7 +9,7 @@ export const Progress = {
     }) => props.progress,
     value: ({
       props
-    }) => props.value,
+    }) => props.value
   },
   extends: 'Flex',
   height: 'X',
@@ -18,14 +18,14 @@ export const Progress = {
   overflow: 'hidden',
   '::-webkit-progress-bar': {
     '@dark': {
-      background: 'gray',
+      background: 'gray'
     },
     '@light': {
-      background: 'hurricane',
-    },
+      background: 'hurricane'
+    }
   },
   '::-webkit-progress-value': {
     borderRadius: 'Y',
-    theme: 'primary',
-  },
-};
+    theme: 'primary'
+  }
+}

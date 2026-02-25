@@ -79,17 +79,17 @@ export const addDependencyModal = {
     ],
     isLoadingPackages: false,
     error: '',
-    disabled: false,
+    disabled: false
   },
   ModalHeader: {
     title: 'Add dependency',
-    p: 'Symbols will make cloud build for your NPM dependency',
+    p: 'Symbols will make cloud build for your NPM dependency'
   },
   LoadingGifSection: {
     fullscreen: true,
     position: 'absolute',
     inset: '0',
-    hide: (el, s) => !s.loading,
+    hide: (el, s) => !s.loading
   },
   Flex: {
     padding: 'A C3 0',
@@ -102,15 +102,15 @@ export const addDependencyModal = {
         '& [dropdown]': {
           transform: 'translate3d(0,0,0)',
           opacity: 1,
-          visibility: 'visible',
-        },
+          visibility: 'visible'
+        }
       },
       extends: [
         'GroupField',
-        'DropdownParent',
+        'DropdownParent'
       ],
       Title: {
-        text: 'Package',
+        text: 'Package'
       },
       Input: {
         width: '100%',
@@ -140,11 +140,11 @@ export const addDependencyModal = {
               packages: []
             })
           }
-        },
+        }
       },
       Dropdown: {
         style: {
-          left: 0,
+          left: 0
         },
         options: (el, s) => s.packages,
         onChoose: (ev, el, s, _ctx, calleeElement) => {
@@ -158,16 +158,16 @@ export const addDependencyModal = {
             schemaVersion: 'latest'
           })
           el.parent.Input.node.value = pkgName
-          el.lookup('InputField.schemaVersion').Input.node.value = pkgVersion ?
-            `^${pkgVersion}` :
-            s.schemaVersion || 'latest'
+          el.lookup('InputField.schemaVersion').Input.node.value = pkgVersion
+            ? `^${pkgVersion}`
+            : s.schemaVersion || 'latest'
         },
         DropdownHeader: {
           if: ({
-              state
-            }) =>
+            state
+          }) =>
             state.packages.length === 0 && state.name.length > 2,
-          text: 'No packages with that name found',
+          text: 'No packages with that name found'
         },
         ListInDropdown: {
           childProps: {
@@ -176,15 +176,15 @@ export const addDependencyModal = {
             fontWeight: '400',
             Span: {
               opacity: '0.5',
-              text: ' @{{ version }}',
-            },
-          },
-        },
-      },
+              text: ' @{{ version }}'
+            }
+          }
+        }
+      }
     },
     'InputField.schemaVersion': {
       Title: {
-        text: 'Version',
+        text: 'Version'
       },
       Input: {
         required: true,
@@ -204,16 +204,16 @@ export const addDependencyModal = {
             await el.call('fetchNpmPackage', s.name, schemaVersion)
             clearTimeout(t)
           }, 1000)
-        },
+        }
       },
       ResolvedVersion: {
-        text: '{{ version }}',
-      },
+        text: '{{ version }}'
+      }
     },
     Error: {
       text: (el, s) => s.error,
-      color: 'red',
-    },
+      color: 'red'
+    }
   },
   ModalFooter: {
     margin: 'auto - -',
@@ -221,7 +221,7 @@ export const addDependencyModal = {
       type: 'submit',
       reverse: true,
       icon: 'checkmark',
-      text: 'Save',
-    },
-  },
-};
+      text: 'Save'
+    }
+  }
+}

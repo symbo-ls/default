@@ -9,12 +9,12 @@ export const CommonFieldLike = {
       text: '',
       color: 'caption',
       userSelect: 'none',
-      whiteSpace: 'nowrap',
-    },
+      whiteSpace: 'nowrap'
+    }
   },
   element: {
     props: {
-      width: '100%',
-    },
-  },
-};
+      width: '100%'
+    }
+  }
+}

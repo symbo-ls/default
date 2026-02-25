@@ -3,7 +3,7 @@ export const QuickEditor = {
     recents: [
     ],
     recentsIndex: 0,
-    showLayers: true,
+    showLayers: true
   },
   FilesSidebarListItem: {
     lazyLoad: true,
@@ -11,11 +11,11 @@ export const QuickEditor = {
       {
         props: {
           content: {
-            lazyLoad: true,
-          },
-        },
+            lazyLoad: true
+          }
+        }
       },
-      'FilesSidebarListItem',
+      'FilesSidebarListItem'
     ],
     isActive: null,
     '.isActive': null,
@@ -26,13 +26,13 @@ export const QuickEditor = {
     onDblclick: () => {},
     Text: {
       fontSize: 'Z2',
-      margin: '- - - Y1',
+      margin: '- - - Y1'
     },
     EditCode: {
-      margin: '0',
+      margin: '0'
     },
     QuickEditorNavbar: {
-      margin: '- - - auto',
+      margin: '- - - auto'
     },
     Span: null,
     '& .layers': {
@@ -41,14 +41,14 @@ export const QuickEditor = {
       overflow: 'hidden auto',
       maxHeight: 'calc(100vh - D2 - W2)',
       '& > div > div': {
-        paddingBlockStart: '0',
-      },
-    },
+        paddingBlockStart: '0'
+      }
+    }
   },
   PromptAI: {
     margin: 'auto - -',
     order: 2,
-    hide: true,
+    hide: true
   },
   extend: 'Flex',
   props: {
@@ -68,32 +68,32 @@ export const QuickEditor = {
     fontSize: 'Y2',
     hide: (el, s) => !el.getCanvasScope('editorActive') || !s.value,
     onFrame: (el, s) => {
-    const editorActive = el.getCanvasScope('editorActive')
-    const selected = el.getSelectedKey()
-    el.variables({
-      editorActive,
-      selected
-    }).changed(() => {
-      if (selected && editorActive) {
-        const componentState = el.call(
-          'deepClone',
-          el.getSelected().state.parse()
-        )
-        // console.log(componentState)
-        s.replace(componentState, {
-          preventStateUpdateListener: true,
-          forceMonacoUpdate: true
-        })
-      } else {
-        if (s.value) {
-          delete s.code
-          s.remove('value', {
+      const editorActive = el.getCanvasScope('editorActive')
+      const selected = el.getSelectedKey()
+      el.variables({
+        editorActive,
+        selected
+      }).changed(() => {
+        if (selected && editorActive) {
+          const componentState = el.call(
+            'deepClone',
+            el.getSelected().state.parse()
+          )
+          // console.log(componentState)
+          s.replace(componentState, {
             preventStateUpdateListener: true,
-            forceMonacoUpdate: false
+            forceMonacoUpdate: true
           })
+        } else {
+          if (s.value) {
+            delete s.code
+            s.remove('value', {
+              preventStateUpdateListener: true,
+              forceMonacoUpdate: false
+            })
+          }
         }
-      }
-    })
-  },
-  },
-};
+      })
+    }
+  }
+}

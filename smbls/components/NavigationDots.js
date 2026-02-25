@@ -10,16 +10,16 @@ export const NavigationDots = {
     cursor: 'pointer',
     text: '',
     '.isActive': {
-      theme: 'primary',
+      theme: 'primary'
     },
     ':active': {
-      theme: 'primary',
-    },
+      theme: 'primary'
+    }
   },
   children: [
     {},
     {
-      isActive: true,
-    },
-  ],
-};
+      isActive: true
+    }
+  ]
+}

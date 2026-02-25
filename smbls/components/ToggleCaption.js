@@ -1,14 +1,14 @@
 export const ToggleCaption = {
   Caption: {
-    text: 'Caption',
+    text: 'Caption'
   },
   Toggle: {
     Input: {},
     Flex: {
-      ':after': {},
-    },
+      ':after': {}
+    }
   },
   extends: 'Flex',
   align: 'center flex-start',
-  gap: 'Z',
-};
+  gap: 'Z'
+}

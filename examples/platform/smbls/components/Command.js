@@ -6,19 +6,19 @@ export const Command = {
     style: {
       '& .token': {
         '&.function': {
-          color: '#DBDDAA',
-        },
-      },
-    },
+          color: '#DBDDAA'
+        }
+      }
+    }
   },
   '@light': {
     style: {
       '& .token': {
         '&.function': {
-          color: '#a59300',
-        },
-      },
-    },
+          color: '#a59300'
+        }
+      }
+    }
   },
   onUpdate: (el, s) => {
     el.props.onRender(el, s)
@@ -48,5 +48,5 @@ export const Command = {
     }, {
       preventListeners: true
     })
-  },
-};
+  }
+}

@@ -1,6 +1,6 @@
 export const Logo = {
   extends: [
-    'SquareButton',
+    'SquareButton'
   ],
   icon: 'logov2',
   boxSize: '1.25em',
@@ -17,33 +17,33 @@ export const Logo = {
   top: 'X2',
   left: 'Y',
   ':focus-within': {
-    zIndex: 9990100,
+    zIndex: 9990100
   },
   '@dark': {
-    color: 'white',
+    color: 'white'
   },
   '@light': {
-    color: 'black',
+    color: 'black'
   },
   ':hover': {
     '@dark': {
       color: 'gray15',
-      background: 'gray3',
+      background: 'gray3'
     },
     '@light': {
       color: 'black',
-      background: 'white',
-    },
+      background: 'white'
+    }
   },
   '.isActive': {
     '@dark': {
       color: 'gray15',
-      background: 'gray3',
+      background: 'gray3'
     },
     '@light': {
       color: 'black',
-      background: 'white',
-    },
+      background: 'white'
+    }
   },
   onClick: (ev, el) => {
     ev.preventDefault()
@@ -67,11 +67,11 @@ export const Logo = {
     position: 'absolute',
     inset: '0',
     zIndex: 9,
-    href: `'https://symbols.app' + window.location.pathname.split('/embed')[1]`,
-    target: '_blank',
+    href: '\'https://symbols.app\' + window.location.pathname.split(\'/embed\')[1]',
+    target: '_blank'
   },
   Icon: {
-    fontSize: '1.26em',
+    fontSize: '1.26em'
   },
   Span: {
     animation: 'slideInOut',
@@ -86,6 +86,6 @@ export const Logo = {
     fontSize: 'X',
     text: 'BETA',
     transform: 'translate3d(0, 50%, 0)',
-    opacity: '0',
-  },
-};
+    opacity: '0'
+  }
+}

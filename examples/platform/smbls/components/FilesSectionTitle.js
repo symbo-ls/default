@@ -23,25 +23,25 @@ export const FilesSectionTitle = {
           s.update()
         }
       }
-    },
+    }
   },
   Span: {
     extends: [
       'CaptionTitle',
-      'Flex',
+      'Flex'
     ],
     margin: 'W auto - -',
     ':hover': {
-      color: 'paragraph',
+      color: 'paragraph'
     },
     Text: {
-      text: (el, s) => s.type?.replace('_', ' '),
+      text: (el, s) => s.type?.replace('_', ' ')
     },
     onClick: (ev, el, s) => {
       const isVisible = el.call('getCookie', `sidebar_${s.type}`) !== 'false'
       el.call('setCookie', `sidebar_${s.type}`, !isVisible)
       s.update()
-    },
+    }
   },
   'NavbarButton.question': {
     transition: 'A defaultBezier opacity',
@@ -53,7 +53,7 @@ export const FilesSectionTitle = {
       ev.preventDefault()
       ev.stopPropagation()
       el.setWindow('docs', '/' + s.type)
-    },
+    }
   },
   extend: 'Navbar',
   props: {
@@ -66,6 +66,6 @@ export const FilesSectionTitle = {
     align: 'center',
     margin: '- -Y1',
     padding: '- Y1',
-    fontSize: 'Z2',
-  },
-};
+    fontSize: 'Z2'
+  }
+}

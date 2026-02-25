@@ -3,6 +3,6 @@ export const ArticleMedium = {
   gap: 'X',
   Title: {
     tag: 'h2',
-    fontSize: 'B',
-  },
-};
+    fontSize: 'B'
+  }
+}

@@ -9,11 +9,11 @@ export const TabSet = {
     {
       text: 'build',
       isActive: true,
-      theme: 'dialog-elevated',
+      theme: 'dialog-elevated'
     },
     {
-      text: 'test',
-    },
+      text: 'test'
+    }
   ],
   childProps: {
     Icon: null,
@@ -22,8 +22,8 @@ export const TabSet = {
     padding: 'Z B1',
     textTransform: 'capitalize',
     '.isActive': {
-      theme: 'document',
+      theme: 'document'
     },
-    theme: 'transparent',
-  },
-};
+    theme: 'transparent'
+  }
+}

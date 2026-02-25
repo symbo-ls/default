@@ -3,41 +3,41 @@ export const IconsFromInsert = {
   props: {
     flow: 'y',
     gap: 'Z',
-    position: 'relative',
+    position: 'relative'
   },
   CaptionTitle: {
     width: '100%',
     Text: {
-      text: 'Icons',
+      text: 'Icons'
     },
     SearchButton: {
       extends: [
         'CanvasButton',
-        'IconButton',
+        'IconButton'
       ],
       icon: 'search',
-      margin: '- auto - A',
+      margin: '- auto - A'
     },
     ExpandButton: {
       extends: [
         'CanvasButton',
-        'IconButton',
+        'IconButton'
       ],
       icon: 'expand',
       onClick: (ev, el) => {
-          el.setWindow('explorer', 'insert:icons')
-        },
+        el.setWindow('explorer', 'insert:icons')
+      }
     },
-    align: 'center',
+    align: 'center'
   },
   IconsGroup: {
     limit: 96,
     childProps: {
       padding: 'auto',
       Icon: {
-        fontSize: 'A',
-      },
-    },
+        fontSize: 'A'
+      }
+    }
   },
-  InsertSectionShadow: {},
-};
+  InsertSectionShadow: {}
+}

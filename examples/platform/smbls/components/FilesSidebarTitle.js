@@ -15,7 +15,7 @@ export const FilesSidebarTitle = {
       'methods',
       'snippets',
       'typography',
-      'state',
+      'state'
     ],
     allowedAddNewPanel: [
       'semantic_color',
@@ -24,7 +24,7 @@ export const FilesSidebarTitle = {
       'media',
       'icons',
       'media',
-      'spacing',
+      'spacing'
     ],
     allowedAddModal: [
       'font',
@@ -32,7 +32,7 @@ export const FilesSidebarTitle = {
       'templates',
       'cases',
       'dependencies',
-      'files',
+      'files'
     ],
     hide: (el, s) => {
       const activeFileSidebar = el.call('getActiveDynamicIslandCategory')
@@ -54,10 +54,10 @@ export const FilesSidebarTitle = {
         s.toggle('adding')
         return setTimeout(
           () =>
-          el
-          .lookup('FilesSidebarList')
-          .parent.lookdown('FileSidebarAddNewItem')
-          .Label.Input.node.focus(),
+            el
+              .lookup('FilesSidebarList')
+              .parent.lookdown('FileSidebarAddNewItem')
+              .Label.Input.node.focus(),
           100
         )
       }
@@ -74,7 +74,7 @@ export const FilesSidebarTitle = {
         'openModal',
         `/add-${el.getSingular(s.type.replace(/_/gu, '-'))}`
       )
-    },
+    }
   },
   'NavbarButton.sort': {
     transition: 'A defaultBezier opacity',
@@ -101,10 +101,10 @@ export const FilesSidebarTitle = {
       const value = el.call('getCookie', `sidebar_${s.type}_sort`) === 'true'
       el.call('setCookie', `sidebar_${s.type}_sort`, !value)
       s.update()
-    },
+    }
   },
   'NavbarButton.question': {},
   extend: [
-    'FilesSectionTitle',
-  ],
-};
+    'FilesSectionTitle'
+  ]
+}

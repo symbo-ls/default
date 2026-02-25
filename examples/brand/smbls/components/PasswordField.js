@@ -2,11 +2,11 @@ export const PasswordField = {
   extends: 'InputField',
   position: 'relative',
   Title: {
-    text: 'Password',
+    text: 'Password'
   },
   Input: {
     placeholder: 'Enter password',
-    type: 'password',
+    type: 'password'
   },
   IconButton: {
     position: 'absolute',
@@ -17,6 +17,6 @@ export const PasswordField = {
     boxSize: 'B B',
     theme: null,
     color: 'dim',
-    background: 'transparent',
-  },
-};
+    background: 'transparent'
+  }
+}

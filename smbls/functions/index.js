@@ -1,2 +1,2 @@
-export * from './fibonacciNumberByIndex.js';
-export * from './fibonacciNumberByIndexCopy.js';
+export * from './fibonacciNumberByIndex.js'
+export * from './fibonacciNumberByIndexCopy.js'

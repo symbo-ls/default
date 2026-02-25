@@ -7,11 +7,11 @@ export const InstallHero = {
   minWidth: '100%',
   Hgroup: {
     H: {
-      text: 'Install Symbols',
+      text: 'Install Symbols'
     },
     P: {
-      text: 'The short block to get your Symbols integrated:',
-    },
+      text: 'The short block to get your Symbols integrated:'
+    }
   },
   'Iframe.youtube': {
     widthRange: 'G 50%',
@@ -23,6 +23,6 @@ export const InstallHero = {
     minHeight: '0',
     allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share',
     allowfullscreen: true,
-    onBeforeUpdate: () => false,
-  },
-};
+    onBeforeUpdate: () => false
+  }
+}

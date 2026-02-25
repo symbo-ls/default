@@ -1,4 +1,4 @@
-export const compileCode = async function compileCode(source, method) {
+export const compileCode = async function compileCode (source, method) {
   let dist = source
 
   try {

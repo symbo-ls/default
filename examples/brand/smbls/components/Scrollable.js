@@ -4,13 +4,13 @@ export const Scrollable = {
   maxWidth: '100%',
   overflowY: 'auto',
   '::-webkit-scrollbar': {
-    display: 'none',
+    display: 'none'
   },
   '@mobileL': {
     padding: 'A B B B',
     style: {
-      scrollSnapType: 'x mandatory',
+      scrollSnapType: 'x mandatory'
     },
-    scrollPadding: 'B',
-  },
-};
+    scrollPadding: 'B'
+  }
+}

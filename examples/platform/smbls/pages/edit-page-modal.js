@@ -1,7 +1,7 @@
 export const editPageModal = {
   extends: [
     '/edit-component-modal',
-    '/add-page-modal',
+    '/add-page-modal'
   ],
   onInit: (el, s) => {
     let pageKey = s.key
@@ -15,6 +15,6 @@ export const editPageModal = {
   },
   ModalHeader: {
     title: 'Edit {{ key }} page',
-    p: 'Fill initial settings and choose a template',
-  },
-};
+    p: 'Fill initial settings and choose a template'
+  }
+}

@@ -1,6 +1,6 @@
 export const ProjectTab = {
   extends: [
-    'Link',
+    'Link'
   ],
   gap: 'Z',
   position: 'relative',
@@ -10,13 +10,13 @@ export const ProjectTab = {
   Avatar: {
     extends: [
       'Avatar',
-      'Clickable',
+      'Clickable'
     ],
     src: (el, s) => (s.icon && s.icon?.src) || 'https://assets.symbo.ls/logo-colorful.png',
     text: '{{ title }}',
     fontSize: 'A',
     borderRadius: 'Z2',
-    boxSize: 'D2',
+    boxSize: 'D2'
   },
   Text: {
     fontWeight: '400',
@@ -31,6 +31,6 @@ export const ProjectTab = {
     position: 'absolute',
     whiteSpace: 'nowrap',
     textOverflow: 'ellipsis',
-    text: '{{ title }}',
-  },
-};
+    text: '{{ title }}'
+  }
+}

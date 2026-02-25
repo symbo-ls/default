@@ -5,12 +5,12 @@ export const ModesInNavbar = {
     icon: 'sf cursor',
     '!isActive': {
       ':not(:hover)': {
-        theme: 'transparent',
-      },
+        theme: 'transparent'
+      }
     },
     onClick: (ev, el, s) => {
       el.setCanvasMode('defaultMode')
-    },
+    }
   },
   Inspect: {
     isActive: (el, s) => el.isCanvasMode('inspectMode'),
@@ -18,12 +18,12 @@ export const ModesInNavbar = {
     icon: 'sf inspect',
     '!isActive': {
       ':not(:hover)': {
-        theme: 'transparent',
-      },
+        theme: 'transparent'
+      }
     },
     onClick: (ev, el, s) => {
       el.setCanvasMode('inspectMode')
-    },
+    }
   },
   Pan: {
     isActive: (el, s) => el.isCanvasMode('panningMode'),
@@ -31,12 +31,12 @@ export const ModesInNavbar = {
     icon: 'sf move',
     '!isActive': {
       ':not(:hover)': {
-        theme: 'transparent',
-      },
+        theme: 'transparent'
+      }
     },
     onClick: (ev, el, s) => {
       el.setCanvasMode('panningMode')
-    },
+    }
   },
   Viewing: {
     isActive: (el, s) => el.isCanvasMode('isViewing'),
@@ -44,13 +44,13 @@ export const ModesInNavbar = {
     icon: 'sf eye',
     '!isActive': {
       ':not(:hover)': {
-        theme: 'transparent',
-      },
+        theme: 'transparent'
+      }
     },
     onClick: (ev, el, s) => {
       el.setCanvasMode('isViewing')
     },
-    hide: true,
+    hide: true
   },
   Comment: {
     isActive: (el, s) => el.isCanvasMode('isCommenting'),
@@ -58,13 +58,13 @@ export const ModesInNavbar = {
     icon: 'sf comment',
     '!isActive': {
       ':not(:hover)': {
-        theme: 'transparent',
-      },
+        theme: 'transparent'
+      }
     },
     onClick: (ev, el, s) => {
       el.setCanvasMode('isCommenting')
     },
-    hide: true,
+    hide: true
   },
   CanvasButton: {
     ignoreChildProps: true,
@@ -81,13 +81,13 @@ export const ModesInNavbar = {
     extends: [
       'CanvasButton',
       'Flex',
-      'DropdownParentFocus',
+      'DropdownParentFocus'
     ],
     Dropdown: {
       top: 'C3',
       left: '-D1',
-      'Dropdown.MoreModesMenu': {},
-    },
+      'Dropdown.MoreModesMenu': {}
+    }
   },
   extend: 'NavbarButtonSet',
   props: {
@@ -95,13 +95,13 @@ export const ModesInNavbar = {
     onFrame: (el, s) => {
       const canvasMode = el.getCanvasMode()
       el.variables({
-          canvasMode,
-        })
+        canvasMode
+      })
         .changed(_ => {
           el.update()
         })
     },
     align: 'center',
-    onRender: el => el.update(),
-  },
-};
+    onRender: el => el.update()
+  }
+}

@@ -8,6 +8,6 @@ export const BulletCaption = {
     content: '""',
     boxSize: 'Z1',
     background: 'blue',
-    round: 'A2',
-  },
-};
+    round: 'A2'
+  }
+}

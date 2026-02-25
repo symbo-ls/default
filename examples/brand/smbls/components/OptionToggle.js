@@ -5,10 +5,10 @@ export const OptionToggle = {
   padding: 'B1 - -',
   cursor: 'pointer',
   '@dark': {
-    borderColor: '--color-line-dark',
+    borderColor: '--color-line-dark'
   },
   '@light': {
-    borderColor: '--color-line-light',
+    borderColor: '--color-line-light'
   },
   onChange: (ev, el) => {
     const {
@@ -20,7 +20,7 @@ export const OptionToggle = {
     })
   },
   Input: {
-    checked: el => el.getUserSettings(el.parent.props.key),
+    checked: el => el.getUserSettings(el.parent.props.key)
   },
   Caption: {},
   QuestionMarkTooltip: {
@@ -29,8 +29,8 @@ export const OptionToggle = {
     TooltipHidden: {
       description: ({
         parent
-      }) => parent.props.tip,
-    },
+      }) => parent.props.tip
+    }
   },
-  SwitchField: {},
-};
+  SwitchField: {}
+}

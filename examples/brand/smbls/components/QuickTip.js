@@ -1,6 +1,6 @@
 export const QuickTip = {
   extends: [
-    'Notification',
+    'Notification'
   ],
   display: 'inline-flex',
   cursor: 'default',
@@ -15,14 +15,14 @@ export const QuickTip = {
     opacity: '0.65',
     order: '-1',
     margin: 'W',
-    icon: 'questionMark',
+    icon: 'questionMark'
   },
   Hgroup: {
     H: {
-      text: 'Spread across document',
+      text: 'Spread across document'
     },
     P: {
-      text: 'Explanation simply deeply',
-    },
-  },
-};
+      text: 'Explanation simply deeply'
+    }
+  }
+}

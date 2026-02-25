@@ -3,7 +3,7 @@ export const StoryCard = {
     src: 'https://files-production-symbols-platform-development-en-d5-u3-p7x0.based.dev/fibd6dc13e/64be440c-ae12-4942-8da7-d772e06cb76c-b3013bf0-701c-4aff-b439-55d412265b2a-25215bc5-652d-40a7-8c99-af865865b74e.jpeg',
     boxSize: '100%',
     zIndex: '2',
-    round: 'A',
+    round: 'A'
   },
   Icon: {
     icon: 'smile',
@@ -13,7 +13,7 @@ export const StoryCard = {
     left: '50%',
     fontSize: 'J1+F1',
     transform: 'translate(-50%, -50%)',
-    color: 'white',
+    color: 'white'
   },
   HgroupSteps: {
     position: 'absolute',
@@ -27,23 +27,23 @@ export const StoryCard = {
     theme: 'field',
     Hgroup: {
       H: {
-        text: 'Symbols',
+        text: 'Symbols'
       },
       P: {
-        color: 'white .65',
-      },
+        color: 'white .65'
+      }
     },
     ProgressStepSet: {
       childProps: {
-        theme: 'field-dialog',
+        theme: 'field-dialog'
       },
-      children: () => [{}, {}],
-    },
+      children: () => [{}, {}]
+    }
   },
   extends: 'Flex',
   position: 'relative',
   round: 'B2',
   boxSize: 'H1 G3',
   alignSelf: 'flex-start',
-  overflow: 'hidden',
-};
+  overflow: 'hidden'
+}

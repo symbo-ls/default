@@ -9,9 +9,9 @@ export const GridInDropdown = {
   childrenAs: 'state',
   content: {
     ignoreChildProps: true,
-    ignoreChildExtend: true,
+    ignoreChildExtend: true
   },
   childExtends: [
-    'GridItem',
-  ],
-};
+    'GridItem'
+  ]
+}

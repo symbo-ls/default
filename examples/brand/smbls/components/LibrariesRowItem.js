@@ -1,6 +1,6 @@
 export const LibrariesRowItem = {
   extends: [
-    'TemplatesRowItem',
+    'TemplatesRowItem'
   ],
   poster: 'https://api.symbols.app/core/files/public/68b667ce424350c909ec03f9/download',
   projectPath: 'nikoloza/default',
@@ -15,7 +15,7 @@ export const LibrariesRowItem = {
       fontWeight: '100',
       fontSize: 'Z2',
       text: ' ({{ amount }} resources)',
-      color: 'paragraph',
-    },
-  },
-};
+      color: 'paragraph'
+    }
+  }
+}

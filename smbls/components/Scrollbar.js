@@ -16,17 +16,17 @@ export const Scrollbar = {
       background: '#d9d7d7 .5',
       left: '0',
       transformOrigin: 'left',
-      width: '15%',
-    },
+      width: '15%'
+    }
   },
   NavigationArrows: {
     childProps: {
       padding: 'Z Z',
       Icon: {
-        fontSize: 'B1',
-      },
-    },
+        fontSize: 'B1'
+      }
+    }
   },
   extends: 'Flex',
-  minWidth: 'I',
-};
+  minWidth: 'I'
+}

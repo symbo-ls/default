@@ -7,24 +7,24 @@ export const PublishNavbar = {
         text: 'Publish',
         callback: async el => {
           await el.call('openModal', '/publish')
-        },
+        }
       },
       sync: {
         icon: 'syncOvalFill',
         text: 'Sync',
         callback: async el => {
           await el.call('openModal', '/publish')
-        },
+        }
       },
       export: {
         icon: 'sf download',
         text: 'Export',
         callback: async el => {
           await el.call('openModal', '/publish')
-        },
-      },
+        }
+      }
     },
-    activeOutput: 'publish',
+    activeOutput: 'publish'
   },
   Button: {
     icon: (el, s) => s.modes[s.activeOutput].icon,
@@ -33,7 +33,7 @@ export const PublishNavbar = {
     aspectRatio: 'none',
     onClick: async (ev, el, s) => {
       await s.modes[s.activeOutput].callback(el)
-    },
+    }
   },
   IconButton: {
     DropdownParentFocus: {
@@ -41,10 +41,10 @@ export const PublishNavbar = {
       Dropdown: {
         left: '-F',
         onClick: () => {},
-        'Dropdown.Publish': {},
+        'Dropdown.Publish': {}
       },
-      inset: '0',
-    },
+      inset: '0'
+    }
   },
-  extend: 'DropdownButton',
-};
+  extend: 'DropdownButton'
+}

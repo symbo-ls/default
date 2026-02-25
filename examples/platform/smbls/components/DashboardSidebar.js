@@ -11,17 +11,17 @@ export const DashboardSidebar = {
     hide: (el, s) => !s.hideTutorials,
     cursor: 'pointer',
     ':hover': {
-      textDecoration: 'underline',
+      textDecoration: 'underline'
     },
     Icon: {
-      order: 2,
+      order: 2
     },
     onClick: (ev, el, s) => {
       el.call('setCookie', 'hideTutorialsDashboard', 'false', 365)
       s.toggle('hideTutorials', {
         preventUpdate: ['ChooseProject']
       })
-    },
+    }
   },
   Title: null,
   Filter: {
@@ -33,7 +33,7 @@ export const DashboardSidebar = {
     top: 'D1',
     childExtends: {
       extend: [
-        'Button',
+        'Button'
       ],
       props: (el, s) => ({
         theme: s.projectsFilter === el.key ? 'secondary' : 'tertiary',
@@ -46,20 +46,20 @@ export const DashboardSidebar = {
           el.call('setCookie', 'projectsFilter', el.key)
           el.sdk.rootBus.emit('projects:filter', el.key)
         }
-      }),
+      })
     },
     All: {
-      text: 'All',
+      text: 'All'
     },
     Favorites: {
-      text: 'Favorites',
+      text: 'Favorites'
     },
     Recents: {
-      text: 'Recents',
+      text: 'Recents'
     },
     New: {
       extends: [
-        'Button',
+        'Button'
       ],
       ignoreChildExtend: true,
       theme: null,
@@ -74,7 +74,7 @@ export const DashboardSidebar = {
         await el.call('openModal', '/settings', {
           key: '/onboarding'
         })
-      },
-    },
-  },
-};
+      }
+    }
+  }
+}

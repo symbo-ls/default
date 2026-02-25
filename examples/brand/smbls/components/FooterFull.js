@@ -8,18 +8,18 @@ export const FooterFull = {
   borderColor: 'line',
   borderWidth: '1px 0 0 0',
   '@mobileL': {
-    padding: '- A',
+    padding: '- A'
   },
   childProps: {
     minWidth: '100%',
-    maxWidth: '100%',
+    maxWidth: '100%'
   },
   Flex: {
     align: 'flex-start flex-start',
     padding: 'B1 A - Y',
     '@tabletS': {
       flow: 'y',
-      gap: 'B2',
+      gap: 'B2'
     },
     LinkSet: {
       extends: 'Flex',
@@ -31,41 +31,41 @@ export const FooterFull = {
         flow: 'x',
         align: 'center space-between',
         minWidth: '100%',
-        maxWidth: '100%',
+        maxWidth: '100%'
       },
       '@mobileL': {
         gap: 'B',
-        flexWrap: 'wrap',
+        flexWrap: 'wrap'
       },
       '@mobileM': {
-        align: 'center flex-start',
+        align: 'center flex-start'
       },
       childExtends: [
         'DocsLink',
-        'IconText',
+        'IconText'
       ],
       childProps: {
         gap: 'X2',
         color: 'title',
         Icon: {
-          name: 'arrowUpRight',
-        },
+          name: 'arrowUpRight'
+        }
       },
       children: [
         {
           text: 'Get started',
-          href: '/signup',
+          href: '/signup'
         },
         {
           text: 'Go to dashboard',
-          href: '/signin',
+          href: '/signin'
         },
         {
           text: 'Schedule a demo',
           href: 'https://cal.com/symbols-josh/early-access',
-          target: '_blank',
-        },
-      ],
+          target: '_blank'
+        }
+      ]
     },
     Product: {
       extends: 'Flex',
@@ -75,13 +75,13 @@ export const FooterFull = {
       flex: '1',
       '@tabletS': {
         gap: 'Z',
-        padding: 'A1 - - -',
+        padding: 'A1 - - -'
       },
       Caption: {
         text: 'Product',
         fontWeight: '700',
         lineHeight: '1em',
-        color: 'title',
+        color: 'title'
       },
       Flex: {
         flow: 'y',
@@ -89,33 +89,33 @@ export const FooterFull = {
         gap: 'A1',
         '@tabletS': {
           flow: 'x',
-          flexWrap: 'wrap',
+          flexWrap: 'wrap'
         },
         childProps: {
           cursor: 'pointer',
           fontWeight: '300',
-          color: 'caption',
+          color: 'caption'
         },
         childExtends: 'DocsLink',
         children: [
           {
             text: 'Explore (TBA)',
-            href: '/explore',
+            href: '/explore'
           },
           {
             text: 'Library (TBA)',
-            href: '/library',
+            href: '/library'
           },
           {
             text: 'Experts (TBA)',
-            href: '/experts',
+            href: '/experts'
           },
           {
             text: 'Pricing',
-            href: '/pricing',
-          },
-        ],
-      },
+            href: '/pricing'
+          }
+        ]
+      }
     },
     Developers: {
       extends: 'Flex',
@@ -125,13 +125,13 @@ export const FooterFull = {
       gap: 'A1',
       '@tabletS': {
         gap: 'Z',
-        padding: '- - A1 -',
+        padding: '- - A1 -'
       },
       Caption: {
         text: 'Developers',
         fontWeight: '700',
         lineHeight: '1em',
-        color: 'title',
+        color: 'title'
       },
       Flex: {
         flow: 'y',
@@ -139,43 +139,43 @@ export const FooterFull = {
         gap: 'A1',
         '@tabletS': {
           flow: 'x',
-          flexWrap: 'wrap',
+          flexWrap: 'wrap'
         },
         '@mobileM': {
-          gap: '0',
+          gap: '0'
         },
         childProps: {
           cursor: 'pointer',
           fontWeight: '300',
           color: 'caption',
           '@mobileM': {
-            padding: '- A1 X2 -',
-          },
+            padding: '- A1 X2 -'
+          }
         },
         childExtends: 'DocsLink',
         children: [
           {
             text: 'Onboarding',
-            href: '/docs/intro',
+            href: '/docs/intro'
           },
           {
             text: 'Building in Symbols',
-            href: '/docs/building-in-symbols',
+            href: '/docs/building-in-symbols'
           },
           {
             text: 'Framework',
-            href: '/docs/framework',
+            href: '/docs/framework'
           },
           {
             text: 'SDK',
-            href: '/docs/sdk',
+            href: '/docs/sdk'
           },
           {
             text: 'CLI',
-            href: '/docs/cli',
-          },
-        ],
-      },
+            href: '/docs/cli'
+          }
+        ]
+      }
     },
     Resources: {
       extends: 'Flex',
@@ -185,13 +185,13 @@ export const FooterFull = {
       flex: '1',
       '@tabletS': {
         gap: 'Z',
-        padding: 'A1 - - -',
+        padding: 'A1 - - -'
       },
       Caption: {
         text: 'Resources',
         fontWeight: '700',
         lineHeight: '1em',
-        color: 'title',
+        color: 'title'
       },
       Flex: {
         flow: 'y',
@@ -199,32 +199,32 @@ export const FooterFull = {
         gap: 'A1',
         '@tabletS': {
           flow: 'x',
-          flexWrap: 'wrap',
+          flexWrap: 'wrap'
         },
         childProps: {
           cursor: 'pointer',
           fontWeight: '300',
-          color: 'caption',
+          color: 'caption'
         },
         childExtends: 'DocsLink',
         children: [
           {
             text: 'Investors',
             target: '_blank',
-            href: 'https://invest.symbo.ls',
+            href: 'https://invest.symbo.ls'
           },
           {
             text: 'Blog',
             target: '_blank',
-            href: 'https://medium.com/symbolsapp',
+            href: 'https://medium.com/symbolsapp'
           },
           {
             text: 'Contact',
             target: '_blank',
-            href: 'https://cal.com/symbols-josh/early-access',
-          },
-        ],
-      },
+            href: 'https://cal.com/symbols-josh/early-access'
+          }
+        ]
+      }
     },
     Companies: {
       extends: 'Flex',
@@ -234,38 +234,38 @@ export const FooterFull = {
       '@mobileS': {
         minWidth: '100%',
         maxWidth: '100%',
-        align: 'center space-between',
+        align: 'center space-between'
       },
       childProps: {
-        target: '_blank',
+        target: '_blank'
       },
       childExtends: [
         'Link',
-        'IconButton',
+        'IconButton'
       ],
       children: [
         {
           icon: 'twitter',
-          href: 'https://x.com/symbo_ls',
+          href: 'https://x.com/symbo_ls'
         },
         {
           icon: 'medium',
-          href: 'https://medium.com/symbolsapp',
+          href: 'https://medium.com/symbolsapp'
         },
         {
           icon: 'github',
-          href: 'https://github.com/symbo-ls/',
+          href: 'https://github.com/symbo-ls/'
         },
         {
           icon: 'discord',
-          href: 'https://discord.com/invite/crdFSkapFY',
+          href: 'https://discord.com/invite/crdFSkapFY'
         },
         {
           icon: 'npm',
-          href: 'https://www.npmjs.com/package/smbls',
-        },
-      ],
-    },
+          href: 'https://www.npmjs.com/package/smbls'
+        }
+      ]
+    }
   },
   Flex_2: {
     align: 'center flex-start',
@@ -273,13 +273,13 @@ export const FooterFull = {
     '@mobileM': {
       display: 'grid',
       style: {
-        gridTemplateColumns: 'repeat(2, 1fr)',
+        gridTemplateColumns: 'repeat(2, 1fr)'
       },
-      rowGap: 'A',
+      rowGap: 'A'
     },
     childProps: {
       fontWeight: '300',
-      color: 'caption',
+      color: 'caption'
     },
     DocsLink: {
       text: 'Terms and conditions',
@@ -288,8 +288,8 @@ export const FooterFull = {
       href: '/terms',
       '@mobileM': {
         margin: '- 0 - -',
-        whiteSpace: 'nowrap',
-      },
+        whiteSpace: 'nowrap'
+      }
     },
     DocsLink_2: {
       text: 'Privacy terms',
@@ -297,8 +297,8 @@ export const FooterFull = {
       href: '/privacy',
       '@mobileM': {
         whiteSpace: 'nowrap',
-        textAlign: 'right',
-      },
+        textAlign: 'right'
+      }
     },
     P: {
       text: 'Symbols © 2020-2025',
@@ -306,8 +306,8 @@ export const FooterFull = {
       '@mobileM': {
         gridColumn: 'span 2',
         textAlign: 'left',
-        margin: '- - - 0',
-      },
-    },
-  },
-};
+        margin: '- - - 0'
+      }
+    }
+  }
+}

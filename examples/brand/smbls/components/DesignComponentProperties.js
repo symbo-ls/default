@@ -11,12 +11,12 @@ export const DesignComponentProperties = {
     PropertyKey: {
       text: '{{ property }}',
       flex: 1,
-      color: 'gray7',
+      color: 'gray7'
     },
     Value: {
       text: '{{ value }}',
       flex: 1,
-      fontWeight: '500',
-    },
-  },
-};
+      fontWeight: '500'
+    }
+  }
+}

@@ -1,16 +1,16 @@
 export const DomainItem = {
   extend: [
-    'Flex',
+    'Flex'
   ],
   props: {
     gap: 'Z',
     padding: 'Z Z2 Y',
-    round: 'Z2',
+    round: 'Z2'
   },
   Icon: {
     margin: 'V2 - -',
     name: 'network',
-    fontSize: 'A1',
+    fontSize: 'A1'
   },
   Hgroup: {
     flexFlow: 'y',
@@ -19,7 +19,7 @@ export const DomainItem = {
     H: {
       color: 'title',
       tag: 'span',
-      text: 'Custom domain',
+      text: 'Custom domain'
     },
     P: {
       margin: '0',
@@ -31,8 +31,8 @@ export const DomainItem = {
       whiteSpace: 'wrap',
       textOverflow: 'anywhere',
       lineBreak: 'anywhere',
-      text: el => `Connect any domain to your app`,
-    },
+      text: el => 'Connect any domain to your app'
+    }
   },
   Buttons: {
     hide: (el) => el.getRootState('tier') === 'starter',
@@ -40,12 +40,12 @@ export const DomainItem = {
     childExtends: 'IconButton',
     childProps: {
       theme: 'transparent',
-      padding: 'Y',
+      padding: 'Y'
     },
     EnvOpen: {
       icon: 'arrow up right',
-      color: 'title',
-    },
+      color: 'title'
+    }
   },
   Upgrade: {
     extends: 'Link',
@@ -57,13 +57,13 @@ export const DomainItem = {
     fontSize: 'Z2',
     lineHeight: 1,
     ':hover': {
-      textDecoration: 'underline',
+      textDecoration: 'underline'
     },
     onClick: (f, el, st) => {
-        el.call('openModal', '/settings', {
-          key: '/pricing'
-        })
-      },
-    hide: (el) => el.getRootState('tier') !== 'starter',
-  },
-};
+      el.call('openModal', '/settings', {
+        key: '/pricing'
+      })
+    },
+    hide: (el) => el.getRootState('tier') !== 'starter'
+  }
+}

@@ -36,7 +36,7 @@ export const InviteFormInDropdown = {
         } else {
           el.call('openNotification', {
             title: 'Validation message',
-            message: `Please fill in all fields`,
+            message: 'Please fill in all fields',
             type: 'warning'
           })
         }
@@ -48,7 +48,7 @@ export const InviteFormInDropdown = {
         })
         console.error(err)
       }
-    },
+    }
   },
   Input: {
     margin: '- -A1',
@@ -63,7 +63,7 @@ export const InviteFormInDropdown = {
           email: value
         })
       }
-    },
+    }
   },
   Flex: {
     position: 'absolute',
@@ -88,37 +88,37 @@ export const InviteFormInDropdown = {
       childProps: {
         tag: 'option',
         attr: {
-          selected: (el, s) => el.node.value === s.action,
-        },
+          selected: (el, s) => el.node.value === s.action
+        }
       },
       children: [
         {
           text: 'Guest',
-          value: 'guest',
+          value: 'guest'
         },
         {
           text: 'Editor',
-          value: 'editor',
+          value: 'editor'
         },
         {
           text: 'Admin',
-          value: 'admin',
-        },
-      ],
+          value: 'admin'
+        }
+      ]
     },
     Copy: {
       extends: [
         'CanvasButton',
-        'IconButton',
+        'IconButton'
       ],
       padding: 'Y2',
       round: 'C1',
       icon: 'send',
       Icon: {
         order: 2,
-        color: 'blue',
+        color: 'blue'
       },
-      type: 'submit',
-    },
-  },
-};
+      type: 'submit'
+    }
+  }
+}

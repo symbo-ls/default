@@ -4,7 +4,7 @@ export const ProjectInfo = {
   tag: 'section',
   Title: {
     text: 'Connected',
-    width: '100%',
+    width: '100%'
   },
   ItemPreview: {
     flex: 1,
@@ -14,6 +14,6 @@ export const ProjectInfo = {
     autoRows: 'auto',
     justifyItems: 'stretch',
     position: 'relative',
-    transition: 'C defaultBezier max-height',
-  },
-};
+    transition: 'C defaultBezier max-height'
+  }
+}

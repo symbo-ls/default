@@ -2,12 +2,12 @@ export const DataSourcesInInsert = {
   extend: 'Flex',
   props: {
     flow: 'y',
-    gap: 'A',
+    gap: 'A'
   },
   CaptionTitle: {
     Text: {
-      text: 'Data sources',
-    },
+      text: 'Data sources'
+    }
   },
   Flex: {
     gap: 'A',
@@ -17,8 +17,8 @@ export const DataSourcesInInsert = {
     childrenAs: 'state',
     childProps: {
       Button: {
-        text: 'Add',
-      },
+        text: 'Add'
+      }
     },
     children: [
       {
@@ -30,8 +30,8 @@ export const DataSourcesInInsert = {
         },
         onAdd: (el, s) => {
           el.setWindow('docs', '/fetch')
-        },
-      },
-    ],
-  },
-};
+        }
+      }
+    ]
+  }
+}

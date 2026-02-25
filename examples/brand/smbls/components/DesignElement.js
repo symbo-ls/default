@@ -1,6 +1,6 @@
 export const DesignElement = {
   extends: [
-    'Link',
+    'Link'
   ],
   width: '100%',
   flow: 'column',
@@ -12,24 +12,24 @@ export const DesignElement = {
   transition: 'background 250ms',
   ':hover': {
     '@dark': {
-      background: 'white .05',
+      background: 'white .05'
     },
     '@light': {
-      background: 'black .05',
-    },
+      background: 'black .05'
+    }
   },
   WiderButton: {
     flexAlign: 'center center',
     round: 'Z',
     theme: 'default',
-    tabIndex: '-1',
+    tabIndex: '-1'
   },
   Hgroup: {
     fontWeight: '400',
     gap: 'X2',
     H: {
       fontSize: 'A',
-      color: 'title',
-    },
-  },
-};
+      color: 'title'
+    }
+  }
+}

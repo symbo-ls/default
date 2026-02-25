@@ -4,10 +4,10 @@ export default {
   subSequence: true,
   '@screenS': {
     base: 16,
-    ratio: 1.15,
+    ratio: 1.15
   },
   '@tabletS': {
     base: 15,
-    ratio: 1.1,
-  },
-};
+    ratio: 1.1
+  }
+}

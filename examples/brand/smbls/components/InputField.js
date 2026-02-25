@@ -7,6 +7,6 @@ export const InputField = {
     display: 'block',
     widthRange: '0 100%',
     padding: 'Z1 A',
-    round: 'Z',
-  },
-};
+    round: 'Z'
+  }
+}

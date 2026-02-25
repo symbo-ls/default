@@ -12,8 +12,8 @@ export const TutorialsRowItem = {
   ':hover': {
     opacity: '1',
     '& .playButton': {
-      opacity: '1',
-    },
+      opacity: '1'
+    }
   },
   onClick: (ev, el, s) => {
     el.call('openModalVideo', `https://www.youtube.com/embed/${s.youtubeId}?controls=1&amp;autoplay=1`)
@@ -21,7 +21,7 @@ export const TutorialsRowItem = {
   state: {
     text: 'Getting started with basic landing page',
     youtubeId: 'jYU0soXY-To',
-    duration: '14:31',
+    duration: '14:31'
   },
   Img: null,
   Box: {
@@ -30,7 +30,7 @@ export const TutorialsRowItem = {
       round: 'A',
       position: 'relative',
       width: '100%',
-      src: 'https://img.youtube.com/vi/{{ youtubeId }}/hqdefault.jpg',
+      src: 'https://img.youtube.com/vi/{{ youtubeId }}/hqdefault.jpg'
     },
     Circle: {
       extends: 'Flex',
@@ -46,20 +46,20 @@ export const TutorialsRowItem = {
       background: 'black .35',
       Icon: {
         fontSize: 'C',
-        name: 'play',
-      },
-    },
+        name: 'play'
+      }
+    }
   },
   H3: null,
   Span: {
     text: '{{ text }}',
-    color: 'title',
+    color: 'title'
   },
   Time: {
     margin: '-Z - -',
     text: '{{ duration }}',
     fontWeight: '200',
     color: 'placeholder',
-    fontSize: 'Z1',
-  },
-};
+    fontSize: 'Z1'
+  }
+}

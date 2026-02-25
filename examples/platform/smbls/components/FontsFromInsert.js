@@ -2,11 +2,11 @@ export const FontsFromInsert = {
   extend: 'Flex',
   props: {
     flow: 'y',
-    gap: 'Z',
+    gap: 'Z'
   },
   CaptionTitle: {
     Text: {
-      text: 'Fonts',
-    },
-  },
-};
+      text: 'Fonts'
+    }
+  }
+}

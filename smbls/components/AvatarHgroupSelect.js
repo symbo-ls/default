@@ -2,19 +2,19 @@ export const AvatarHgroupSelect = {
   Avatar: {},
   Hgroup: {
     H: {},
-    P: {},
+    P: {}
   },
   SelectPicker: {
     margin: '- - - auto',
     Select: {
       0: {
-        value: 'Goat',
+        value: 'Goat'
       },
       1: {
-        value: 'Icon',
-      },
-    },
+        value: 'Icon'
+      }
+    }
   },
   extends: 'AvatarHgroup',
-  minWidth: 'G1',
-};
+  minWidth: 'G1'
+}

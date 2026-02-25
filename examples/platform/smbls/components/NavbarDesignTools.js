@@ -4,23 +4,23 @@ export const NavbarDesignTools = {
     {
       title: 'Figma preview',
       key: 'figma',
-      icon: 'figma',
+      icon: 'figma'
     },
     {
       title: 'Sketch',
       key: 'sketch',
-      icon: 'sketch',
+      icon: 'sketch'
     },
     {
       title: 'Discussion',
       key: 'comments',
-      icon: 'discussion',
+      icon: 'discussion'
     },
     {
       title: 'Export',
       key: 'export',
-      icon: 'install',
-    },
+      icon: 'install'
+    }
   ],
   childProps: {
     isActive: el => el.getRootState('designTool') === el.props.key,
@@ -29,6 +29,6 @@ export const NavbarDesignTools = {
         pkgManager: el.props.key
       })
       el.call('setCookie', 'pkgManager', el.getRootState('pkgManager'))
-    },
-  },
-};
+    }
+  }
+}

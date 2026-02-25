@@ -40,7 +40,7 @@ export const editComponentModal = {
   },
   ModalHeader: {
     title: 'Edit {{ key }} component',
-    p: 'Edit a platform schema for component',
+    p: 'Edit a platform schema for component'
   },
   Flex: {
     'Flex.info': {
@@ -48,20 +48,20 @@ export const editComponentModal = {
         pointerEvents: 'none',
         Input: {
           opacity: '.65',
-          disabled: 'disabled',
-        },
-      },
+          disabled: 'disabled'
+        }
+      }
     },
     'Button.showAdvanced': {},
     'Flex.advanced': {
-      'GroupField.value': null,
-    },
+      'GroupField.value': null
+    }
   },
   ModalFooter: {
     CheckButton: {
       type: 'submit',
       icon: 'checkmark',
-      text: 'Save',
+      text: 'Save'
     },
     IconButton: {
       icon: 'trash outline',
@@ -70,7 +70,7 @@ export const editComponentModal = {
           el.sdk.deleteItem(`${s.type}s`, s.key)
           await el.call('closeModal')
         }
-      },
-    },
-  },
-};
+      }
+    }
+  }
+}

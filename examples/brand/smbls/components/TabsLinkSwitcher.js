@@ -3,6 +3,6 @@ export const TabsLinkSwitcher = {
   flow: 'x',
   gap: 'Z',
   childExtends: [
-    'TabsLink',
-  ],
-};
+    'TabsLink'
+  ]
+}

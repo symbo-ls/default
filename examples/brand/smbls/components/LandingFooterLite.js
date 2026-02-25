@@ -4,7 +4,7 @@ export const LandingFooterLite = {
   gap: 'A',
   align: 'center space-between',
   '@mobileL': {
-    flow: 'column',
+    flow: 'column'
   },
   Flex_nav: {
     gap: 'B',
@@ -12,21 +12,21 @@ export const LandingFooterLite = {
       color: 'gray8',
       fontWeight: 'normal',
       ':hover': {
-        textDecoration: 'underline',
-      },
+        textDecoration: 'underline'
+      }
     },
     Link_access: {
       href: '/signin',
-      text: 'Access',
+      text: 'Access'
     },
     Link_privacy: {
       href: '/privacy',
-      text: 'Privacy',
+      text: 'Privacy'
     },
     Link: {
       href: 'mailto:hello@symbo.ls',
-      text: 'Contact',
-    },
+      text: 'Contact'
+    }
   },
   Span_copyright: {
     flex: 1,
@@ -34,8 +34,8 @@ export const LandingFooterLite = {
     color: 'gray6',
     text: '2020-2025 © Symbols.app',
     '@mobileL': {
-      order: 3,
-    },
+      order: 3
+    }
   },
   Flex_icons: {
     gap: 'Z2',
@@ -46,27 +46,27 @@ export const LandingFooterLite = {
       target: '_blank',
       fontSize: 'A2',
       ':hover': {
-        color: 'gray8',
-      },
+        color: 'gray8'
+      }
     },
     childExtends: [
       'Link',
-      'IconButton',
+      'IconButton'
     ],
     children: [
       {
         icon: 'medium',
-        href: 'https://symbols.blog/',
+        href: 'https://symbols.blog/'
       },
       {
         icon: 'discord',
-        href: 'https://discord.com/invite/crdFSkapFY',
+        href: 'https://discord.com/invite/crdFSkapFY'
       },
       {
         icon: 'github',
-        href: 'https://github.com/symbo-ls/',
-      },
+        href: 'https://github.com/symbo-ls/'
+      }
     ],
-    childrenAs: 'props',
-  },
-};
+    childrenAs: 'props'
+  }
+}

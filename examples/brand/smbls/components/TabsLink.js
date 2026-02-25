@@ -15,8 +15,8 @@ export const TabsLink = {
   ':hover': {
     color: 'title',
     '@dark': {
-      borderColor: 'gray4',
-    },
+      borderColor: 'gray4'
+    }
   },
   '.isActive': {
     fontWeight: '600',
@@ -24,12 +24,12 @@ export const TabsLink = {
     position: 'relative',
     zIndex: 2,
     '@dark': {
-      borderColor: 'gray5',
-    },
+      borderColor: 'gray5'
+    }
   },
   onClick: (ev, el, s, ctx) => {
     if (el.parent.props.onChoose) {
       return el.parent.props.onChoose(ev, el, s, ctx)
     }
-  },
-};
+  }
+}

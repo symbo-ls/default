@@ -1,6 +1,6 @@
 export const SceneTemplate = {
   props: el => ({
-    display: 'flex', 
+    display: 'flex',
     borderRadius: 'A',
     padding: 'A',
     theme: `scene @${el.getRootState('sceneTheme')}`,
@@ -33,10 +33,10 @@ export const SceneTemplate = {
       theme: `dots @${el.getRootState('sceneTheme')}`,
 
       style: {
-        backgroundPosition: `top`,
-        backgroundRepeat: `repeat`,
+        backgroundPosition: 'top',
+        backgroundRepeat: 'repeat',
         backgroundSize: '20px 20px'
       }
     }
-  }),
-};
+  })
+}

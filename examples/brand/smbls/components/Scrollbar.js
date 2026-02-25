@@ -17,16 +17,16 @@ export const Scrollbar = {
       height: '2px',
       background: '#d9d7d7 .5',
       left: '0',
-      transformOrigin: 'left',
-    },
+      transformOrigin: 'left'
+    }
   },
   NavigationArrows: {
     childProps: {
       padding: 'Z',
       Icon: {
         display: 'block',
-        fontSize: 'B1',
-      },
-    },
-  },
-};
+        fontSize: 'B1'
+      }
+    }
+  }
+}

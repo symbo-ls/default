@@ -4,8 +4,8 @@ export const EditorTools = {
   childProps: {
     '.isDisabled': {
       opacity: '.35',
-      pointerEvents: 'none',
-    },
+      pointerEvents: 'none'
+    }
   },
   TextNavbarButtonDropdown: {
     ignoreChildProps: true,
@@ -17,11 +17,11 @@ export const EditorTools = {
       icon: (el) => {
         const preffered = el.getCanvasScope('preferredEditor')
         const map = {
-          'editor': 'sf pencil',
-          'code': 'code',
-          'sidebar': 'sidebarLeft'
+          editor: 'sf pencil',
+          code: 'code',
+          sidebar: 'sidebarLeft'
         }
-        return map[preffered] || map['editor']
+        return map[preffered] || map.editor
       },
       text: null,
       lineHeight: 0.9,
@@ -44,17 +44,17 @@ export const EditorTools = {
             el.setWindow('componentEditor', 'code')
           }
         }
-      },
+      }
     },
     IconButton: {
       DropdownParentFocus: {
         Dropdown: {
           EditInNavbarMenu: {
-            fontSize: 'A2',
-          },
-        },
-      },
-    },
+            fontSize: 'A2'
+          }
+        }
+      }
+    }
   },
   ShareBtn: {
     hide: true,
@@ -68,6 +68,6 @@ export const EditorTools = {
         el.setWindow('componentEditor', 'share')
       }
       el.parent.update()
-    },
-  },
-};
+    }
+  }
+}

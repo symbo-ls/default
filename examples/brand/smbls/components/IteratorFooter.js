@@ -12,13 +12,13 @@ export const IteratorFooter = {
   padding: 'X',
   gap: 'X',
   '@dark': {
-    boxShadow: '--theme-document-dark-background 0.65, 0, Z, A, -X',
+    boxShadow: '--theme-document-dark-background 0.65, 0, Z, A, -X'
   },
   '@light': {
-    boxShadow: '--theme-document-light-background 0.65, 0, Z, A, -X',
+    boxShadow: '--theme-document-light-background 0.65, 0, Z, A, -X'
   },
   childProps: {
-    theme: 'field',
+    theme: 'field'
   },
   SquareButton_moveUp: {
     isFirst: (el, s) => parseInt(s.__element.__ref.__state) === 0,
@@ -28,12 +28,12 @@ export const IteratorFooter = {
     round: 'Y1',
     '.isFirst': {
       opacity: '.35',
-      pointerEvents: 'none',
+      pointerEvents: 'none'
     },
     onClick: (ev, el, s) => {
       const key = parseInt(s.__element.__ref.__state)
       s.parent.apply((state) => ctx.utils.swapItemsInArray(state, key, key - 1))
-    },
+    }
   },
   SquareButton_moveDown: {
     icon: 'arrowAngleDown',
@@ -43,13 +43,13 @@ export const IteratorFooter = {
     onClick: (ev, el, s) => {
       const key = parseInt(s.__element.__ref.__state)
       s.parent.apply((state) => ctx.utils.swapItemsInArray(state, key, key + 1))
-    },
+    }
   },
   SquareButton_drag: {
     icon: 'drag outline',
     padding: '0',
     boxSize: 'B B',
-    round: 'Y1',
+    round: 'Y1'
   },
   SquareButton_plus: {
     margin: '0 0 0 auto',
@@ -60,7 +60,7 @@ export const IteratorFooter = {
     onClick: (ev, el, s) => {
       const key = parseInt(s.__element.__ref.__state)
       s.parent.apply((state) => state.splice(key + 1, 0, {}))
-    },
+    }
   },
   SquareButton_trash: {
     icon: 'trash',
@@ -73,7 +73,7 @@ export const IteratorFooter = {
       if (window.confirm('Do you want to remove item?')) {
         s.parent.remove(key)
       }
-    },
+    }
   },
   SquareButton_copy: {
     icon: 'copy outline',
@@ -84,6 +84,6 @@ export const IteratorFooter = {
       const key = parseInt(s.__element.__ref.__state)
       const value = ctx.utils.deepClone(s.parse())
       s.parent.apply((state) => state.splice(key + 1, 0, value))
-    },
-  },
-};
+    }
+  }
+}

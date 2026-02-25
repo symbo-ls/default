@@ -8,13 +8,13 @@ export const addPageModal = {
     settings: {
       gridOptions: {
         w: 3,
-        h: 3,
-      },
-    },
+        h: 3
+      }
+    }
   },
   ModalHeader: {
     title: 'Create a new page',
-    p: 'Fill initial settings and choose a template',
+    p: 'Fill initial settings and choose a template'
   },
   Flex: {
     overflow: 'auto',
@@ -27,7 +27,7 @@ export const addPageModal = {
     'Flex.info': {
       'InputField.key': {
         Title: {
-          text: 'Path',
+          text: 'Path'
         },
         Input: {
           placeholder: 'E.g, /portfolio',
@@ -53,23 +53,23 @@ export const addPageModal = {
               return false
             }
             return true
-          },
-        },
-      },
+          }
+        }
+      }
     },
     'Flex.advanced': {
       'InputField.title': {
         Title: {
-          text: 'Page title',
+          text: 'Page title'
         },
         Input: {
           placeholder: 'E.g. Design Porfolio',
           onKeyup: (e, el, s) => {
             const val = el.node.value
             const keyFromTitle = val.toLowerCase().replace(/[^a-z0-9]/gu, '-')
-            const key = ['main', 'index'].includes(keyFromTitle) ?
-              '' :
-              keyFromTitle
+            const key = ['main', 'index'].includes(keyFromTitle)
+              ? ''
+              : keyFromTitle
             const canApplyKey = !s.touched
             const obj = {
               title: val
@@ -78,9 +78,9 @@ export const addPageModal = {
               obj.key = `/${key}`
             }
             s.update(obj)
-          },
-        },
-      },
-    },
-  },
-};
+          }
+        }
+      }
+    }
+  }
+}

@@ -4,27 +4,27 @@ export const NavbarFrameworks = {
     {
       title: 'Symbols',
       key: 'symbols',
-      icon: 'logo',
+      icon: 'logo'
     },
     {
       title: 'DOMQL',
       key: 'domql',
-      icon: 'domql',
+      icon: 'domql'
     },
     {
       pointerEvents: 'none',
       opacity: '.25',
       title: 'React',
       key: 'react',
-      icon: 'react',
+      icon: 'react'
     },
     {
       pointerEvents: 'none',
       opacity: '.25',
       title: 'jQuery',
       key: 'jquery',
-      icon: 'jquery',
-    },
+      icon: 'jquery'
+    }
   ],
   childProps: {
     isActive: el => el.getRootState('framework') === el.props.key,
@@ -33,6 +33,6 @@ export const NavbarFrameworks = {
         framework: el.props.key
       })
       el.call('setCookie', 'framework', el.getRootState('framework'))
-    },
-  },
-};
+    }
+  }
+}

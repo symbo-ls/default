@@ -3,7 +3,7 @@ export const DocsDesignElement = {
   gap: 'Y2',
   WiderButton: {
     icon: 'space',
-    theme: 'space',
+    theme: 'space'
   },
   ExplanatoryParagraph: {
     fontSize: 'Z',
@@ -16,10 +16,10 @@ export const DocsDesignElement = {
       'Property of ',
       {
         props: {
-          color: 'white .85',
+          color: 'white .85'
         },
-        text: 'shape',
-      },
-    ],
-  },
-};
+        text: 'shape'
+      }
+    ]
+  }
+}

@@ -1,10 +1,10 @@
 export const NavbarButtonSet = {
   childExtends: [
-    'NavbarButton',
+    'NavbarButton'
   ],
   gap: 'Y1',
   padding: '- Y1',
   width: 'fit-content',
   flow: 'row',
-  justifyContent: 'space-between',
-};
+  justifyContent: 'space-between'
+}

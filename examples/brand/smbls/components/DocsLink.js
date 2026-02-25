@@ -4,10 +4,10 @@ export const DocsLink = {
   fontWeight: 500,
   color: 'title',
   style: {
-    whiteSpace: 'nowrap',
+    whiteSpace: 'nowrap'
   },
   ':hover': {
-    textDecoration: 'underline',
+    textDecoration: 'underline'
   },
-  onClick: 'navigateDocs',
-};
+  onClick: 'navigateDocs'
+}

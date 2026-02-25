@@ -7,21 +7,21 @@ export const SyncSuggestionsInPublish = {
     childExtends: 'DomainItem',
     childProps: {
       Icon: {
-        name: '{{ icon }}',
+        name: '{{ icon }}'
       },
       Hgroup: {
         H: {
-          text: '{{ title }}',
+          text: '{{ title }}'
         },
         P: {
-          text: '{{ descr }}',
-        },
+          text: '{{ descr }}'
+        }
       },
       Upgrade: null,
       Button: {
         extends: [
           'CanvasButton',
-          'Button',
+          'Button'
         ],
         padding: 'Y2 Z2',
         margin: '-Y -Z2 - auto',
@@ -30,34 +30,34 @@ export const SyncSuggestionsInPublish = {
         gap: 'Y1',
         Icon: {
           order: 2,
-          color: 'blue',
+          color: 'blue'
         },
-        fontSize: 'Z2',
+        fontSize: 'Z2'
       },
-      align: 'start',
+      align: 'start'
     },
     children: [
       {
         icon: 'globe',
         title: 'Your website',
-        descr: 'Import tokens, layers and artboards',
+        descr: 'Import tokens, layers and artboards'
       },
       {
         icon: 'figma',
         title: 'Figma',
-        descr: 'Import tokens, layers and artboards',
+        descr: 'Import tokens, layers and artboards'
       },
       {
         icon: 'wordpress',
         title: 'Wordpress',
-        descr: 'Sync Symbols components',
+        descr: 'Sync Symbols components'
       },
       {
         icon: 'github',
         title: 'Github',
-        descr: 'Sync with your repository',
-      },
+        descr: 'Sync with your repository'
+      }
     ],
-    childrenAs: 'state',
-  },
-};
+    childrenAs: 'state'
+  }
+}

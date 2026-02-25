@@ -1,4 +1,4 @@
-export const resolveHref = function resolveHref(href) {
+export const resolveHref = function resolveHref (href) {
   const execHref = this.call('exec', href || this.props?.href || this.state?.href)
 
   if (this.call('isString', href)) {

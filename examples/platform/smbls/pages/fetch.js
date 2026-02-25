@@ -19,12 +19,12 @@ export const fetch = {
     body: {},
     runtime: false,
     title: '',
-    key: '',
+    key: ''
   },
   GroupField: {
     width: '100%',
     Title: {
-      text: 'Endpoint URL:',
+      text: 'Endpoint URL:'
     },
     Flex: {
       flow: 'x',
@@ -32,11 +32,11 @@ export const fetch = {
       childProps: {
         borderRadius: 'Y',
         ':first-child': {
-          borderRadius: 'Y 0 0 Y',
+          borderRadius: 'Y 0 0 Y'
         },
         ':last-child': {
-          borderRadius: '0 Y Y 0',
-        },
+          borderRadius: '0 Y Y 0'
+        }
       },
       SelectField: {
         Select: {
@@ -44,35 +44,35 @@ export const fetch = {
           borderRadius: 'X2',
           Get: {
             text: 'Get',
-            value: 'GET',
+            value: 'GET'
           },
           Post: {
             text: 'Post',
-            value: 'POST',
+            value: 'POST'
           },
           Patch: {
             text: 'Patch',
-            value: 'PATCH',
+            value: 'PATCH'
           },
           Update: {
             text: 'Update',
-            value: 'UPDATE',
+            value: 'UPDATE'
           },
           Delete: {
             text: 'Delete',
-            value: 'DELETE',
+            value: 'DELETE'
           },
           onChange: (event, element, state) => {
             state.update({
               method: element.node.value
             })
             console.log(element.node.value)
-          },
-        },
+          }
+        }
       },
       VerticalLine: {
         margin: 0,
-        background: 'line-highlight',
+        background: 'line-highlight'
       },
       Input_endpointUrl: {
         flex: 1,
@@ -83,9 +83,9 @@ export const fetch = {
           state.quietUpdate({
             endpointUrl: element.node.value
           })
-        },
-      },
-    },
+        }
+      }
+    }
   },
   Flex: {
     width: '100%',
@@ -95,7 +95,7 @@ export const fetch = {
     childProps: {
       flow: 'y',
       gap: 'Z2',
-      align: 'start',
+      align: 'start'
     },
     Params: {
       Flex: {
@@ -105,7 +105,7 @@ export const fetch = {
         hide: (el, s) => !s.paramsArr.length,
         Span: {
           color: 'paragraph',
-          text: 'Params',
+          text: 'Params'
         },
         Flex: {
           flow: 'y',
@@ -143,12 +143,12 @@ export const fetch = {
             Input_key: {
               padding: 'Z A',
               value: '{{ key }}',
-              placeholder: 'Param key',
+              placeholder: 'Param key'
             },
             Input_value: {
               padding: 'Z A',
               value: '{{ value }}',
-              placeholder: 'Param value',
+              placeholder: 'Param value'
             },
             IconButton: {
               icon: 'trash',
@@ -157,23 +157,23 @@ export const fetch = {
                   delete s2.params[s2.key]
                   s2.paramsArr.splice(parseInt(el.parent.key, 10), 1)
                 })
-              },
-            },
+              }
+            }
           },
           children: (el, s) => s.paramsArr,
-          childrenAs: 'state',
-        },
+          childrenAs: 'state'
+        }
       },
       AddItemButton: {
         Caption: {
-          text: 'Add params',
+          text: 'Add params'
         },
         onClick: (ev, el, s) => {
           s.apply((s2) => {
             s2.paramsArr.push({})
           })
-        },
-      },
+        }
+      }
     },
     Auth: {
       Flex: {
@@ -183,7 +183,7 @@ export const fetch = {
         hide: (el, s) => !s.authArr.length,
         Span: {
           color: 'paragraph',
-          text: 'Auth',
+          text: 'Auth'
         },
         Flex: {
           flow: 'y',
@@ -221,12 +221,12 @@ export const fetch = {
             Input_key: {
               padding: 'Z A',
               value: '{{ key }}',
-              placeholder: 'Auth key',
+              placeholder: 'Auth key'
             },
             Input_value: {
               padding: 'Z A',
               value: '{{ value }}',
-              placeholder: 'Auth value',
+              placeholder: 'Auth value'
             },
             IconButton: {
               icon: 'trash',
@@ -235,23 +235,23 @@ export const fetch = {
                   delete s2.auth[s2.key]
                   s2.authArr.splice(parseInt(el.parent.key, 10), 1)
                 })
-              },
-            },
+              }
+            }
           },
           children: (el, s) => s.authArr,
-          childrenAs: 'state',
-        },
+          childrenAs: 'state'
+        }
       },
       AddItemButton: {
         Caption: {
-          text: 'Add auth',
+          text: 'Add auth'
         },
         onClick: (ev, el, s) => {
           s.apply((s2) => {
             s2.authArr.push({})
           })
-        },
-      },
+        }
+      }
     },
     Headers: {
       Flex: {
@@ -261,7 +261,7 @@ export const fetch = {
         hide: (el, s) => !s.headersArr.length,
         Span: {
           color: 'paragraph',
-          text: 'Headers',
+          text: 'Headers'
         },
         Flex: {
           flow: 'y',
@@ -299,12 +299,12 @@ export const fetch = {
             Input_key: {
               padding: 'Z A',
               value: '{{ key }}',
-              placeholder: 'Header key',
+              placeholder: 'Header key'
             },
             Input_value: {
               padding: 'Z A',
               value: '{{ value }}',
-              placeholder: 'Header value',
+              placeholder: 'Header value'
             },
             IconButton: {
               icon: 'trash',
@@ -313,23 +313,23 @@ export const fetch = {
                   delete s2.headers[s2.key]
                   s2.headersArr.splice(parseInt(el.parent.key, 10), 1)
                 })
-              },
-            },
+              }
+            }
           },
           children: (el, s) => s.headersArr,
-          childrenAs: 'state',
-        },
+          childrenAs: 'state'
+        }
       },
       AddItemButton: {
         Caption: {
-          text: 'Add headers',
+          text: 'Add headers'
         },
         onClick: (ev, el, s) => {
           s.apply((s2) => {
             s2.headersArr.push({})
           })
-        },
-      },
+        }
+      }
     },
     BodyParam: {
       if: (el, s) => ['post', 'update'].includes(s.method.toLowerCase()),
@@ -341,7 +341,7 @@ export const fetch = {
         hide: (el, s) => !s.showBody,
         color: 'paragraph',
         text: 'Body',
-        width: '100%',
+        width: '100%'
       },
       CodePreviewWidget: {
         props: (el, s) => ({
@@ -367,22 +367,22 @@ export const fetch = {
               })
             }
           }
-        }),
+        })
       },
       AddItemButton: {
         IconButton: {
-          icon: (el, s) => (s.showBody ? 'crossmark' : 'plus'),
+          icon: (el, s) => (s.showBody ? 'crossmark' : 'plus')
         },
         Caption: {
-          text: (el, s) => `${s.showBody ? 'Remove' : 'Add'} body`,
+          text: (el, s) => `${s.showBody ? 'Remove' : 'Add'} body`
         },
         onClick: (ev, el, s) => {
           s.apply((s2) => {
             s2.toggle('showBody')
           })
-        },
-      },
-    },
+        }
+      }
+    }
   },
   ContinueButton: {
     alignSelf: 'start',
@@ -403,12 +403,12 @@ export const fetch = {
           })
         }
       }
-    },
+    }
   },
   Code: {
     Line: {
       order: '-3',
-      width: '100%',
+      width: '100%'
     },
     width: '100%',
     maxWidth: '50vw',
@@ -424,8 +424,8 @@ export const fetch = {
       })
     },
     CodePreview: {
-      maxHeight: 'H+C1',
-    },
+      maxHeight: 'H+C1'
+    }
   },
   Saving: {
     width: '100%',
@@ -435,36 +435,36 @@ export const fetch = {
     hide: (el, s) => !s.value,
     Line: {
       order: '-3',
-      width: '100%',
+      width: '100%'
     },
     TitleField: {
       key: 'title',
       Title: {
-        text: 'Title',
+        text: 'Title'
       },
       Input: {
-        placeholder: 'Title of the state',
-      },
+        placeholder: 'Title of the state'
+      }
     },
     TitleField_key: {
       key: 'key',
       Title: {
-        text: 'Key',
+        text: 'Key'
       },
       Input: {
-        placeholder: 'Key of the state',
-      },
+        placeholder: 'Key of the state'
+      }
     },
     SwitchFieldWithCaption: {
       Caption: {
-        text: 'Runtime',
+        text: 'Runtime'
       },
-      onChange: (ev, el, s) => s.toggle('runtime'),
+      onChange: (ev, el, s) => s.toggle('runtime')
     },
     Code: {
       maxWidth: '50vw',
       show: (el, s) => s.runtime,
-      value: el => el.call('codifyFetch'),
+      value: el => el.call('codifyFetch')
     },
     SaveButton: {
       extends: 'ContinueButton',
@@ -478,19 +478,21 @@ export const fetch = {
         // } else {
         // }
         console.log(s)
-        if (!s.key)
+        if (!s.key) {
           return el.call('openNotification', {
             title: 'Key is required',
             message: `${ex}`,
             type: 'error'
           })
+        }
 
-        if (!s.value)
+        if (!s.value) {
           return el.call('openNotification', {
             title: 'Value is not assigned',
             message: `${ex}`,
             type: 'error'
           })
+        }
 
         const {
           runtime
@@ -505,7 +507,7 @@ export const fetch = {
         })
 
         console.log(data)
-      },
-    },
-  },
-};
+      }
+    }
+  }
+}

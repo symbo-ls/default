@@ -6,11 +6,11 @@ export const EnvItem = {
     isActive: el => el.props.isActive || el.parent.props.isActive,
     '.isActive': {
       background: 'green',
-      ':hover': null,
+      ':hover': null
     },
     '!isActive': {
-      background: 'shadow',
-    },
+      background: 'shadow'
+    }
   },
   Hgroup: {
     flexFlow: 'y',
@@ -22,7 +22,7 @@ export const EnvItem = {
       overflow: 'hidden',
       whiteSpace: 'wrap',
       textOverflow: 'anywhere',
-      text: 'Production',
+      text: 'Production'
     },
     P: {
       margin: '0',
@@ -34,21 +34,21 @@ export const EnvItem = {
       whiteSpace: 'wrap',
       textOverflow: 'anywhere',
       lineBreak: 'anywhere',
-      text: el => `${el.call('getAppKey')}`,
-    },
+      text: el => `${el.call('getAppKey')}`
+    }
   },
   Buttons: {
     hide: (el) => el.getRootState('tier') === 'starter',
     margin: '-X -X - auto',
     EnvActive: {
       icon: 'checkmark',
-      color: 'green',
+      color: 'green'
     },
     childExtends: 'IconButton',
     childProps: {
       theme: 'transparent',
-      padding: 'Y',
-    },
+      padding: 'Y'
+    }
   },
   Upgrade: {
     extends: 'Link',
@@ -61,18 +61,18 @@ export const EnvItem = {
     fontSize: 'Z2',
     lineHeight: 1,
     ':hover': {
-      textDecoration: 'underline',
+      textDecoration: 'underline'
     },
     onClick: (f, el, st) => {
-        el.call('openModal', '/settings', {
-          key: '/pricing'
-        })
-      },
+      el.call('openModal', '/settings', {
+        key: '/pricing'
+      })
+    }
   },
   extend: 'Flex',
   props: {
     gap: 'Z',
     round: 'Z2',
-    padding: 'Z Z2 Y',
-  },
-};
+    padding: 'Z Z2 Y'
+  }
+}

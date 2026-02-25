@@ -4,9 +4,9 @@ export const addColorModal = {
     if (!el.getDesignSystem()) return
     const lastPath = el.call('getLastLocationPath')
     const value = window.location.hash
-    const key = value ?
-      el.call('toCamelCase', el.call('nameTheColor').name(value)[1]) :
-      lastPath !== '/add-color' && lastPath.slice(1)
+    const key = value
+      ? el.call('toCamelCase', el.call('nameTheColor').name(value)[1])
+      : lastPath !== '/add-color' && lastPath.slice(1)
     s.quietUpdate({
       key,
       value
@@ -32,7 +32,7 @@ export const addColorModal = {
   tag: 'form',
   ModalHeader: {
     title: 'Add color',
-    p: 'Select the color of your theme, give a name and type the specific code.',
+    p: 'Select the color of your theme, give a name and type the specific code.'
   },
   Flex: {
     gap: 'C1',
@@ -42,7 +42,7 @@ export const addColorModal = {
       minHeight: 'auto',
       aspectRatio: '1 / 1',
       margin: '-W',
-      flex: 3.5,
+      flex: 3.5
     },
     Fields: {
       flex: 5,
@@ -50,7 +50,7 @@ export const addColorModal = {
       gap: 'B1',
       ColorPickerWithTitle: {
         Title: {
-          text: 'Type the HEX or RGBA',
+          text: 'Type the HEX or RGBA'
         },
         ColorPicker: {
           Input: {
@@ -64,19 +64,19 @@ export const addColorModal = {
                 value,
                 key
               })
-            },
+            }
           },
           Value: {
             ColorTemplate: {},
             Text: {
-              text: '{{ value }}',
-            },
-          },
-        },
+              text: '{{ value }}'
+            }
+          }
+        }
       },
       InputField: {
         Title: {
-          text: 'Name the color',
+          text: 'Name the color'
         },
         Input: {
           placeholder: 'PinkPanther',
@@ -86,16 +86,16 @@ export const addColorModal = {
               changedByInput: true,
               key: el.node.value
             })
-          },
-        },
-      },
-    },
+          }
+        }
+      }
+    }
   },
   ModalFooter: {
     CheckButton: {
       type: 'submit',
       icon: 'plus',
-      text: 'Add',
-    },
-  },
-};
+      text: 'Add'
+    }
+  }
+}

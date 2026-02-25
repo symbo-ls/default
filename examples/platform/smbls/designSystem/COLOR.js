@@ -1,3 +1,3 @@
 export default {
-  black: '#000',
-};
+  black: '#000'
+}

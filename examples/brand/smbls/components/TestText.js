@@ -3,7 +3,7 @@ export const TestText = {
   minWidth: 'G2',
   align: 'stretch',
   Title: {
-    text: 'Test text:',
+    text: 'Test text:'
   },
   Input: {
     onInput: (ev, el) => {
@@ -17,6 +17,6 @@ export const TestText = {
     padding: 'Z A',
     round: 'Y',
     placeholder: 'Today is a last day of the year',
-    value: el => el.getRootState().sampleText,
-  },
-};
+    value: el => el.getRootState().sampleText
+  }
+}

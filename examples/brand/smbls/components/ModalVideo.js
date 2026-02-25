@@ -5,7 +5,7 @@ export const ModalVideo = {
   position: 'fixed',
   backdropFilter: 'blur(15px)',
   '!activeVideo': {
-    display: 'none',
+    display: 'none'
   },
   ':after': {
     content: '""',
@@ -13,7 +13,7 @@ export const ModalVideo = {
     inset: '0',
     zIndex: 1,
     theme: 'document',
-    opacity: '.65',
+    opacity: '.65'
   },
   onClick: (event, el, state) => {
     el.call('closeModalVideo')
@@ -30,12 +30,12 @@ export const ModalVideo = {
       el.call('closeModalVideo')
     },
     ':hover': {
-      theme: 'field',
+      theme: 'field'
     },
     Icon: {
       name: 'x',
-      fontSize: 'D',
-    },
+      fontSize: 'D'
+    }
   },
   Iframe: {
     position: 'absolute',
@@ -67,7 +67,7 @@ export const ModalVideo = {
     allowFullscreen: true,
     '@tabletS': {
       minWidth: '90%',
-      maxWidth: '90%',
-    },
-  },
-};
+      maxWidth: '90%'
+    }
+  }
+}

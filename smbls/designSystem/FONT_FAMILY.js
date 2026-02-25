@@ -2,8 +2,8 @@ export default {
   Default: {
     isDefault: true,
     value: [
-      'San Francisco, Helvetica Neue, Helvetica, Arial',
+      'San Francisco, Helvetica Neue, Helvetica, Arial'
     ],
-    type: 'sans-serif',
-  },
-};
+    type: 'sans-serif'
+  }
+}

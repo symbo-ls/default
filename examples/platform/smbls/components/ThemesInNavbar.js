@@ -13,7 +13,7 @@ export const ThemesInNavbar = {
       el.getRoot().call('router', window.location.pathname)
       el.getRoot().call('setCookie', 'sceneTheme', key)
       el.getRoot().call('setCookie', 'globalTheme', key)
-    },
+    }
   },
   Light: {
     title: 'Light mode',
@@ -29,10 +29,10 @@ export const ThemesInNavbar = {
       el.getRoot().call('router', window.location.pathname)
       el.getRoot().call('setCookie', 'sceneTheme', key)
       el.getRoot().call('setCookie', 'globalTheme', key)
-    },
+    }
   },
   extend: 'NavbarButtonSet',
   props: {
-    gap: 'W2',
-  },
-};
+    gap: 'W2'
+  }
+}

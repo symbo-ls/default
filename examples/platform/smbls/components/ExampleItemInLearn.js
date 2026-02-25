@@ -3,13 +3,13 @@ export const ExampleItemInLearn = {
   props: {
     href: null,
     onClick: (ev, el) => {
-        el.setWindow('docs', '/examples')
-      },
+      el.setWindow('docs', '/examples')
+    }
   },
   state: {
     poster: 'example_clock.png',
     descr: 'Increment and decrement a number.',
-    title: 'Counter',
+    title: 'Counter'
   },
   Box: {
     position: 'relative',
@@ -23,14 +23,14 @@ export const ExampleItemInLearn = {
       round: 'Z2',
       position: 'relative',
       width: '100%',
-      src: '{{ poster }}',
-    },
+      src: '{{ poster }}'
+    }
   },
   Flex: {
     Strong: {},
     Span: {
-      text: '{{ descr }}',
+      text: '{{ descr }}'
     },
-    Span_2: null,
-  },
-};
+    Span_2: null
+  }
+}

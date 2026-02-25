@@ -9,21 +9,21 @@ export const EditNavbar = {
     padding: '0',
     Text: {
       ignoreChildExtend: true,
-      text: '{{ key }}',
+      text: '{{ key }}'
     },
     CopyButton: {
       title: 'Copy title',
-      value: (el, s) => s.key,
-    },
+      value: (el, s) => s.key
+    }
   },
   EditorTools: {
     hide: true,
     margin: '- auto - C3',
     color: 'dim',
-    fontSize: 'Z1',
+    fontSize: 'Z1'
   },
   EditorPositionNavbar: {
-    margin: '- - - auto',
+    margin: '- - - auto'
   },
   NavbarButtonSet_meta: {
     Que: {
@@ -32,7 +32,7 @@ export const EditNavbar = {
       isActive: false,
       onClick: (ev, el) => {
         el.setWindow('docs', '/properties')
-      },
+      }
     },
     Close: {
       title: 'Close',
@@ -41,7 +41,7 @@ export const EditNavbar = {
       margin: '- - - X',
       onClick: (ev, el) => {
         el.closeWindow('componentEditor')
-      },
-    },
-  },
-};
+      }
+    }
+  }
+}

@@ -4,9 +4,9 @@ export const NumbCaption = {
   Numb: {
     fontWeight: '400',
     opacity: '0.65',
-    color: 'paragraph',
+    color: 'paragraph'
   },
   Text: {
-    fontWeight: '500',
-  },
-};
+    fontWeight: '500'
+  }
+}

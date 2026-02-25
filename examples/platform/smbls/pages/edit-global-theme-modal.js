@@ -47,7 +47,7 @@ export const editGlobalThemeModal = {
           })
           el.call('closeModal', el, s)
         }
-      },
-    },
-  },
-};
+      }
+    }
+  }
+}

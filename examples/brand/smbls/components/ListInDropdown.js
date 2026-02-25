@@ -7,9 +7,9 @@ export const ListInDropdown = {
   childrenAs: 'state',
   content: {
     ignoreChildProps: true,
-    ignoreChildExtend: true,
+    ignoreChildExtend: true
   },
   childExtends: [
-    'KeyValueColumnFields',
-  ],
-};
+    'KeyValueColumnFields'
+  ]
+}

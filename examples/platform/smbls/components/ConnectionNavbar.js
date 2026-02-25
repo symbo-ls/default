@@ -5,7 +5,7 @@ export const ConnectionNavbar = {
   gap: 'A',
   theme: 'canvas-card-glass',
   ':hover .avatar': {
-    opacity: 0,
+    opacity: 0
   },
   ConnectionLabel: {
     gap: 'Y1',
@@ -15,7 +15,7 @@ export const ConnectionNavbar = {
       el.call('openInNewTab')
     },
     ':hover': {
-      textDecoration: 'underline',
+      textDecoration: 'underline'
     },
     Circle: {
       boxSize: 'Y1',
@@ -25,10 +25,10 @@ export const ConnectionNavbar = {
       animationIterationCount: 'infinite',
       '.isLoading': {
         animation: 'blinking',
-        animationDuration: 'G2',
+        animationDuration: 'G2'
       },
       '!isLoading': {
-        animation: null,
+        animation: null
       },
       onRender: (el, s) => {
         const handler = ({
@@ -44,16 +44,16 @@ export const ConnectionNavbar = {
           }
         }
         el.sdk.rootBus.on('checkpoint:done', handler)
-      },
+      }
     },
     Text: {
       maxWidth: '100%',
       text: el => el.getAppKey(),
       textOverflow: 'ellipsis',
       overflow: 'hidden',
-      padding: '- - .1em',
+      padding: '- - .1em'
     },
-    CopyButton: null,
+    CopyButton: null
   },
   NavbarButtonSet: {
     padding: '0 X',
@@ -68,7 +68,7 @@ export const ConnectionNavbar = {
           preventUpdate: true
         })
         el.getVersionsAside()?.update()
-      },
+      }
     },
     Pub: {
       if: el => el.sdk.hasPermission('editMode'),
@@ -77,7 +77,7 @@ export const ConnectionNavbar = {
       scrollToTop: false,
       onClick: async (ev, el) => {
         await el.call('openModal', '/publish')
-      },
+      }
     },
     SettingsButton: {
       extends: 'Link',
@@ -90,10 +90,10 @@ export const ConnectionNavbar = {
         await el.call('openModal', '/settings', {
           key: '/settings'
         })
-      },
+      }
     },
     childProps: {
-      padding: 'Y1',
-    },
-  },
-};
+      padding: 'Y1'
+    }
+  }
+}

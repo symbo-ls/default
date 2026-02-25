@@ -5,17 +5,17 @@ export const SelectRoleField = {
     id: 'role',
     childrenAs: 'props',
     children: () => [{
-        value: 'guest',
-        text: 'Guest'
-      },
-      {
-        value: 'editor',
-        text: 'Editor'
-      },
-      {
-        value: 'admin',
-        text: 'Admin'
-      },
+      value: 'guest',
+      text: 'Guest'
+    },
+    {
+      value: 'editor',
+      text: 'Editor'
+    },
+    {
+      value: 'admin',
+      text: 'Admin'
+    }
     ],
     childProps: {
       tag: 'option',
@@ -24,8 +24,8 @@ export const SelectRoleField = {
           const userRole = s.role || -1
           const optionValue = el.props.value
           return userRole === optionValue
-        },
-      },
-    },
-  },
-};
+        }
+      }
+    }
+  }
+}

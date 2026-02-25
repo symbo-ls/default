@@ -4,18 +4,18 @@ export const NavbarProgrammingLanguages = {
     {
       title: 'JavaScript',
       key: 'js',
-      icon: 'js',
+      icon: 'js'
     },
     {
       title: 'TypeScript',
       key: 'ts',
-      icon: 'ts',
+      icon: 'ts'
     },
     {
       title: 'HTML',
       key: 'html',
-      icon: 'html',
-    },
+      icon: 'html'
+    }
   ],
   childProps: {
     isActive: el => el.getRootState('language') === el.props.key,
@@ -24,6 +24,6 @@ export const NavbarProgrammingLanguages = {
         language: el.props.key
       })
       el.call('setCookie', 'language', el.getRootState('language'))
-    },
-  },
-};
+    }
+  }
+}

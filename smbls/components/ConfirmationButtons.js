@@ -4,14 +4,14 @@ export const ConfirmationButtons = {
   gap: 'Y1',
   childProps: {
     theme: 'dialog',
-    padding: 'Z1 B1',
+    padding: 'Z1 B1'
   },
   children: [
     {
-      text: 'No',
+      text: 'No'
     },
     {
-      text: 'YES',
-    },
-  ],
-};
+      text: 'YES'
+    }
+  ]
+}

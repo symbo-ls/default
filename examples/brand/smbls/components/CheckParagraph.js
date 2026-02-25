@@ -7,6 +7,6 @@ export const CheckParagraph = {
   icon: 'checkmark',
   Icon: {
     order: '-1',
-    color: 'paragraph',
-  },
-};
+    color: 'paragraph'
+  }
+}

@@ -1,7 +1,7 @@
 export const SharingNavbar = {
   extend: 'NavbarButtonSet',
   props: {
-    gap: 'W2',
+    gap: 'W2'
   },
   PreviewButton: {
     extends: 'DropdownButton',
@@ -16,8 +16,8 @@ export const SharingNavbar = {
         el.openModal('/browser-preview')
       },
       Icon: {
-        color: 'blue',
-      },
+        color: 'blue'
+      }
     },
     IconButton: {
       DropdownParentFocus: {
@@ -25,16 +25,16 @@ export const SharingNavbar = {
         Dropdown: {
           left: '-D2',
           onClick: () => {},
-          PreviewModesMenu: {},
+          PreviewModesMenu: {}
         },
-        inset: '0',
-      },
-    },
+        inset: '0'
+      }
+    }
   },
   InNewTab: {
     icon: 'sf arrow up right',
     title: 'In new tab',
-    onClick: 'openInNewTab',
+    onClick: 'openInNewTab'
   },
   Share: {
     title: 'Share',
@@ -43,12 +43,12 @@ export const SharingNavbar = {
       left: 'auto',
       right: '-A',
       onClick: (ev, el, s) => {},
-      'Dropdown.Share': {},
+      'Dropdown.Share': {}
     },
     extends: [
       'CanvasButton',
       'IconButton',
-      'DropdownParentFocus',
-    ],
-  },
-};
+      'DropdownParentFocus'
+    ]
+  }
+}

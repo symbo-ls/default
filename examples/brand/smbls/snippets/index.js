@@ -1,1 +1,1 @@
-export * from './TEMPLATES_DATA.js';
+export * from './TEMPLATES_DATA.js'

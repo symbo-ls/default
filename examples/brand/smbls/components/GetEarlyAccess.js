@@ -11,21 +11,21 @@ export const GetEarlyAccess = {
   Hgroup: {
     H: {
       tag: 'strong',
-      text: 'Get early access',
+      text: 'Get early access'
     },
     P: {
-      text: `We're kicking off invite-only. Get early signup to make it to the top.`,
-    },
+      text: 'We\'re kicking off invite-only. Get early signup to make it to the top.'
+    }
   },
   Link: {
     extends: [
       'Link',
-      'Button',
+      'Button'
     ],
     margin: '0 0 0 -X',
     theme: 'quaternary',
     fontWeight: '500',
     text: 'Join up',
-    href: '/signup',
-  },
-};
+    href: '/signup'
+  }
+}

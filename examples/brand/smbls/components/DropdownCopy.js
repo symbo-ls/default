@@ -1,1 +1,1 @@
-export const DropdownCopy = {};
+export const DropdownCopy = {}

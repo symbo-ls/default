@@ -6,14 +6,14 @@ export const shareModal = {
   tag: 'form',
   ModalHeader: {
     title: 'Share',
-    p: 'Share?',
+    p: 'Share?'
   },
   Flex: {},
   ModalFooter: {
     CheckButton: {
       theme: 'primary',
       type: 'submit',
-      text: 'Share',
-    },
-  },
-};
+      text: 'Share'
+    }
+  }
+}

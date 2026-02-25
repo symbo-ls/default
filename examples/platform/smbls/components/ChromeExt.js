@@ -2,7 +2,7 @@ export const ChromeExt = {
   P: {
     color: 'gray8',
     margin: '0 0 X2',
-    text: 'Optionally you can install the Chrome extension to have realtime preview of your Symbols:',
+    text: 'Optionally you can install the Chrome extension to have realtime preview of your Symbols:'
   },
   Link: {
     target: '_blank',
@@ -16,12 +16,12 @@ export const ChromeExt = {
     opacity: '.9',
     ':hover': {
       opacity: '1',
-      borderColor: 'gray8 .25',
+      borderColor: 'gray8 .25'
     },
     Img: {
       display: 'block',
       height: 'C1',
-      src: 'chrome-ext.png',
-    },
-  },
-};
+      src: 'chrome-ext.png'
+    }
+  }
+}

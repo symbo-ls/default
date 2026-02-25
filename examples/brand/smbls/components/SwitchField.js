@@ -9,13 +9,13 @@ export const SwitchField = {
       background: 'white .2',
       ':before': {
         left: '68%',
-        background: 'white .85',
-      },
+        background: 'white .85'
+      }
     },
     onChange: (ev, el, s) => {
       ev.stopPropagation()
       el.parent.props.onChange(ev, el.parent, s)
-    },
+    }
   },
   Pseudo: {
     tag: 'span',
@@ -37,7 +37,7 @@ export const SwitchField = {
       transform: 'translate3d(-50%, -50%, 0)',
       bottom: '4px',
       backgroundColor: 'white .1',
-      transition: 'B',
-    },
-  },
-};
+      transition: 'B'
+    }
+  }
+}

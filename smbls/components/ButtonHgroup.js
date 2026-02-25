@@ -3,15 +3,15 @@ export const ButtonHgroup = {
     gap: 'X2',
     H: {
       tag: 'h6',
-      text: 'Heading',
+      text: 'Heading'
     },
-    P: {},
+    P: {}
   },
   Button: {
     text: 'Button',
-    theme: 'dialog',
+    theme: 'dialog'
   },
   extends: 'Flex',
   align: 'flex-start flex-start',
-  gap: 'Z',
-};
+  gap: 'Z'
+}

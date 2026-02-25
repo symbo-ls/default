@@ -31,19 +31,19 @@ export default {
         base: '/core/files',
         file: '/core/files/69325cf7ebee5529e0391f0b',
         download: '/core/files/public/69325cf7ebee5529e0391f0b/download',
-        publicDownload: '/core/files/public/69325cf7ebee5529e0391f0b/download',
+        publicDownload: '/core/files/public/69325cf7ebee5529e0391f0b/download'
       },
       absolute: {
         base: 'https://api.symbols.app/core/files',
         file: 'https://api.symbols.app/core/files/69325cf7ebee5529e0391f0b',
         download: 'https://api.symbols.app/core/files/public/69325cf7ebee5529e0391f0b/download',
-        publicDownload: 'https://api.symbols.app/core/files/public/69325cf7ebee5529e0391f0b/download',
+        publicDownload: 'https://api.symbols.app/core/files/public/69325cf7ebee5529e0391f0b/download'
       },
-      storage: 'https://storage.googleapis.com/smbls-api-media/media/projects/686848570cf470c5890934c5/users/6868484c0cf470c5890933cc/KgGod-ERYLMzehFbRno3w.png',
-    },
+      storage: 'https://storage.googleapis.com/smbls-api-media/media/projects/686848570cf470c5890934c5/users/6868484c0cf470c5890933cc/KgGod-ERYLMzehFbRno3w.png'
+    }
   },
   code: '',
   key: 'colors.jpeg',
   type: 'file',
-  format: 'png',
-};
+  format: 'png'
+}

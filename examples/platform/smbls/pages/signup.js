@@ -101,7 +101,7 @@ export const signup = {
         })
         s.update({
           confirm: false,
-          loading: false,
+          loading: false
         })
       } else {
         el.call('openNotification', {
@@ -119,41 +119,41 @@ export const signup = {
       })
     },
     '@tabletS': {
-      boxSize: 'auto I',
+      boxSize: 'auto I'
     },
     '@mobileL': {
       boxSize: 'auto H',
-      padding: '- C',
+      padding: '- C'
     },
     '@mobileS': {
       boxSize: 'auto G2',
-      padding: '- B1',
+      padding: '- B1'
     },
     '@mobileXS': {
-      boxSize: 'auto G1',
+      boxSize: 'auto G1'
     },
     ModalHeader: {
       '@mobileL': {
-        gap: '0',
+        gap: '0'
       },
       title: 'Sign up to Symbols',
-      p: `You're joining the Symbols. Creating the account will greatly help you increase productivity.`,
+      p: 'You\'re joining the Symbols. Creating the account will greatly help you increase productivity.',
       heading: {
         p: {
           '@tabletS': {
-            maxWidth: 'H',
+            maxWidth: 'H'
           },
           '@mobileL': {
-            minWidth: '100%',
-          },
-        },
-      },
+            minWidth: '100%'
+          }
+        }
+      }
     },
     Flex: {
       '@mobileL': {
         flow: 'column',
         padding: '0',
-        fontSize: 'A',
+        fontSize: 'A'
       },
       SignupForm: {},
       RequestAccessButtons: {
@@ -161,23 +161,23 @@ export const signup = {
           Link: {
             icon: 'email',
             gap: 'Z',
-            text: 'Continue with existing email',
-          },
-        },
-      },
-    },
+            text: 'Continue with existing email'
+          }
+        }
+      }
+    }
   },
   ConfirmEmail: {
     transition: 'B defaultBezier',
     transitionProperty: 'opacity, visibility',
     '.confirm': {
       opacity: 1,
-      visibility: 'visible',
+      visibility: 'visible'
     },
     '!confirm': {
       opacity: 0,
-      visibility: 'hidden',
-    },
+      visibility: 'hidden'
+    }
   },
-  LandingFooterLite: {},
-};
+  LandingFooterLite: {}
+}

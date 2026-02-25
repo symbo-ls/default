@@ -3,6 +3,6 @@ export const UploadImage = {
   boxSize: 'fit-content',
   round: 'Z2',
   Icon: {
-    name: 'upload',
-  },
-};
+    name: 'upload'
+  }
+}

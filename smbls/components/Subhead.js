@@ -1,4 +1,4 @@
 export const Subhead = {
   text: 'Subhead',
-  extends: 'smbls.Subhead',
-};
+  extends: 'smbls.Subhead'
+}

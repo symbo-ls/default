@@ -3,5 +3,5 @@ export const Line = {
   padding: '0',
   theme: 'line',
   background: 'line',
-  heightRange: '1px',
-};
+  heightRange: '1px'
+}

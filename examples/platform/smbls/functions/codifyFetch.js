@@ -1,4 +1,4 @@
-export const codifyFetch = function codifyFetch() {
+export const codifyFetch = function codifyFetch () {
   const s = this.state
 
   const data = {

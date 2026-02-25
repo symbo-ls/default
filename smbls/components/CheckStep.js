@@ -5,10 +5,10 @@ export const CheckStep = {
     display: 'block',
     boxSizing: 'content-box',
     padding: 'Y2',
-    round: '100%',
+    round: '100%'
   },
   H6: {
-    text: 'Step',
+    text: 'Step'
   },
   Progress: {
     minWidth: 'E',
@@ -16,10 +16,10 @@ export const CheckStep = {
     value: 0,
     height: 'V',
     '.isActive': {
-      value: 1,
-    },
+      value: 1
+    }
   },
   extends: 'Flex',
   align: 'center flex-start',
-  gap: 'Z',
-};
+  gap: 'Z'
+}

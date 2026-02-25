@@ -1,4 +1,4 @@
 export const Flex = {
   extends: 'smbls.Flex',
-  flow: 'x',
-};
+  flow: 'x'
+}

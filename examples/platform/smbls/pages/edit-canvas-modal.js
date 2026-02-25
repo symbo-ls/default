@@ -19,16 +19,16 @@ export const editCanvasModal = {
   },
   ModalHeader: {
     title: 'Edit {{ title }} canvas',
-    p: 'Edit custom canvas page',
+    p: 'Edit custom canvas page'
   },
   Flex: {
     InputField: {
       pointerEvents: 'none',
       Input: {
         opacity: '.65',
-        disabled: 'disabled',
-      },
-    },
+        disabled: 'disabled'
+      }
+    }
   },
   ModalFooter: {
     CheckButton: {},
@@ -36,7 +36,7 @@ export const editCanvasModal = {
       icon: 'trash outline',
       onClick: async (ev, el, s) => {
         await el.call('deleteCanvasPage', s.key)
-      },
-    },
-  },
-};
+      }
+    }
+  }
+}

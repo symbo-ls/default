@@ -1,7 +1,7 @@
 export const UsersTableCopy = {
   H6: {
     text: 'Team Members',
-    margin: '- - A',
+    margin: '- - A'
   },
   Flex: {
     flow: 'y',
@@ -15,25 +15,25 @@ export const UsersTableCopy = {
         props: (el, s) => ({
           boxSize: 'B',
           key: s.name
-        }),
+        })
       },
       Name: {
         margin: '- - - -C',
         Text: {
           tag: 'span',
-          text: '{{ name }}',
+          text: '{{ name }}'
         },
         Strong: {
           hide: (el, s) => !s.username,
-          text: ' ({{ username }})',
-        },
+          text: ' ({{ username }})'
+        }
       },
       Email: {
-        text: '{{ email }}',
+        text: '{{ email }}'
       },
-      Role: {},
+      Role: {}
     },
     children: (el) => el.getRootProjectsUsers(),
-    childrenAs: 'state',
-  },
-};
+    childrenAs: 'state'
+  }
+}

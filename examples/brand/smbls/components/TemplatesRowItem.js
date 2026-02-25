@@ -1,6 +1,6 @@
 export const TemplatesRowItem = {
   extends: [
-    'Link',
+    'Link'
   ],
   padding: '0',
   gap: 'Y1',
@@ -18,21 +18,21 @@ export const TemplatesRowItem = {
     opacity: '1',
     '& .arrow': {
       transform: 'none',
-      opacity: '1',
-    },
+      opacity: '1'
+    }
   },
   state: {
     poster: 'https://api.symbols.app/core/files/public/68b43aac424350c909e4f047/download',
     projectPath: 'nikoloza/tech-dash',
     previewUrl: 'https://tech-dash.symbo.ls',
-    title: 'TechBrother',
+    title: 'TechBrother'
   },
   Box: {
     position: 'relative',
     Flex: {
       extends: [
         'Link',
-        'Flex',
+        'Flex'
       ],
       if: (el, s) => !!s.previewUrl,
       transition: 'A defaultBezier all',
@@ -54,19 +54,19 @@ export const TemplatesRowItem = {
       },
       Icon: {
         fontSize: 'B',
-        icon: 'eye',
-      },
+        icon: 'eye'
+      }
     },
     Img: {
       round: 'A',
       position: 'relative',
       width: '100%',
-      src: '{{ poster }}',
-    },
+      src: '{{ poster }}'
+    }
   },
   Span: {
     text: '{{ title }}',
     fontWeight: '400',
-    padding: '- - - X2',
-  },
-};
+    padding: '- - - X2'
+  }
+}

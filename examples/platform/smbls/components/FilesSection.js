@@ -1,7 +1,7 @@
 export const FilesSection = {
   FilesSectionTitle: {},
   FilesSectionList: {
-    margin: '- -Y',
+    margin: '- -Y'
   },
   extend: 'Flex',
   props: {
@@ -10,8 +10,8 @@ export const FilesSection = {
     gap: 'X2',
     ':hover': {
       '& header > button, & header > a': {
-        opacity: 1,
-      },
-    },
-  },
-};
+        opacity: 1
+      }
+    }
+  }
+}

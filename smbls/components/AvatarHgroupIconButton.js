@@ -2,16 +2,16 @@ export const AvatarHgroupIconButton = {
   Avatar: {},
   Hgroup: {
     H: {
-      tag: 'h6',
+      tag: 'h6'
     },
-    P: {},
+    P: {}
   },
   IconButton: {
     margin: '- - - auto',
     Icon: {
-      name: 'copy',
-    },
+      name: 'copy'
+    }
   },
   extends: 'AvatarHgroup',
-  minWidth: 'G+Z2',
-};
+  minWidth: 'G+Z2'
+}

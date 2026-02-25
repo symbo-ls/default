@@ -1,6 +1,6 @@
 export const ComponentAddressBar = {
   extend: [
-    'DropdownParentFocus',
+    'DropdownParentFocus'
   ],
   tag: 'search',
   props: {
@@ -8,7 +8,7 @@ export const ComponentAddressBar = {
     theme: 'quinary',
     round: 'C',
     minWidth: 'D3',
-    margin: '-V - - -',
+    margin: '-V - - -'
   },
   Form: {
     extends: 'Flex',
@@ -16,15 +16,15 @@ export const ComponentAddressBar = {
     gap: 'X',
     margin: '0',
     attr: {
-      novalidate: true,
+      novalidate: true
     },
     onSubmit: (ev, el, s) => {
-        ev.preventDefault()
-      },
+      ev.preventDefault()
+    },
     Icon: {
       fontSize: 'Z1',
       margin: '- -B2 - A',
-      name: 'search',
+      name: 'search'
     },
     Input: {
       autofocus: 'autofocus',
@@ -39,47 +39,47 @@ export const ComponentAddressBar = {
       required: true,
       type: 'text',
       style: {
-        appearance: 'none',
+        appearance: 'none'
       },
       ':focus-visible': {
-        outline: 'none',
+        outline: 'none'
       },
       '::-webkit-search-cancel-button': {
-        display: 'none',
+        display: 'none'
       },
       '::placeholder': {
-        color: 'placeholder',
+        color: 'placeholder'
       },
       onInput: (ev, el, s) => {
-          s.update({
-            searchTerm: el.node.value
-          })
-        },
-    },
+        s.update({
+          searchTerm: el.node.value
+        })
+      }
+    }
   },
   CanvasSearchDropdown: {
     ListInDropdown: {
       childProps: {
         Flex_Buttons: null,
         onClick: (ev, el, s) => {
-            const key = s.key
-            const type = s.type
-            s.parent.update({
-              type,
-              key,
-            })
-          },
-      },
+          const key = s.key
+          const type = s.type
+          s.parent.update({
+            type,
+            key
+          })
+        }
+      }
     },
     extends: [
       'CanvasSearchDropdown',
-      'Dropdown',
+      'Dropdown'
     ],
     width: '100%',
     left: '0',
     typesToIndex: [
       'components',
-      'pages',
-    ],
-  },
-};
+      'pages'
+    ]
+  }
+}

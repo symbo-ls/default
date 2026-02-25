@@ -7,7 +7,7 @@ export const CanvasEmbed2 = {
       el.setProps({
         animation: 'scaleInOut',
         animationDuration: 'F',
-        pointerEvents: 'none',
+        pointerEvents: 'none'
       })
       el.nextElement().setProps({
         hide: false,
@@ -18,7 +18,7 @@ export const CanvasEmbed2 = {
       position: 'absolute',
       pointerEvents: 'auto',
       opacity: '0.9',
-      zIndex: 2,
+      zIndex: 2
     },
     Button: {
       position: 'relative',
@@ -27,8 +27,8 @@ export const CanvasEmbed2 = {
       transform: 'none',
       icon: 'play',
       theme: 'quaternary',
-      text: 'Click to Preview',
-    },
+      text: 'Click to Preview'
+    }
   },
   CanvasEmbed: {
     minWidth: 'none',
@@ -38,12 +38,12 @@ export const CanvasEmbed2 = {
     height: 'H2',
     project: '/nikoloza/default',
     src: el => 'https://symbols.app/embed' + (el.parent.props.project || el.props.project),
-    round: 'Z2',
+    round: 'Z2'
   },
   props: {
     position: 'relative',
     minWidth: 'H3',
     round: 'Z2',
-    overflow: 'hidden',
-  },
-};
+    overflow: 'hidden'
+  }
+}

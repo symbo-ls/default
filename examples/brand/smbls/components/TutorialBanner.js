@@ -5,12 +5,12 @@ export const TutorialBanner = {
     'Hoverable',
     {
       props: (el, s) => ({
-        ":before": {
+        ':before': {
           theme: s.theme,
-          backgroundImage: `url(${s.background})`,
+          backgroundImage: `url(${s.background})`
         }
-      }),
-    },
+      })
+    }
   ],
   flow: 'column',
   round: 'A',
@@ -28,25 +28,25 @@ export const TutorialBanner = {
   style: {
     userSelect: 'none',
     'h2, p': {
-      zIndex: 2,
-    },
+      zIndex: 2
+    }
   },
   ':after, &:before': {
     content: '""',
     position: 'absolute',
     zIndex: 0,
-    inset: '-5px -5px -5px -5px',
+    inset: '-5px -5px -5px -5px'
   },
   ':before': {
     transition: 'B defaultBezier, A defaultBezier, A defaultBezier',
     transitionProperty: 'opacity, color, background',
     backgroundSize: 'cover',
     '@dark': {
-      opacity: '0.5',
+      opacity: '0.5'
     },
     '@light': {
-      opacity: '1',
-    },
+      opacity: '1'
+    }
   },
   '.withShadow': {
     ':after': {
@@ -54,33 +54,33 @@ export const TutorialBanner = {
       transitionProperty: 'opacity, color, background',
       background: 'shadow-overlay',
       '@dark': {
-        opacity: '0.69',
+        opacity: '0.69'
       },
       '@light': {
-        display: 'none',
-      },
-    },
+        display: 'none'
+      }
+    }
   },
   ':hover': {
     padding: '- C1 - -',
     ':before': {
-      opacity: '1',
+      opacity: '1'
     },
     ':after': {
-      opacity: '1',
-    },
+      opacity: '1'
+    }
   },
   Icon: {
     opacity: '0.5',
     fontSize: 'A2',
     margin: 'X - - -',
-    name: 'play outline',
+    name: 'play outline'
   },
   Title: {
     margin: 'auto 0 0',
-    text: '{{ title }}',
+    text: '{{ title }}'
   },
   P: {
-    text: '{{ p }}',
-  },
-};
+    text: '{{ p }}'
+  }
+}

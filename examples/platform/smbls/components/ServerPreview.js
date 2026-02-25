@@ -10,6 +10,6 @@ export const ServerPreview = {
   SectionHeader: {
     margin: '0',
     padding: '0',
-    title: 'Development',
-  },
-};
+    title: 'Development'
+  }
+}

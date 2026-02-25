@@ -6,9 +6,9 @@ export const CounterButton = {
   minWidth: 'F',
   theme: 'field',
   Span: {
-    text: 'Button',
+    text: 'Button'
   },
   NotificationCounter: {
-    text: '7',
-  },
-};
+    text: '7'
+  }
+}

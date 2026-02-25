@@ -3,42 +3,42 @@ const Dropdownpublish = {
     key: 'publish',
     CaptionTitle: {
       Text: {
-        text: 'Publish',
-      },
+        text: 'Publish'
+      }
     },
     Section: {
-      extends: 'PublishTools',
-    },
+      extends: 'PublishTools'
+    }
   },
   Line: {
     margin: '-A2 0',
-    ignoreChildProps: true,
+    ignoreChildProps: true
   },
   Sync: {
     key: 'sync',
     CaptionTitle: {
       Text: {
-        text: 'Sync',
-      },
+        text: 'Sync'
+      }
     },
     Section: {
-      extends: 'SyncSuggestionsInPublish',
-    },
+      extends: 'SyncSuggestionsInPublish'
+    }
   },
   Line_2: {
     margin: '-A2 0',
-    ignoreChildProps: true,
+    ignoreChildProps: true
   },
   Export: {
     key: 'export',
     CaptionTitle: {
       Text: {
-        text: 'Export',
-      },
+        text: 'Export'
+      }
     },
     Section: {
-      extends: 'ExportsInPublish',
-    },
+      extends: 'ExportsInPublish'
+    }
   },
   extend: 'Flex',
   childExtend: 'Flex',
@@ -54,7 +54,7 @@ const Dropdownpublish = {
       CaptionTitle: {
         extends: [
           'CaptionTitle',
-          'CanvasButton',
+          'CanvasButton'
         ],
         margin: '- -A2',
         padding: 'A A2',
@@ -62,17 +62,17 @@ const Dropdownpublish = {
         Text: {},
         Icon: {
           margin: '- - - auto',
-          icon: (el, s) => s.activeOutput === el.parent.parent.props.key ? 'arrow angle up' : 'arrow angle down',
+          icon: (el, s) => s.activeOutput === el.parent.parent.props.key ? 'arrow angle up' : 'arrow angle down'
         },
         onClick: (ev, el, s) => s.update({
           activeOutput: el.parent.props.key
-        }),
+        })
       },
       Section: {
-        show: (el, s) => s.activeOutput === el.parent.props.key,
-      },
-    },
-  },
-};
+        show: (el, s) => s.activeOutput === el.parent.props.key
+      }
+    }
+  }
+}
 
 export { Dropdownpublish as 'Dropdown.Publish' }

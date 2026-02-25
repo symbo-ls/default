@@ -5,7 +5,7 @@ export const CodeWithTitleAndButtons = {
   maxWidth: '50%',
   align: 'stretch',
   '@tabletS': {
-    maxWidth: 'none',
+    maxWidth: 'none'
   },
   Title: {},
   CodePreview: {
@@ -13,8 +13,8 @@ export const CodeWithTitleAndButtons = {
     padding: 'A A1 D1',
     '&': {
       minWidth: '100%',
-      width: 'auto',
-    },
+      width: 'auto'
+    }
   },
   Buttons: {
     flexAlign: 'center space-between',
@@ -23,10 +23,10 @@ export const CodeWithTitleAndButtons = {
     transition: 'B opacity',
     '&': {
       minWidth: '100%',
-      width: 'auto',
+      width: 'auto'
     },
     childExtends: [
-      'WiderButton',
+      'WiderButton'
     ],
     childProps: {
       round: 'Z1',
@@ -35,40 +35,40 @@ export const CodeWithTitleAndButtons = {
       transitionProperty: 'background, color, border',
       theme: 'secondary-highlight',
       backdropFilter: 'blur(3px)',
-      zIndex: 10,
+      zIndex: 10
     },
     CopyButton: {
       extends: [
         'WiderButton',
-        'CopyButton',
+        'CopyButton'
       ],
       margin: '0 auto 0 0',
       icon: 'copy outline',
       value: el => {
         const val = el.call('getCodePreviewValue', el.parent.props.value || '//')
         return val
-      },
+      }
     },
     Link: {
       href: '/dashboard#{{ title }}',
       Icon: {
-        name: 'url',
-      },
+        name: 'url'
+      }
     },
     FrameworkSwitcher: {
       padding: 'Z B Z Z2',
       fontSize: 'A',
       fontFamily: 'smbls',
       Icon: {
-        name: el => el.getRootState().framework,
+        name: el => el.getRootState().framework
       },
       Icon_arrow: {
         position: 'absolute',
         opacity: 0.5,
         fontSize: 'Z',
         right: 'Z1',
-        icon: 'arrowAngleMirroringVertical',
-      },
-    },
-  },
-};
+        icon: 'arrowAngleMirroringVertical'
+      }
+    }
+  }
+}

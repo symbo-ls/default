@@ -1,10 +1,10 @@
 export const AccordionItem = {
   state: {
-    isActive: false,
+    isActive: false
   },
   props: (el, s) => {
-    const Section = el.Section.node;
-    const height = Section?.getBoundingClientRect && Section.getBoundingClientRect().height;
+    const Section = el.Section.node
+    const height = Section?.getBoundingClientRect && Section.getBoundingClientRect().height
     return {
       flow: 'y',
       position: 'relative',
@@ -25,7 +25,7 @@ export const AccordionItem = {
       '.isActive': {
         paddingBlockEnd: `calc(${height}px + 1em)`
       }
-    };
+    }
   },
   Flex: {
     minWidth: '100%',
@@ -33,22 +33,22 @@ export const AccordionItem = {
     cursor: 'pointer',
     userSelect: 'none',
     onClick: (event, element, state) => {
-      state.toggle('isActive');
+      state.toggle('isActive')
     },
     P: {
       padding: 'X2 -',
       margin: '0',
       text: 'Question text one here',
-      color: 'title',
+      color: 'title'
     },
     Icon: {
       icon: 'arrowAngleDown',
       textDecoration: 'none',
       fontSize: 'B',
       '.isActive': {
-        transform: 'rotate(180deg)',
-      },
-    },
+        transform: 'rotate(180deg)'
+      }
+    }
   },
   Section: {
     text: 'Use a checkbox when users can select one option, multiple options, or no option from a list of a possible options.',
@@ -60,10 +60,10 @@ export const AccordionItem = {
     transition: 'A defaultBezier',
     transitionProperty: 'margin, opacity',
     '.isActive': {
-      opacity: '1',
+      opacity: '1'
     },
     '!isActive': {
-      opacity: '0',
-    },
-  },
-};
+      opacity: '0'
+    }
+  }
+}

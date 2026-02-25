@@ -1,7 +1,7 @@
 export const LogoCopy = {
   extends: [
     'Link',
-    'SquareButton',
+    'SquareButton'
   ],
   icon: 'logo',
   isActive: () => window.location.pathname === '/dashboard',
@@ -17,30 +17,30 @@ export const LogoCopy = {
   padding: 'Y',
   round: '100%',
   '@dark': {
-    color: 'white',
+    color: 'white'
   },
   '@light': {
-    color: 'black',
+    color: 'black'
   },
   ':hover': {
     '@dark': {
       color: 'gray15',
-      background: 'gray3',
+      background: 'gray3'
     },
     '@light': {
       color: 'black',
-      background: 'white',
-    },
+      background: 'white'
+    }
   },
   '.isActive': {
     '@dark': {
       color: 'gray15',
-      background: 'gray3',
+      background: 'gray3'
     },
     '@light': {
       color: 'black',
-      background: 'white',
-    },
+      background: 'white'
+    }
   },
   Span: {
     animation: 'slideInOut',
@@ -55,6 +55,6 @@ export const LogoCopy = {
     fontWeight: '500',
     text: 'BETA',
     transform: 'translate3d(0, 50%, 0)',
-    opacity: '0',
-  },
-};
+    opacity: '0'
+  }
+}

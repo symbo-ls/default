@@ -5,15 +5,15 @@ export const IntegrationsPanel = {
     fontSize: 'Z2',
     padding: 'A+Z Z2',
     gap: 'C',
-    overflow: 'hidden auto',
+    overflow: 'hidden auto'
   },
   ImportInInsert: {},
   Line_3: {
-    margin: '- -A',
+    margin: '- -A'
   },
   DataSourcesInInsert: {},
   Line_4: {
-    margin: '- -A',
+    margin: '- -A'
   },
-  IntegrationsInInsert: {},
-};
+  IntegrationsInInsert: {}
+}

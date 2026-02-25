@@ -11,20 +11,20 @@ export const ActiveCanvasUsers = {
     transitionProperty: 'opacity, outline',
     data: {},
     ':hover': {
-      opacity: 1,
+      opacity: 1
     },
     ':not(:last-child)': {
-      margin: '0 -Z 0 0',
+      margin: '0 -Z 0 0'
     },
     '.isActive': {
       zIndex: 2,
       opacity: 1,
-      outline: '2px, solid, orange',
+      outline: '2px, solid, orange'
     },
     '.isFollowingYou': {
       zIndex: 2,
       opacity: 1,
-      outline: '2px, solid, blue',
+      outline: '2px, solid, blue'
     },
     onClick: (ev, el) => {
       const {
@@ -38,10 +38,10 @@ export const ActiveCanvasUsers = {
         userId
       } = el.props
       el.call('askToFollow', userId)
-    },
+    }
   },
   ':empty': {
-    hide: true,
+    hide: true
   },
   onInit: async (el, st) => {
     const areClientsEqual = (prev = {}, next = {}) => {
@@ -124,6 +124,6 @@ export const ActiveCanvasUsers = {
   state: {
     clients: {},
     users: [
-    ],
-  },
-};
+    ]
+  }
+}

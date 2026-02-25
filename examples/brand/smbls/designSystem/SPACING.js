@@ -3,7 +3,7 @@ export default {
   ratio: 1.618,
   range: [
     '-6',
-    12,
+    12
   ],
-  subSequence: true,
-};
+  subSequence: true
+}

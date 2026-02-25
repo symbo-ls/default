@@ -20,7 +20,7 @@ export const SaveCheckpointControl = {
     el.sdk.rootBus.on('checkpoint:done', handler)
   },
   state: {
-    status: null,
+    status: null
   },
   CommitBtn: {
     extends: 'Button',
@@ -47,7 +47,7 @@ export const SaveCheckpointControl = {
           status: null
         })
       }
-    },
+    }
   },
   ManualSavedStatusMessage: {
     if: (el, st) => st.status === 'manualSaved',
@@ -55,7 +55,7 @@ export const SaveCheckpointControl = {
     text: 'Save success',
     color: 'green',
     textAlign: 'center',
-    width: '100%',
+    width: '100%'
   },
   AutoSavedStatusMessage: {
     if: (el, st) => st.status === 'autoSaved',
@@ -63,7 +63,7 @@ export const SaveCheckpointControl = {
     text: 'Auto Saved',
     color: 'green',
     textAlign: 'center',
-    width: '100%',
+    width: '100%'
   },
   SavingStatusMessage: {
     if: (el, st) => st.status === 'saving',
@@ -71,6 +71,6 @@ export const SaveCheckpointControl = {
     text: 'Saving…',
     color: 'dim',
     textAlign: 'center',
-    width: '100%',
-  },
-};
+    width: '100%'
+  }
+}

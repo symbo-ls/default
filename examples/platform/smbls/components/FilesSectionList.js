@@ -12,16 +12,16 @@ export const FilesSectionList = {
         type: 'components',
         key: 'Logo',
         value: {
-          Img: {},
-        },
+          Img: {}
+        }
       },
       {
         type: 'components',
         key: 'Header',
         value: {
-          Logo: {},
-        },
-      },
-    ],
-  },
-};
+          Logo: {}
+        }
+      }
+    ]
+  }
+}

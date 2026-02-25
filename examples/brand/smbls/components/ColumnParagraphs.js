@@ -6,10 +6,10 @@ export const ColumnParagraphs = {
   columns: '4fr 7fr 7fr',
   '@mobileM': {
     display: 'flex',
-    flexFlow: 'column',
+    flexFlow: 'column'
   },
   childProps: {
     maxWidth: 'G+C',
-    color: 'paragraph',
-  },
-};
+    color: 'paragraph'
+  }
+}

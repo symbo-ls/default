@@ -4,6 +4,6 @@ export const ExplanatoryParagraph = {
   margin: 'A 0',
   gap: 'X',
   childProps: {
-    tag: 'span',
-  },
-};
+    tag: 'span'
+  }
+}

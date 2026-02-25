@@ -4,21 +4,21 @@ export const FileSidebarSearch = {
     position: 'relative',
     zIndex: 'none',
     theme: 'field',
-    round: 'C1',
+    round: 'C1'
   },
   Form: {
     Icon: {
       top: 'Z1',
       name: 'search outline',
       position: 'absolute',
-      left: 'Z2',
+      left: 'Z2'
     },
     Input: {
       theme: 'field',
       round: 'C1',
       padding: 'Z B2 Z B2+X2',
-      placeholder: 'Filter',
-    },
+      placeholder: 'Filter'
+    }
   },
   NavbarButton: {
     tag: 'button',
@@ -34,7 +34,7 @@ export const FileSidebarSearch = {
       const {
         node
       } = el.parent.Form.Input
-      if (node.value) { 
+      if (node.value) {
         el.lookup('FilesSidebar').state.update({
           search: ''
         })
@@ -43,6 +43,6 @@ export const FileSidebarSearch = {
           node.focus()
         }, 100)
       }
-    },
-  },
-};
+    }
+  }
+}

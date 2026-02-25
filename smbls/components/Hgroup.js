@@ -1,3 +1,3 @@
 export const Hgroup = {
-  extends: 'smbls.Hgroup',
-};
+  extends: 'smbls.Hgroup'
+}

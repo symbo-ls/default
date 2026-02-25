@@ -5,12 +5,12 @@ export const browserExtension = {
     gap: 'X2',
     width: '100%',
     height: '100%',
-    padding: 'X',
+    padding: 'X'
   },
   state: {
     recents: [
     ],
-    extensionInstalled: 'Boolean(window.chrome && window.chrome.runtime)',
+    extensionInstalled: 'Boolean(window.chrome && window.chrome.runtime)'
   },
   ExtensionCanvasNavbar: {},
   Window: {
@@ -26,7 +26,7 @@ export const browserExtension = {
       border: 0,
       hide: (el, s) => !s.url,
       height: '100%',
-      width: '100%',
+      width: '100%'
     },
     Message: {
       position: 'absolute',
@@ -36,11 +36,11 @@ export const browserExtension = {
       hide: (el, s) => s.extensionInstalled && s.url,
       P: {
         color: 'disabled',
-        text: 'Type URL to start inspecting',
-      },
+        text: 'Type URL to start inspecting'
+      }
     },
     InstallExt: {
-      hide: (el, s) => !s.extensionInstalled,
+      hide: (el, s) => !s.extensionInstalled
     },
     Chosen: {
       hide: (el, s) => !s.parent.inspectedItem,
@@ -48,7 +48,7 @@ export const browserExtension = {
       inset: '0',
       onStateUpdate: (ch, el, s, ctx, opts) => {
         // overwrite default state
-      },
-    },
-  },
-};
+      }
+    }
+  }
+}
