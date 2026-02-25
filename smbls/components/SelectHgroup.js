@@ -7,9 +7,7 @@ export const SelectHgroup = {
     P: {},
   },
   SelectPicker: {
-    props: {
-      margin: '- - - auto',
-    },
+    margin: '- - - auto',
     Select: {
       children: () => [{
           value: 'Goat',
@@ -20,8 +18,6 @@ export const SelectHgroup = {
       ],
     },
   },
-  extend: 'Flex',
-  props: {
-    gap: 'C',
-  },
+  extends: 'Flex',
+  gap: 'C',
 };

@@ -12,9 +12,7 @@ export const ImgHgroup = {
     },
     P: {},
   },
-  extend: 'Flex',
-  props: {
-    align: 'center flex-start',
-    gap: 'Y1',
-  },
+  extends: 'Flex',
+  align: 'center flex-start',
+  gap: 'Y1',
 };

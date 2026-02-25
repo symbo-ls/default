@@ -8,9 +8,7 @@ export const RadioCaption = {
       ':after': {},
     },
   },
-  extend: 'Flex',
-  props: {
-    align: 'center flex-start',
-    gap: 'Z',
-  },
+  extends: 'Flex',
+  align: 'center flex-start',
+  gap: 'Z',
 };

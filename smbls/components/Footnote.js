@@ -1,6 +1,4 @@
 export const Footnote = {
-  props: {
-    text: 'Footnote',
-  },
-  extend: 'smbls.Footnote',
+  text: 'Footnote',
+  extends: 'smbls.Footnote',
 };

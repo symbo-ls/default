@@ -7,8 +7,6 @@ export const CounterIconButton = {
     right: '-Y',
     top: '-W2',
   },
-  extend: 'IconButton',
-  props: {
-    position: 'relative',
-  },
+  extends: 'IconButton',
+  position: 'relative',
 };

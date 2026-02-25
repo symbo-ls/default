@@ -46,10 +46,8 @@ export const Accordion = {
       opacity: '0',
     },
   },
-  extend: 'Flex',
-  props: {
-    flow: 'y',
-    gap: 'Y2',
-    position: 'relative',
-  },
+  extends: 'Flex',
+  flow: 'y',
+  gap: 'Y2',
+  position: 'relative',
 };

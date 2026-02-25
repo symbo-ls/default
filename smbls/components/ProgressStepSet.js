@@ -1,16 +1,14 @@
 export const ProgressStepSet = {
-  extend: 'Flex',
-  childExtend: 'Progress',
-  props: {
-    gap: 'A',
-    childProps: {
-      minWidth: 'C',
-    },
-    children: [
-      {
-        value: 0.7,
-      },
-      {},
-    ],
+  extends: 'Flex',
+  childExtends: 'Progress',
+  gap: 'A',
+  childProps: {
+    minWidth: 'C',
   },
+  children: [
+    {
+      value: 0.7,
+    },
+    {},
+  ],
 };

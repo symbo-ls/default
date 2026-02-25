@@ -21,10 +21,8 @@ export const UserNavbar = {
     },
     children: () => [{}, {}],
   },
-  extend: 'Flex',
-  props: {
-    minWidth: 'G2',
-    align: 'center flex-start',
-    gap: 'Z',
-  },
+  extends: 'Flex',
+  minWidth: 'G2',
+  align: 'center flex-start',
+  gap: 'Z',
 };

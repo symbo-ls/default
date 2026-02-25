@@ -5,13 +5,11 @@ export const UnitValue = {
   Value: {
     text: '73',
   },
-  extend: 'Flex',
-  props: {
-    align: 'center flex-start',
-    gap: 'V',
-    childProps: {
-      lineHeight: '1em',
-      color: 'title',
-    },
+  extends: 'Flex',
+  align: 'center flex-start',
+  gap: 'V',
+  childProps: {
+    lineHeight: '1em',
+    color: 'title',
   },
 };

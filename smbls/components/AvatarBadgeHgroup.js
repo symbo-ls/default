@@ -10,5 +10,5 @@ export const AvatarBadgeHgroup = {
     },
     P: {},
   },
-  extend: 'AvatarHgroup',
+  extends: 'AvatarHgroup',
 };

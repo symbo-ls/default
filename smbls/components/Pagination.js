@@ -49,9 +49,7 @@ export const Pagination = {
       state.update({})
     },
   },
-  extend: 'Flex',
-  props: {
-    gap: 'A',
-    align: 'center fllex-start',
-  },
+  extends: 'Flex',
+  gap: 'A',
+  align: 'center fllex-start',
 };

@@ -12,8 +12,6 @@ export const TextareaIconButton = {
       name: 'send',
     },
   },
-  extend: 'Flex',
-  props: {
-    gap: 'Y1',
-  },
+  extends: 'Flex',
+  gap: 'Y1',
 };

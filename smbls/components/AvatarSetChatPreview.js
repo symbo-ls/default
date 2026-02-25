@@ -64,10 +64,8 @@ export const AvatarSetChatPreview = {
       },
     },
   },
-  extend: 'Flex',
-  props: {
-    gap: 'Z1',
-    minWidth: 'G3',
-    align: 'center flex-start',
-  },
+  extends: 'Flex',
+  gap: 'Z1',
+  minWidth: 'G3',
+  align: 'center flex-start',
 };

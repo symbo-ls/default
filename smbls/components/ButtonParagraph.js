@@ -9,9 +9,7 @@ export const ButtonParagraph = {
     theme: 'transparent',
     text: 'Click to Resend',
   },
-  extend: 'Flex',
-  props: {
-    alignItems: 'center',
-    gap: 'X2',
-  },
+  extends: 'Flex',
+  alignItems: 'center',
+  gap: 'X2',
 };

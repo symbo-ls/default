@@ -28,12 +28,10 @@ export const NumberPicker = {
       })
     },
   },
-  extend: 'Flex',
-  props: {
-    align: 'center flex-start',
-    gap: 'Z',
-    '> button': {
-      theme: 'transparent',
-    },
+  extends: 'Flex',
+  align: 'center flex-start',
+  gap: 'Z',
+  '> button': {
+    theme: 'transparent',
   },
 };

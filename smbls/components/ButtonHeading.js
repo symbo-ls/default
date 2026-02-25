@@ -7,9 +7,7 @@ export const ButtonHeading = {
     text: 'Button',
     theme: 'dialog',
   },
-  extend: 'Flex',
-  props: {
-    align: 'center flex-start',
-    gap: 'Z',
-  },
+  extends: 'Flex',
+  align: 'center flex-start',
+  gap: 'Z',
 };

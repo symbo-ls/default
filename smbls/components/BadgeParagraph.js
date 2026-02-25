@@ -5,9 +5,7 @@ export const BadgeParagraph = {
     color: 'paragraph',
   },
   Badge: {},
-  extend: 'Flex',
-  props: {
-    align: 'center space-between',
-    gap: 'A',
-  },
+  extends: 'Flex',
+  align: 'center space-between',
+  gap: 'A',
 };

@@ -18,11 +18,9 @@ export const SelectField = {
   Icon: {
     margin: '- Z2 - -',
   },
-  extend: 'SelectPicker',
-  props: {
-    theme: 'field',
-    minWidth: 'G',
-    padding: 'A A1',
-    round: 'D',
-  },
+  extends: 'SelectPicker',
+  theme: 'field',
+  minWidth: 'G',
+  padding: 'A A1',
+  round: 'D',
 };

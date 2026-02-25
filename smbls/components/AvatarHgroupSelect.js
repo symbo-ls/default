@@ -5,9 +5,7 @@ export const AvatarHgroupSelect = {
     P: {},
   },
   SelectPicker: {
-    props: {
-      margin: '- - - auto',
-    },
+    margin: '- - - auto',
     Select: {
       0: {
         value: 'Goat',
@@ -15,11 +13,8 @@ export const AvatarHgroupSelect = {
       1: {
         value: 'Icon',
       },
-      props: {},
     },
   },
-  extend: 'AvatarHgroup',
-  props: {
-    minWidth: 'G1',
-  },
+  extends: 'AvatarHgroup',
+  minWidth: 'G1',
 };

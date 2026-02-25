@@ -4,15 +4,13 @@ export const IcontextLink = {
     fontSize: 'B',
     name: 'logo',
   },
-  extend: [
+  extends: [
     'Link',
     'IconText',
   ],
-  props: {
-    gap: 'Y',
-    maxHeight: '3em',
-    cursor: 'pointer',
-    round: 'D',
-    fontWeight: '500',
-  },
+  gap: 'Y',
+  maxHeight: '3em',
+  cursor: 'pointer',
+  round: 'D',
+  fontWeight: '500',
 };

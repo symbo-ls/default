@@ -1,3 +1,3 @@
 export const Select = {
-  extend: 'smbls.Select',
+  extends: 'smbls.Select',
 };

@@ -2,8 +2,6 @@ export const SectionHeader = {
   tag: 'header',
   Hgroup: {},
   IconButtonSet: {},
-  extend: 'Flex',
-  props: {
-    gap: 'C1',
-  },
+  extends: 'Flex',
+  gap: 'C1',
 };

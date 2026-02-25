@@ -18,8 +18,6 @@ export const PackageFeatureItem = {
       name: 'logo',
     },
   },
-  extend: 'Flex',
-  props: {
-    cursor: 'pointer',
-  },
+  extends: 'Flex',
+  cursor: 'pointer',
 };

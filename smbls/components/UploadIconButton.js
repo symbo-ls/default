@@ -13,10 +13,8 @@ export const UploadIconButton = {
     left: '0',
     opacity: '0',
   },
-  extend: 'IconButton',
-  props: {
-    position: 'relative',
-    padding: '0',
-    cursor: 'pointer',
-  },
+  extends: 'IconButton',
+  position: 'relative',
+  padding: '0',
+  cursor: 'pointer',
 };

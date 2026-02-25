@@ -12,8 +12,6 @@ export const AvatarHgroupIconButton = {
       name: 'copy',
     },
   },
-  extend: 'AvatarHgroup',
-  props: {
-    minWidth: 'G+Z2',
-  },
+  extends: 'AvatarHgroup',
+  minWidth: 'G+Z2',
 };

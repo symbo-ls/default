@@ -19,9 +19,7 @@ export const CheckStep = {
       value: 1,
     },
   },
-  extend: 'Flex',
-  props: {
-    align: 'center flex-start',
-    gap: 'Z',
-  },
+  extends: 'Flex',
+  align: 'center flex-start',
+  gap: 'Z',
 };

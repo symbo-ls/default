@@ -13,11 +13,9 @@ export const IconInput = {
     zIndex: '2',
     right: 'Z2',
   },
-  extend: 'Flex',
-  props: {
-    minWidth: 'G',
-    align: 'center flex-start',
-    round: 'D',
-    position: 'relative',
-  },
+  extends: 'Flex',
+  minWidth: 'G',
+  align: 'center flex-start',
+  round: 'D',
+  position: 'relative',
 };

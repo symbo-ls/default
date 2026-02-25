@@ -34,37 +34,35 @@ export const ScrollableList = {
       },
     ],
   },
-  props: {
-    position: 'relative',
-    overflow: 'hidden',
-    theme: 'field',
-    round: 'A2',
-    minWidth: 'F1',
-    ':before, &:after': {
-      content: '""',
-      position: 'absolute',
-      boxSize: 'B 100%',
-      zIndex: '2',
-      left: '0',
-      pointerEvents: 'none',
+  position: 'relative',
+  overflow: 'hidden',
+  theme: 'field',
+  round: 'A2',
+  minWidth: 'F1',
+  ':before, &:after': {
+    content: '""',
+    position: 'absolute',
+    boxSize: 'B 100%',
+    zIndex: '2',
+    left: '0',
+    pointerEvents: 'none',
+  },
+  ':before': {
+    top: '0',
+    '@light': {
+      background: 'linear-gradient(to bottom,  #ebecf2 0%, transparent 100%)',
     },
-    ':before': {
-      top: '0',
-      '@light': {
-        background: 'linear-gradient(to bottom,  #ebecf2 0%, transparent 100%)',
-      },
-      '@dark': {
-        background: 'linear-gradient(to bottom, #171717 0%, transparent 100%)',
-      },
+    '@dark': {
+      background: 'linear-gradient(to bottom, #171717 0%, transparent 100%)',
     },
-    ':after': {
-      bottom: '-3px',
-      '@light': {
-        background: 'linear-gradient(to top,  #ebecf2 0%, transparent 100%)',
-      },
-      '@dark': {
-        background: 'linear-gradient(to top, #171717 0%, transparent 100%)',
-      },
+  },
+  ':after': {
+    bottom: '-3px',
+    '@light': {
+      background: 'linear-gradient(to top,  #ebecf2 0%, transparent 100%)',
+    },
+    '@dark': {
+      background: 'linear-gradient(to top, #171717 0%, transparent 100%)',
     },
   },
 };

@@ -8,12 +8,10 @@ export const ImgHeadingButton = {
     tag: 'h6',
     text: 'Heading',
   },
-  extend: 'Button',
-  props: {
-    theme: 'transparent',
-    flow: 'y',
-    gap: 'Z',
-    padding: '0',
-    round: '0',
-  },
+  extends: 'Button',
+  theme: 'transparent',
+  flow: 'y',
+  gap: 'Z',
+  padding: '0',
+  round: '0',
 };

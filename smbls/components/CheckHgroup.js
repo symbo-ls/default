@@ -14,8 +14,6 @@ export const CheckHgroup = {
       },
     },
   },
-  extend: 'Flex',
-  props: {
-    gap: 'Z',
-  },
+  extends: 'Flex',
+  gap: 'Z',
 };

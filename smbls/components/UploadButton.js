@@ -11,12 +11,10 @@ export const UploadButton = {
     left: '0',
     opacity: '0',
   },
-  extend: 'Button',
-  props: {
-    position: 'relative',
-    padding: '0',
-    cursor: 'pointer',
-    theme: 'transparent',
-    color: 'blue',
-  },
+  extends: 'Button',
+  position: 'relative',
+  padding: '0',
+  cursor: 'pointer',
+  theme: 'transparent',
+  color: 'blue',
 };

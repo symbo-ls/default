@@ -1,6 +1,4 @@
 export const Headline = {
-  props: {
-    text: 'Headline',
-  },
-  extend: 'smbls.Headline',
+  text: 'Headline',
+  extends: 'smbls.Headline',
 };

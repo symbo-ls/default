@@ -17,7 +17,5 @@ export const ValueCircleProgress = {
       text: '%',
     },
   },
-  props: {
-    border: '2',
-  },
+  border: '2',
 };

@@ -87,11 +87,9 @@ export const SearchDropdown_copy = {
       color: 'disabled',
     },
   },
-  props: {
-    color: 'black',
-    position: 'relative',
-    width: 'G3',
-    theme: 'field',
-    round: 'A2',
-  },
+  color: 'black',
+  position: 'relative',
+  width: 'G3',
+  theme: 'field',
+  round: 'A2',
 };

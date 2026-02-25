@@ -13,9 +13,7 @@ export const IconHgroup = {
     },
     P: {},
   },
-  extend: 'Flex',
-  props: {
-    gap: 'X',
-    align: 'flex-start',
-  },
+  extends: 'Flex',
+  gap: 'X',
+  align: 'flex-start',
 };

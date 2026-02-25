@@ -5,9 +5,7 @@ export const AvatarHeading = {
     lineHeight: '1em',
     text: 'Heading',
   },
-  extend: 'Flex',
-  props: {
-    gap: 'X2',
-    align: 'center flex-start',
-  },
+  extends: 'Flex',
+  gap: 'X2',
+  align: 'center flex-start',
 };

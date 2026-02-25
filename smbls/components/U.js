@@ -1,6 +1,4 @@
 export const U = {
-  props: {
-    text: 'Underlined text',
-  },
-  extend: 'smbls.Underline',
+  text: 'Underlined text',
+  extends: 'smbls.Underline',
 };

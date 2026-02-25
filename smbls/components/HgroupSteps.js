@@ -14,11 +14,9 @@ export const HgroupSteps = {
       flex: '1',
     },
   },
-  extend: 'Flex',
-  props: {
-    flow: 'column',
-    gap: 'A1',
-    minWidth: 'G1',
-    maxWidth: 'H',
-  },
+  extends: 'Flex',
+  flow: 'column',
+  gap: 'A1',
+  minWidth: 'G1',
+  maxWidth: 'H',
 };

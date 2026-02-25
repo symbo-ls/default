@@ -12,8 +12,6 @@ export const RadioHgroup = {
       ':after': {},
     },
   },
-  extend: 'Flex',
-  props: {
-    gap: 'Z',
-  },
+  extends: 'Flex',
+  gap: 'Z',
 };

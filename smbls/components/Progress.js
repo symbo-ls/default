@@ -11,23 +11,21 @@ export const Progress = {
       props
     }) => props.value,
   },
-  extend: 'Flex',
-  props: {
-    height: 'X',
-    minWidth: 'F3',
-    round: 'Y',
-    overflow: 'hidden',
-    '::-webkit-progress-bar': {
-      '@dark': {
-        background: 'gray',
-      },
-      '@light': {
-        background: 'hurricane',
-      },
+  extends: 'Flex',
+  height: 'X',
+  minWidth: 'F3',
+  round: 'Y',
+  overflow: 'hidden',
+  '::-webkit-progress-bar': {
+    '@dark': {
+      background: 'gray',
     },
-    '::-webkit-progress-value': {
-      borderRadius: 'Y',
-      theme: 'primary',
+    '@light': {
+      background: 'hurricane',
     },
+  },
+  '::-webkit-progress-value': {
+    borderRadius: 'Y',
+    theme: 'primary',
   },
 };

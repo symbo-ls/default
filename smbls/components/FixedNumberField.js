@@ -36,5 +36,5 @@ export const FixedNumberField = {
       }
     },
   },
-  extend: 'InputField',
+  extends: 'InputField',
 };

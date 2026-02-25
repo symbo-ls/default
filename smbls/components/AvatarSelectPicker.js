@@ -40,10 +40,8 @@ export const AvatarSelectPicker = {
     margin: 'V - - -',
     fontSize: 'B',
   },
-  extend: 'Flex',
-  props: {
-    round: '0',
-    align: 'center flex-start',
-    position: 'relative',
-  },
+  extends: 'Flex',
+  round: '0',
+  align: 'center flex-start',
+  position: 'relative',
 };

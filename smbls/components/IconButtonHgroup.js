@@ -10,9 +10,7 @@ export const IconButtonHgroup = {
   IconButton: {
     theme: 'dialog',
   },
-  extend: 'Flex',
-  props: {
-    align: 'flex-start flex-start',
-    gap: 'Z',
-  },
+  extends: 'Flex',
+  align: 'flex-start flex-start',
+  gap: 'Z',
 };

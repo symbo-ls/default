@@ -85,10 +85,8 @@ export const SearchDropdown = {
       color: 'disabled',
     },
   },
-  props: {
-    position: 'relative',
-    width: 'G3',
-    theme: 'field',
-    round: 'A2',
-  },
+  position: 'relative',
+  width: 'G3',
+  theme: 'field',
+  round: 'A2',
 };

@@ -7,15 +7,13 @@ export const InputButton = {
     text: 'Sign up',
     theme: 'primary',
   },
-  extend: 'Flex',
-  props: {
-    gap: 'Y2',
-    align: 'center flex-start',
-    height: 'C+X',
-    '> *': {
-      height: '100%',
-      minHeight: '100%',
-      maxHeight: '100%',
-    },
+  extends: 'Flex',
+  gap: 'Y2',
+  align: 'center flex-start',
+  height: 'C+X',
+  '> *': {
+    height: '100%',
+    minHeight: '100%',
+    maxHeight: '100%',
   },
 };

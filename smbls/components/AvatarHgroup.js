@@ -9,9 +9,7 @@ export const AvatarHgroup = {
     },
     P: {},
   },
-  extend: 'Flex',
-  props: {
-    gap: 'Z',
-    align: 'center flex-start',
-  },
+  extends: 'Flex',
+  gap: 'Z',
+  align: 'center flex-start',
 };

@@ -15,9 +15,7 @@ export const FieldCaption = {
     Input: {},
     Icon: {},
   },
-  extend: 'Flex',
-  props: {
-    flow: 'column',
-    boxSize: 'fit-content fit-content',
-  },
+  extends: 'Flex',
+  flow: 'column',
+  boxSize: 'fit-content fit-content',
 };

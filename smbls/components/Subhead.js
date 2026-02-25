@@ -1,6 +1,4 @@
 export const Subhead = {
-  props: {
-    text: 'Subhead',
-  },
-  extend: 'smbls.Subhead',
+  text: 'Subhead',
+  extends: 'smbls.Subhead',
 };

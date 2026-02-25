@@ -1,6 +1,4 @@
 export const Hr = {
-  extend: 'smbls.Hr',
-  props: {
-    minWidth: 'F',
-  },
+  extends: 'smbls.Hr',
+  minWidth: 'F',
 };

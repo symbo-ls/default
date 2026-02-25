@@ -3,9 +3,7 @@ export const BadgeCaption = {
     text: 'CAPTION',
   },
   Badge: {},
-  extend: 'Flex',
-  props: {
-    align: 'center flex-start',
-    gap: 'Y',
-  },
+  extends: 'Flex',
+  align: 'center flex-start',
+  gap: 'Y',
 };

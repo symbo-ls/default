@@ -19,9 +19,7 @@ export const RadioStep = {
       value: 1,
     },
   },
-  extend: 'Flex',
-  props: {
-    align: 'center flex-start',
-    gap: 'Y2',
-  },
+  extends: 'Flex',
+  align: 'center flex-start',
+  gap: 'Y2',
 };

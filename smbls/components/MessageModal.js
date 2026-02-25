@@ -13,8 +13,6 @@ export const MessageModal = {
       name: 'x',
     },
   },
-  extend: 'Modal',
-  props: {
-    maxWidth: 'H',
-  },
+  extends: 'Modal',
+  maxWidth: 'H',
 };

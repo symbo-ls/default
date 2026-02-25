@@ -27,8 +27,6 @@ export const Scrollbar = {
       },
     },
   },
-  extend: 'Flex',
-  props: {
-    minWidth: 'I',
-  },
+  extends: 'Flex',
+  minWidth: 'I',
 };

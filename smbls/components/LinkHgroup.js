@@ -12,9 +12,7 @@ export const LinkHgroup = {
   Link: {
     text: 'Get direction',
   },
-  extend: 'Flex',
-  props: {
-    flow: 'y',
-    gap: 'Z',
-  },
+  extends: 'Flex',
+  flow: 'y',
+  gap: 'Z',
 };

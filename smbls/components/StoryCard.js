@@ -40,12 +40,10 @@ export const StoryCard = {
       children: () => [{}, {}],
     },
   },
-  extend: 'Flex',
-  props: {
-    position: 'relative',
-    round: 'B2',
-    boxSize: 'H1 G3',
-    alignSelf: 'flex-start',
-    overflow: 'hidden',
-  },
+  extends: 'Flex',
+  position: 'relative',
+  round: 'B2',
+  boxSize: 'H1 G3',
+  alignSelf: 'flex-start',
+  overflow: 'hidden',
 };

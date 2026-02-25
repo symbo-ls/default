@@ -5,14 +5,12 @@ export const Group = {
     userSelect: 'none',
     whiteSpace: 'nowrap',
   },
-  extend: 'Flex',
-  props: {
-    flow: 'y',
-    align: 'flex-start',
-    gap: 'Y1',
-    minWidth: 'F',
-    childProps: {
-      width: '100%',
-    },
+  extends: 'Flex',
+  flow: 'y',
+  align: 'flex-start',
+  gap: 'Y1',
+  minWidth: 'F',
+  childProps: {
+    width: '100%',
   },
 };

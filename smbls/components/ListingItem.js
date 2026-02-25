@@ -64,9 +64,7 @@ export const ListingItem = {
       ],
     },
   },
-  extend: 'Flex',
-  props: {
-    gap: 'A2',
-    alignItems: 'flex-start',
-  },
+  extends: 'Flex',
+  gap: 'A2',
+  alignItems: 'flex-start',
 };

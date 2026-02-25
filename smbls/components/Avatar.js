@@ -1,6 +1,4 @@
 export const Avatar = {
-  extend: 'smbls.Avatar',
-  props: {
-    boxSize: 'C2',
-  },
+  extends: 'smbls.Avatar',
+  boxSize: 'C2',
 };

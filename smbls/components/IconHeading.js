@@ -9,9 +9,7 @@ export const IconHeading = {
     lineHeight: '1em',
     fontWeight: '700',
   },
-  extend: 'Flex',
-  props: {
-    gap: 'Z',
-    align: 'center flex-start',
-  },
+  extends: 'Flex',
+  gap: 'Z',
+  align: 'center flex-start',
 };

@@ -3,11 +3,9 @@ export const ImgButton = {
     src: 'https://api.symbols.app/core/files/public/69325cf7ebee5529e0391f0b/download',
     boxSize: 'C1 D2',
   },
-  extend: 'Button',
-  props: {
-    theme: 'transparent',
-    padding: '0',
-    round: 'Z2',
-    overflow: 'hidden',
-  },
+  extends: 'Button',
+  theme: 'transparent',
+  padding: '0',
+  round: 'Z2',
+  overflow: 'hidden',
 };

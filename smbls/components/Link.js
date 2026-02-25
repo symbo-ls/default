@@ -1,6 +1,4 @@
 export const Link = {
-  props: {
-    text: 'Link',
-  },
-  extend: 'smbls.Link',
+  text: 'Link',
+  extends: 'smbls.Link',
 };

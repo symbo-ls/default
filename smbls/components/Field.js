@@ -14,11 +14,9 @@ export const Field = {
     right: 'Z2',
     opacity: '.45',
   },
-  extend: 'Flex',
-  props: {
-    theme: 'field',
-    align: 'center flex-start',
-    round: 'D',
-    position: 'relative',
-  },
+  extends: 'Flex',
+  theme: 'field',
+  align: 'center flex-start',
+  round: 'D',
+  position: 'relative',
 };

@@ -5,8 +5,6 @@ export const AvatarStatus = {
     bottom: 'W2',
     right: '0',
   },
-  extend: 'Flex',
-  props: {
-    position: 'relative',
-  },
+  extends: 'Flex',
+  position: 'relative',
 };

@@ -13,8 +13,6 @@ export const ToggleHgroup = {
       after: {},
     },
   },
-  extend: 'Flex',
-  props: {
-    gap: 'Z',
-  },
+  extends: 'Flex',
+  gap: 'Z',
 };

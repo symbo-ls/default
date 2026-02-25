@@ -7,9 +7,7 @@ export const NotCounterParagraph = {
     overflow: 'hidden',
   },
   NotificationCounter: {},
-  extend: 'Flex',
-  props: {
-    align: 'center space-between',
-    gap: 'B',
-  },
+  extends: 'Flex',
+  align: 'center space-between',
+  gap: 'B',
 };

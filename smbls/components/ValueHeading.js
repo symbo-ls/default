@@ -8,9 +8,7 @@ export const ValueHeading = {
     Unit: {},
     Value: {},
   },
-  extend: 'Flex',
-  props: {
-    minWidth: 'F3',
-    align: 'center space-between',
-  },
+  extends: 'Flex',
+  minWidth: 'F3',
+  align: 'center space-between',
 };
